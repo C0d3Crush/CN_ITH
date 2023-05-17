@@ -1,0 +1,70 @@
+\documentclass[a4paper,11pt]{article}
+
+%\setlength{\headheight}{22.62503pt}
+
+% Use packages to set margins, fonts, and spacing
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+
+\onehalfspacing
+\usepackage{fancyhdr} % Package to customize headers and footers
+\pagestyle{fancy} % Set the page style to use fancy headers and footers
+\fancyhf{} % Clear all header and footer fields
+\lhead{\small{}} % Set left header
+\rhead{\small{}} % Set right header
+\rfoot{\small{Seite \thepage}} % Set right footer
+\renewcommand{\headrulewidth}{0.5pt} % Set thickness of header rule
+
+
+%\usepackage{fontspec}
+%\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
+
+
+\begin{document}
+
+\begin{center}
+\section*{Automaten und Grammatiken}
+\end{center}
+
+\section*{4. Endliche Automaten}
+Wir wollen Turingmahinen un stark einschränken. 
+wir betrahten ein Modell, das im wesentlichen ohne speicher
+zurechtkommt (=Tm ohne band $\longrightarrow$  brauchen es nur für die Eingabe).
+Der Ausgabemechanismus kennt nur Akzeptanz und Nichtakzeptanz.\\\\
+Als TM kann der wie folgt realisiert werden:
+\begin{itemize}
+    \item Es ist nur ein Band erlaubt.
+    \item Bei jedem Rechenschritt bewegt sich der Kopf nach rechts. Ob und wie die Felder des Bandes dabei überschreiben werden spielt dann keine Rolle, denn der Kopf kann nie zurück bewegt werden; wir lehen aber fest, dass Symbole nicht überschrieben werden. Die Symbole die des Bandalphabet $\Gamma $ neben denen des Eingabealphabets $\Sigma $ und des $\square $  Symbols ?? hat ?? spielen keine Rolle. Wir legen hier $\varGamma $ = $\Sigma \cup $ \{$\square $\} fest.
+    \item Beim Einlesen des ersten $\square $ Symbols muss die Rechnung der Machine enden. Wir soll die Rechnung nicht vor dem Einlesen des ersten $\square $ Symbols enden. 
+\end{itemize}
+??Die?? bedeutet, dass wir DM M = (Q, $\Sigma$m $\Sigma\cup $\{$\square $\}), $\delta$, s, F) die nur Instruktionen der Form (q, a, q', a, R) mit q $\in$ Q und a $\in \sigma$ hat.
+Dies sind nun stark eingeschränkte TM. Wir wählen eine äquivalente Form, die als endliche Automaten bezeichnet werden. 
+
+\section*{Definition 4.1(Endliche Automaten)}
+Ein endicher Automat, kurz EA, ist ein Tupel A = (Q, $\Sigma$, $\delta$, s, F). Dabei ist 
+\begin{itemize}
+    \item Q eine endliche Menge, der Zustandsmenge;
+    \item $\Sigma$ das Eingabealphabet;
+    \item $\Delta \subseteq$ Q x $\sigma$ x Q die Übergangsrelation, eine relation, so dass es für alle q $\in$ Q und a$\in$ $\sigma$ ein q' $/in$ Q mit (q, a, q');
+    \item s $\in$ Q der Startzustand;
+    \item F $\subseteq$ die Menge der akzeptierten Zustände.
+\end{itemize}
+er endliche Automat A ist ein deterministischer endlicher Automa,
+kurz DEA, wenn es $\forall$ (q,a) $\in$ Q x $\sigma$ genau ein q' gibt mit (q,a,q') $\in$ $\delta$. 
+Im Sinne der obigen Betrachtung entspricht ein EA A = (Q, $\Sigma$m $\Delta$, s, F) der 1-TM $M_{a}$ = (Q, $\sigma$, ...)
+$\leadsto $ Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
+
+\section*{Definition 4.2 (Übergangsfunktion eines EA)}
+Sei A = (Q, $\sigma$, $\Delta$,s,F) ein EA. 
+Die Übergangsfunktion von A ist die Funktion \\
+$S_{A}$ : Q x $\Sigma \to 2^{Q}$ mit $S_{A}$(q, a) = \{q' $\in$ Q: (q, a, q')$\in \delta$\} $\forall$q $\in$ Q a $\in \sigma$.\\
+Die erweiterte Übergangsfunktion von A ist die Funktion \\
+$\delta_{A}^{*}$ (q,a): Q x $\Sigma^{*} \to 2^{Q}$ mit $S_{A}^{*}$(q,$\lambda$) = \{q\} und $\delta_{A}^{*}(q, aw)$ $\underset{q' \in \delta_{A}^{*}(q,a)}{\bigcup} \delta_{A}^{*}$(q', w) $\forall$q $\in$ Q a$\in \Sigma$ und w$\in \Sigma^{*}$.\\
+Für $Q_{0} \subseteq $ Q und w $\in \Sigma^{*}$ schreiben wir $\delta_{A}^{*} $($Q_{0}, w$) statt $\underset{q \in Q_{0}}{\bigcup}$ $\delta_{A}^{*}$ (q, w).
+
+
+\end{document}
