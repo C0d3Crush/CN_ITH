@@ -1,0 +1,89 @@
+\documentclass[a4paper,11pt]{article}
+
+%\setlength{\headheight}{22.62503pt}
+
+% Use packages to set margins, fonts, and spacing
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{graphicx} % for graphics
+\usepackage{lipsum} % for sample text
+
+%\usepackage{fontspec}
+%\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
+\newcommand{\coversection}[2]{
+  \newpage
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{\fill}
+    \includegraphics[width=0.5\linewidth]{#1}
+    \vspace*{0.5cm} % Anpassung des Abstands
+    \par
+    \Large\textbf{#2}
+    \par\vspace{\fill}
+  \end{center}
+  \newpage
+}
+
+
+\begin{document}
+\coversection{language.png}{Reguläre Sprachen}
+\section{Reguläre Sprachen}
+\subsection{Definition (Äquivalenzrelation)} Sei A eine Menge. Eine Äquivalenzreöation auf A ist eine Relation $~ \leq A^{2}$, so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
+\begin{itemize}
+    \item [(i)] $a \sim a \forall a \in A $ (Reflexivität)
+    \item [(ii)] $a \sim b \Rightarrow  b \sim a \forall a, b, c \in A$ (Symetrie)
+    \item [(iii)] $a \sim b, b \sim c \rightarrow a \sim c$ (Transitivität)
+\end{itemize}
+Die \textbf{Äquivalenzklasse} eines Elements $a \in A$ bezüglich $\sim$ ist die Menge $[a]_{~} := {a' \in A : a' ~a}$. Der \textbf{Index} von $\sim$ ist die Kardinalität der Menge $A_{/\sim} := {[a]_{\sim} : a \in A}$ falls diese endlich ist und $\infty$  andernfalls.
+
+\subsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion $\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $~_A$ auf $\Sigma^{*}$
+$\cdots$
+
+\subsection{Bemerkung} Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA.
+\begin{itemize}
+    \item [(i)] Die A-Äquivalenz ist eine Äquivalenzrelation.
+    \item [(ii)] Der Index von $\sim_{A}$ ist höchstens $|Q|$.
+    \item [(iii)] Es gilt $L(A) = \bigcup \limits_{w \in L(A)} [w]_{\sim A}$.
+\end{itemize}
+
+\subsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim ?\leq ?(\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \forall u, v, w \in Sigma^{*}$.
+
+\subsection{Proposition} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist eine Rechtskonqruenz auf $\Sigma^{*}$.\\\textbf{Beweis: } Seien $u, v, w \in \Sigma^{*}$ mit $u \sim_{A} v$. Dann gilt 
+\[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\]
+\[= \delta_{det,A}^{*}(s, vw). (hier benutzen wir Bem 4.3 und 4.5)\]
+
+Dann gilt $uw\sim_{A}vw.$
+$\Box $
+Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von $\sim_{A}$ ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gibt es einen DEA A mit $L(A) = L$
+
+\subsection{Definition} Sei $\Sigma$ eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index. Es bezeichne
+\[A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}\]
+den DEA mit $\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}$ und $a \in \Sigma$. Die Wohldefiniertheit von $\delta_{det, A_{\sim}, L}$ ergibt sich daraus, dass $\sim$ eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass $L(A_{\sim, L}) = L$ gilt betrachten wr zunächst die Arbeitsweise von $A_{\sim, L}$.
+
+\subsection{Lemma} Sei $\Sigma$ ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index und sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$. Dann gilt $\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}$. \textbf{Beweis} Wir verwenden vollständige Induktion über $|w|$. Es gilt $\delta^{*}([\lambda]_{\sim}, \lambda) = [\lambda_{\sim}]$. Sei nun $w \in \Sigma^{+}$ $\cdots$
+
+\subsection{Satz} Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index Es gibt $L(A_{\sim, L}) = L$ \textbf{Beweis: } Sei $\Sigma$ das Alphabet, so dass $\sim$ eine Rechtskongruenz auf $\Sigma^{*}$ ist. Sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$ und sei $w \in \Sigma^{*}$. Aus Lemma 5.7 folgt 
+\[w \in L(A_{\sim, L}) \Leftrightarrow \delta^{*}([\lambda]_{\sim}, w) \in {[v]_{\sim} : v \in L}\]
+\[\Leftrightarrow [w]_{\sim} \in {[v]_{\sim} : v\in L}\]
+\[\Leftrightarrow \exists v \in L : [w]_{\sim} = [v]_{\sim}\]
+\[\Leftrightarrow \exists v \in L : w \sim v\]
+\[\Leftrightarrow w \in L\]
+$\cdots$
+
+\subsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. \textbf{Beweis: }Folgt aus Bemerkung 5.3, Proposition 5.5 und Satz 5.8 $\Box$ 
+
+Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustände, so entsprechen diese bis auf Unbenutzung von Zuständen sogar den Rechtskongruenz mit endlichem Index zusammen mit Vereinigung von Äquivalenzklassn dieser.
+
+\subsection{Definition(erreichbar)} Sei $\Sigma$ ein Alphabet. Sei $A = (Q, \Sigma, \Delta, s, F)$ ein EA mit erweiterter Übergangsfunktion $\delta^{*}$. Ein zustand $q\in Q$ heißt erreichbar in A wenn es ein Wort $w \in \Sigma ^{*}$ mit $q\in \delta^{*}(s, w)$ gilt.
+
+\subsection{Definition(isomorph)} Sei $A_{i} = (Q_{i}, \Sigma, \Delta_{i}, s_{i}, F_{i})$ für $i \in {1,2}$ ein EA mit Übergangsfunktion $\delta_{i}$. Die endliche Automaten $A_{1}$ und $A_{2}$ sind \textbf{isomorph}, kurz $A_{1}? \cong A_{2}$, wenn es eine Projektion $f:Q_{1}\rightarrow Q_{2}$ gibt, sodass folgendes gilt:
+\begin{itemize}
+    \item [(i)] $f(s_{1}) = s_{2}$
+    \item [(ii)] $\delta_{2}(f(q_{1}), a) = f(\delta_{1}(q_{1}), a)$
+\end{itemize}
+
+\end{document}
