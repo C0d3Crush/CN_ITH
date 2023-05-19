@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1684509655 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/2. Turingmachine/main.tex" "main.pdf" "main" 1684509657 0
-  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/2. Turingmachine/main.tex" 1684509655 4350 ff5c2ac0d7eb5ec490a674a3327fc03e ""
+["pdflatex"] 1684536167 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/2. Turingmachine/main.tex" "main.pdf" "main" 1684536168 0
+  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/2. Turingmachine/main.tex" 1684536166 5981 86e0e823a077021b4db78a411b186733 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -85,8 +85,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683725111 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1684509657 660 e37b52aa2d7188b8ae982a9ac0af2b49 "pdflatex"
-  "main.tex" 1684509655 4350 ff5c2ac0d7eb5ec490a674a3327fc03e ""
+  "main.aux" 1684536168 773 5e88b3202dc9afa1b2d861f3b268f591 "pdflatex"
+  "main.tex" 1684536166 5981 86e0e823a077021b4db78a411b186733 ""
   "turing.png" 1684448602 1800992 c0e9ddcb30efab1c8fcd2b8c0cf052a8 ""
   "turing_sym.png" 1684503460 29145 7ad79d807c310c49ed3f29caff636c5a ""
   (generated)
