@@ -19,7 +19,7 @@
 \usepackage{graphicx}
 \usepackage{lipsum}
 
-\newcommand{\coversection}[2]{
+\newcommand{\coversection}[3]{
   \newpage
   \thispagestyle{empty}
   \begin{center}
@@ -28,6 +28,10 @@
     \vspace*{0.5cm} % Anpassung des Abstands
     \par
     \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
     \par\vspace{\fill}
   \end{center}
   \newpage
@@ -35,9 +39,8 @@
 
 
 
-
 \begin{document}
-\coversection{turing.png}{Turingmachine}
+\coversection{turing.png}{Turingmachine}{A Turing machine is like a wise old person, sitting at an endless table, playing a complex game. They have a magical pen that reads and writes on the game board. They follow strict rules, do not move from their spot, but the table mysteriously moves back and forth. Their concentration is deep and calm as they perform a complex ballet of reading, writing, and state-changing.\\ \hspace*{\fill} - ChatGPT}
 \section*{Berechenbarkeit}
 \section{Turingmachine} 
 \begin{sloppypar}

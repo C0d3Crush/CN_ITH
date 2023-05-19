@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  19 MAY 2023 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  19 MAY 2023 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,26 +196,26 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 39.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 42.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -294,52 +294,52 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <turing.png, id=1, 1027.84pt x 1027.84pt>
 File: turing.png Graphic file (type png)
 <use turing.png>
-Package pdftex.def Info: turing.png  used on input line 40.
+Package pdftex.def Info: turing.png  used on input line 43.
 (pdftex.def)             Requested size: 227.62206pt x 227.61543pt.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./turing.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 48.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 48.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 48.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-<turing_sym.png, id=8, 371.3875pt x 273.02pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+<turing_sym.png, id=9, 371.3875pt x 273.02pt>
 File: turing_sym.png Graphic file (type png)
 <use turing_sym.png>
-Package pdftex.def Info: turing_sym.png  used on input line 57.
+Package pdftex.def Info: turing_sym.png  used on input line 60.
 (pdftex.def)             Requested size: 227.62206pt x 167.33765pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 64.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2 <./turing_sym.png>] [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4666 strings out of 476025
- 78849 string characters out of 5790017
+ 4669 strings out of 476025
+ 78888 string characters out of 5790017
  1858388 words of memory out of 5000000
- 25025 multiletter control sequences out of 15000+600000
- 535823 words of font info for 81 fonts, out of 8000000 for 9000
+ 25027 multiletter control sequences out of 15000+600000
+ 538055 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,6n,77p,805b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 1908436 bytes).
+Output written on main.pdf (3 pages, 1911852 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
