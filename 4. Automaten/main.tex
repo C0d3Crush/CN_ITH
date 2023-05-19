@@ -14,7 +14,7 @@
 
 %\usepackage{fontspec}
 %\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
-\newcommand{\coversection}[2]{
+\newcommand{\coversection}[3]{
   \newpage
   \thispagestyle{empty}
   \begin{center}
@@ -23,6 +23,10 @@
     \vspace*{0.5cm} % Anpassung des Abstands
     \par
     \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
     \par\vspace{\fill}
   \end{center}
   \newpage
@@ -30,7 +34,7 @@
 
 
 \begin{document}
-\coversection{finit1.png}{Automaten und Grammatiken}
+\coversection{finit1.png}{Automaten und Grammatiken}{Imagine you're in a city with a limited number of locations (like a park, library, cafe, etc.). You can move from one place to another following specific paths (like roads). The paths you take depend on some rules, like the time of the day, or the type of ticket you have. The places you can reach with these rules represent different states in a finite automaton, and the rules themselves act like the transition function.\\ \hspace*{\fill} - ChatGPT}
 \section{Endliche Automaten}
 Wir wollen Turingmahinen un stark einschränken. 
 wir betrahten ein Modell, das im wesentlichen ohne speicher

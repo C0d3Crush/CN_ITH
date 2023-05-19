@@ -14,7 +14,7 @@
 
 %\usepackage{fontspec}
 %\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
-\newcommand{\coversection}[2]{
+\newcommand{\coversection}[3]{
   \newpage
   \thispagestyle{empty}
   \begin{center}
@@ -23,14 +23,19 @@
     \vspace*{0.5cm} % Anpassung des Abstands
     \par
     \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
     \par\vspace{\fill}
   \end{center}
   \newpage
 }
 
 
+
 \begin{document}
-\coversection{language.png}{Reguläre Sprachen}
+\coversection{regul.png}{Reguläre Sprachen}{A regular language can be thought of as a collection of sentences in a secret code. This secret code has a set of rules that determine which sentences are valid. You can think of it like a secret handshake, where only certain movements are allowed to be performed in a particular order.\\ \hspace*{\fill} - ChatGPT}
 \section{Reguläre Sprachen}
 \subsection{Definition (Äquivalenzrelation)} Sei A eine Menge. Eine Äquivalenzreöation auf A ist eine Relation $~ \leq A^{2}$, so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
 \begin{itemize}

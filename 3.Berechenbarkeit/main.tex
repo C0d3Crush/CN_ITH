@@ -1,0 +1,38 @@
+\documentclass[a4paper,11pt]{article}
+
+%\setlength{\headheight}{22.62503pt}
+
+% Use packages to set margins, fonts, and spacing
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{graphicx} % for graphics
+\usepackage{lipsum} % for sample text
+
+%\usepackage{fontspec}
+%\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
+\newcommand{\coversection}[3]{
+  \newpage
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{\fill}
+    \includegraphics[width=0.5\linewidth]{#1}
+    \vspace*{0.5cm} % Anpassung des Abstands
+    \par
+    \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
+    \par\vspace{\fill}
+  \end{center}
+  \newpage
+}
+
+\begin{document}
+\coversection{predic.png}{Berechenbarkeit}{Predictability is like knowing the path a river takes. The river starts at its source and flows down to the sea. Along the way, it may turn, twist, and divide, but it always follows the path of least resistance due to gravity. Knowing the terrain allows us to predict where the river will go.\\ \hspace*{\fill} - ChatGPT}
+
+\end{document}
