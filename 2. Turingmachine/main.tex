@@ -115,6 +115,24 @@ Eine Sprache L ist genau dann \textbf{entscheidbar}, wenn es eien totale k-TM M 
 
 \subsection{Definition(rekursiv aufzählbar)} Eine Sprache L ist genau dann \textbf{rekursiv aufzähbar}, wenn es eine k-TM mit akzeptierten Sprache L gibt. Wir schreiben \textbf{RE} für die Klasse der rekursiv aufzählbaren Sprachen. Die Aufzählbarkeit leitet sih daraus ab, dass es für eine rekuriv aufzählbare Sprache L über einem Alühabet $\Sigma$ möglich ist effektive Verfahren anzugeben ,die die Wörter von L aufzählen, also dass eine endlich oder unendliche Aufzählung von $A = w_1, w_2, \cdots$ mit ${w_1, w_2, \cdots} = L$ existiert.
 
+\subsection{Bemerkung} Jede entscheidbare Sprache ist rekursiv aufzähbar.
+
+\subsection{Bemerkung} Alle endlichen Sprachen sind entscheidbar.
+
+\subsection{Bemerkung} Eine Sprache L über einem Alphabet $\Sigma$ist genau dann entscheidbar, wenn $L$ und $L^c :=(\Sigma^*)/L$ rekursiv aufzähbar sind.
+
+\subsection{Definition (Ausgabe)} Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-TM und $C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)$ eine Konfigration von M. Die Ausgabe $out_M(C)$ von M bei Konfiguration C ist das Präfix $w \sqsubseteq w_1(p_1), \cdots, w_1(|w_1|)$ maximale Länge mit $w \in (\Gamma / {\Box})^*$.
+
+\subsection{Definition (berechnete Funktion)} Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-DTM und $n \in \mathbb{N}$. Die von M berechnete \textbf{n-äre partielle Funktion} $\Phi_M$ ist die partielle Funktion $\Phi_M : (\Sigma^*)^n \leadsto (\Gamma / {\Box})^*$, so dass $\forall (w_1, \cdots, w_n) \in (\Sigma^*)^n$ folgendes gilt:
+\begin{enumerate}
+  \item Ist die rechnung von M zur Eingabe $(w_1, \cdots, w_n)$ die endliche Rechnung $C_1, \cdots, C_M$, so gilt $\Phi_M(w_1, \cdots, w_n) = out_M(C_M)$.
+  \item Ist die Rechnung von M zur Eingabe $(w_1, \cdots, w_n)$ unendlich, so gilt $\Phi_M(w_1, \cdots, w_n)\uparrow $
+\end{enumerate}
+Für $w_1, \cdots, w_n \in \Sigma^*$ schreiben wir statt $\Phi_M(w_1, \cdots, w_n)$ auch $M(w_1, \cdots, w_n)$.
+
+\subsection{Definition (partiell berechenbar)}
+Für Alphabet $\Sigma, \Gamma$ und eine partielle Funktion $\Phi : \Sigma^* \leadsto \Gamma^*$ ist $\Phi$ \textbf{partiell berechenbar}, wenn es eine $k \in \mathbb{N}$ gibt und eine k-DTM M mit $\Phi_M = \Phi$ gibt. Ist $\Phi $total und partiell berechenbar, so ist $\Phi$ berechenbar. Wir schreiben \textbf{RF} für die Klasse der partiellen Funktionen.////Mittels der Induktivität von $\mathbb{N}_0$ und ${0, 1}^*$ können 
+
 \subsection{Bemerkung (normiert)} Eine 1-DTM $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ heißt \textbf{normiert}, wenn $Q = {0,\cdots, n}$ für eine $n \in \mathbb{N}_{0}$, $\Sigma = {0, 1}$, $\Gamma = {\Box, 0, 1}$, $s = 0$, $F = {s}$. Alle TMs mit Eingabealphabet ${0,1}$ lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln. 
 \begin{itemize}
   \item Von Nichtdeterminismus zu Determinismus: Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}. ADD IMAGE HERE
