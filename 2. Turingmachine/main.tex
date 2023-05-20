@@ -77,5 +77,48 @@
 
 \subsection{Definition (Konfiguration)} Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-TM. EIne \textbf{Konfigration} von M ist ein Tupel \[C = (q, w_{1}, \cdots, w_{k}, p_{1}, \cdots, p_{k}) \in Q \times (p^{*})^{k} \times \mathbb{N}^{k}\] Die \textbf{Startkonfiguration} von M zur Eingabe $(u_{1}, \cdots, u_{n}) \in (\Sigma^{*})^{n}$, wobei $n \in \mathbb{N}$, ist die Konfiguration \[Start_{M}(u_{1}, \cdots, u_{n}) = (s, u_{1} \Box u_{2} \Box \cdots \Box u_{n}, \Box, \cdots, 1, \cdots, 1)\] Die Konfiguration C ist eine \textbf{Stoppkonfigration} von M, wenn es keine Instruktion $i \in \Delta$ mit Bedingungsteil $(q, w_{1}(p_{1}), \cdots, w_{k}(p_{k}))$ gibt.
 
-\subsection{Definition (Nachfolgekonfiguration)}
+\subsection{Definition (Nachfolgekonfiguration)} 
+\begin{sloppypar}
+  Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-DTM. Für Konfiguration $C = q_{1}, w_{1}, \cdots, w_{k}, p_{1},\cdots, p_{k}$ und $C' = q'_{1}, w'_{1}, \cdots, w'_{k}, p'_{1},\cdots, p'_{k}$ von M ist die Konfigration C' Nachfolgekonfiguration von C, wenn es eine Instruktion \[(q, w_{1}(p_{1}), \cdots, w_{k}(p_{k}), a_{1}', a_{k}', B_{1}, \cdots, B_{k}) \in \Delta\] gibt, sodass 
+\end{sloppypar}
+\begin{equation*}
+  w_{i}' = 
+  \begin{cases}
+    \Box a_{i}' w_{i}(2) \cdots w_{i}(|w_{i}|), & \text{falls}\ p_{i} = 1 \text{und}  B_{i} = L \\
+    w_{i} \cdots w_{i}(|w_{i}| - 1) a_{i}' \Box, & \text{falls}\ p{i} = |w_{i}| \text{und} B_{i} = R \\
+    w_{i} \cdots w_{i}(p_{i}-1) a_{i}' w_{i}(p_{i} + 1) \cdots w_{i}(|w_{i}|), & \text{sonst} \\
+  \end{cases}
+\end{equation*}
+und 
+\begin{equation*}
+  p_{i}' = 
+  \begin{cases}
+    1, & \text{falls}\ p_{i} = 1 \text{ und } B_{i} = L\\
+    p_{i} - 1, & \text{falls}\ p_{i} \geq 2 \text{ und } B_{i} = L\\
+    p_{i}, & \text{falls}\ B_{i} = S\\
+    p_{i} + 1, & \text{falls}\ B_{i} = R\\
+  \end{cases}
+\end{equation*}
+$\forall i \in [k]$ gelten. \\ Es bezeichnen $\rightarrow M$ die Relation auf der Menge der Konfiguration von M, sodass $C \rightarrow_{M} C'$ falls C, C' Konfig von M sind wobei C' eine Nachfolgekonfiguration von C ist.
+
+\subsection{Definition (Rechnung)} Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-DTM. Eine \textbf{endliche partielle Rechnung} von M ist eine endliche Folge $C_{1}, \cdots, C_{n}$ von Konfig von M mit $C_{i} \rightarrow_{M} C_{i+1} \forall i \in [n-1]$. Eine \textbf{unendliche partielle Rechnung} von M ist eine unendliche Folge $C_{1}, C_{2}, \cdots$ von Konfigration von M mit $C_{1} \rightarrow_{M} C_{1+1} \forall i \in \mathbb{N}$. Eine \textbf{Rechnung von M zur Eingabe } ($w_{1}, \cdots
+, w_{n}) \in (\Sigma^*)^n$ (mit $n \in \mathbb{N}$) ist eine endliche partielle Rechnung $start_M = C_1, \cdots, C_m$ bei der $C_m$ eine Stoppkonfiguration von M oder eine unendliche partielle rechnung $start_M(w_1, \cdots, w_n) = C_1, C_2, \cdots$
+
+\subsection{Bemerkung} Ist M eine k-DTM, so gilt es $\forall n \in \mathbb{N}$ und $(w_1, \cdots, w_n) \in (\Sigma^*)^n$ genau eine Rechnung zur Eingabe $(w_1, \cdots, w_n)$.
+
+\subsection{Definition (total)} Eine k-DTM $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ \textbf{terminiert} bei Eingabe $(w_1, \cdots, w_n) \in (\Sigma^*)^n$ wenn die Rechnung von M zur Eingabe $(w_1, \cdots, w_n)$ endlich ist. Eine k-TM $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ ist \textbf{total}, wenn $\forall n \in \mathbb{N}$ und $(w_1, \cdots, w_n) \in (\Sigma^*)^n$ alle Rechnungen von M zur Eingabe $(w_1, \cdots, w_n)$ endlich sind.
+
+\subsection{Definition (akzeptierte Sprache)} Sei $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ eine k-TM. Eine Stoppkonfiguration $(q, w_1, \cdots, w_k, p_1, \cdots, p_k)$ von M ist \textbf{akzeptierend}, wenn $q \in F$. Die \textbf{akzeptierte Sprache L(M)} von M ist die Sprache über dem Alphabet $\Sigma$ so dass $w\in L(M)$ gilt, wenn es eien endliche Rechnung $C_1, \cdots, C_n$ von M zur Eingabe w gibt, bei der $C_n$ eine akzeptierende Stoppkonfigration von M ist. \\ \textbf{Hinweis: } Für nicht deterministische TM heißt das insbesondere, dass es für die Wörter w in der akzeptierten Sprache nur mindestend \textbf{eine} im einer akzeptierten Stoppkonfigration endende endliche Rechnung zur Eingabe w geben muss. Für Wörter w, die nicht in L(M) sind, sind \textbf{alle} rechnungen von M zur Eingabe am Ende nicht in einer akzeptierten Stoppkonfigration oder unendlich.
+
+\subsection{Definition(entscheidbar)}
+Eine Sprache L ist genau dann \textbf{entscheidbar}, wenn es eien totale k-TM M mit L(M) = L gibt. Wir schreiben \textbf{REC} für die Klasse der entscheidbaren Sprachen. Der Begriff entscheidbar für Sprachen ergibt sich hier daraus, dass effektiv entschieden werden kann ob eine gegebene Eingabe in der Sprache liegt oder nicht. Insbesondere steht? dies voraus, dass Eingabe, die nicht in der Sprache liegen effektiv als nicht in der Sprache liegend erkannt werden. \\ \textbf{Begriff: } effektiv $\leadsto$ eine TM erlefigt dies in endicher Zeit. Da sich der durch TM formatierte Berechenbarkeitsbegriff, also die Formalisierung dessen was effektiv durchführbar ist, auch äquivalent durch rekursive Funktion definieren lässt, weden entscheidbare Sprachen auch als rekuriv bezeichnet.
+
+\subsection{Definition(rekursiv aufzählbar)} Eine Sprache L ist genau dann \textbf{rekursiv aufzähbar}, wenn es eine k-TM mit akzeptierten Sprache L gibt. Wir schreiben \textbf{RE} für die Klasse der rekursiv aufzählbaren Sprachen. Die Aufzählbarkeit leitet sih daraus ab, dass es für eine rekuriv aufzählbare Sprache L über einem Alühabet $\Sigma$ möglich ist effektive Verfahren anzugeben ,die die Wörter von L aufzählen, also dass eine endlich oder unendliche Aufzählung von $A = w_1, w_2, \cdots$ mit ${w_1, w_2, \cdots} = L$ existiert.
+
+\subsection{Bemerkung (normiert)} Eine 1-DTM $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ heißt \textbf{normiert}, wenn $Q = {0,\cdots, n}$ für eine $n \in \mathbb{N}_{0}$, $\Sigma = {0, 1}$, $\Gamma = {\Box, 0, 1}$, $s = 0$, $F = {s}$. Alle TMs mit Eingabealphabet ${0,1}$ lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln. 
+\begin{itemize}
+  \item Von Nichtdeterminismus zu Determinismus: Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}. ADD IMAGE HERE
+  \item Von mehreren Bändern zu einem Band: Intuitiv können k Bänder auf ein Band simuliert werden, indem die Felder des einen Bandes in k-teilfelder unterteilt werden, die jeweils die gleiche Bandalphabetbuchstaben wie zufor als Beschreibung zulassen und es zudem erlaubt zu markieren, dass der simulierte Kopf des simulierten Bandes dort steht. Eine dieser Idee folgende Konstruktion wird als \textbf{Spurentechnik} bezeichnet. Formal: Übergang vom Bandalphabet $\Gamma$ zu \[((\Gamma \cup{\underline{a} : a \in \Gamma})^{k}/{\Box}^{k}) \cup {\Box}\] 
+  wobei $\underline{a} \not \in \Gamma$ für $a \in \Gamma$. Hierbei bedeutet \underline{a}, dass das simulierte Feld mit a beschriftet ist und dass dort der simulierte Kopf steht. Weiter spielt $\Box$ die Rolle des k-Tupels $(\Box, \cdots, \Box)$ um der Tatsache gerecht zu werden, dan alle Felderzu Begin mit $\Box$ beschriftet sind.
+\end{itemize}
 \end{document}

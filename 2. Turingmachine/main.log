@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  19 MAY 2023 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  20 MAY 2023 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -329,20 +329,25 @@ Package pdftex.def Info: turing_sym.png  used on input line 60.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 67.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2 <./turing_sym.png>] [3] (./main.aux) ) 
+) [2 <./turing_sym.png>]
+Overfull \hbox (0.91792pt too wide) in paragraph at lines 111--112
+\OT1/ptm/m/n/10.95 Sei $\OML/ztmcm/m/it/10.95 M \OT1/ztmcm/m/n/10.95 = (\OML/ztmcm/m/it/10.95 Q; \OT1/ztmcm/m/n/10.95 ^^F\OML/ztmcm/m/it/10.95 ; \OT1/ztmcm/m/n/10.95 ^^@\OML/ztmcm/m/it/10.95 ; \OT1/ztmcm/m/n/10.95 ^^A\OML/ztmcm/m/it/10.95 ; s; F\OT1/ztmcm/m/n/10.95 )$ \OT1/ptm/m/n/10.95 eine k-TM. Eine Stopp-kon-fig-u-ra-tion $\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 q; w[]; []  ; w[]; p[]; []  ; p[]\OT1/ztmcm/m/n/10.95 )$ \OT1/ptm/m/n/10.95 von M ist \OT1/ptm/b/n/10.95 akzep-
+ []
+
+[3] [4] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4669 strings out of 476025
- 78888 string characters out of 5790017
- 1858388 words of memory out of 5000000
- 25027 multiletter control sequences out of 15000+600000
- 538055 words of font info for 84 fonts, out of 8000000 for 9000
+ 4674 strings out of 476025
+ 78930 string characters out of 5790017
+ 1867388 words of memory out of 5000000
+ 25029 multiletter control sequences out of 15000+600000
+ 539847 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,77p,805b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 1911852 bytes).
+ 72i,9n,77p,990b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 1931197 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
