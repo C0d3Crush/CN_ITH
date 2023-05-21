@@ -12,6 +12,10 @@
 \usepackage{graphicx}
 \usepackage{lipsum} % this package is used to create dummy text.
 \usepackage{enumitem}
+\usepackage{bbm}
+\usepackage{hyperref}
+
+
 
 \usepackage[utf8]{inputenc}
 
@@ -37,9 +41,8 @@
   \newpage
 }
 
-
-
 \begin{document}
+\tableofcontents
 \coversection{turing.png}{Turingmachine}{A Turing machine is like a wise old person, sitting at an endless table, playing a complex game. They have a magical pen that reads and writes on the game board. They follow strict rules, do not move from their spot, but the table mysteriously moves back and forth. Their concentration is deep and calm as they perform a complex ballet of reading, writing, and state-changing.\\ \hspace*{\fill} - ChatGPT}
 \section*{Berechenbarkeit}
 \section{Turingmachine} 
@@ -131,12 +134,41 @@ Eine Sprache L ist genau dann \textbf{entscheidbar}, wenn es eien totale k-TM M 
 Für $w_1, \cdots, w_n \in \Sigma^*$ schreiben wir statt $\Phi_M(w_1, \cdots, w_n)$ auch $M(w_1, \cdots, w_n)$.
 
 \subsection{Definition (partiell berechenbar)}
-Für Alphabet $\Sigma, \Gamma$ und eine partielle Funktion $\Phi : \Sigma^* \leadsto \Gamma^*$ ist $\Phi$ \textbf{partiell berechenbar}, wenn es eine $k \in \mathbb{N}$ gibt und eine k-DTM M mit $\Phi_M = \Phi$ gibt. Ist $\Phi $total und partiell berechenbar, so ist $\Phi$ berechenbar. Wir schreiben \textbf{RF} für die Klasse der partiellen Funktionen.////Mittels der Induktivität von $\mathbb{N}_0$ und ${0, 1}^*$ können 
+Für Alphabet $\Sigma, \Gamma$ und eine partielle Funktion $\Phi : \Sigma^* \leadsto \Gamma^*$ ist $\Phi$ \textbf{partiell berechenbar}, wenn es eine $k \in \mathbb{N}$ gibt und eine k-DTM M mit $\Phi_M = \Phi$ gibt. Ist $\Phi $total und partiell berechenbar, so ist $\Phi$ berechenbar. Wir schreiben \textbf{RF} für die Klasse der partiellen Funktionen.\\\\Mittels der Induktivität von $\mathbb{N}_0$ und ${0, 1}^*$ können so auch partielle Funktionen, die von oder nach $\mathbb{N}_0$ abbilden als (partielle) berechenbare Funktion bezeichnent werden. Beispielsweise ist eine partielle Funktion $\Phi : \mathbb{N}_0 \leadsto \mathbb{N}_0$ dennoch genau dann partiell berechenbar, wenn die partielle Funktion $bin \circ \Phi \circ bin^-1$ partiell berechenbar ist. Gewissermaßen verfügen die hier definierten TM über zewi Ausgabemechanismen. Die Ausgabeim engeren Sinne in Definition 2.13 und das Ablesen vn Akzeptanz anhand des schließlich erreichten Zustands in Definition 2.7. Im Sinne der folgenden Bemerkung wäre der zweiten Fall nicht notwendig, allerdings ist dies ein wichtiger spezialfall.
+
+\subsection{Definition (charackteristische Funktion, partielle charachteristische Funktion)} Sei L eine Sprache über dem Alphabet $\Sigma$
+\begin{itemize}
+  \item [(i)] Die \textbf{charackteristische Funktion} von L als Sprache über $\Sigma$ ist die Funktion $\mathbbm{1}_L : \Sigma \rightarrow \{0, 1\}$ mit $\mathbbm{1}_L = 1$ $\forall w \in L$ und $\mathbbm{1}_L (u) = 0$ $\forall w \in \Sigma^* / L$.
+  \item [(ii)] Die \textbf{ partielle charackteristische Funktion} von L als Sprache über $\Sigma$ ist die partielle Funktion $x_L : \Sigma^* \leadsto \{1\}$ mit $x_L(w) = 1$ $\forall w \in L$ und $x_L(w) \uparrow$  $\forall w \in \Sigma^* / L.$ 
+\end{itemize}
+
+\subsection{Bemerkung} Sei L eine Sprache über einem Alphabet $\Sigma$. 
+\begin{itemize}
+  \item [(i)] L ist genau dann entscheidbar, wenn $\mathbbm{1}_L$ berechenbar ist.
+  \item [(ii)] L ist genau dann rekursiv aufzähbar, wenn $x_L$ partiell berechenbar ist.
+\end{itemize}
 
 \subsection{Bemerkung (normiert)} Eine 1-DTM $M = (Q, \Sigma, \Gamma, \Delta, s, F)$ heißt \textbf{normiert}, wenn $Q = {0,\cdots, n}$ für eine $n \in \mathbb{N}_{0}$, $\Sigma = {0, 1}$, $\Gamma = {\Box, 0, 1}$, $s = 0$, $F = {s}$. Alle TMs mit Eingabealphabet ${0,1}$ lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln. 
 \begin{itemize}
-  \item Von Nichtdeterminismus zu Determinismus: Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}. ADD IMAGE HERE
+  \item Von Nichtdeterminismus zu Determinismus: Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}. 
+  \includegraphics[width=0.5\textwidth]{breitensuche.png} 
+
   \item Von mehreren Bändern zu einem Band: Intuitiv können k Bänder auf ein Band simuliert werden, indem die Felder des einen Bandes in k-teilfelder unterteilt werden, die jeweils die gleiche Bandalphabetbuchstaben wie zufor als Beschreibung zulassen und es zudem erlaubt zu markieren, dass der simulierte Kopf des simulierten Bandes dort steht. Eine dieser Idee folgende Konstruktion wird als \textbf{Spurentechnik} bezeichnet. Formal: Übergang vom Bandalphabet $\Gamma$ zu \[((\Gamma \cup{\underline{a} : a \in \Gamma})^{k}/{\Box}^{k}) \cup {\Box}\] 
   wobei $\underline{a} \not \in \Gamma$ für $a \in \Gamma$. Hierbei bedeutet \underline{a}, dass das simulierte Feld mit a beschriftet ist und dass dort der simulierte Kopf steht. Weiter spielt $\Box$ die Rolle des k-Tupels $(\Box, \cdots, \Box)$ um der Tatsache gerecht zu werden, dan alle Felderzu Begin mit $\Box$ beschriftet sind.
+  
+  \includegraphics[width=0.7\textwidth]{n_zu_1_band.png}
+
+  \item Von beliebigen bandalphabet zu $\{\Box, 0, 1\}$: Andere bandalphabete können bei einem \textbf{Alphabetwechel} zum Bandalphabet $\{\Box, 0, 1\}$ simuliert werden um ein Symbol des vorherigen Bandlaphabets durch ein Binärwort zu beschreiben. Die TM liest stets nur ein Feld, es wird dabei also nötig sein die Zustandsmenge so zu erweitern, dass angrenzende Felder im Zustand gespeichert weden können.
+  
+  \includegraphics[width=0.7\textwidth]{alphabet_wech.png}
 \end{itemize}
+
+\subsection{Bemerkung} Sei $L \subseteq \{0, 1\}^*$ eine Sprache und sei $\Phi : \{0, 1\}^* \leadsto \{0, 1\}^*$ eine partielle Funktion.
+\begin{itemize}
+  \item [(i)] L ist genau dann entscheidbar, wenn L akzeptierte Sprache einer totalen normierten TM ist. 
+  \item [(ii)] L ist genau dann rekursiv aufzähbar, wenn L akzeptierte Sprache einer normierten TM ist.
+  \item [(iii)] $\Phi$ ist genau dann partiell berechenbar, wenn $\Phi$ berechnete Funktion einer normierten TM ist.
+\end{itemize}
+
+\subsection{Church- Turing- These} Berechenbarkeit auf eienr Turingmachine entspricht intuitiver Berechenbarkeit.
 \end{document}
