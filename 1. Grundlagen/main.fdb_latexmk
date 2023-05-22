@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1684758073 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" "main.pdf" "main" 1684758077 0
-  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" 1684758073 9267 7ef9166c732bf479382465ae240da375 ""
+["pdflatex"] 1684786523 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" "main.pdf" "main" 1684786527 0
+  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" 1684786523 9273 0c2ab086244924093498bd92530a6b63 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -23,6 +23,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -40,7 +41,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf" 1136768653 1380 0ea3a3370054be6da6acd929ec569f06 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf" 1136768653 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf" 1136768653 1948 7330aeef3af211edff3b35fb2c12a0fd ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf" 1136768653 1384 a9d8adaf491ce34e5fba99dc7bbe5f39 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf" 1136768653 1132 27520247d3fe18d4266a226b461885c2 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf" 1136768653 1108 d271d6f9de4122c3f8d3b65666167fac ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7v.vf" 1136768653 1012 046369ac6a83af997c3aa05a43256ad5 ""
@@ -94,8 +94,8 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Einführung.png" 1683901728 46464 c6da4f4f766aa53aa9b9da6ec35e795d ""
-  "main.aux" 1684758077 2095 8930e8d5e90a1813b5a061c1ebfa532a "pdflatex"
-  "main.tex" 1684758073 9267 7ef9166c732bf479382465ae240da375 ""
+  "main.aux" 1684786526 2095 8930e8d5e90a1813b5a061c1ebfa532a "pdflatex"
+  "main.tex" 1684786523 9273 0c2ab086244924093498bd92530a6b63 ""
   "qrcode.png" 1684757527 523 125d9220c3b239ca7406729d505e7b89 ""
   "unilogo.png" 1684757773 462603 e9103cf2400b314a3eba22e6e545643c ""
   (generated)

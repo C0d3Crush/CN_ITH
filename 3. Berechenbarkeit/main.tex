@@ -11,6 +11,16 @@
 \usepackage{mathptmx}
 \usepackage{graphicx} % for graphics
 \usepackage{lipsum} % for sample text
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{caption}
+\usetikzlibrary{tikzmark}
+
+
 
 %\usepackage{fontspec}
 %\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
@@ -54,5 +64,60 @@
 
 \subsection{Definition (U)} Es bezeichnet U die normierte TM, die bei Eingabe $(e, x_1, \cdots, x_n) \in \mathbb{N}_0^{n+1}$ wobei $n \in \mathbb{N}$ die normierte TM $\mathcal{M}_e$ bei Eingabe $(x_1, \cdots, x_n)$ simuliert und falls diese terminiert die Ausgabe der Simulierten ausgibt.
 
-\subsection{Definition (Universell)} Eine DTM U heißt \textbf{Universell}, wenn es für alle $n \in \mathbb{N}$ und alle partiell berechenbaren Funktionen $\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0$ eine $e \in \mathbb{N}$, so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\]
+\subsection{Definition (Universell)} Eine DTM U heißt \textbf{Universell}, wenn es für alle $n \in \mathbb{N}$ und alle partiell berechenbaren Funktionen $\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0$ eine $e \in \mathbb{N}$, so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\] $\forall x_1, \cdots, x_n \in \mathbb{N}_0$ gilt.
+
+\subsection{Bemerkung} Die TM U ist universell, denn für $e \in \mathbb{N}_0$, $n \in \mathbb{N}$ und $x_1, \cdots, x_n \in \mathbb{N}_0$ gilt \[U(e,x_1, \cdots, x_n) = \Phi_e(x_1, \cdots, x_n)\]\\ \[(x, y) \mapsto x^y\] \[y \mapsto 2^y\] \[(x_1, \cdots, x_m, y_1, \cdots, y_n) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar\] \[\leadsto (y_1,\cdots, y_m) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar \]
+
+\subsection{Satz ($s_n^m$ - Theorem)} $\forall m, n \in \mathbb{N}$ existiert eine berechenbare Funktion $s_n^m : \mathbb{N}_0^{m+1} \to \mathbb{N}_0$ mit \[\Phi_e^{m+1}(x_1\cdots, x_m, y_1, \cdots, y_n) = \Phi_{s_n^m(e, x_1, \cdots, x_m)}^n (y_1, \cdots, y_n)\] $\forall e, x_1, \cdots, x_m, y_1, \cdots, y_n \in \mathbb{N}_0$
+
+\subsubsection*{Beweis: } Fixiere $m \in \mathbb{N}$. Betrachte die DTM S , die bei Eingabe $(e, x_1, \cdots, x_m) \in \mathbb{N}_0^{m+1}$ wie folgt verfährt??.
+\begin{itemize}
+  \item Zunächst bestimmt S den Code von $\mathcal{M}_e$ 
+  \item der Code von $\mathcal{M_e}$wird dann in einen Code einer normierten TM $\mathcal{M}$ umgewandet, die zunächst $x_1\Box\cdots\Box x_m\Box$ neben die Eingabe schreibt, dan den Kopf auf das erste Feld des beschriebenen Bandteilsbewegt und dann wie $\mathcal{M_e}$ arbeitet.
+  \item Es wird bestimmt an welcher Stelle der Standardaufzählung der Code von auftaucht und diese Stelle wird ausgegeben.
+\end{itemize}
+Sei $s_n^m$ die von S berechnete $(m+1)$-äre partielle Funktion. Dann ist $s_n^m$ eine Funktion wie gewünscht. Es gibt überabzählbar viele Binärsprachen, denn: Betrachte Aufzählung von Binärsprachen $L_1, L_2, \cdots$ 
+\begin{table}[ht]
+  \centering
+  \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
+  \begin{tabular}{c c c c c}
+    \tikzmarknode{L0-0}{$\mathds{1}_{L_0}(0)$} & $\mathds{1}_{L_0}(1)$ & $\mathds{1}_{L_0}(2)$ & $\mathds{1}_{L_0}(3)$ \\
+    $\mathds{1}_{L_1}(0)$ & $\mathds{1}_{L_1}(1)$ & $\mathds{1}_{L_1}(2)$ & $\mathds{1}_{L_1}(3)$ \\
+    $\mathds{1}_{L_2}(0)$ & $\mathds{1}_{L_2}(1)$ & \tikzmarknode{L2-2}{$\mathds{1}_{L_2}(2)$} & $\mathds{1}_{L_2}(3)$ \\
+  \end{tabular}
+  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
+  \caption{Standardaufzählung}
+\end{table}
+
+\begin{tikzpicture}[overlay, remember picture, blue, >=stealth]
+  \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+\end{tikzpicture}
+
+$L$ mit $\mathds{1}_L(i)$ = 
+$\begin{cases}
+    0, & \text{wenn } \mathds{1}_{L_i}(i) = 1 \\
+    1, & \text{wenn } \mathds{1}_{L_i}(i) = 0 \\
+\end{cases}$
+
+\subsection{Definition (diagonales Halteproblem)} Die Menge $H_diag := \{e \in \mathbb{N}_0 : \Phi_e (e) \downarrow\}$ heißt \textbf{diagonales Halteproblem}.
+
+\subsection{Proposition} Das diagonale Halteproblem ist rekursiv aufzählbar.
+\subsubsection*{Beweis: }Die DTM, die bei Eingabe $e \in \mathbb{N}_0$ wie $U$ bei Eingabe $(e, e)$ arbeitet, aber bei terminieren $1$ statt der Ausgabe von $U$ ausgibt berechnet die partielle charachteristische Funktion von $H_{diag}$. Die partielle Funktion $x_{H_{diag}}$ ist also partiell berechenbar. Die partielle Funktion $x_{H_{diag}^c}$ ist nicht partiell berechenbar, dann: Betrachte Standardaufzählung
+
+\begin{table}[ht]
+  \centering
+  \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
+  \begin{tabular}{c c c c c}
+    \tikzmarknode{L0-0}{$\Phi_{L_0}(0)$} & $\Phi_{L_0}(1)$ & $\Phi_{L_0}(2)$ & $\Phi_{L_0}(3)$ \\
+    $\Phi_{L_1}(0)$ & $\Phi_{L_1}(1)$ & $\Phi_{L_1}(2)$ & $\Phi_{L_1}(3)$ \\
+    $\Phi_{L_2}(0)$ & $\Phi_{L_2}(1)$ & \tikzmarknode{L2-2}{$\Phi_{L_2}(2)$} & $\Phi_{L_2}(3)$ \\
+  \end{tabular}
+  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
+  \caption{Standardaufzählung}
+\end{table}
+
+\begin{tikzpicture}[overlay, remember picture, blue, >=stealth]
+  \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+\end{tikzpicture}
+
 \end{document}
