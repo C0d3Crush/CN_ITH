@@ -19,7 +19,53 @@
 \usepackage{graphicx}
 \usepackage{lipsum}
 
+\newcommand{\coversection}[3]{
+  \newpage
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{\fill}
+    \includegraphics[width=0.5\linewidth]{#1}
+    \vspace*{0.5cm} % Anpassung des Abstands
+    \par
+    \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
+    \par\vspace{\fill}
+  \end{center}
+  \newpage
+}
+
+
 \begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+  
+    % Uni Logo
+    \includegraphics[width=0.3\textwidth]{unilogo.png}
+    \vspace{1cm}
+  
+    % Course and University Information
+    \textsc{\LARGE Ruprecht-Karls-Universität Heidelberg}\\[0.5cm]
+    \textsc{\Large Einführung in die Theoretische Informatik - Script}\\[1.5cm]
+  
+    % Author Name
+    \Large \emph{Verfasser:} Lukas Dzielski\\[2cm]
+  
+    % Git Repository
+    \includegraphics[width=0.2\textwidth]{qrcode.png}
+
+    \texttt{\large https://github.com/C0d3Crush/ITH-Script}\\[2cm]
+  
+    % Date
+    {\large \today}\\[2cm]
+  
+    \vfill
+  
+  \end{titlepage}
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{Einführung.png}

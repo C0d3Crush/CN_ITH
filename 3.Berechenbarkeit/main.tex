@@ -47,4 +47,12 @@
 \end{itemize}
 
 \subsection{Definition (standardaufzählung)} Sei $\hat{w_0}, \hat{w_1}, \cdots$ die Aufzählung aller Codes normierter TMs in längenlexikographischer Ordnung. Für $e \in \mathbb{N}_0$ sei $M_e$ die durch $\hat{w_e}$ codierte TM und für $n \in \mathbb{N}$ sei $\Phi_e^n : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ die von $M_e$ berechnete n-äre partielle Funktion. Für $n \in \mathbb{N}$ heißt die Folge $(\Phi_e^n)_e\in \mathbb{N}$ \textbf{standardaufzählung} der n-ären partiell berechenbaren Funktion. Für $n \in \mathbb{N} $ und eine partiell berechenbare n-äre Funktion $\varphi: \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ heißt jede zahl $e \in \mathbb{N}_0$ mit $\Phi_e^n = \varphi$ \textbf{Index} von $\varphi$.
+
+\subsection*{Konvention: } Ergibt sich n aus dem Kontext, so schreiben wir auch $\Phi_e$ statt $\Phi_e^(n)$
+
+\subsection{Bemerkung} Für $n \in \mathbb{N}$ und eine partielle berechnbare n-äre partielle Funktion $\Phi : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ gibt es unendlich viele Indizes von $\varphi$.
+
+\subsection{Definition (U)} Es bezeichnet U die normierte TM, die bei Eingabe $(e, x_1, \cdots, x_n) \in \mathbb{N}_0^{n+1}$ wobei $n \in \mathbb{N}$ die normierte TM $\mathcal{M}_e$ bei Eingabe $(x_1, \cdots, x_n)$ simuliert und falls diese terminiert die Ausgabe der Simulierten ausgibt.
+
+\subsection{Definition (Universell)} Eine DTM U heißt \textbf{Universell}, wenn es für alle $n \in \mathbb{N}$ und alle partiell berechenbaren Funktionen $\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0$ eine $e \in \mathbb{N}$, so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\]
 \end{document}
