@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1684786523 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" "main.pdf" "main" 1684786527 0
-  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" 1684786523 9273 0c2ab086244924093498bd92530a6b63 ""
+["pdflatex"] 1684791506 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" "main.pdf" "main" 1684791508 0
+  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/1. Grundlagen/main.tex" 1684791506 9199 6b4c7a43e793179cf5ddc67d6aca5f9b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -94,10 +94,9 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Einführung.png" 1683901728 46464 c6da4f4f766aa53aa9b9da6ec35e795d ""
-  "main.aux" 1684786526 2095 8930e8d5e90a1813b5a061c1ebfa532a "pdflatex"
-  "main.tex" 1684786523 9273 0c2ab086244924093498bd92530a6b63 ""
+  "main.aux" 1684791508 2095 8930e8d5e90a1813b5a061c1ebfa532a "pdflatex"
+  "main.tex" 1684791506 9199 6b4c7a43e793179cf5ddc67d6aca5f9b ""
   "qrcode.png" 1684757527 523 125d9220c3b239ca7406729d505e7b89 ""
-  "unilogo.png" 1684757773 462603 e9103cf2400b314a3eba22e6e545643c ""
   (generated)
   "main.aux"
   "main.log"

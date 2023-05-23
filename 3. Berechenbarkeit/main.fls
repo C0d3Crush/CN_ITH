@@ -1,8 +1,8 @@
-PWD /Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3.Berechenbarkeit
+PWD /Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3.Berechenbarkeit/main.tex
+INPUT /Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
