@@ -18,6 +18,11 @@
 \usepackage{amssymb}
 \usepackage{tikz}
 \usepackage{caption}
+\usepackage{amsthm}
+\usepackage[ngerman]{babel}
+
+\newtheorem{proposition}{Proposition}[subsection] % Propositionen werden nach Subsections nummeriert
+
 \usetikzlibrary{tikzmark}
 
 
@@ -58,7 +63,7 @@
 
 \subsection{Definition (standardaufzählung)} Sei $\hat{w_0}, \hat{w_1}, \cdots$ die Aufzählung aller Codes normierter TMs in längenlexikographischer Ordnung. Für $e \in \mathbb{N}_0$ sei $M_e$ die durch $\hat{w_e}$ codierte TM und für $n \in \mathbb{N}$ sei $\Phi_e^n : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ die von $M_e$ berechnete n-äre partielle Funktion. Für $n \in \mathbb{N}$ heißt die Folge $(\Phi_e^n)_e\in \mathbb{N}$ \textbf{standardaufzählung} der n-ären partiell berechenbaren Funktion. Für $n \in \mathbb{N} $ und eine partiell berechenbare n-äre Funktion $\varphi: \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ heißt jede zahl $e \in \mathbb{N}_0$ mit $\Phi_e^n = \varphi$ \textbf{Index} von $\varphi$.
 
-\subsection*{Konvention: } Ergibt sich n aus dem Kontext, so schreiben wir auch $\Phi_e$ statt $\Phi_e^(n)$
+\subsection*{Konvention: } Ergibt sich n aus dem Kontext, so schreiben wir auch $\Phi_e$ statt $\Phi_e^n$
 
 \subsection{Bemerkung} Für $n \in \mathbb{N}$ und eine partielle berechnbare n-äre partielle Funktion $\Phi : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ gibt es unendlich viele Indizes von $\varphi$.
 
@@ -66,11 +71,11 @@
 
 \subsection{Definition (Universell)} Eine DTM U heißt \textbf{Universell}, wenn es für alle $n \in \mathbb{N}$ und alle partiell berechenbaren Funktionen $\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0$ eine $e \in \mathbb{N}$, so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\] $\forall x_1, \cdots, x_n \in \mathbb{N}_0$ gilt.
 
-\subsection{Bemerkung} Die TM U ist universell, denn für $e \in \mathbb{N}_0$, $n \in \mathbb{N}$ und $x_1, \cdots, x_n \in \mathbb{N}_0$ gilt \[U(e,x_1, \cdots, x_n) = \Phi_e(x_1, \cdots, x_n)\]\\ \[(x, y) \mapsto x^y\] \[y \mapsto 2^y\] \[(x_1, \cdots, x_m, y_1, \cdots, y_n) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar\] \[\leadsto (y_1,\cdots, y_m) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar \]
+\subsection{Bemerkung} \sloppy Die TM U ist universell, denn für $e \in \mathbb{N}_0$, $n \in \mathbb{N}$ und $x_1, \cdots, x_n \in \mathbb{N}_0$ gilt \[U(e,x_1, \cdots, x_n) = \Phi_e(x_1, \cdots, x_n)\]\\ \[(x, y) \mapsto x^y\] \[y \mapsto 2^y\] \[(x_1, \cdots, x_m, y_1, \cdots, y_n) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar\] \[\leadsto (y_1,\cdots, y_m) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar \]
 
 \subsection{Satz ($s_n^m$ - Theorem)} $\forall m, n \in \mathbb{N}$ existiert eine berechenbare Funktion $s_n^m : \mathbb{N}_0^{m+1} \to \mathbb{N}_0$ mit \[\Phi_e^{m+1}(x_1\cdots, x_m, y_1, \cdots, y_n) = \Phi_{s_n^m(e, x_1, \cdots, x_m)}^n (y_1, \cdots, y_n)\] $\forall e, x_1, \cdots, x_m, y_1, \cdots, y_n \in \mathbb{N}_0$
 
-\subsubsection*{Beweis: } Fixiere $m \in \mathbb{N}$. Betrachte die DTM S , die bei Eingabe $(e, x_1, \cdots, x_m) \in \mathbb{N}_0^{m+1}$ wie folgt verfährt??.
+\begin{proof}Fixiere $m \in \mathbb{N}$. Betrachte die DTM S , die bei Eingabe $(e, x_1, \cdots, x_m) \in \mathbb{N}_0^{m+1}$ wie folgt vorfährt.
 \begin{itemize}
   \item Zunächst bestimmt S den Code von $\mathcal{M}_e$ 
   \item der Code von $\mathcal{M_e}$wird dann in einen Code einer normierten TM $\mathcal{M}$ umgewandet, die zunächst $x_1\Box\cdots\Box x_m\Box$ neben die Eingabe schreibt, dan den Kopf auf das erste Feld des beschriebenen Bandteilsbewegt und dann wie $\mathcal{M_e}$ arbeitet.
@@ -87,6 +92,10 @@ Sei $s_n^m$ die von S berechnete $(m+1)$-äre partielle Funktion. Dann ist $s_n^
   \end{tabular}
   \captionsetup{labelformat=empty, justification=centering, skip=10pt}
   \caption{Standardaufzählung}
+  
+  \begin{tikzpicture}[overlay, remember picture, blue, >=stealth]
+    \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+  \end{tikzpicture}
 \end{table}
 
 \begin{tikzpicture}[overlay, remember picture, blue, >=stealth]
@@ -98,12 +107,17 @@ $\begin{cases}
     0, & \text{wenn } \mathds{1}_{L_i}(i) = 1 \\
     1, & \text{wenn } \mathds{1}_{L_i}(i) = 0 \\
 \end{cases}$
+\end{proof}
 
-\subsection{Definition (diagonales Halteproblem)} Die Menge $H_diag := \{e \in \mathbb{N}_0 : \Phi_e (e) \downarrow\}$ heißt \textbf{diagonales Halteproblem}.
+\subsection{Definition (diagonales Halteproblem)} Die Menge $H_{diag} := \{e \in \mathbb{N}_0 : \Phi_e (e) \downarrow\}$ heißt \textbf{diagonales Halteproblem}.
 
-\subsection{Proposition} Das diagonale Halteproblem ist rekursiv aufzählbar.
-\subsubsection*{Beweis: }Die DTM, die bei Eingabe $e \in \mathbb{N}_0$ wie $U$ bei Eingabe $(e, e)$ arbeitet, aber bei terminieren $1$ statt der Ausgabe von $U$ ausgibt berechnet die partielle charachteristische Funktion von $H_{diag}$. Die partielle Funktion $x_{H_{diag}}$ ist also partiell berechenbar. Die partielle Funktion $x_{H_{diag}^c}$ ist nicht partiell berechenbar, dann: Betrachte Standardaufzählung
-
+\begin{proposition}
+  Das diagonale Halteproblem ist rekursiv aufzählbar.
+\end{proposition}
+\begin{proof}
+  Die DTM, die bei Eingabe $e \in \mathbb{N}_0$ wie $U$ bei Eingabe $(e, e)$ arbeitet, aber bei terminieren $1$ statt der Ausgabe von $U$ ausgibt berechnet die partielle charachteristische Funktion von $H_{diag}$. Die partielle Funktion $x_{H_{diag}}$ ist also partiell berechenbar. Die partielle Funktion $x_{H_{diag}^c}$ ist nicht partiell berechenbar, dann: Betrachte Standardaufzählung
+\end {proof}
+  
 \begin{table}[ht]
   \centering
   \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
@@ -119,5 +133,34 @@ $\begin{cases}
 \begin{tikzpicture}[overlay, remember picture, blue, >=stealth]
   \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
 \end{tikzpicture}
+
+$\varphi$ mit $\varphi(i)$ = 
+$\begin{cases}
+    \uparrow, & \text{wenn } \Phi_i(i) \downarrow\\
+    \downarrow, & \text{wenn } \Phi_i(i) \uparrow \\
+\end{cases}$
+Wird nicht aufgezählt.
+
+\subsection{Satz} Das diagonale Halteproblem ist nicht entscheidbar. 
+\begin{proof}
+  Angenommen $H_{diag}$ wäre entscheidbar. Dann wäre die partielle charakteristische Funktion $\varphi$ von $H_{diag}^c = \mathbb{N}_0 / H_{diag}$ partiell berechenbar, es gäbe also ein Index $e \in \mathbb{N}_0$ von $\varphi$. Es folge \[e \in H_{diag}^c \Leftrightarrow \varphi(e) \downarrow \Leftrightarrow \Phi_e(e) \downarrow \Leftrightarrow e \in H_{diag} \Leftrightarrow e \not \in H_{diag}^c\] Die ist ein Wiederspruch.
+\end{proof}
+
+\subsection{m-Reduktion} Für eine Sprache $A$ über einem Alphabet $\Sigma$ und eine Sprache $B$ über einem Alphabet $\Gamma$ ist A genau dann \textbf{many-one-reduzierbar}, auch \textbf{m-reduzierbar}, auf $B$, kurz $A \leq_m B$, wenn es eine berechebare Funktion. $f: \Sigma^* \to \Gamma^*$ gibt so dass \[w \in A \Leftrightarrow f(w)\in B\] $\forall w \in \Sigma^*$ gilt. Gelten $A \leq_m B$ und $B \leq_{m} A$, so sind $A$ und $B$ \textbf{many-one-äquivalent} auch \textbf{m-äquivalent}, kurz $A =_m B$.
+
+\subsection{Bemerkung} 
+\begin{itemize}
+  \item [(i)] $\leq_m$ ist transitiv.
+  \item [(ii)] Gilt $A \leq_m B$ für Sprachen $A$ und $B$ und ist $B$ entscheidbar, so ist auch $A$ entscheidbar.
+  \item [(iii)] Alle entscheidbaren Sprachen L mit $\varnothing \not = L \not = \mathbb{N}_0$ und m-äquivalent.
+\end{itemize}
+
+\subsection{Satz} Das \textbf{initiale Halteproblem} $H_{init} = {e \in \mathbb{N}_0 = \Phi_e(0) \downarrow}$ ist nicht entscheidbar.
+
+\subsubsection*{Idee: } suche $f:\mathbb{N}_0 \to \mathbb{N}_0$ mit $\Phi_e(e)\downarrow \Leftrightarrow \Phi_{f(e)}(0)\downarrow$ Wähle $f$ so dass $\Phi_{f(e)}(x) = \Phi_e(e) \forall x \in \mathbb{N}_0$
+
+\begin{proof}
+  Sei $\psi : \mathbb{N}_0^2 \leadsto \mathbb{N}_0$ mit $\psi (e, x) = \Phi_e(e) \forall e, x \in \mathbb{N}_0$. Dann ist $\psi$ partiell berechenbar. Sei $e_0$ ein Index von $\psi$ und $s:\mathbb{N}_0^2 \to \mathbb{N}_0$ gilt. \\Sei $f: \mathbb{N}_0 \to \mathbb{N}_0$ mit $f(e) = s(e_0, e) \forall e /in \mathbb{N}_0$.\\ Dann ist f berechenbar. \\ $\forall e \in \mathbb{N}_0$ gilt. \[e \in H_{diag} \Leftrightarrow \Phi_e(e) \downarrow \Leftrightarrow \psi(e, 0) \downarrow \Leftrightarrow \Phi_{e_0}(e, 0) \downarrow \Leftrightarrow \Phi_s (e_0, e)(0)\downarrow \Leftrightarrow \Phi_{f(e)} ...\]  
+\end{proof}
 
 \end{document}

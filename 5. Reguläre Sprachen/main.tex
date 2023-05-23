@@ -13,6 +13,11 @@
 \usepackage{lipsum} % for sample text
 \usepackage{amsthm}
 
+\usepackage[ngerman]{babel}
+
+\newtheorem{proposition}{Proposition}
+
+
 %\usepackage{fontspec}
 %\setmainfont{TeX-Gyre-Schola/texgyreschola-regular.otf}
 \newcommand{\coversection}[3]{
@@ -46,7 +51,8 @@
 \end{itemize}
 Die \textbf{Äquivalenzklasse} eines Elements $a \in A$ bezüglich $\sim$ ist die Menge $[a]_{~} := {a' \in A : a' ~a}$. Der \textbf{Index} von $\sim$ ist die Kardinalität der Menge $A_{/\sim} := {[a]_{\sim} : a \in A}$ falls diese endlich ist und $\infty$  andernfalls.
 
-\subsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion $\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $~_A$ auf $\Sigma^{*}$
+\subsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion 
+$\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $~_A$ auf $\Sigma^{*}$
 $\cdots$
 
 \subsection{Bemerkung} Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA.
@@ -58,7 +64,9 @@ $\cdots$
 
 \subsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim ?\leq ?(\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \forall u, v, w \in Sigma^{*}$.
 
-\subsection{Proposition} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist eine Rechtskonqruenz auf $\Sigma^{*}$.\\
+\begin{proposition}
+Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist eine Rechtskonqruenz auf $\Sigma^{*}$.
+\end{proposition}
 \begin{proof}
   Seien $u, v, w \in \Sigma^{*}$ mit $u \sim_{A} v$. Dann gilt 
   \[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\]
@@ -71,18 +79,26 @@ Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma
 \[A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}\]
 den DEA mit $\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}$ und $a \in \Sigma$. Die Wohldefiniertheit von $\delta_{det, A_{\sim}, L}$ ergibt sich daraus, dass $\sim$ eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass $L(A_{\sim, L}) = L$ gilt betrachten wr zunächst die Arbeitsweise von $A_{\sim, L}$.
 
-\subsection{Lemma} Sei $\Sigma$ ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index und sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$. Dann gilt $\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}$. \textbf{Beweis} Wir verwenden vollständige Induktion über $|w|$. Es gilt $\delta^{*}([\lambda]_{\sim}, \lambda) = [\lambda_{\sim}]$. Sei nun $w \in \Sigma^{+}$ $\cdots$
+\subsection{Lemma} Sei $\Sigma$ ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index und sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$. Dann gilt $\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}$. 
+\begin{proof}
+  Wir verwenden vollständige Induktion über $|w|$. Es gilt $\delta^{*}([\lambda]_{\sim}, \lambda) = [\lambda_{\sim}]$. Sei nun $w \in \Sigma^{+}$ $\cdots$  
+\end{proof}
 
-\subsection{Satz} Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index Es gibt $L(A_{\sim, L}) = L$ \textbf{Beweis: } Sei $\Sigma$ das Alphabet, so dass $\sim$ eine Rechtskongruenz auf $\Sigma^{*}$ ist. Sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$ und sei $w \in \Sigma^{*}$. Aus Lemma 5.7 folgt 
-\[w \in L(A_{\sim, L}) \Leftrightarrow \delta^{*}([\lambda]_{\sim}, w) \in {[v]_{\sim} : v \in L}\]
-\[\Leftrightarrow [w]_{\sim} \in {[v]_{\sim} : v\in L}\]
-\[\Leftrightarrow \exists v \in L : [w]_{\sim} = [v]_{\sim}\]
-\[\Leftrightarrow \exists v \in L : w \sim v\]
-\[\Leftrightarrow w \in L\]
-$\cdots$
+\subsection{Satz} Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index Es gibt $L(A_{\sim, L}) = L$ 
+\begin{proof}
+  Sei $\Sigma$ das Alphabet, so dass $\sim$ eine Rechtskongruenz auf $\Sigma^{*}$ ist. Sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$ und sei $w \in \Sigma^{*}$. Aus Lemma 5.7 folgt 
+  \[w \in L(A_{\sim, L}) \Leftrightarrow \delta^{*}([\lambda]_{\sim}, w) \in {[v]_{\sim} : v \in L}\]
+  \[\Leftrightarrow [w]_{\sim} \in {[v]_{\sim} : v\in L}\]
+  \[\Leftrightarrow \exists v \in L : [w]_{\sim} = [v]_{\sim}\]
+  \[\Leftrightarrow \exists v \in L : w \sim v\]
+  \[\Leftrightarrow w \in L\]
+  $\cdots$    
+\end{proof}
 
-\subsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. \textbf{Beweis: }Folgt aus Bemerkung 5.3, Proposition 5.5 und Satz 5.8 $\Box$ 
-
+\subsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. 
+\begin{proof}
+  Folgt aus Bemerkung 5.3, Proposition 5.5 und Satz 5.8 $\Box$ 
+\end{proof}
 Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustände, so entsprechen diese bis auf Unbenutzung von Zuständen sogar den Rechtskongruenz mit endlichem Index zusammen mit Vereinigung von Äquivalenzklassn dieser.
 
 \subsection{Definition(erreichbar)} Sei $\Sigma$ ein Alphabet. Sei $A = (Q, \Sigma, \Delta, s, F)$ ein EA mit erweiterter Übergangsfunktion $\delta^{*}$. Ein zustand $q\in Q$ heißt erreichbar in A wenn es ein Wort $w \in \Sigma ^{*}$ mit $q\in \delta^{*}(s, w)$ gilt.

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1684793371 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit/main.tex" "main.pdf" "main" 1684793373 0
-  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit/main.tex" 1684793370 9202 b6fbff79cef817feffc82e2e281b5730 ""
+["pdflatex"] 1684857503 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit/main.tex" "main.pdf" "main" 1684857506 0
+  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/3. Berechenbarkeit/main.tex" 1684857502 12065 9f1f870e61bfddb5f0c353fb0b795092 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -46,6 +46,12 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7v.vf" 1136768653 1012 046369ac6a83af997c3aa05a43256ad5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf" 1136768653 964 5673178ff30617b900214de28ab32b38 ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngerman.ldf" 1614462139 2289 b1d356015c8fd065cb4437d567449559 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngermanb.ldf" 1614462139 7752 76871ff65dd4689e1a548995ac96d8c3 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty" 1676321701 151363 1f5971af3ef874d432e8fb43e0edb71d ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-de.ini" 1661803479 4096 fa1802f91144b2c083d61dddf097a6d2 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex" 1656274800 336 b80d4d282e518e78a8b5f9cc543e7f94 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def" 1674507072 6927 64b53e78feab932ab94f892bb5a5facf ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673816307 1016 1c2b89187d12a2768764b83b4945667c ""
@@ -100,6 +106,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex" 1673816307 4385 510565c2f07998c8a0e14f0ec07ff23c ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex" 1673816307 29239 22e8c7516012992a49873eff0d868fed ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def" 1673816307 6950 8524a062d82b7afdc4a88a57cb377784 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty" 1591045760 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1359763108 13829 94730e64147574077f8ecfea9bb69af4 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1654720880 2222 78b930a5a6e3dc2ac69b78c2057b94d7 ""
@@ -154,8 +161,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683725111 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "main.aux" 1684793373 1980 9af6063a0973d260e0163f601c3124a1 "pdflatex"
-  "main.tex" 1684793370 9202 b6fbff79cef817feffc82e2e281b5730 ""
+  "main.aux" 1684857506 2452 0525c798d63b5a407771b2ca5226ceab "pdflatex"
+  "main.tex" 1684857502 12065 9f1f870e61bfddb5f0c353fb0b795092 ""
   "predic.png" 1684508617 2206939 bb40c5ef9084415d3dd9132bf3f82723 ""
   (generated)
   "main.aux"
