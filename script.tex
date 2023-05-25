@@ -1,0 +1,111 @@
+\documentclass[DIV=12]{scrartcl}
+\usepackage{dsfont}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tcolorbox} % for colored box around pasage
+\usepackage{graphicx}
+\usepackage{hyperref}
+\graphicspath{{img/}}
+\usepackage[ngerman]{babel}
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{lipsum} % this package is used to create dummy text.
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{bbm}
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{graphicx} % for graphics
+\usepackage{lipsum} % for sample text
+\usepackage[margin=2.5cm,headheight=22.28003pt,top=2.5cm]{geometry}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{mathptmx}
+\usepackage{graphicx} % for graphics
+\usepackage{lipsum} % for sample text
+\usepackage{amsthm}
+\usepackage[ngerman]{babel}
+
+
+
+
+\newtheorem{proposition}{Proposition}
+
+\usetikzlibrary{tikzmark}
+
+\usetikzlibrary{automata, positioning} % Hinzufügen der benötigten TikZ-Bibliotheken
+\usetikzlibrary{arrows, positioning, calc}
+\newtheorem{newproposition}{Proposition}[subsection] % Propositionen werden nach Subsections nummeriert
+
+\usetikzlibrary{tikzmark}
+
+
+\newcommand{\coversection}[3]{
+  \newpage
+  \thispagestyle{empty}
+  \begin{center}
+    \vspace*{\fill}
+    \includegraphics[width=0.5\linewidth]{#1}
+    \vspace*{0.5cm} % Anpassung des Abstands
+    \par
+    \Large\textbf{#2}
+    \par\vspace{0.5cm} % Anpassung des Abstands
+    \begin{quote}
+      \itshape\small\raggedleft #3
+    \end{quote}
+    \par\vspace{\fill}
+  \end{center}
+  \newpage
+}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+  
+    % Uni Logo
+    %\includegraphics[width=0.3\textwidth]{unilogo.png}
+    \vspace{1cm}
+  
+    % Course and University Information
+    \textsc{\Large Einführung in die Theoretische Informatik - Script}\\[1.5cm]
+    
+    \texttt{\large https://github.com/C0d3Crush/ITH-Script}\\
+    \texttt{\large Lukas.Dzielski@stud.uni-heidelberg.de}\\[2cm]
+
+    % Git Repository
+    \includegraphics[width=0.2\textwidth]{qrcode.png}\\[10cm]
+
+  
+    % Date
+    {\large \today}\\[2cm]
+  
+    \vfill
+  
+  \end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\include{Grundlagen/main}
+\include{Turingmachine/main}
+\include{Berechenbarkeit/main}
+\include{Automaten/main}
+\include{ReguläreSprachen/main}
+
+
+\end{document}

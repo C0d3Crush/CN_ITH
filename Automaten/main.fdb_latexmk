@@ -1,0 +1,17 @@
+# Fdb version 4
+["pdflatex"] 1685055209 "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/Automaten/main.tex" "main.pdf" "main" 1685055214 2
+  "/Users/lukas/Documents/vscode_repo/ITH/ITH_Vorlesung/Automaten/main.tex" 1685055201 10055 1c313e55f625b6a2c825be8127b3b9cd ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd" 1667332637 2469 24e8437abfd2393aed5f0ac9f00f801e ""
+  "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
+  "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1683725111 4623355 b8cad38412faebe1ce5b780a45db67bd ""
+  "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1683725019 7883454 15dafec1fc7f71b6d440a197086c42ad ""
+  "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
+  "main.aux" 1685055209 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1685055201 10055 1c313e55f625b6a2c825be8127b3b9cd ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)

@@ -1,0 +1,232 @@
+\coversection{Berechenbarkeit/predic.png}{Berechenbarkeit}{Predictability is like knowing the path a river takes. The river starts at its source and flows down to the sea. Along the way, it may turn, twist, and divide, but it always follows the path of least resistance due to gravity. Knowing the terrain allows us to predict where the river will go.\\ \hspace*{\fill} - ChatGPT}
+
+\section{Berechenbarkeit} \textbf{Konvention: } Sprechen wir von einer $e \in \mathbb{N}_0$ oder $(e_1, \cdots, e_n) \in \mathbb{N}_0^n$ wobei $n \in \mathbb{N}$ als Eingabe für eine TM oder Ausgabe einer TM, so bedetet dies, dass die Eingabe bzw. Ausgabe $bin(e)$ bzw $(bin(e_1), \cdots, bin(e_n))$ ist. Dies erlaubt es über partiell berechnenbare Funktionene $\Phi: \mathbb{N}_0^n \leadsto \mathbb{N}_0$ wobei $n\in \mathbb{N}$ zu sprechen und $L \subseteq \mathbb{N}_0$ als Sprache über $\{0, 1\}$ aufzufassen.
+
+\subsection{Definition (Code)} Wir betrachten die Funktion code (mit geeignetem Definitionsbereich) und Zielmenge $\{0, 1\}^*$, für die folgendes gilt. Zunächst gelte \[code(L) = 10 \qquad code (S) = 00 \qquad code(R) = 01\] Für eine Instruktion $ I = (q, a, q', a', B) \in \mathbb{N}_0 \times \{0, 1\} \to \mathbb{N}_0 \times \{0, 1\} \times \{L, S, R\}$ einer normierten TM sei \[code (I) = 0^{|bin(q)|} 1 bin (q) a 0^{|bin(q')|} 1 bin (q') a' code (B)\] Für eine endliche Menge $ \Delta \subseteq \mathbb{N}_0 \times \{0, 1\} \to \mathbb{N}_0 \times \{0, 1\}\times \{L, S, R\}$ von Instruktionen einer normierten TM und $i \in [|\Delta|]$ sein $code_i(\Delta)$ dann ein längenlexikographische Ordnung i-te Wort in $\{code(I): I \in \Delta\}$ und sei \[ code (\Delta) = code_1(\Delta), \cdots, code_{|\Delta|}(\Delta)\] Für eine normierte TM $M = (\{0, \cdots, n\}, \{0, 1\}, \{\Box, 0, 1\}, \Delta, 0, \{0\})$ sei \[ code (M) = 0^{|bin(n)|} 1 bin (n) code (\Delta)\] der \textbf{Code} von $M$. Relevant ist hierbei dass es eine geeignete effektive Codierung von Turingmachinen durch Binärwörter gibt, so dass folgendes gilt 
+\begin{itemize}
+  \item Jede normierte TM hat einen Code 
+  \item Keine zwei verschiedene normierten TMs haben den gleichen Code.
+  \item Die Sprache der Codes von Turingmachinen ist entscheidbar
+  \item Codes können eine geeignete Repräsentation der durch sie codierten TMs umgewandelt werden, die es insbesondere erlauben die codierten TMs effekiv zu simulieren.
+  \item geignete Repräsentationen von TMs können effektiv in ihre Codes umgewandet werden.
+\end{itemize}
+
+\subsection{Definition (standardaufzählung)} Sei $\hat{w_0}, \hat{w_1}, \cdots$ die Aufzählung aller Codes normierter TMs in längenlexikographischer Ordnung. Für $e \in \mathbb{N}_0$ sei $M_e$ die durch $\hat{w_e}$ codierte TM und für $n \in \mathbb{N}$ sei $\Phi_e^n : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ die von $M_e$ berechnete n-äre partielle Funktion. Für $n \in \mathbb{N}$ heißt die Folge $(\Phi_e^n)$ mit $e\in \mathbb{N}$ \textbf{standardaufzählung} der n-ären partiell berechenbaren Funktion. Für $n \in \mathbb{N} $ und eine partiell berechenbare n-äre Funktion $\varphi: \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ heißt jede zahl $e \in \mathbb{N}_0$ mit $\Phi_e^n = \varphi$ \textbf{Index} von $\varphi$.
+
+\subsection*{Konvention: } Ergibt sich n aus dem Kontext, so schreiben wir auch $\Phi_e$ statt $\Phi_e^n$
+
+\subsection{Bemerkung} Für $n \in \mathbb{N}$ und eine partielle berechnbare n-äre partielle Funktion $\Phi : \mathbb{N}_0^n \rightarrow \mathbb{N}_0$ gibt es unendlich viele Indizes von $\varphi$.
+
+\subsection{Definition (U)} Es bezeichnet U die normierte TM, die bei Eingabe $(e, x_1, \cdots, x_n) \in \mathbb{N}_0^{n+1}$ wobei $n \in \mathbb{N}$ die normierte TM $\mathcal{M}_e$ bei Eingabe $(x_1, \cdots, x_n)$ simuliert und falls diese terminiert die Ausgabe der Simulierten ausgibt.
+
+\subsection{Definition (Universell)} Eine DTM U heißt \textbf{Universell}, wenn es für alle $n \in \mathbb{N}$ und alle partiell berechenbaren Funktionen $\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0$ eine $e \in \mathbb{N}$, so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\] $\forall x_1, \cdots, x_n \in \mathbb{N}_0$ gilt.
+
+\subsection{Bemerkung} \sloppy Die TM U ist universell, denn für $e \in \mathbb{N}_0$, $n \in \mathbb{N}$ und $x_1, \cdots, x_n \in \mathbb{N}_0$ gilt \[U(e,x_1, \cdots, x_n) = \Phi_e(x_1, \cdots, x_n)\]\\ \[(x, y) \mapsto x^y\] \[y \mapsto 2^y\] \[(x_1, \cdots, x_m, y_1, \cdots, y_n) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar\] \[\leadsto (y_1,\cdots, y_m) \mapsto \varphi(x_1, \cdots, x_m, y_1, \cdots, y_n) partiell berechenbar \]
+
+\subsection{Satz ($s_n^m$ - Theorem)} $\forall m, n \in \mathbb{N}$ existiert eine berechenbare Funktion $s_n^m : \mathbb{N}_0^{m+1} \to \mathbb{N}_0$ mit \[\Phi_e^{m+1}(x_1\cdots, x_m, y_1, \cdots, y_n) = \Phi_{s_n^m(e, x_1, \cdots, x_m)}^n (y_1, \cdots, y_n)\] $\forall e, x_1, \cdots, x_m, y_1, \cdots, y_n \in \mathbb{N}_0$
+
+\begin{proof}Fixiere $m \in \mathbb{N}$. Betrachte die DTM S , die bei Eingabe $(e, x_1, \cdots, x_m) \in \mathbb{N}_0^{m+1}$ wie folgt vorfährt.
+\begin{itemize}
+  \item Zunächst bestimmt S den Code von $\mathcal{M}_e$ 
+  \item der Code von $\mathcal{M_e}$wird dann in einen Code einer normierten TM $\mathcal{M}$ umgewandet, die zunächst $x_1\Box\cdots\Box x_m\Box$ neben die Eingabe schreibt, dan den Kopf auf das erste Feld des beschriebenen Bandteilsbewegt und dann wie $\mathcal{M_e}$ arbeitet.
+  \item Es wird bestimmt an welcher Stelle der Standardaufzählung der Code von auftaucht und diese Stelle wird ausgegeben.
+\end{itemize}
+Sei $s_n^m$ die von S berechnete $(m+1)$-äre partielle Funktion. Dann ist $s_n^m$ eine Funktion wie gewünscht. Es gibt überabzählbar viele Binärsprachen, denn: Betrachte Aufzählung von Binärsprachen $L_1, L_2, \cdots$ 
+\begin{table}[ht]
+  \centering
+  \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
+  \begin{tabular}{c c c c c}
+    \tikzmarknode{L0-0}{$\mathds{1}_{L_0}(0)$} & $\mathds{1}_{L_0}(1)$ & $\mathds{1}_{L_0}(2)$ & $\mathds{1}_{L_0}(3)$ \\
+    $\mathds{1}_{L_1}(0)$ & $\mathds{1}_{L_1}(1)$ & $\mathds{1}_{L_1}(2)$ & $\mathds{1}_{L_1}(3)$ \\
+    $\mathds{1}_{L_2}(0)$ & $\mathds{1}_{L_2}(1)$ & \tikzmarknode{L2-2}{$\mathds{1}_{L_2}(2)$} & $\mathds{1}_{L_2}(3)$ \\
+  \end{tabular}
+  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
+  \caption{Standardaufzählung}
+  
+  \begin{tikzpicture}[overlay, remember picture, red, >=stealth]
+    \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+  \end{tikzpicture}
+\end{table}
+
+$L$ mit $\mathds{1}_L(i)$ = 
+$\begin{cases}
+    0, & \text{wenn } \mathds{1}_{L_i}(i) = 1 \\
+    1, & \text{wenn } \mathds{1}_{L_i}(i) = 0 \\
+\end{cases}$
+\end{proof}
+
+\subsection{Definition (diagonales Halteproblem)} Die Menge $H_{diag} := \{e \in \mathbb{N}_0 : \Phi_e (e) \downarrow\}$ heißt \textbf{diagonales Halteproblem}.
+
+\begin{proposition}
+  Das diagonale Halteproblem ist rekursiv aufzählbar.
+\end{proposition}
+\begin{proof}
+  Die DTM, die bei Eingabe $e \in \mathbb{N}_0$ wie $U$ bei Eingabe $(e, e)$ arbeitet, aber bei terminieren $1$ statt der Ausgabe von $U$ ausgibt berechnet die partielle charachteristische Funktion von $H_{diag}$. Die partielle Funktion $x_{H_{diag}}$ ist also partiell berechenbar. Die partielle Funktion $x_{H_{diag}^c}$ ist nicht partiell berechenbar, dann: Betrachte Standardaufzählung
+\end {proof}
+  
+\begin{table}[ht]
+  \centering
+  \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
+  \begin{tabular}{c c c c c}
+    \tikzmarknode{L0-0}{$\Phi_{L_0}(0)$} & $\Phi_{L_0}(1)$ & $\Phi_{L_0}(2)$ & $\Phi_{L_0}(3)$ \\
+    $\Phi_{L_1}(0)$ & $\Phi_{L_1}(1)$ & $\Phi_{L_1}(2)$ & $\Phi_{L_1}(3)$ \\
+    $\Phi_{L_2}(0)$ & $\Phi_{L_2}(1)$ & \tikzmarknode{L2-2}{$\Phi_{L_2}(2)$} & $\Phi_{L_2}(3)$ \\
+  \end{tabular}
+  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
+  \caption{Standardaufzählung}
+\end{table}
+
+\begin{tikzpicture}[overlay, remember picture, green, >=stealth]
+  \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+\end{tikzpicture}
+
+$\varphi$ mit $\varphi(i)$ = 
+$\begin{cases}
+    \uparrow, & \text{wenn } \Phi_i(i) \downarrow\\
+    \downarrow, & \text{wenn } \Phi_i(i) \uparrow \\
+\end{cases}$
+Wird nicht aufgezählt.
+
+\subsection{Satz} Das diagonale Halteproblem ist nicht entscheidbar. 
+\begin{proof}
+  Angenommen $H_{diag}$ wäre entscheidbar. Dann wäre die partielle charakteristische Funktion $\varphi$ von $H_{diag}^c = \mathbb{N}_0 / H_{diag}$ partiell berechenbar, es gäbe also ein Index $e \in \mathbb{N}_0$ von $\varphi$. Es folge \[e \in H_{diag}^c \Leftrightarrow \varphi(e) \downarrow \Leftrightarrow \Phi_e(e) \downarrow \Leftrightarrow e \in H_{diag} \Leftrightarrow e \not \in H_{diag}^c\] Die ist ein Wiederspruch.
+\end{proof}
+
+\subsection{m-Reduktion} Für eine Sprache $A$ über einem Alphabet $\Sigma$ und eine Sprache $B$ über einem Alphabet $\Gamma$ ist A genau dann \textbf{many-one-reduzierbar}, auch \textbf{m-reduzierbar}, auf $B$, kurz $A \leq_m B$, wenn es eine berechebare Funktion. $f: \Sigma^* \to \Gamma^*$ gibt so dass \[w \in A \Leftrightarrow f(w)\in B\] $\forall w \in \Sigma^*$ gilt. Gelten $A \leq_m B$ und $B \leq_{m} A$, so sind $A$ und $B$ \textbf{many-one-äquivalent} auch \textbf{m-äquivalent}, kurz $A =_m B$.
+
+\subsection{Bemerkung} 
+\begin{itemize}
+  \item [(i)] $\leq_m$ ist transitiv.
+  \item [(ii)] Gilt $A \leq_m B$ für Sprachen $A$ und $B$ und ist $B$ entscheidbar, so ist auch $A$ entscheidbar.
+  \item [(iii)] Alle entscheidbaren Sprachen L mit $\varnothing \not = L \not = \mathbb{N}_0$ und m-äquivalent.
+\end{itemize}
+
+\subsection{Satz} Das \textbf{initiale Halteproblem} $H_{init} = {e \in \mathbb{N}_0 = \Phi_e(0) \downarrow}$ ist nicht entscheidbar.
+
+\subsubsection*{Idee: } suche $f:\mathbb{N}_0 \to \mathbb{N}_0$ mit $\Phi_e(e)\downarrow \Leftrightarrow \Phi_{f(e)}(0)\downarrow$ Wähle $f$ so dass $\Phi_{f(e)}(x) = \Phi_e(e)$ $\forall x \in \mathbb{N}_0$
+
+\begin{proof}
+  Sei $\psi : \mathbb{N}_0^2 \leadsto \mathbb{N}_0$ mit $\psi (e, x) = \Phi_e(e) \forall e, x \in \mathbb{N}_0$. Dann ist $\psi$ partiell berechenbar. Sei $e_0$ ein Index von $\psi$ und $s:\mathbb{N}_0^2 \to \mathbb{N}_0$ gilt. Sei $f: \mathbb{N}_0 \to \mathbb{N}_0$ mit $f(e) = s(e_0, e) \forall e /in \mathbb{N}_0$. Dann ist f berechenbar. $\forall e \in \mathbb{N}_0$ gilt. \[e \in H_{diag} \Leftrightarrow \Phi_e(e) \downarrow \Leftrightarrow \psi(e, 0) \downarrow \Leftrightarrow \Phi_{e_0}(e, 0) \downarrow \Leftrightarrow \Phi_s (e_0, e)(0)\downarrow \Leftrightarrow \Phi_{f(e)} (0)\downarrow \Leftrightarrow f(e) \in H_{init}\] Es gilt also $H_{diag} \leq_{m} H_{init}$, da $H_{diag}$ nicht entscheidbar ist, ist damit $H_{init}$ nicht entscheidbar.
+\end{proof}
+
+\subsection*{Dominosteinspiel!}
+\subsubsection*{Gegeben: } Endlich viele typen von Spielsteinen mit jeweils zwei beschrifteten Feldern: "oberes Feld, unteres Feld". Beschritungen sind nichtleere Wörter über einem Alphabet. Spielsteine sind vom gleichen Typ, wenn die beiden oberen Felder gleich beschriftet sind und die beiden unteren Felder gleich beschriftet sind. Es gibt von jedem Typ beliebig viele steine. 
+
+\subsubsection*{Gesucht: }Können ein oder mehrere (aber endlich viele) Spielsteine so nebeneinander gelegt werden, dass sich oben und unten von links nach rechts gelesen das gleiche Wort ergibt?
+\begin{center}
+  \begin{tikzpicture}
+    % Define styles for Dominoes
+    \tikzstyle{domino}=[rectangle, draw, minimum width=1cm, minimum height=2cm, inner sep=0pt]
+  
+    % Domino (0111, 0)
+    \node[domino] (d1) at (0,0) {};
+    \node at ([yshift=4mm]d1.center) {0111};
+    \node at ([yshift=-4mm]d1.center) {0};
+  
+    % Domino (1, 01)
+    \node[domino] (d2) at (1.5,0) {};
+    \node at ([yshift=4mm]d2.center) {1};
+    \node at ([yshift=-4mm]d2.center) {01};
+  
+    % Domino (0, 1)
+    \node[domino] (d3) at (3,0) {};
+    \node at ([yshift=4mm]d3.center) {0};
+    \node at ([yshift=-4mm]d3.center) {1};
+  
+    % Domino (0, 000)
+    \node[domino] (d4) at (4.5,0) {};
+    \node at ([yshift=4mm]d4.center) {0};
+    \node at ([yshift=-4mm]d4.center) {000};
+  
+    % Domino (1, 011)
+    \node[domino] (d5) at (6,0) {};
+    \node at ([yshift=4mm]d5.center) {1};
+    \node at ([yshift=-4mm]d5.center) {011};
+  
+    \end{tikzpicture}
+    \vspace{1cm}\\
+    \begin{tikzpicture}
+
+      % Define styles for Dominoes
+      \tikzstyle{domino}=[rectangle, draw, minimum width=1cm, minimum height=2cm, inner sep=0pt]
+      
+      % Domino (0111, 0)
+      \node[domino] (d1) at (0,0) {};
+      \node at ([yshift=4mm]d1.center) {0111};
+      \node at ([yshift=-4mm]d1.center) {0};
+      
+      % Domino (0, 1)
+      \node[domino] (d2) at (1,0) {};
+      \node at ([yshift=4mm]d2.center) {0};
+      \node at ([yshift=-4mm]d2.center) {1};
+      
+      % Domino (0, 1)
+      \node[domino] (d3) at (2,0) {};
+      \node at ([yshift=4mm]d3.center) {0};
+      \node at ([yshift=-4mm]d3.center) {1};
+      
+      % Domino (0, 1)
+      \node[domino] (d4) at (3,0) {};
+      \node at ([yshift=4mm]d4.center) {0};
+      \node at ([yshift=-4mm]d4.center) {1};
+      
+      % Domino (0, 000)
+      \node[domino] (d5) at (4,0) {};
+      \node at ([yshift=4mm]d5.center) {0};
+      \node at ([yshift=-4mm]d5.center) {000};
+      
+      % Domino (1, 01)
+      \node[domino] (d6) at (5,0) {};
+      \node at ([yshift=4mm]d6.center) {1};
+      \node at ([yshift=-4mm]d6.center) {01};
+      
+      % Arrow pointing to the leftmost domino
+      \draw[->, thick] (-1.5,0) -- (d1.west);
+
+      \end{tikzpicture}
+        
+  \end{center}
+
+  \subsection{Definition (Postsches Korrespondenzproblem, Emil Port, 1946)} Für ein Alphabet $\Sigma$ sei eine Instanz des Postschen Korrespondenzproblems über $\Sigma$ eine endliche Teilmenge $I \subseteq (\Sigma^+)^2$. Eine Lösung für eine solche Instanz ist eine endliche Folge $(u_1, v_1), \cdots, (u_n, v_n)$ von Paaren in $I$ mit $n \geq 1$,so dass \[u_1 \cdots u_n = v_1 \cdots v_n\] Gibt es eine Lösung für eine instanz des Postschen Korrespondenzproblems, so heißt diese Instanz lösbar. Das \textbf{Postsche Korrespondenzproblem} über einem Alphabet $\Sigma$, kurz $PCP_{\Sigma}$ ist die Menge aller lösbaren Instanzen des Postschen Korrespondenzproblems über $\Sigma$.\\\\ Für ein Alphabet $\Sigma$ sei eine Instanz des modifizierten Postschen Korrespondenzproblems über $\Sigma$ ein Paar $(p, I)$, wobei $I\subseteq (\Sigma^+)^2$ eine endliche Teilmenge und $p\in I$ ein Paar von Wörtern ist. Eine Lösung für eine solche Instanz ist eine endlcihe Folge $(u_1, v_1), \cdots, (u_n, v_n)$ von Paaren ist $I$, so dass \[p = (u_1, v_1) und u_1\cdots u_n = v_1\cdots v_n\] Gibt es eine Lösung für eine Instanz des modifizierten Postschen Korrespondenzproblems so heißt diese Instanz lösbar. Das \textbf{modifizierte Postsche Korrespondenzproblem} über einem Alphabet $\Sigma$, kurz $MPCP_{\Sigma}$ ist die Menge aller lösbaren Instanzen des modifizierten Postschen Korrespondenzproblems über $\Sigma$.
+  \subsubsection*{Plan: } Für Alphabet mit $|\Sigma| \geq 2$: \[H_{init} \stackrel{(3)}{\leq_m} MPCP_{\Gamma} \stackrel{(2)}{\leq_m} PCP_{\Gamma} \stackrel{(1)}{\leq_m} PCP_{\Sigma}\]
+  \subsection{Lemma} Für ein Alphabet $\Sigma$ und $\Gamma$ mit $|\Sigma| \geq w$ gilt $PCP_{\Gamma} \leq_m PCP_{\Sigma}$
+  \begin{proof}
+    Wir suchen eine effektive Transformation, die jede Instanz $I$ des Postschen Korrespondenzproblems über $\Gamma$ in eine Instanz $I'$ des postschen Korrespondenzproblems über $\Sigma$ transformiert, so dass $I$ genau dann lösbar ist, wenn $I'$ lösbar ist. Seien $a_1, a_2 \in \Sigma$ verschieden und sein $b_1, \cdots, b_{|\Gamma|}$ die Elemente von $\Gamma$. Es bezeichne $\varphi : \Gamma^* \to \Gamma^*$ den eindeutigen Homomorphismus von Sprachen mit $\varphi (b_i) = a^i_1 a_2$ $\forall i \in [|\Gamma|]$. Gegeben eine solche Instanz $I$ wie oben sei $I' := \{(\varphi(u), \varphi(v)) : (u, v) \in I\}$. Die Funktion, die geeignete Codes von Instanzen $I$ auf geeignete Codes von Instanzen $I'$ abbildet ist berechenbar. Ist $(u_1, v_1), \cdots, (u_n, v_n)$ eine lösung $I$, so gilt \[\varphi(u_1) \cdots \varphi(v_1) = \varphi(u_1, \cdots, \varphi(v_n)) = \varphi(v_1, \cdots, v_n) = \varphi(v_1) \cdots \varphi(v_n)\] und somit ist $(\varphi(u_1), \varphi(v_1), \cdots, (\varphi(u_n)), \varphi(v_n))$ eine Lösung von $I'$. Die Instanz $I'$ ist also lösbar wenn $I$ lösbar ist. Ist $(u'_1, v'_1), \cdots, (u'_n, v'_n)$ eine Lösung von $I'$, so gibt es eine Folge $(u_1, v_1)\cdots (u_n, v_n)$ von Paaren in $I$ mit $\varphi(u'_i)$ und $\varphi(v_i) = v'_i$ $\forall i \in [n]$, also mit \[\varphi(u_1, \cdots, u_n) = u'_1, \cdots, u'_n = u'_1, \cdots, u'_n =\varphi(u_1, \cdots, u_n)\] Da $\varphi \vert_{\Sigma}$ injektiv und $\varphi (\Sigma)$ präfixfrei ist, ist $\varphi$ injektiv (siehe Übung), folglich gilt $u_1, \cdots, u_n = v_1, \cdots, v_n$ und somit ist $(u_1, v_1), \cdots, (u_n, v_n)$ eine Lösung von $I$. Die Instanz $I$ ist also lösbar wenn $I'$ Lösbar ist.
+  \end{proof}
+
+
+  \subsection{Lemma} Für Jedes alphabet $\Sigma$ mit $|\Sigma| \leq w$ gitl $MPCP_{\Sigma} \leq_m PCP_{\Sigma}$.
+  \begin{proof}
+    Sei $\Sigma$ ein Alphabet mit $|\Sigma| \geq 2$. Nach lemma 3.14 genügt es ein Alphabet $\Gamma$ zu finden, so das $MPCP_{\Sigma} \leq_m PCP_{\Gamma}$ gilt. \\Wir suchen eine effektive Transformation , die jede instanz $(p, I)$ des modifizierten Postschen Korrespondenzproblems über $\Sigma$ in eine Instanz $I'$ des Postschen Korrespondenzproblems über einem geeignetem Alphabet$\Gamma$ transformiert, so dass $(p, I)$ genau dann lösbar ist, wenn $I'$ lösbar ist.
+  \end{proof}
+  \subsubsection*{Idee: }
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[blue] (0,0) rectangle (1,1) node[midway] {0};
+      \draw[blue] (1,0) rectangle (2,1) node[midway] {1};
+      \draw[blue] (2,0) rectangle (3,1) node[midway] {0};
+      \draw[green] (3,0) rectangle (4,1) node[midway] {0};
+      \draw[yellow] (4,0) rectangle (5,1) node[midway] {1};
+      \draw[yellow] (5,0) rectangle (6,1) node[midway] {0};
+      \draw[yellow] (6,0) rectangle (7,1) node[midway] {1};
+      \draw[yellow] (7,0) rectangle (8,1) node[midway] {1};
+      \draw[purple] (8,0) rectangle (9,1) node[midway] {1};
+      \draw[purple] (9,0) rectangle (10,1) node[midway] {0};
+      \draw[purple] (10,0) rectangle (11,1) node[midway] {1};
+  
+      \draw[blue] (0,1) rectangle (1,2) node[midway] {0};
+      \draw[green] (1,1) rectangle (2,2) node[midway] {1};
+      \draw[green] (2,1) rectangle (3,2) node[midway] {0};
+      \draw[green] (3,1) rectangle (4,2) node[midway] {0};
+      \draw[green] (4,1) rectangle (5,2) node[midway] {1};
+      \draw[yellow] (5,1) rectangle (6,2) node[midway] {0};
+      \draw[yellow] (6,1) rectangle (7,2) node[midway] {1};
+      \draw[purple] (7,1) rectangle (8,2) node[midway] {1};
+      \draw[purple] (8,1) rectangle (9,2) node[midway] {1};
+      \draw[purple] (9,1) rectangle (10,2) node[midway] {0};
+      \draw[purple] (10,1) rectangle (11,2) node[midway] {1};
+    \end{tikzpicture}
+  \end{center}
+  ...
+  Betrachte die Homomorphismus von Sprachen $\delta_{\rightarrow}$, $\delta_{\leftarrow} : \Sigma^* \rightarrow (\Sigma \cup {*})^*$ mit $\delta_{a} = a*$ und $\delta_{\leftarrow}(a) = *a$ $\forall a \in \Sigma$. Für jede Instanz $(p, I) = ((u_1, v_1), I)$ wie oben sei \[I' = \{(\delta_{\leftarrow}(u_1), *\delta_{\rightarrow}(v_1))\} \cup \{\delta_{leftarrow}(u), \delta_{rightarrow}(v):  (u, v) \in I\} \cup \{\delta_{\leftarrow}(u)*, \delta_{\rightarrow}(v): (u, v) \in I\}\] Die Funktion die geeignete Codes von Instanzen $(p, I)$ auf geeignete Codes der zugehörigen Instanzen $I'$ abbildet ist berechenbar. Gibt es eine Lösung $(u_1, v_1), \cdots, (u_n, u_n)$ von $(p,I)$ dann ist \[\delta_{\leftarrow}(u_1)\cdots \delta_{\leftarrow}(u_n)* = \delta_{\leftarrow} (u_1 \cdots u_n)*\]
+  \[= \delta_{\leftarrow}(v_1 \cdots v_n)*\] \[= *\delta_{\rightarrow}(v_1 \cdots v_n)\] \[=*\delta_{\rightarrow}(v_1) \cdots \delta_{\rightarrow}(v_n)\] und folglich ist \[(\delta_{\leftarrow}(u_1), *\delta_{\rightarrow}(v_1)), (\delta_{\leftarrow}(u_2), \delta_{\rightarrow}(v_2)), \cdots, (\delta_{\leftarrow}(u_{n-1}), \delta_{\rightarrow}(v_{n-1})), (\delta_{\leftarrow}(u_{n}), \delta_{\rightarrow}(v_{n}))\] eine Lösung von $I'$. Es bleibt zu zeigen das $(p, I)$ lösbar ist, wenn $I'$ lösbar ist. Sei $\tau : (\Sigma \cup \{*\})^* \rightarrow \Sigma^*$ der Homomorphismus von Sprachen mit $\tau \vert_{\Sigma}$
