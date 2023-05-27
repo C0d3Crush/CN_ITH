@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{\numberline {1.2.11}Bemerkung}{6}{subsubsection.1.2.11}%
 \contentsline {subsubsection}{\numberline {1.2.12}Definition}{6}{subsubsection.1.2.12}%
 \contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{6}{subsubsection.1.2.13}%
-\contentsline {section}{\numberline {2}Turingmachine}{8}{section.2}%
+\contentsline {section}{\numberline {2}Turingmachine}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{9}{subsection.2.3}%
@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{12}{subsection.2.18}%
 \contentsline {subsection}{\numberline {2.19}Bemerkung}{13}{subsection.2.19}%
 \contentsline {subsection}{\numberline {2.20}Church- Turing- These}{13}{subsection.2.20}%
-\contentsline {section}{\numberline {3}Berechenbarkeit}{15}{section.3}%
+\contentsline {section}{\numberline {3}Berechenbarkeit}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Definition (Code)}{15}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Bemerkung}{15}{subsection.3.3}%
@@ -58,10 +58,10 @@
 \contentsline {subsection}{\numberline {3.19}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{21}{subsection.3.19}%
 \contentsline {subsection}{\numberline {3.20}Definition (Fixpunktsatz)}{22}{subsection.3.20}%
 \contentsline {subsection}{\numberline {3.21}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{22}{subsection.3.21}%
-\contentsline {section}{\numberline {4}Endliche Automaten}{24}{section.4}%
+\contentsline {section}{\numberline {4}Automaten und Grammatiken}{23}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Definition (Endliche Automaten)}{24}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{24}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Definition (Übergangsfunktion eines EA)}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Definition (Übergangsfunktion eines EA)}{24}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Bemerkung}{25}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Definition (Übergangsfunktion eines DEA)}{25}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Bemerkung}{25}{subsection.4.6}%
@@ -71,22 +71,22 @@
 \contentsline {subsection}{\numberline {4.10}Beispiel}{26}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Definition (Potenzautomaten)}{26}{subsection.4.11}%
 \contentsline {subsection}{\numberline {4.12}Satz}{26}{subsection.4.12}%
-\contentsline {section}{\numberline {5}Reguläre Sprachen}{29}{section.5}%
+\contentsline {section}{\numberline {5}Reguläre Sprachen}{28}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{29}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{29}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Bemerkung}{29}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{29}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Definition}{30}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.5}Definition}{29}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Lemma}{30}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}Satz}{30}{subsection.5.7}%
 \contentsline {subsection}{\numberline {5.8}Korollar}{30}{subsection.5.8}%
 \contentsline {subsection}{\numberline {5.9}Definition(erreichbar)}{30}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Definition(isomorph)}{31}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.10}Definition(isomorph)}{30}{subsection.5.10}%
 \contentsline {subsection}{\numberline {5.11}Satz}{31}{subsection.5.11}%
 \contentsline {subsection}{\numberline {5.12}Satz}{31}{subsection.5.12}%
 \contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{31}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Bemerkung}{32}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{32}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.14}Bemerkung}{31}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{31}{subsection.5.15}%
 \contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{32}{subsection.5.16}%
 \contentsline {subsection}{\numberline {5.17}Bemerkung}{32}{subsection.5.17}%
 \contentsline {subsection}{\numberline {5.18}Proposition}{32}{subsection.5.18}%
