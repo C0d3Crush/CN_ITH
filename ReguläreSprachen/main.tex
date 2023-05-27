@@ -119,3 +119,38 @@ Das heißt $\sim_L$ ist die größte Parition, die $L$ darstellen kann.
   \item [(ii)] Ist $A$ ein DEA mit Zustandsmenge $Q_A$ und $L(A) = L$, so gilt $|Q_A| \leq |Q|$.
   \item [(iii)] Ist $A$ ein DEA mit $|Q|$ Zuständen und $L(A) = L$, so gilt $A \cong M$. 
 \end{itemize}
+
+$\cdots$
+
+Für eine Sprache $L$ über einem Alphabet $\Sigma$ sind die folgenden Aussagen äquivalent:
+\begin{itemize}
+  \item [(i)] $L$ ist regulär.
+  \item [(ii)] Der Index von $\sim_{L}$ ist endlich.
+  \item [(iii)] $L$ ist die Vereinigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index.
+\end{itemize}
+
+\begin{proof}
+  (i) $\Leftrightarrow$ (iii) ist die Aussage von Korollar 5.9. Die Relation $\sim_L$ ist nach Bemerkung 5.14 eine Rechtskongruenzund es gilt $L = \bigcup \limits_{w \in L} [w]_{\sim L}$. Somit folgt folgt (i) $\Rightarrow$ (iii). Die Implikation (iii) $\Rightarrow$ (ii) folgt aus Bemerkung 5.17(ii) und Proposition 5.18.
+\end{proof}
+
+Wie wollen nun ein Kriterium beschreiben das hilft nicht reguläre Sprachen zu erkennen.
+
+\subsection{Satz (Pumping-Lemma)} Sei $\Sigma$ ein Alphabet. Für jede reguläre Sprache $L \subseteq \Sigma^*$ gibt es eine Konstante $k \in \mathbb{N}$, so dass folgendes gilt:\\ Ist $z \in L$ mit $|z| \geq k$, so gilt es Wörter $um v \in \Sigma^*$ mit $z = uvw$, so dass folgendes gilt:
+\begin{itemize}
+  \item [(i)]$v \not = \lambda$
+  \item [(ii)]$|uv| \leq k$
+  \item [(iii)]$uv^iw \in L \forall i \in \mathbb{N}_0$ (?ist das w noch in dem wort oder ist es ausserhalt aber in l?)
+\end{itemize} 
+\begin{proof}
+  %Sei $L \subseteq \Sigma^*$ eine reguläre Sprache und ... ein DEA mit $L(A) = L$ und erweiterter Übergangsfunktion $\delta^*: Q \times \Sigma^* \to Q$. Sei $k := |Q|$. Sei $z \in L $ mit $|z| \geq k$. (Falls kein solches z existiert ist nichts zu zeigen). Die Funktion $f: \{0,\cdots, k\} \to Q$, $i \mapsto \delta^*(s, z(1) \cdots z(i))$ ise keine Injektion, denn es gibt $|\{0, \cdots, k\}| = k + 1 > |Q|$. Sieen $j_1, j_2 \in \{0, \cdots, k\}$ mit $j_1, j_2$ und $f(j_1) = f(j_2)$. Sei $u := z(1)\cdots z(j_1)$, $v = z(j_1+1)\cdots z(j_2)$, $w = z(j_2 + 1) \cdots z(|w|)$. Dann gilt $z = uvw$. Aus $j_1 < j_2$ folgt $v \not = \lambda$. Aus $j_2 \leq k$ folgt $|uv| \leq k$. Es bleibt zu zeigen, dass $uv^iw\in L \forall i \in \mathbb{N}_0$ gilt. Dafür genügt es zu zeigen $\delta^*(s, uv^i) = \delta^*(s, u)$ (*). Denn dann gilt mit Bemerkung 4.3(iii) und Bemerkung 4.5 \[\delta^*(s, uv^iw) = \delta^*(\delta^*(s, uv^i), w) = $%\delta^*(\delat^*(s, u), w) = \delta^*(\delta^*(s, uv), w) = \delta^*(s, uvw)\] und damit $uv^iw \in L$. Wir zeigen (*) mittels vollständiger Induktion über $i$.\\
+  %$i = 0$\\
+  %Gelte nun $\delta^*(s, uv^{i-1}) = \delta^*(s, u)$ für ein $i \in \mathbb{N}$. %Wieder folgt \[$\delta^*(s, uw^i) = \delta^*(\delta^*(s, uv^{i-^}))$ ...\]
+\end{proof}
+
+  \subsection{Beispiel} Die Sprache $L = \{0^n i^n : u \in \mathbb{N}_0\}$ ist nicht regulär. Dies lässt sich mit den Pumping-Lemma wie folgt zeigen.
+
+  \begin{proof}
+    Angenommen $L$ wäre regulär.\\
+    $\Rightarrow \exists k \in \mathbb{N}_0 : \forall z \in L$ mit $|z| \geq k$ gilt, $\exists u, v, w \in \Sigma^*$ mit $z = uvw$ und (i) $v \not = \lambda$ (ii) $|uv| \leq k$ (iii) $uv^i w \in L$ $\forall i \in \mathbb{N}_0$. \\ Sei $z:= 0^k 1^k$. \\Aus (i) und (ii) folgt, dass $v = 0^l$ für $l > 0$ und damit folgt $uw = 0^{k\cdot l} 1^k$
+  \end{proof}
+  
