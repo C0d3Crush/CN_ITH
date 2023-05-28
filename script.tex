@@ -49,6 +49,17 @@
 
 \usetikzlibrary{tikzmark}
 
+% Funktion für eine Section
+\newcommand{\mysection}[1]{%
+  \section{#1}%
+  \label{sec:\thesection}%
+}
+
+% Funktion für eine Subsection
+\newcommand{\mysubsection}[1]{%
+  \subsection{#1}%
+  \label{subsec:\thesubsection}%
+}
 
 \newcommand{\coversection}[3]{
   \newpage
@@ -58,7 +69,7 @@
     \includegraphics[width=0.5\linewidth]{#1}
     \vspace*{0.5cm} % Anpassung des Abstands
     \par
-    \section{#2}
+    \mysection{#2}
     %\Large\textbf{#2}
     \par\vspace{0.5cm} % Anpassung des Abstands
     \begin{quote}

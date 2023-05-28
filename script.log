@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  28 MAY 2023 01:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  28 MAY 2023 02:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -715,30 +715,30 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \c@newproposition=\count322
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 73.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 84.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux))
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -795,7 +795,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 84.
 (./script.out) (./script.out)
 \@outlinefile=\write4
 \openout4 = `script.out'.
@@ -807,7 +807,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 73.
+(scrartcl)           before \begin{document} on input line 84.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -817,7 +817,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 <qrcode.png, id=7, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 91.
+Package pdftex.def Info: qrcode.png  used on input line 102.
 (pdftex.def)             Requested size: 91.04744pt x 91.04694pt.
  [1
 
@@ -852,7 +852,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/Einführung.png, id=218, 658.46pt x 322.20375pt>
+<Grundlagen/Einführung.png, id=224, 658.46pt x 322.20375pt>
 File: Grundlagen/Einführung.png Graphic file (type png)
 <use Grundlagen/Einführung.png>
 Package pdftex.def Info: Grundlagen/Einführung.png  used on input line 3.
@@ -878,7 +878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
 \openout2 = `Turingmachine/main.aux'.
 
  (./Turingmachine/main.tex
-<Turingmachine/turing.png, id=243, 1027.84pt x 1027.84pt>
+<Turingmachine/turing.png, id=249, 1027.84pt x 1027.84pt>
 File: Turingmachine/turing.png Graphic file (type png)
 <use Turingmachine/turing.png>
 Package pdftex.def Info: Turingmachine/turing.png  used on input line 1.
@@ -888,7 +888,7 @@ Package pdftex.def Info: Turingmachine/turing.png  used on input line 1.
 
 
  <./Turingmachine/turing.png (PNG copy)>]
-<Turingmachine/turing_sym.png, id=249, 371.3875pt x 273.02pt>
+<Turingmachine/turing_sym.png, id=255, 371.3875pt x 273.02pt>
 File: Turingmachine/turing_sym.png Graphic file (type png)
 <use Turingmachine/turing_sym.png>
 Package pdftex.def Info: Turingmachine/turing_sym.png  used on input line 16.
@@ -925,7 +925,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 \openout2 = `Berechenbarkeit/main.aux'.
 
  (./Berechenbarkeit/main.tex
-<Berechenbarkeit/predic.png, id=280, 1027.84pt x 1027.84pt>
+<Berechenbarkeit/predic.png, id=286, 1027.84pt x 1027.84pt>
 File: Berechenbarkeit/predic.png Graphic file (type png)
 <use Berechenbarkeit/predic.png>
 Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 1.
@@ -975,7 +975,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--190
  []
 
 [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 
  []
 
@@ -983,7 +983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--237
 \openout2 = `Automaten/main.aux'.
 
  (./Automaten/main.tex
-<Automaten/finit1.png, id=332, 1027.84pt x 1027.84pt>
+<Automaten/finit1.png, id=340, 1027.84pt x 1027.84pt>
 File: Automaten/finit1.png Graphic file (type png)
 <use Automaten/finit1.png>
 Package pdftex.def Info: Automaten/finit1.png  used on input line 1.
@@ -1011,7 +1011,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 87--89
 \openout2 = `ReguläreSprachen/main.aux'.
 
  (./ReguläreSprachen/main.tex
-<ReguläreSprachen/regul.png, id=356, 1027.84pt x 1027.84pt>
+<ReguläreSprachen/regul.png, id=364, 1027.84pt x 1027.84pt>
 File: ReguläreSprachen/regul.png Graphic file (type png)
 <use ReguläreSprachen/regul.png>
 Package pdftex.def Info: ReguläreSprachen/regul.png  used on input line 1.
@@ -1040,18 +1040,18 @@ Package rerunfilecheck Info: File `script.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32010 strings out of 476025
- 648132 string characters out of 5790017
+ 32043 strings out of 476025
+ 648514 string characters out of 5790017
  1879388 words of memory out of 5000000
- 51725 multiletter control sequences out of 15000+600000
+ 51758 multiletter control sequences out of 15000+600000
  559746 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,16n,106p,10673b,1108s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on script.pdf (33 pages, 8319178 bytes).
+Output written on script.pdf (33 pages, 8319892 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
- 690 compressed objects within 7 object streams
+ 791 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
  148 named destinations out of 1000 (max. 500000)
- 808 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 832 words of extra memory for PDF output out of 10000 (max. 10000000)
 

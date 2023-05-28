@@ -39,25 +39,28 @@
 \contentsline {section}{\numberline {3}Berechenbarkeit}{14}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Definition (Code)}{15}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Bemerkung}{15}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Definition (U)}{16}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Definition (Universell)}{16}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Bemerkung}{16}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Satz ($s_n^m$ - Theorem)}{16}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Definition (diagonales Halteproblem)}{16}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Satz}{17}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}m-Reduktion}{17}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Bemerkung}{17}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Satz}{18}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{18}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}Lemma}{19}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Lemma}{19}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Lemma}{20}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Beispiel}{21}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Satz}{21}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{21}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Definition (Fixpunktsatz)}{22}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{22}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.3}*}{15}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Bemerkung}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Definition (U)}{16}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Definition (Universell)}{16}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Bemerkung}{16}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Satz ($s_n^m$ - Theorem)}{16}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Definition (diagonales Halteproblem)}{16}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Satz}{17}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}m-Reduktion}{17}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Bemerkung}{17}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Satz}{18}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}*}{18}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{18}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Lemma}{19}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Lemma}{19}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Lemma}{20}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Beispiel}{21}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Satz}{21}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}*}{21}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{21}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Definition (Fixpunktsatz)}{22}{subsection.3.23}%
+\contentsline {subsection}{\numberline {3.24}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{22}{subsection.3.24}%
 \contentsline {section}{\numberline {4}Automaten und Grammatiken}{23}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Definition (Endliche Automaten)}{24}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{24}{subsection.4.2}%
