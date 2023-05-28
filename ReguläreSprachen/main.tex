@@ -1,6 +1,6 @@
 \coversection{ReguläreSprachen/regul.png}{Reguläre Sprachen}{A regular language can be thought of as a collection of sentences in a secret code. This secret code has a set of rules that determine which sentences are valid. You can think of it like a secret handshake, where only certain movements are allowed to be performed in a particular order.\\ \hspace*{\fill} - ChatGPT}
 
-\subsection{Definition (Äquivalenzrelation)} Sei A eine Menge. Eine Äquivalenzrelation auf A ist eine Relation $~ \leq A^{2}$, so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
+\mysubsection{Definition (Äquivalenzrelation)} Sei A eine Menge. Eine Äquivalenzrelation auf A ist eine Relation $~ \leq A^{2}$, so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
 \begin{itemize}
     \item [(i)] $a \sim a \forall a \in A $ (Reflexivität)
     \item [(ii)] $a \sim b \Rightarrow  b \sim a \forall a, b, c \in A$ (Symetrie)
@@ -8,22 +8,21 @@
 \end{itemize}
 Die \textbf{Äquivalenzklasse} eines Elements $a \in A$ bezüglich $\sim$ ist die Menge $[a]_{~} := {a' \in A : a' ~a}$. Der \textbf{Index} von $\sim$ ist die Kardinalität der Menge $A_{/\sim} := {[a]_{\sim} : a \in A}$ falls diese endlich ist und $\infty$  andernfalls.
 
-\subsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion 
+\mysubsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion 
 $\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $~_A$ auf $\Sigma^{*}$
 $\cdots$
 
-\subsection{Bemerkung} Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA.
+\mysubsection{Bemerkung} Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA.
 \begin{itemize}
     \item [(i)] Die A-Äquivalenz ist eine Äquivalenzrelation.
     \item [(ii)] Der Index von $\sim_{A}$ ist höchstens $|Q|$.
     \item [(iii)] Es gilt $L(A) = \bigcup \limits_{w \in L(A)} [w]_{\sim A}$.
 \end{itemize}
 
-\subsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim ?\leq ?(\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \forall u, v, w \in Sigma^{*}$.
+\mysubsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim ?\leq ?(\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \forall u, v, w \in Sigma^{*}$.
 
-\begin{proposition}
+\mysubsection{Proposition}
 Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist eine Rechtskonqruenz auf $\Sigma^{*}$.
-\end{proposition}
 \begin{proof}
   Seien $u, v, w \in \Sigma^{*}$ mit $u \sim_{A} v$. Dann gilt 
   \[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\]
@@ -32,16 +31,16 @@ Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist ei
 $\Box $
 Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von $\sim_{A}$ ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gibt es einen DEA A mit $L(A) = L$
 
-\subsection{Definition} Sei $\Sigma$ eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index. Es bezeichne
+\mysubsection{Definition} Sei $\Sigma$ eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index. Es bezeichne
 \[A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}\]
 den DEA mit $\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}$ und $a \in \Sigma$. Die Wohldefiniertheit von $\delta_{det, A_{\sim}, L}$ ergibt sich daraus, dass $\sim$ eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass $L(A_{\sim, L}) = L$ gilt betrachten wr zunächst die Arbeitsweise von $A_{\sim, L}$.
 
-\subsection{Lemma} Sei $\Sigma$ ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index und sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$. Dann gilt $\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}$. 
+\mysubsection{Lemma} Sei $\Sigma$ ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index und sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$. Dann gilt $\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}$. 
 \begin{proof}
   Wir verwenden vollständige Induktion über $|w|$. Es gilt $\delta^{*}([\lambda]_{\sim}, \lambda) = [\lambda_{\sim}]$. Sei nun $w \in \Sigma^{+}$ $\cdots$  
 \end{proof}
 
-\subsection{Satz} Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index Es gibt $L(A_{\sim, L}) = L$ 
+\mysubsection{Satz} Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index Es gibt $L(A_{\sim, L}) = L$ 
 \begin{proof}
   Sei $\Sigma$ das Alphabet, so dass $\sim$ eine Rechtskongruenz auf $\Sigma^{*}$ ist. Sei $\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}$ die erweiterte Übergangsfunktion von $A_{\sim, L}$ und sei $w \in \Sigma^{*}$. Aus Lemma 5.7 folgt 
   \[w \in L(A_{\sim, L}) \Leftrightarrow \delta^{*}([\lambda]_{\sim}, w) \in {[v]_{\sim} : v \in L}\]
@@ -52,22 +51,22 @@ den DEA mit $\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \i
   $\cdots$    
 \end{proof}
 
-\subsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. 
+\mysubsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. 
 \begin{proof}
-  Folgt aus Bemerkung 5.3, Proposition 5.5 und Satz 5.8 $\Box$ 
+  Folgt aus \hyperref[subsec:5.3]{Bemerkung 5.3}, \hyperref[subsec:5.5]{Proposition 5.5} und \hyperref[subsec:5.8]{Satz 5.8}
 \end{proof}
 Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustände, so entsprechen diese bis auf Unbenutzung von Zuständen sogar den Rechtskongruenz mit endlichem Index zusammen mit Vereinigung von Äquivalenzklassn dieser.
 
-\subsection{Definition(erreichbar)} Sei $\Sigma$ ein Alphabet. Sei $A = (Q, \Sigma, \Delta, s, F)$ ein EA mit erweiterter Übergangsfunktion $\delta^{*}$. Ein zustand $q\in Q$ heißt erreichbar in A wenn es ein Wort $w \in \Sigma ^{*}$ mit $q\in \delta^{*}(s, w)$ gilt.
+\mysubsection{Definition(erreichbar)} Sei $\Sigma$ ein Alphabet. Sei $A = (Q, \Sigma, \Delta, s, F)$ ein EA mit erweiterter Übergangsfunktion $\delta^{*}$. Ein zustand $q\in Q$ heißt erreichbar in A wenn es ein Wort $w \in \Sigma ^{*}$ mit $q\in \delta^{*}(s, w)$ gilt.
 
-\subsection{Definition(isomorph)} Sei $A_{i} = (Q_{i}, \Sigma, \Delta_{i}, s_{i}, F_{i})$ für $i \in {1,2}$ ein EA mit Übergangsfunktion $\delta_{i}$. Die endliche Automaten $A_{1}$ und $A_{2}$ sind \textbf{isomorph}, kurz $A_{1}? \cong A_{2}$, wenn es eine Projektion $f:Q_{1}\rightarrow Q_{2}$ gibt, sodass folgendes gilt:
+\mysubsection{Definition(isomorph)} Sei $A_{i} = (Q_{i}, \Sigma, \Delta_{i}, s_{i}, F_{i})$ für $i \in {1,2}$ ein EA mit Übergangsfunktion $\delta_{i}$. Die endliche Automaten $A_{1}$ und $A_{2}$ sind \textbf{isomorph}, kurz $A_{1}? \cong A_{2}$, wenn es eine Projektion $f:Q_{1}\rightarrow Q_{2}$ gibt, sodass folgendes gilt:
 \begin{itemize}
     \item [(i)] $f(s_{1}) = s_{2}$
     \item [(ii)] $\delta_{2}(f(q_{1}), a) = f(\delta_{1}(q_{1}), a)$
     \item [(iii)] $f(F_1) = F_2$
 \end{itemize}
 
-\subsection{Satz}
+\mysubsection{Satz}
 \begin{itemize}
   \item [(i)] Ist $A$ eine DEA ohne unereichbare Zustände, so gilt $A \cong A_{\sim A, L(A)}$
   \item [(ii)] Ist L die Vereinuíngung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gilt $(\sim, L) = (\sim_{A_{\sim, L}, L(A_{\sim, L})})$.
@@ -76,32 +75,31 @@ Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustä
 \begin{proof}
   \begin{itemize}
     \item [(i)] Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA mit erweiterte Übergangsfunktion $\delta^* : Q \times \Sigma^* \to Q$ ohne unereichbare Zustände , $\sim := \sim_A$, $A' := A_{\sim, L(A)}$ und sei $\delta' : \Sigma^* / \sim \times \Sigma^* \to \Sigma/\sim$ die erweiterte Übergangsfunktion von $A'$. Sei $f : Q \to \Sigma^* / \sim$ die Bijektive mit $f(q) := \{ w \in \Sigma^* : \delta^*(s,w) = q\}$. Es gelte $f(s) = [\lambda]_{\sim}$ und $f(F) = \{[w]_{\sim} : w \in L(A)\}$. Es genügt somit zu zeigen , dass $\delta'(f(q), a) = f(\delta(q,a)) \forall q \in Q, a \in \Sigma$. Sei $q \in Q, a \in \Sigma^*$. Es genügt $w \in \delta' (f(q), a) \Leftrightarrow \delta^*(s,w) = \delta^*(q, a)$ zu zeigen. Sei $v \in \Sigma^*$ mit $\delta^*(s,v) = q$. Nun gilt $w \in \delta'(f(q), a) \leftrightarrow w \in \delta'([v]_{\sim}, a) \leftrightarrow w \sim va \leftrightarrow \delta^*(s,w) = \delta^*(s, va) \leftrightarrow \delta^*(s,w) = \delta^*(q,a)$  %füge hier bei dem letzetn pfeil noch "Bem 4.3 und 4.5" unter den pfeil hinzu"
-    \item [(ii)] Sei $\Sigma$ ein Alphabet, $\sim$ eine Rechtskongruenz aud $\Sigma^*, L$ Vereinigung von Äquivalenzklassen von $\sim$, $A' := A_{\sim, L} = (\Sigma^*/\sim, \Sigma, A', [\lambda]_{\sim}, \uparrow)$, $\delta'^* : \Sigma^*/\sim \times \Sigma^* \to \Sigma^*/\sim$ die erweiterterte Übergangsfunktion von $A'$ $\{w \in \Sigma^* : w \in L \}$ und $\sim' := \sim_{A'}$. Nach Satz 5.8 gilt $L = L(A')$, es genügt also $\sim = \sim'$ zu zeigen. Sei $u, v \in \Sigma^*$. Aus lemma 5.7 folgt $u \sim v \leftrightarrow 
+    \item [(ii)] Sei $\Sigma$ ein Alphabet, $\sim$ eine Rechtskongruenz aud $\Sigma^*, L$ Vereinigung von Äquivalenzklassen von $\sim$, $A' := A_{\sim, L} = (\Sigma^*/\sim, \Sigma, A', [\lambda]_{\sim}, \uparrow)$, $\delta'^* : \Sigma^*/\sim \times \Sigma^* \to \Sigma^*/\sim$ die erweiterterte Übergangsfunktion von $A'$ $\{w \in \Sigma^* : w \in L \}$ und $\sim' := \sim_{A'}$. Nach \hyperref[subsec:5.8]{Satz 5.8} gilt $L = L(A')$, es genügt also $\sim = \sim'$ zu zeigen. Sei $u, v \in \Sigma^*$. Aus \hyperref[subsec:5.7]{Lemma 5.7}  folgt $u \sim v \leftrightarrow 
     [u]_{\sim} = [v]_{\sim} \leftrightarrow \delta'(...)$$\dots$
   \end{itemize}
 \end{proof}
+\hyperref[subsec:5.12]{Satz 5.12} Bedeutet insbesondere folgendes: Ist $A_i$, $i \in \{1, 2\}$ ein DEA ohne unereichbare Zustände, so gilt $A_1 \cong  A_2 \leftrightarrow (\sim_{A_1}, L(A_1)) = (\sim_{A_2}, L(A_2))$ und ist $L_i$ für $i \in \{1, 2\}$. Vereinigung von Äquivalenzklassen einer Rechtskongruenz $\sim_i$ mit endlichem Index, so gilt $(\sim_1, L_1) = (\sim_2, L_2) \leftrightarrow A_{\sim_1,L_1} \cong A_{\sim_2,L_2}$. \\\\ Ist $L$ eine reguläre Sprache, so gibt es verschiedene endliche Automaten (ohne unereichbare Zustände) mit $L(A) = L$. Äquivalenzklassen verschiedener Rechtskongruenz mit endlichem Index. Für alle solche Rechtskongruenz $\sim$ und $\forall u, v, w \Sigma^*$ mit $u \sim v$ gilt aber \[uw \in L \leftrightarrow \delta^*_{det, A} (s, uw) \in F \leftrightarrow \delta^*_{det, A} (s, vw) \in F \leftrightarrow vw \in L\] Dies führt zum Begriff der L-Äquivalenz und zeigt, dass die Parition in die Äquivalenzklassen von $\sim$ Vereinfacht der Parition in die Äquivalenzklasse der L-Äquivalenz ist.
 
-\subsection{Satz} Bedeutet insbesondere folgendes: Ist $A_i$, $i \in \{1, 2\}$ ein DEA ohne unereichbare Zustände, so gilt $A_1 \cong  A_2 \leftrightarrow (\sim_{A_1}, L(A_1)) = (\sim_{A_2}, L(A_2))$ und ist $L_i$ für $i \in \{1, 2\}$. Vereinigung von Äquivalenzklassen einer Rechtskongruenz $\sim_i$ mit endlichem Index, so gilt $(\sim_1, L_1) = (\sim_2, L_2) \leftrightarrow A_{\sim_1,L_1} \cong A_{\sim_2,L_2}$. \\\\ Ist $L$ eine reguläre Sprache, so gibt es verschiedene endliche Automaten (ohne unereichbare Zustände) mit $L(A) = L$. Äquivalenzklassen verschiedener Rechtskongruenz mit endlichem Index. Für alle solche Rechtskongruenz $\sim$ und $\forall u, v, w \Sigma^*$ mit $u \sim v$ gilt aber \[uw \in L \leftrightarrow \delta^*_{det, A} (s, uw) \in F \leftrightarrow \delta^*_{det, A} (s, vw) \in F \leftrightarrow vw \in L\] Dies führt zum Begriff der L-Äquivalenz und zeigt, dass die Parition in die Äquivalenzklassen von $\sim$ Vereinfacht der Parition in die Äquivalenzklasse der L-Äquivalenz ist.
+\mysubsection{Definition (L-Äquivalenz)} Sei $L$ eine Sprache über einem Alphabet $\Sigma$. Die \textbf{L-Äquivalenz} von $L$ als Sprache ist die Relation $\sim_L$ auf $\Sigma^*$ mit \[u \sim_L v \leftrightarrow (uw \in L \leftrightarrow vw \in L \forall w \in \Sigma^*)\] 
 
-\subsection{Definition (L-Äquivalenz)} Sei $L$ eine Sprache über einem Alphabet $\Sigma$. Die \textbf{L-Äquivalenz} von $L$ als Sprache ist die Relation $\sim_L$ auf $\Sigma^*$ mit \[u \sim_L v \leftrightarrow (uw \in L \leftrightarrow vw \in L \forall w \in \Sigma^*)\] 
-
-\subsection{Bemerkung} Sei $L$ eine Sprache über $\Sigma$. 
+\mysubsection{Bemerkung} Sei $L$ eine Sprache über $\Sigma$. 
 \begin{itemize}
   \item [(i)] Die L-Äquivalenz ist eine Rechtskongruenz.
   \item [(ii)] Es gilt $L = \bigcup \limits_{w \in L}[w]_{\sim L}$.
 \end{itemize}
 
-\subsection{Definition (Parition)} Sei $A$ eine Menge. Eine Parition von $A$ ist eine Menge $\mathcal{A} = {A_1, \cdots, A_n}$ paarweise disjunkt nichtleere Teilmengen von $A$ mit $\bigcup \limits_{i \in [n]} A_i = A$.
+\mysubsection{Definition (Parition)} Sei $A$ eine Menge. Eine Parition von $A$ ist eine Menge $\mathcal{A} = {A_1, \cdots, A_n}$ paarweise disjunkt nichtleere Teilmengen von $A$ mit $\bigcup \limits_{i \in [n]} A_i = A$.
 
-\subsection{Definition (Verefeinerung)} Seien $\mathcal{A}_1$ und $\mathcal{A}_2$ Paritionen einer Menge A. Die Parition $\mathcal{A}_2$ \textbf{Verefeinert} $\mathcal{A}_1$ (heißt Verefeinerung von $\mathcal{A}_1$), wenn es $\forall A_2 \in \mathcal{A}_2$ ein $A_1 \in \mathcal{A}_1$, mit $A_2 \subseteq A_1$ gibt.
+\mysubsection{Definition (Verefeinerung)} Seien $\mathcal{A}_1$ und $\mathcal{A}_2$ Paritionen einer Menge A. Die Parition $\mathcal{A}_2$ \textbf{Verefeinert} $\mathcal{A}_1$ (heißt Verefeinerung von $\mathcal{A}_1$), wenn es $\forall A_2 \in \mathcal{A}_2$ ein $A_1 \in \mathcal{A}_1$, mit $A_2 \subseteq A_1$ gibt.
 
-\subsection{Bemerkung} Seien $\mathcal{A}_1$ und $\mathcal{A}_2$ Paritionen einer Menge $A_1$, so dass $A_2$ die Parition $\mathcal{A}_1$ verefeinert.
+\mysubsection{Bemerkung} Seien $\mathcal{A}_1$ und $\mathcal{A}_2$ Paritionen einer Menge $A_1$, so dass $A_2$ die Parition $\mathcal{A}_1$ verefeinert.
 \begin{itemize}
   \item [(i)] $\forall A' \in \mathcal{A}_1$, gibt es eine Teilmengen $\mathcal{A}'_2 \subseteq \mathcal{A}_2$, die eine Parition von $A'$ ist.
   \item 
 \end{itemize}
 
-\subsection{Proposition} Sei $\Sigma$ eine Alphabet und L eine Sprache über $\Sigma$ und $\sim$ eine Rechtskongruenz auf $\Sigma^*$ mit $L = \bigcup \limits_{w \in L} [w]_{\sim}$. Die Parition $\Sigma^*/\sim$ ist eine Verefeinerung der partition $\Sigma^*/ \sim L$.
+\mysubsection{Proposition} Sei $\Sigma$ eine Alphabet und L eine Sprache über $\Sigma$ und $\sim$ eine Rechtskongruenz auf $\Sigma^*$ mit $L = \bigcup \limits_{w \in L} [w]_{\sim}$. Die Parition $\Sigma^*/\sim$ ist eine Verefeinerung der partition $\Sigma^*/ \sim L$.
 
 \begin{proof}
   Seien $u, v \in \Sigma^*$ mit $u \sim v$. Es genügt zu zeigen, dass $u \sim_{L} v$. Sei $w \in \Sigma^*$. Es genügt $uw \in L \leftrightarrow vw \in L$ zu zeigen. Da $\sim$ eine Rechtskongruenz ist dolgt $uw \sim vw$. Ist $u, w \in L$, so folgt aus $L = \bigcup \limits_{w' \in L} [w']_\sim$ auch $vw \in L$(analog folgt auch auch $vw \in L \Rightarrow uw \in L$).
@@ -111,9 +109,14 @@ $\Rightarrow u \sim_L v$.\\\\
 
 Das heißt $\sim_L$ ist die größte Parition, die $L$ darstellen kann.
 
-\subsection{Definition (Minimalautomat)} Sei $L$ eine reguläre Sprache über $\Sigma$. Der Minimalautomat von L als Sprache über $\Sigma$ ist der DEA $A_{\sim L, L}$.
+\mysubsection{Definition (Minimalautomat)} Sei $L$ eine reguläre Sprache über $\Sigma$. Der Minimalautomat von L als Sprache über $\Sigma$ ist der DEA $A_{\sim L, L}$.
 
-\subsection{Satz} Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M = (Q, \Sigma, \Delta, s, F)$ der Minimalautomat von $L$. Dann gilt:
+\mysubsection{Satz}
+\begin{proof}
+  
+\end{proof}
+
+\mysubsection{Satz (Satz von Myhill und Nerode)} Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M = (Q, \Sigma, \Delta, s, F)$ der Minimalautomat von $L$. Dann gilt:
 \begin{itemize}
   \item [(i)] $L(M) = L$
   \item [(ii)] Ist $A$ ein DEA mit Zustandsmenge $Q_A$ und $L(A) = L$, so gilt $|Q_A| \leq |Q|$.
@@ -130,12 +133,12 @@ Für eine Sprache $L$ über einem Alphabet $\Sigma$ sind die folgenden Aussagen 
 \end{itemize}
 
 \begin{proof}
-  (i) $\Leftrightarrow$ (iii) ist die Aussage von Korollar 5.9. Die Relation $\sim_L$ ist nach Bemerkung 5.14 eine Rechtskongruenzund es gilt $L = \bigcup \limits_{w \in L} [w]_{\sim L}$. Somit folgt folgt (i) $\Rightarrow$ (iii). Die Implikation (iii) $\Rightarrow$ (ii) folgt aus Bemerkung 5.17(ii) und Proposition 5.18.
+  (i) $\Leftrightarrow$ (iii) ist die Aussage von Korollar 5.9. Die Relation $\sim_L$ ist nach Bemerkung 5.14 eine Rechtskongruenzund es gilt $L = \bigcup \limits_{w \in L} [w]_{\sim L}$. Somit folgt folgt (i) $\Rightarrow$ (iii). Die Implikation (iii) $\Rightarrow$ (ii) folgt aus \hyperref[subsec:5.17]{Bemerkung 5.17(ii)} und \hyperref[subsec:5.19]{Proposition 5.19}.
 \end{proof}
 
 Wie wollen nun ein Kriterium beschreiben das hilft nicht reguläre Sprachen zu erkennen.
 
-\subsection{Satz (Pumping-Lemma)} Sei $\Sigma$ ein Alphabet. Für jede reguläre Sprache $L \subseteq \Sigma^*$ gibt es eine Konstante $k \in \mathbb{N}$, so dass folgendes gilt:\\ Ist $z \in L$ mit $|z| \geq k$, so gilt es Wörter $um v \in \Sigma^*$ mit $z = uvw$, so dass folgendes gilt:
+\mysubsection{Satz (Pumping-Lemma)} Sei $\Sigma$ ein Alphabet. Für jede reguläre Sprache $L \subseteq \Sigma^*$ gibt es eine Konstante $k \in \mathbb{N}$, so dass folgendes gilt:\\ Ist $z \in L$ mit $|z| \geq k$, so gilt es Wörter $um v \in \Sigma^*$ mit $z = uvw$, so dass folgendes gilt:
 \begin{itemize}
   \item [(i)]$v \not = \lambda$
   \item [(ii)]$|uv| \leq k$
@@ -147,7 +150,7 @@ Wie wollen nun ein Kriterium beschreiben das hilft nicht reguläre Sprachen zu e
   %Gelte nun $\delta^*(s, uv^{i-1}) = \delta^*(s, u)$ für ein $i \in \mathbb{N}$. %Wieder folgt \[$\delta^*(s, uw^i) = \delta^*(\delta^*(s, uv^{i-^}))$ ...\]
 \end{proof}
 
-  \subsection{Beispiel} Die Sprache $L = \{0^n i^n : u \in \mathbb{N}_0\}$ ist nicht regulär. Dies lässt sich mit den Pumping-Lemma wie folgt zeigen.
+  \mysubsection{Beispiel} Die Sprache $L = \{0^n i^n : u \in \mathbb{N}_0\}$ ist nicht regulär. Dies lässt sich mit den Pumping-Lemma wie folgt zeigen.
 
   \begin{proof}
     Angenommen $L$ wäre regulär.\\

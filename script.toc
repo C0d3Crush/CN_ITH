@@ -1,100 +1,101 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Grundlagen}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Notationen und begriffe}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Alphabet, Wörter und Sprachen}{4}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Definition (Alphabet)}{4}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Definition (Wörter)}{5}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.3}Definition (Binäraphabet, Binärwörter)}{5}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Sprache}{5}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Definition}{5}{subsubsection.1.2.5}%
-\contentsline {subsubsection}{\numberline {1.2.6}Definition (Verkettung)}{5}{subsubsection.1.2.6}%
-\contentsline {subsubsection}{\numberline {1.2.7}Definition (Präfix, Infix, Suffix)}{5}{subsubsection.1.2.7}%
-\contentsline {subsubsection}{\numberline {1.2.8}Definition (präfixfrei)}{6}{subsubsection.1.2.8}%
-\contentsline {subsubsection}{\numberline {1.2.9}Definition (Homomorphismus)}{6}{subsubsection.1.2.9}%
-\contentsline {subsubsection}{\numberline {1.2.10}Definition (Längenlexikographische Ordnung)}{6}{subsubsection.1.2.10}%
-\contentsline {subsubsection}{\numberline {1.2.11}Bemerkung}{6}{subsubsection.1.2.11}%
-\contentsline {subsubsection}{\numberline {1.2.12}Definition}{6}{subsubsection.1.2.12}%
-\contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{6}{subsubsection.1.2.13}%
-\contentsline {section}{\numberline {2}Turingmachine}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{9}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Definition (Rechnung)}{9}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Bemerkung}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Definition (total)}{9}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Definition (akzeptierte Sprache)}{10}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Definition(entscheidbar)}{10}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Definition(rekursiv aufzählbar)}{10}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Bemerkung}{10}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Bemerkung}{10}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}Bemerkung}{11}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}Definition (Ausgabe)}{11}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{11}{subsection.2.14}%
-\contentsline {subsection}{\numberline {2.15}Definition (partiell berechenbar)}{11}{subsection.2.15}%
-\contentsline {subsection}{\numberline {2.16}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{11}{subsection.2.16}%
-\contentsline {subsection}{\numberline {2.17}Bemerkung}{11}{subsection.2.17}%
-\contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{12}{subsection.2.18}%
-\contentsline {subsection}{\numberline {2.19}Bemerkung}{13}{subsection.2.19}%
-\contentsline {subsection}{\numberline {2.20}Church- Turing- These}{13}{subsection.2.20}%
-\contentsline {section}{\numberline {3}Berechenbarkeit}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Definition (Code)}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}*}{15}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Bemerkung}{15}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Definition (U)}{16}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Definition (Universell)}{16}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Bemerkung}{16}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Satz ($s_n^m$ - Theorem)}{16}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Definition (diagonales Halteproblem)}{16}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Satz}{17}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}m-Reduktion}{17}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Bemerkung}{17}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Satz}{18}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}*}{18}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{18}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Lemma}{19}{subsection.3.16}%
+\contentsline {section}{\numberline {1}Grundlagen}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Notationen und begriffe}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Alphabet, Wörter und Sprachen}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Definition (Alphabet)}{3}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Definition (Wörter)}{4}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Definition (Binäraphabet, Binärwörter)}{4}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Sprache}{4}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Definition}{4}{subsubsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.6}Definition (Verkettung)}{4}{subsubsection.1.2.6}%
+\contentsline {subsubsection}{\numberline {1.2.7}Definition (Präfix, Infix, Suffix)}{4}{subsubsection.1.2.7}%
+\contentsline {subsubsection}{\numberline {1.2.8}Definition (präfixfrei)}{4}{subsubsection.1.2.8}%
+\contentsline {subsubsection}{\numberline {1.2.9}Definition (Homomorphismus)}{5}{subsubsection.1.2.9}%
+\contentsline {subsubsection}{\numberline {1.2.10}Definition (Längenlexikographische Ordnung)}{5}{subsubsection.1.2.10}%
+\contentsline {subsubsection}{\numberline {1.2.11}Bemerkung}{5}{subsubsection.1.2.11}%
+\contentsline {subsubsection}{\numberline {1.2.12}Definition}{5}{subsubsection.1.2.12}%
+\contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{5}{subsubsection.1.2.13}%
+\contentsline {section}{\numberline {2}Turingmachine}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Definition (Rechnung)}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Bemerkung}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Definition (total)}{8}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Definition (akzeptierte Sprache)}{9}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Definition(entscheidbar)}{9}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Definition(rekursiv aufzählbar)}{9}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Bemerkung}{9}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Bemerkung}{9}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Bemerkung}{9}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}Definition (Ausgabe)}{9}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{10}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}Definition (partiell berechenbar)}{10}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.16}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{10}{subsection.2.16}%
+\contentsline {subsection}{\numberline {2.17}Bemerkung}{10}{subsection.2.17}%
+\contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{10}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.19}Bemerkung}{12}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}Church- Turing- These}{12}{subsection.2.20}%
+\contentsline {section}{\numberline {3}Berechenbarkeit}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Definition (Code)}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bemerkung}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Definition (U)}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Definition (Universell)}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Bemerkung}{15}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Satz ($s_n^m$ - Theorem)}{15}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Definition (diagonales Halteproblem)}{16}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Proposition}{16}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Satz}{16}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}m-Reduktion}{16}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Bemerkung}{16}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Satz}{16}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{17}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Lemma}{18}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Lemma}{18}{subsection.3.16}%
 \contentsline {subsection}{\numberline {3.17}Lemma}{19}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Lemma}{20}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Beispiel}{21}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Satz}{21}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}*}{21}{subsection.3.21}%
-\contentsline {subsection}{\numberline {3.22}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{21}{subsection.3.22}%
-\contentsline {subsection}{\numberline {3.23}Definition (Fixpunktsatz)}{22}{subsection.3.23}%
-\contentsline {subsection}{\numberline {3.24}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{22}{subsection.3.24}%
-\contentsline {section}{\numberline {4}Automaten und Grammatiken}{23}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Definition (Endliche Automaten)}{24}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{24}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Definition (Übergangsfunktion eines EA)}{24}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Bemerkung}{25}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Definition (Übergangsfunktion eines DEA)}{25}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Bemerkung}{25}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Bemerkung}{25}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Definition (akzeptierte Sprache)}{25}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Definition (regulär)}{25}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}Beispiel}{26}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}Definition (Potenzautomaten)}{26}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}Satz}{26}{subsection.4.12}%
-\contentsline {section}{\numberline {5}Reguläre Sprachen}{28}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{29}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{29}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Bemerkung}{29}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{29}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Definition}{29}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Lemma}{30}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Satz}{30}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Korollar}{30}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Definition(erreichbar)}{30}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Definition(isomorph)}{30}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Satz}{31}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Satz}{31}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{31}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Bemerkung}{31}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{31}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{32}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}Bemerkung}{32}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}Proposition}{32}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{32}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Satz}{32}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Satz (Pumping-Lemma)}{33}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}Beispiel}{33}{subsection.5.22}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\contentsline {subsection}{\numberline {3.18}Beispiel}{20}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Satz}{20}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{20}{subsection.3.20}%
+\contentsline {subsubsection}{\numberline {3.20.1}Definition (Fixpunktsatz)}{20}{subsubsection.3.20.1}%
+\contentsline {subsubsection}{\numberline {3.20.2}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{20}{subsubsection.3.20.2}%
+\contentsline {subsubsection}{\numberline {3.20.3}Satz (Rekursionstheorem, Stephen Cole Kleen, 1938)}{21}{subsubsection.3.20.3}%
+\contentsline {subsubsection}{\numberline {3.20.4}Korollar}{21}{subsubsection.3.20.4}%
+\contentsline {subsubsection}{\numberline {3.20.5}Definition (Indexmenge)}{21}{subsubsection.3.20.5}%
+\contentsline {subsubsection}{\numberline {3.20.6}Satz (Satz von Rice, Henry Horden Rice, 1951)}{21}{subsubsection.3.20.6}%
+\contentsline {section}{\numberline {4}Automaten und Grammatiken}{22}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Definition (Endliche Automaten)}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Bemerkung }{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Definition (Übergangsfunktion eines DEA)}{24}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Bemerkung }{24}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Bemerkung}{24}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache)}{24}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Definition (regulär)}{24}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Beispiel}{24}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{24}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Satz}{25}{subsection.4.11}%
+\contentsline {section}{\numberline {5}Reguläre Sprachen}{26}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{27}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{27}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Bemerkung}{27}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{27}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Proposition}{27}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Definition}{27}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Lemma}{28}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Satz}{28}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Korollar}{28}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{28}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{28}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Satz}{29}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{29}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Bemerkung}{29}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{29}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{29}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}Bemerkung}{30}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}Proposition}{30}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{30}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}Satz}{30}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{30}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{31}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}Beispiel}{31}{subsection.5.23}%

@@ -26,15 +26,6 @@ er endliche Automat A ist ein deterministischer endlicher Automa,
 kurz DEA, wenn es $\forall$ (q,a) $\in$ Q x $\sigma$ genau ein q' gibt mit (q,a,q') $\in$ $\delta$. 
 Im Sinne der obigen Betrachtung entspricht ein EA A = (Q, $\Sigma$m $\Delta$, s, F) der 1-TM $M_{a}$ = (Q, $\sigma$, ...)
 $\leadsto $ Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
-
-\subsection{Definition (Übergangsfunktion eines EA)}
-Sei A = (Q, $\sigma$, $\Delta$,s,F) ein EA. 
-Die Übergangsfunktion von A ist die Funktion \\
-$S_{A}$ : Q x $\Sigma \to 2^{Q}$ mit $S_{A}$(q, a) = \{q' $\in$ Q: (q, a, q')$\in \delta$\} $\forall$q $\in$ Q a $\in \sigma$.\\
-Die erweiterte Übergangsfunktion von A ist die Funktion \\
-$\delta_{A}^{*}$ (q,a): Q x $\Sigma^{*} \to 2^{Q}$ mit $S_{A}^{*}$(q,$\lambda$) = \{q\} und $\delta_{A}^{*}(q, aw)$ $\underset{q' \in \delta_{A}^{*}(q,a)}{\bigcup} \delta_{A}^{*}$(q', w) $\forall$q $\in$ Q a$\in \Sigma$ und w$\in \Sigma^{*}$.\\
-Für $Q_{0} \subseteq $ Q und w $\in \Sigma^{*}$ schreiben wir $\delta_{A}^{*} $($Q_{0}, w$) statt $\underset{q \in Q_{0}}{\bigcup}$ $\delta_{A}^{*}$ (q, w).
-
 \subsection{Definition (Übergangsfunktion eines EA)}
 Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die \textbf{Übergangsfunktion} von A ist die Funktion $\delta_{A}$ : Q $\times \Sigma\rightarrow 2^{Q}$ (=Potenzmenge von Q) mit $\delta_{A}$(q,a) = \{q'$\in$ Q : (q, a, q')$\in \Delta$\} $\forall$q $\in$ Q, a$\in \Sigma$ \textbf{erweiterte Übergangsfunktion} von A ist die Funktion $\delta_{A}^{*}$ : Q $\times \Sigma^{*} \rightarrow 2^{Q}$ $\delta_{A}^{*}$(q, $\lambda$) = \{q\} und $\delta_{A}^{*}$(q, aw) = $\bigcup \limits_{q'\in \delta_{A}(q,a)}$ $\delta_{A}^{*}$(q', w) $\forall$q$\in$Q a$\in \Sigma$ und w$\in \Sigma^{*}$. Für $Q_{0} \subseteq Q$ und w $\in \Sigma^{*}$ schreiben wir $\delta_{A}^{*}$ ($Q_{0}$, w) statt $\bigcup \limits_{q \in Q_{0}}$ $\delta_{A}^{*}$(q,w). Für einen EA A = (Q, $\Sigma$, $\Delta$, s, F) ,mit entsprechnder TM $M_{A}$ = (Q, $\Sigma$, $\Gamma$, $\Delta$', s, F), q $\in$ Q und w $\in$ $\Sigma^{*}$ ist $\delta_{A}^{*}$(s,w) die Menge der zustände, die sich als erst Komp.?? der ubtem?? Konfig einer Rechnung von $M_{A}$ zur Eingabe zu ergeben.
 
@@ -93,17 +84,18 @@ Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. der Potenzautomat von A ist der DE
 \subsection{Satz}
 Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
 
-\subsubsection*{Beweis:} 
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA mit Potenzautomat $P_{A}$. Es genügt zu zeigen, dass L(A) = L($P_{A}$). Hierfür genügt es zu zeigen, dass:
-\[\delta_{det,P}^{*} = \delta_{A}^{*}(s, w) \forall w \in \Sigma^{*} (*)\]
-Denn damit folgt
-\[w \in  L (P_{A}) \Leftrightarrow \delta_{P_{A}}^{*}(\{s\}, w) \cap \{P\subseteq Q : P\cap F \neq \varnothing \} \neq \varnothing \] 
-\[\Leftrightarrow \delta_{det, P_{A}}^{*}(\{s\}, w) \cap F \neq \varnothing \]
-\[\underset{\text{(*)}}{\Leftrightarrow } \delta_{A}^{*}(\{s\}, w) \cap F \neq \varnothing \]
-\[\Leftrightarrow w \in L(A)\] Wir zeigen (*) mittels vollständiger Induktion über $\lvert$w$\rvert$. Es gilt $\delta_{det, P_{A}}^{*}$(\{s\}, $\lambda$) = $\delta_{A}^{*}$(s, $\lambda$). Sei w $\in \Sigma^{+}$ mit $\delta_{det, A}^{*}$(\{s\}, v) = $\delta_{A}^{*}$(s, v) $\forall$ v $\in \Sigma^{\leq \lvert w \rvert - 1}$. Nun zeigen wir (*) Sei va := w mit a $\in \Sigma$ und $\lvert$v$\rvert$ = $\lvert$w$\rvert$ - 1.
-\[\delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\text{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
-\[\underset{\text{Ind. hyp}}{=} \delta_{det, P_{A}}^{*}(\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
-\[ = \bigcup \limits_{q \in \delta_{det, A}^{*}}\delta_{A}(q, a)\]
-\[ = \delta_{A}^{*}(\delta_{A}^{*}(s, v), a)\]
-\[ = \delta_{A}^{*}(s, va)\]
-\[ = \delta_{A}^{*}(s, w)\]
+\begin{proof}
+    Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA mit Potenzautomat $P_{A}$. Es genügt zu zeigen, dass L(A) = L($P_{A}$). Hierfür genügt es zu zeigen, dass:
+    \[\delta_{det,P}^{*} = \delta_{A}^{*}(s, w) \forall w \in \Sigma^{*} (*)\]
+    Denn damit folgt
+    \[w \in  L (P_{A}) \Leftrightarrow \delta_{P_{A}}^{*}(\{s\}, w) \cap \{P\subseteq Q : P\cap F \neq \varnothing \} \neq \varnothing \] 
+    \[\Leftrightarrow \delta_{det, P_{A}}^{*}(\{s\}, w) \cap F \neq \varnothing \]
+    \[\underset{\text{(*)}}{\Leftrightarrow } \delta_{A}^{*}(\{s\}, w) \cap F \neq \varnothing \]
+    \[\Leftrightarrow w \in L(A)\] Wir zeigen (*) mittels vollständiger Induktion über $\lvert$w$\rvert$. Es gilt $\delta_{det, P_{A}}^{*}$(\{s\}, $\lambda$) = $\delta_{A}^{*}$(s, $\lambda$). Sei w $\in \Sigma^{+}$ mit $\delta_{det, A}^{*}$(\{s\}, v) = $\delta_{A}^{*}$(s, v) $\forall$ v $\in \Sigma^{\leq \lvert w \rvert - 1}$. Nun zeigen wir (*) Sei va := w mit a $\in \Sigma$ und $\lvert$v$\rvert$ = $\lvert$w$\rvert$ - 1.
+    \[\delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\text{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
+    \[\underset{\text{Ind. hyp}}{=} \delta_{det, P_{A}}^{*}(\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
+    \[ = \bigcup \limits_{q \in \delta_{det, A}^{*}}\delta_{A}(q, a)\]
+    \[ = \delta_{A}^{*}(\delta_{A}^{*}(s, v), a)\]
+    \[ = \delta_{A}^{*}(s, va)\]
+    \[ = \delta_{A}^{*}(s, w)\]
+\end{proof}

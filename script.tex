@@ -1,4 +1,4 @@
-\documentclass[DIV=12]{scrartcl}
+\documentclass{article}
 \usepackage{dsfont}
 \usepackage{caption}
 \usepackage{amsmath}
@@ -36,9 +36,16 @@
 \usepackage{lipsum} % for sample text
 \usepackage{amsthm}
 \usepackage[ngerman]{babel}
-\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+%\usepackage{fontspec}
+\usepackage{hyperref}
 
-
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    linktoc=all
+}
 \newtheorem{proposition}{Proposition}
 
 \usetikzlibrary{tikzmark}
@@ -46,8 +53,6 @@
 \usetikzlibrary{automata, positioning} % Hinzufügen der benötigten TikZ-Bibliotheken
 \usetikzlibrary{arrows, positioning, calc}
 \newtheorem{newproposition}{Proposition}[subsection] % Propositionen werden nach Subsections nummeriert
-
-\usetikzlibrary{tikzmark}
 
 % Funktion für eine Section
 \newcommand{\mysection}[1]{%
@@ -59,6 +64,12 @@
 \newcommand{\mysubsection}[1]{%
   \subsection{#1}%
   \label{subsec:\thesubsection}%
+}
+
+% Funktion für eine Subsubsection
+\newcommand{\mysubsubsection}[1]{%
+  \subsubsection{#1}%
+  \label{subsubsec:\thesubsubsection}%
 }
 
 \newcommand{\coversection}[3]{
@@ -79,7 +90,6 @@
   \end{center}
   \newpage
 }
-
 
 \begin{document}
 
