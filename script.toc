@@ -96,6 +96,6 @@
 \contentsline {subsection}{\numberline {5.18}Proposition}{30}{subsection.5.18}%
 \contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{30}{subsection.5.19}%
 \contentsline {subsection}{\numberline {5.20}Satz}{30}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{30}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{31}{subsection.5.21}%
 \contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{31}{subsection.5.22}%
 \contentsline {subsection}{\numberline {5.23}Beispiel}{31}{subsection.5.23}%

@@ -26,7 +26,7 @@ Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist ei
 \begin{proof}
   Seien $u, v, w \in \Sigma^{*}$ mit $u \sim_{A} v$. Dann gilt 
   \[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\]
-  \[= \delta_{det,A}^{*}(s, vw).\] (hier benutzen wir Bem 4.3 und 4.5)    
+  \[= \delta_{det,A}^{*}(s, vw).\] (hier benutzen wir \hyperref[subsec:4.3]{Bemerkung 4.3} und \hyperref[subsec:4.5]{Bemerkung 4.5})    
 \end{proof} Dann gilt $uw\sim_{A}vw.$
 $\Box $
 Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von $\sim_{A}$ ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gibt es einen DEA A mit $L(A) = L$
@@ -48,7 +48,6 @@ den DEA mit $\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \i
   \[\Leftrightarrow \exists v \in L : [w]_{\sim} = [v]_{\sim}\]
   \[\Leftrightarrow \exists v \in L : w \sim v\]
   \[\Leftrightarrow w \in L\]
-  $\cdots$    
 \end{proof}
 
 \mysubsection{Korollar} Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. 
@@ -96,25 +95,34 @@ Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustä
 \mysubsection{Bemerkung} Seien $\mathcal{A}_1$ und $\mathcal{A}_2$ Paritionen einer Menge $A_1$, so dass $A_2$ die Parition $\mathcal{A}_1$ verefeinert.
 \begin{itemize}
   \item [(i)] $\forall A' \in \mathcal{A}_1$, gibt es eine Teilmengen $\mathcal{A}'_2 \subseteq \mathcal{A}_2$, die eine Parition von $A'$ ist.
-  \item 
+  \item [(ii)] Es gilt $|\mathcal{A}_1| \leq |\mathcal{A}_2|$
+  \item [(iii)] Gilt $|\mathcal{A}_1| = |\mathcal{A}_2|$ dann ist $\mathcal{A}_1 = \mathcal{A}_2$
 \end{itemize}
 
 \mysubsection{Proposition} Sei $\Sigma$ eine Alphabet und L eine Sprache über $\Sigma$ und $\sim$ eine Rechtskongruenz auf $\Sigma^*$ mit $L = \bigcup \limits_{w \in L} [w]_{\sim}$. Die Parition $\Sigma^*/\sim$ ist eine Verefeinerung der partition $\Sigma^*/ \sim L$.
-
 \begin{proof}
-  Seien $u, v \in \Sigma^*$ mit $u \sim v$. Es genügt zu zeigen, dass $u \sim_{L} v$. Sei $w \in \Sigma^*$. Es genügt $uw \in L \leftrightarrow vw \in L$ zu zeigen. Da $\sim$ eine Rechtskongruenz ist dolgt $uw \sim vw$. Ist $u, w \in L$, so folgt aus $L = \bigcup \limits_{w' \in L} [w']_\sim$ auch $vw \in L$(analog folgt auch auch $vw \in L \Rightarrow uw \in L$).
+  Seien $u, v \in \Sigma^*$ mit $u \sim v$. Es genügt zu zeigen, dass $u \sim_{L} v$. Sei $w \in \Sigma^*$. Es genügt $uw \in L \leftrightarrow vw \in L$ zu zeigen. Da $\sim$ eine Rechtskongruenz ist dolgt $uw \sim vw$. Ist $u, w \in L$, so folgt aus $L = \bigcup \limits_{w' \in L} [w']_\sim$ auch $vw \in L$(analog folgt auch auch $vw \in L \Rightarrow uw \in L$).\\ $\Rightarrow u \sim_L v$.
 \end{proof}
-
-$\Rightarrow u \sim_L v$.\\\\
-
 Das heißt $\sim_L$ ist die größte Parition, die $L$ darstellen kann.
 
 \mysubsection{Definition (Minimalautomat)} Sei $L$ eine reguläre Sprache über $\Sigma$. Der Minimalautomat von L als Sprache über $\Sigma$ ist der DEA $A_{\sim L, L}$.
 
 \mysubsection{Satz}
+Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M _ (Q, \Sigma, \Delta, s ,F)$ der Minimalautomat von L. Dann gilt:
+\begin{itemize}
+  \item [(i)] $L(M) = L$
+  \item [(ii)] Ist A ein DEA mit Zustandsmenge $Q_A$ und $L(A) = L$, so gilt $|Q_A| \geq |Q|$.
+  \item [(iii)] Ist $A$ ein DEA mit $|Q|$ Zuständen und $L(A) = L$, so golt $A \cong M$.
+\end{itemize}
 \begin{proof}
-  
+  \begin{itemize}
+    \item [(i)] Folgt direkt aus \hyperref[subsec:5.8]{Satz 5.8} 
+    \item [(ii)] Aus \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} folgt $|Q_A| \geq |\Sigma^* / \sim_A|$. Nach \hyperref[subsec:5.18]{Proposition 5.18} ist $\Sigma^* / \sim_A$ eine Verefeinerung von $\Sigma^* / \sim_L$, nach \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} gilt also $|\Sigma^* / \sim_A| \geq |\Sigma^* / \sim_L|$. Wegen $|\Sigma^* / \sim_L| = |Q|$ folgt somit \[|Q_A| \geq |\Sigma^* / \sim_A| \geq |\Sigma^* / \sim_L| = |Q|\]
+    \item [(iii)] Sei A ein DEA mit $|Q|$ Zuständen und $L(A) = L$. Hätte $A$ unereichbare Zustände, so folgt $|\Sigma^* / \sim_A| < |Q| = |\Sigma^* /\sim_L|$ im wiederspruch zu \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} und \hyperref[subsec:5.18]{Proposition 5.18} 
+  \end{itemize}
+  Nach \hyperref[subsec:5.12]{Satz 5.12} genügt es zu zeigen, dass $\sim_A = \sim_M$ zu zeigen. Die Relationen $\sim_M$ und $\sim_A$ sind nach \hyperref[subsec:5.3]{Bemerkung 5.3} und \hyperref[subsec:5.5]{Proposition 5.5} Rechtskongruent mit endlichem Index und $L$ ist Verfeinerung von Äquivalenzklassen davon. Damit sind $\Sigma^* / \sim_A$ und $\Sigma^* / \sim_M$ nach \hyperref[subsec:5.18]{Proposition 5.18} Verfeinerungen von $\Sigma^* /\sim_L$. Somit sind die Indices von $\sim_A$ und $\sim_M$ mindestens so groß wie der index von $\sim_L$. Weiter sind die Indices von $\sim_A und \sim_M$ nach \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} aber auch höchstens so groß wie $|Q| = |\Sigma^* / \sim_L|$. Die Indices von $\sim_A$, $\sim_M$ und $\sim_L$ sind alle gleich groß. Da $\Sigma^* / \sim_A$ und $\Sigma^* / \sim_M$ Verefeinerungen von $\Sigma^* /\sim_L$ sind, folgt mit \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} somit $\Sigma^* /\sim_A = \Sigma^* /\sim_M = \Sigma^* /\sim_L$ und $\sim_A = \sim_L = \sim_M$. 
 \end{proof}
+Unsere bisherigen Betrachtungen erlauben verschiedene Äquivalenten Charkterisierungen der Klasse der regulären Sprachen.
 
 \mysubsection{Satz (Satz von Myhill und Nerode)} Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M = (Q, \Sigma, \Delta, s, F)$ der Minimalautomat von $L$. Dann gilt:
 \begin{itemize}

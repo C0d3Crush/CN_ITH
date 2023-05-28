@@ -13,7 +13,7 @@ Als TM kann der wie folgt realisiert werden:
 ??Die?? bedeutet, dass wir DM M = (Q, $\Sigma$m $\Sigma\cup $\{$\square $\}), $\delta$, s, F) die nur Instruktionen der Form (q, a, q', a, R) mit q $\in$ Q und a $\in \sigma$ hat.
 Dies sind nun stark eingeschränkte TM. Wir wählen eine äquivalente Form, die als endliche Automaten bezeichnet werden. 
 
-\subsection{Definition (Endliche Automaten)}
+\mysubsection{Definition (Endliche Automaten)}
 Ein endicher Automat, kurz EA, ist ein Tupel A = (Q, $\Sigma$, $\delta$, s, F). Dabei ist 
 \begin{itemize}
     \item Q eine endliche Menge, der Zustandsmenge;
@@ -26,10 +26,10 @@ er endliche Automat A ist ein deterministischer endlicher Automa,
 kurz DEA, wenn es $\forall$ (q,a) $\in$ Q x $\sigma$ genau ein q' gibt mit (q,a,q') $\in$ $\delta$. 
 Im Sinne der obigen Betrachtung entspricht ein EA A = (Q, $\Sigma$m $\Delta$, s, F) der 1-TM $M_{a}$ = (Q, $\sigma$, ...)
 $\leadsto $ Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
-\subsection{Definition (Übergangsfunktion eines EA)}
+\mysubsection{Definition (Übergangsfunktion eines EA)}
 Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die \textbf{Übergangsfunktion} von A ist die Funktion $\delta_{A}$ : Q $\times \Sigma\rightarrow 2^{Q}$ (=Potenzmenge von Q) mit $\delta_{A}$(q,a) = \{q'$\in$ Q : (q, a, q')$\in \Delta$\} $\forall$q $\in$ Q, a$\in \Sigma$ \textbf{erweiterte Übergangsfunktion} von A ist die Funktion $\delta_{A}^{*}$ : Q $\times \Sigma^{*} \rightarrow 2^{Q}$ $\delta_{A}^{*}$(q, $\lambda$) = \{q\} und $\delta_{A}^{*}$(q, aw) = $\bigcup \limits_{q'\in \delta_{A}(q,a)}$ $\delta_{A}^{*}$(q', w) $\forall$q$\in$Q a$\in \Sigma$ und w$\in \Sigma^{*}$. Für $Q_{0} \subseteq Q$ und w $\in \Sigma^{*}$ schreiben wir $\delta_{A}^{*}$ ($Q_{0}$, w) statt $\bigcup \limits_{q \in Q_{0}}$ $\delta_{A}^{*}$(q,w). Für einen EA A = (Q, $\Sigma$, $\Delta$, s, F) ,mit entsprechnder TM $M_{A}$ = (Q, $\Sigma$, $\Gamma$, $\Delta$', s, F), q $\in$ Q und w $\in$ $\Sigma^{*}$ ist $\delta_{A}^{*}$(s,w) die Menge der zustände, die sich als erst Komp.?? der ubtem?? Konfig einer Rechnung von $M_{A}$ zur Eingabe zu ergeben.
 
-\subsection{Bemerkung }
+\mysubsection{Bemerkung }
 Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA
 \begin{itemize}
     \item [(i)] $\forall$ q $\in$ Q und a$\in \Sigma$ gilt $\delta_{A}^{*}$(q,a) = $\delta_{A}$(q, a).
@@ -37,13 +37,13 @@ Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA
     \item[(iii)] Seien u,v $\in \Sigma^{*}$ $\forall$ q $\in$ Q gilt $\delta_{A}^{*}$(q, uv) = $\delta_{A}^{*}(\delta_{A}^{*}(Q_{0}, u), v)$.
 \end{itemize}
 
-\subsection{Definition (Übergangsfunktion eines DEA)}
+\mysubsection{Definition (Übergangsfunktion eines DEA)}
 Sei A = (Q, $\Sigma$,  $\Delta$, s, F) eine DEA. Auch die Funktion $\delta_{det, A}$: Q $\times \Sigma \rightarrow$ Q mit $\delta_{A}(q,a)$ = \{$\delta_{det, A}(q, a)$\} $\forall$ q $\in$ Q und a $\in \Sigma$ wird auch \textbf{Übergangsfunktion} von A gennant. Analoges gilt für $\delta_{det, A}^{*}$($Q_{0}$, w) statt $\bigcup \limits_{q \in Q_{0}}\{\delta_{det, A}^{*}(q, w)\}$.
 
-\subsection{Bemerkung }
+\mysubsection{Bemerkung }
 Ist A = (Q, $\Sigma$, $\Delta$, s, F) ein DEA, so gelten Berkung 4.3 (i) und (iii) auch wenn $\delta_{A}$ durch $\delta_{det, A}$ und $\delta_{A}^{*}$ durch $\delta_{det, A}^{*}$ ersetzt wird.
 
-\subsection{Bemerkung}
+\mysubsection{Bemerkung}
 Sei Q eine endliche Menge, $\Sigma$ ein Alphabet, s$\in$ Q, und F$\subseteq$ Q. 
 
 \begin{itemize}
@@ -51,13 +51,13 @@ Sei Q eine endliche Menge, $\Sigma$ ein Alphabet, s$\in$ Q, und F$\subseteq$ Q.
     \item [(ii)] $\forall$ Funktionen $\delta$ : Q $\times \Sigma \rightarrow$ Q gibt es genau einen $\delta_{det, A}$ = $\delta$. 
 \end{itemize}
 
-\subsection{Definition (akzeptierte Sprache)}
+\mysubsection{Definition (akzeptierte Sprache)}
 Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die Sprache L(A) := \{w $\in \Sigma^{*}$ : $\delta_{A}^{*}$(s, w)$\cap$ F $\neq \varnothing $\} ist die \textbf{akzeptierte Sprache} von A.
 
-\subsection{Definition (regulär)} 
+\mysubsection{Definition (regulär)} 
 Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben REG für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
 
-\subsection{Beispiel}
+\mysubsection{Beispiel}
 Sei A := (\{$q_{0}$, $q_{1}$\}, \{0, 1\}, $\Delta$, $q_{0}$, \{$q_{1}$\}) mit $\Delta$ = \{($q_{0}$)\}
 Übergangsdiagramm und übergangstabelle von sehen wie folgt aus:
 \begin{center}
@@ -78,10 +78,10 @@ Sei A := (\{$q_{0}$, $q_{1}$\}, \{0, 1\}, $\Delta$, $q_{0}$, \{$q_{1}$\}) mit $\
 Für jeden Zustand gibt es einen Kreis. Zustände in F bekommen einen Doppelkreis. Für (q, a, q') $\in \Delta$ für einen Pfeil von dem Kreis von q zu dem Kreis von q' mit der Beschreibung a. Zusätzlich gibt es einen Pfeil (ohne Beschriftung) aus dem "Nichts" zus deom Kreis des Starzustandes.\\\\
 Ähnlich wie bei allgemeinen und normierten TM bleibt die Klasse der akzeptierten Sprachen glich wenn man nur deterministisch endliche Automaten zulässt. Um dies zu beweisen führen wir den Potentautomaten ein.
 
-\subsection{Definition (Potenzautomaten)}
+\mysubsection{Definition (Potenzautomaten)}
 Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. der Potenzautomat von A ist der DEA $P_{A}$ = ($2^{Q}$, $\Sigma$, $\Delta$', \{s\}, \{P$\subseteq$Q : P$\cup$F $\neq \varnothing $ \}) mit $\delta_{det}, P_{A}$($Q_{0}, a$) = $\bigcup $ $\dots$
 
-\subsection{Satz}
+\mysubsection{Satz}
 Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
 
 \begin{proof}
@@ -92,7 +92,7 @@ Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt.
     \[\Leftrightarrow \delta_{det, P_{A}}^{*}(\{s\}, w) \cap F \neq \varnothing \]
     \[\underset{\text{(*)}}{\Leftrightarrow } \delta_{A}^{*}(\{s\}, w) \cap F \neq \varnothing \]
     \[\Leftrightarrow w \in L(A)\] Wir zeigen (*) mittels vollständiger Induktion über $\lvert$w$\rvert$. Es gilt $\delta_{det, P_{A}}^{*}$(\{s\}, $\lambda$) = $\delta_{A}^{*}$(s, $\lambda$). Sei w $\in \Sigma^{+}$ mit $\delta_{det, A}^{*}$(\{s\}, v) = $\delta_{A}^{*}$(s, v) $\forall$ v $\in \Sigma^{\leq \lvert w \rvert - 1}$. Nun zeigen wir (*) Sei va := w mit a $\in \Sigma$ und $\lvert$v$\rvert$ = $\lvert$w$\rvert$ - 1.
-    \[\delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\text{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
+    \[\delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\hyperref[subsec:4.5]{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
     \[\underset{\text{Ind. hyp}}{=} \delta_{det, P_{A}}^{*}(\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
     \[ = \bigcup \limits_{q \in \delta_{det, A}^{*}}\delta_{A}(q, a)\]
     \[ = \delta_{A}^{*}(\delta_{A}^{*}(s, v), a)\]
