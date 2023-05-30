@@ -80,11 +80,11 @@ Betrachten man nur deterministische endliche Automaten ohne unerreichbare Zustä
 \end{proof}
 \hyperref[subsec:5.12]{Satz 5.12} Bedeutet insbesondere folgendes: Ist $A_i$, $i \in \{1, 2\}$ ein DEA ohne unereichbare Zustände, so gilt $A_1 \cong  A_2 \leftrightarrow (\sim_{A_1}, L(A_1)) = (\sim_{A_2}, L(A_2))$ und ist $L_i$ für $i \in \{1, 2\}$. Vereinigung von Äquivalenzklassen einer Rechtskongruenz $\sim_i$ mit endlichem Index, so gilt $(\sim_1, L_1) = (\sim_2, L_2) \leftrightarrow A_{\sim_1,L_1} \cong A_{\sim_2,L_2}$. \\\\ Ist $L$ eine reguläre Sprache, so gibt es verschiedene endliche Automaten (ohne unereichbare Zustände) mit $L(A) = L$. Äquivalenzklassen verschiedener Rechtskongruenz mit endlichem Index. Für alle solche Rechtskongruenz $\sim$ und $\forall u, v, w \Sigma^*$ mit $u \sim v$ gilt aber \[uw \in L \leftrightarrow \delta^*_{det, A} (s, uw) \in F \leftrightarrow \delta^*_{det, A} (s, vw) \in F \leftrightarrow vw \in L\] Dies führt zum Begriff der L-Äquivalenz und zeigt, dass die Parition in die Äquivalenzklassen von $\sim$ Vereinfacht der Parition in die Äquivalenzklasse der L-Äquivalenz ist.
 
-\mysubsection{Definition (L-Äquivalenz)} Sei $L$ eine Sprache über einem Alphabet $\Sigma$. Die \textbf{L-Äquivalenz} von $L$ als Sprache ist die Relation $\sim_L$ auf $\Sigma^*$ mit \[u \sim_L v \leftrightarrow (uw \in L \leftrightarrow vw \in L \forall w \in \Sigma^*)\] 
+\mysubsection{Definition (L-Äquivalenz)} Sei $L$ eine Sprache über einem Alphabet $\Sigma$. Die \textbf{L-Äquivalenz} von $L$ als Sprache ist die Relation $\sim_L$ auf $\Sigma^*$ mit \[u \sim_L v \leftrightarrow (uw \in L \leftrightarrow vw \in L \quad \forall w \in \Sigma^*)\] 
 
 \mysubsection{Bemerkung} Sei $L$ eine Sprache über $\Sigma$. 
 \begin{itemize}
-  \item [(i)] Die L-Äquivalenz ist eine Rechtskongruenz.
+  \item [(i)] Die L-Äquivalenz ist eine Rechtskongruent.
   \item [(ii)] Es gilt $L = \bigcup \limits_{w \in L}[w]_{\sim L}$.
 \end{itemize}
 

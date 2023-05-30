@@ -38,6 +38,14 @@
 \usepackage[ngerman]{babel}
 %\usepackage{fontspec}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\rhead{\thepage}
+
 
 \hypersetup{
     colorlinks=true,
@@ -53,6 +61,13 @@
 \usetikzlibrary{automata, positioning} % Hinzufügen der benötigten TikZ-Bibliotheken
 \usetikzlibrary{arrows, positioning, calc}
 \newtheorem{newproposition}{Proposition}[subsection] % Propositionen werden nach Subsections nummeriert
+
+
+% Funktion für ein Kapitel
+\newcommand{\mychapter}[1]{%
+  \chapter{#1}%
+  \label{sec:\theHchapter}%
+}
 
 % Funktion für eine Section
 \newcommand{\mysection}[1]{%
@@ -95,6 +110,7 @@
 
 
 \begin{titlepage}
+  
     \centering
     \vspace*{2cm}
   
@@ -104,6 +120,9 @@
   
     % Course and University Information
     \textsc{\Large Einführung in die Theoretische Informatik - Script}\\[1.5cm]
+    
+    \title{Einführung in die Theoretische Informatik}
+    \author{Lukas Dzielski\thanks{Universität Heidelberg}}
     
     \texttt{\large https://github.com/C0d3Crush/ITH-Script}\\
     \texttt{\large Lukas.Dzielski@stud.uni-heidelberg.de}\\[2cm]
@@ -117,7 +136,7 @@
   
     \vfill
   
-  \end{titlepage}
+\end{titlepage}
 \newpage
 \tableofcontents
 \newpage
