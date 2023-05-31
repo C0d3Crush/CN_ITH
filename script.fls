@@ -1,8 +1,8 @@
-PWD /Users/lukas/Documents/vscode_repo/Einführung_theo._Info./Skript
+PWD /Users/lukas/Documents/vscode_repo/Einf_Th_Inf/Skript
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/lukas/Documents/vscode_repo/Einführung_theo._Info./Skript/script.tex
+INPUT /Users/lukas/Documents/vscode_repo/Einf_Th_Inf/Skript/script.tex
 OUTPUT script.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls

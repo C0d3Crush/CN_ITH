@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  30 MAY 2023 14:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  31 MAY 2023 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/lukas/Documents/vscode_repo/Einführung_theo._Info./Skript/script.tex
-(/Users/lukas/Documents/vscode_repo/Einführung_theo._Info./Skript/script.tex
+**/Users/lukas/Documents/vscode_repo/Einf_Th_Inf/Skript/script.tex
+(/Users/lukas/Documents/vscode_repo/Einf_Th_Inf/Skript/script.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -986,14 +986,14 @@ Package rerunfilecheck Info: File `script.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  29281 strings out of 476025
- 577875 string characters out of 5790017
+ 577839 string characters out of 5790017
  1882388 words of memory out of 5000000
  49040 multiletter control sequences out of 15000+600000
  558843 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,104p,3228b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,104p,3216b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on script.pdf (32 pages, 8312099 bytes).
+Output written on script.pdf (32 pages, 8312956 bytes).
 PDF statistics:
  906 PDF objects out of 1000 (max. 8388607)
  824 compressed objects within 9 object streams

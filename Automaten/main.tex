@@ -79,7 +79,8 @@ Für jeden Zustand gibt es einen Kreis. Zustände in F bekommen einen Doppelkrei
 Ähnlich wie bei allgemeinen und normierten TM bleibt die Klasse der akzeptierten Sprachen glich wenn man nur deterministisch endliche Automaten zulässt. Um dies zu beweisen führen wir den Potentautomaten ein.
 
 \mysubsection{Definition (Potenzautomaten)}
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. der Potenzautomat von A ist der DEA $P_{A}$ = ($2^{Q}$, $\Sigma$, $\Delta$', \{s\}, \{P$\subseteq$Q : P$\cup$F $\neq \varnothing $ \}) mit $\delta_{det}, P_{A}$($Q_{0}, a$) = $\bigcup $ $\dots$
+Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. der \textbf{Potenzautomat} von A ist der DEA $P_{A}$ = ($2^{Q}$, $\Sigma$, $\Delta$', \{s\}, \{P$\subseteq$Q : P$\cup$F $\neq \varnothing $ \}) mit \[\delta_{det, P_{A}}(Q_{0}, a) = \bigcup\limits_{q \in Q_0} \delta_A (q, a) \quad \forall Q_0 \subseteq Q \quad \forall a \in \Sigma \] 
+\textit{Anmerkung: Es gibt eine einfache möglichkeit einen nicht Deterministischen Automaten in einen Deterministischen umzuwanden. Das wird hier in Zukunft beschrieben. Siehe Tutoriumaufschrieb. (das wird hier in zukunft angefügt)}
 
 \mysubsection{Satz}
 Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
