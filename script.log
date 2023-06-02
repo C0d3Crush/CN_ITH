@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  2 JUN 2023 02:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  2 JUN 2023 02:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,8 +595,47 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen282
 \titlewidthlast=\dimen283
 \titlewidthfirst=\dimen284
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 112.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ztmcm/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ztmcm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/ztmcm/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/ztmcm/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ztmcm/m/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ztmcm/m/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/ztmcm/m/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/ztmcm/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 \c@proposition=\count320
  (/usr/local/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
 File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking positions in a document
@@ -644,30 +683,30 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \c@newproposition=\count321
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 111.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux))
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 114.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Bilder/main.aux))
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -724,34 +763,48 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 111.
+Package hyperref Info: Link coloring ON on input line 114.
 (./script.out) (./script.out)
 \@outlinefile=\write4
 \openout4 = `script.out'.
 
-<qrcode.png, id=409, 263.48438pt x 263.48438pt>
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 132.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<qrcode.png, id=413, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 133.
+Package pdftex.def Info: qrcode.png  used on input line 136.
 (pdftex.def)             Requested size: 94.4048pt x 94.404pt.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./qrcode.png>] (./script.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./qrcode.png>] (./script.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 3.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 3.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 3.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.4> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
@@ -764,7 +817,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.52 ...umberline {3.13}Satz}{15}{subsection.3.13}
-                                                  % [1])
+                                                  % [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@toc=\write5
 \openout5 = `script.toc'.
 
@@ -772,42 +825,30 @@ l.52 ...umberline {3.13}Satz}{15}{subsection.3.13}
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/Einführung.png, id=629, 658.46pt x 322.20375pt>
+<Grundlagen/Einführung.png, id=639, 658.46pt x 322.20375pt>
 File: Grundlagen/Einführung.png Graphic file (type png)
 <use Grundlagen/Einführung.png>
 Package pdftex.def Info: Grundlagen/Einführung.png  used on input line 3.
 (pdftex.def)             Requested size: 472.03123pt x 230.98357pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 12.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 12.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
- [3
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 12.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [3
 
- <./Grundlagen/Einführung.png>]
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./Grundlagen/Einführung.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
-
-Overfull \hbox (2.7409pt too wide) in paragraph at lines 72--73
-\OT1/ptm/m/n/10 F[]ur Spra-che L und M hei^^Yt ei-ne Funk-ti-on $\OML/ztmcm/m/it/10 ' \OT1/ztmcm/m/n/10 : \OML/ztmcm/m/it/10 L \OMS/ztmcm/m/n/10 ! \OML/ztmcm/m/it/10 M$ \OT1/ptm/b/n/10 Ho-mo-mor-phis-mus von Spra-chen\OT1/ptm/m/n/10 , wenn $\OML/ztmcm/m/it/10 '\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 uv\OT1/ztmcm/m/n/10 ) = \OML/ztmcm/m/it/10 '\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 u\OT1/ztmcm/m/n/10 )\OML/ztmcm/m/it/10 '\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 v\OT1/ztmcm/m/n/10 )\OMS/ztmcm/m/n/10 8\OML/ztmcm/m/it/10 u; v \OMS/ztmcm/m/n/10 2
- []
-
-[4]) [5]
+[4{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]) [5]
 \openout2 = `Turingmachine/main.aux'.
 
  (./Turingmachine/main.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[][]\OT1/ptm/b/n/14.4 Turingmachine|
+[][]\T1/lmr/bx/n/14.4 Turingmachine|
  []
 
-<Turingmachine/turing_sym.png, id=653, 371.3875pt x 273.02pt>
+<Turingmachine/turing_sym.png, id=664, 371.3875pt x 273.02pt>
 File: Turingmachine/turing_sym.png Graphic file (type png)
 <use Turingmachine/turing_sym.png>
 Package pdftex.def Info: Turingmachine/turing_sym.png  used on input line 16.
@@ -817,23 +858,13 @@ Package pdftex.def Info: Turingmachine/turing_sym.png  used on input line 16.
 
 
  <./Turingmachine/turing_sym.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-\OT1/ptm/m/n/10 Das Sym-bol $\U/msa/m/n/10 ^^C$ \OT1/ptm/m/n/10 hei^^Yt \OT1/ptm/b/n/10 Blank\OT1/ptm/m/n/10 . Die Ele-men-te von $\OT1/ztmcm/m/n/10 ^^A$ \OT1/ptm/m/n/10 hei-^^Yen \OT1/ptm/b/n/10 in-struk-tio-nen\OT1/ptm/m/n/10 . F[]ur ei-ne In-struk-ti-on
+Underfull \hbox (badness 2005) in paragraph at lines 31--32
+\T1/lmr/m/n/10 Das Sym-bol $\U/msa/m/n/10 ^^C$ \T1/lmr/m/n/10 hei�t \T1/lmr/bx/n/10 Blank\T1/lmr/m/n/10 . Die Ele-men-te von $\OT1/lmr/m/n/10 ^^A$ \T1/lmr/m/n/10 hei-�en \T1/lmr/bx/n/10 in-struk-tio-nen\T1/lmr/m/n/10 . F�r ei-ne In-struk-ti-on
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 31--32
-\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 q[]; a[]; []  ; a[]; q[]; a[]; []  ; a[]; B[]; []  ; B[]\OT1/ztmcm/m/n/10 )$ \OT1/ptm/b/n/10 An-wei-sung-teil\OT1/ptm/m/n/10 . Die TM M ist ei-ne \OT1/ptm/b/n/10 de-ter-mi-nis-ti-sche k-Band Tu-ring-
- []
-
-
-Overfull \hbox (45.2562pt too wide) in paragraph at lines 34--35
-\OT1/ptm/m/n/10 Die Kon-fi-gu-ra-ti-on C ist ei-ne \OT1/ptm/b/n/10 Stopp-kon-fi-gra-ti-on \OT1/ptm/m/n/10 von M, wenn es kei-ne In-struk-ti-on $\OML/ztmcm/m/it/10 i \OMS/ztmcm/m/n/10 2 \OT1/ztmcm/m/n/10 ^^A$ \OT1/ptm/m/n/10 mit Be-din-gungs-teil $\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 q; w[]\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 p[]\OT1/ztmcm/m/n/10 )\OML/ztmcm/m/it/10 ; []  ; w[]\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 p[]\OT1/ztmcm/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-\OT1/ptm/m/n/10 Sei $\OML/ztmcm/m/it/10 M \OT1/ztmcm/m/n/10 = (\OML/ztmcm/m/it/10 Q; \OT1/ztmcm/m/n/10 ^^F\OML/ztmcm/m/it/10 ; \OT1/ztmcm/m/n/10 ^^@\OML/ztmcm/m/it/10 ; \OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 ; s; F\OT1/ztmcm/m/n/10 )$ \OT1/ptm/m/n/10 ei-ne k-DTM. F[]ur Kon-fi-gu-ra-ti-on $\OML/ztmcm/m/it/10 C \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \OT1/ptm/m/n/10 und $\OML/ztmcm/m/it/10 C[] \OT1/ztmcm/m/n/10 =
+Underfull \hbox (badness 2564) in paragraph at lines 38--38
+\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 ei-ne k-DTM. F�r Kon-fi-gu-ra-ti-on $\OML/lmm/m/it/10 C \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 C[] \OT1/lmr/m/n/10 =
  []
 
 [7]
@@ -847,6 +878,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--77
  []
 
 [8]
+Overfull \hbox (20.09167pt too wide) in paragraph at lines 87--88
+[]\T1/lmr/m/n/10 Ist die rech-nung von M zur Ein-ga-be $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 die end-li-che Rech-nung $\OML/lmm/m/it/10 C[]; []  ; C[]$\T1/lmr/m/n/10 , so gilt $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 ) =
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -859,12 +895,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 
  (./Berechenbarkeit/main.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[][]\OT1/ptm/b/n/14.4 Berechenbarkeit|
- []
-
-
-Overfull \hbox (0.83827pt too wide) in paragraph at lines 5--7
-\OT1/ptm/m/n/10 der \OT1/ptm/b/n/10 Co-de \OT1/ptm/m/n/10 von $\OML/ztmcm/m/it/10 M$\OT1/ptm/m/n/10 . Re-le-vant ist hier-bei dass es ei-ne ge-eig-ne-te ef-fek-ti-ve Co-die-rung von Tu-ring-ma-chi-nen durch Bin[]arw[]orter
+[][]\T1/lmr/bx/n/14.4 Berechenbarkeit|
  []
 
 [12
@@ -876,6 +907,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 26.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
@@ -907,6 +944,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--189
  []
 
 [15] [16]
+Underfull \hbox (badness 1596) in paragraph at lines 237--237
+\T1/lmr/m/n/10 Im we-sent-li-chen wol-len wir er-rei-chen, dass es ge-nau dann f�r ein Wort w ei-ne par-ti-el-le l�-sung
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 
  []
@@ -916,7 +958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--237
 
  (./Automaten/main.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[][]\OT1/ptm/b/n/14.4 Automaten und Gram-ma-ti-ken|
+[][]\T1/lmr/bx/n/14.4 Automaten und Gram-ma-ti-ken|
  []
 
 
@@ -933,45 +975,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
-) [22]
+[22]) [23]
 \openout2 = `ReguläreSprachen/main.aux'.
 
  (./ReguläreSprachen/main.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[][]\OT1/ptm/b/n/14.4 Regul[]are Spra-chen|
+[][]\T1/lmr/bx/n/14.4 Regul�re Spra-chen|
  []
 
-[23
+[24
 
 
 
-] [24]
+] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
+[26] [27] [28]) [29]
+\openout2 = `Bilder/main.aux'.
 
-Underfull \hbox (badness 1087) in paragraph at lines 81--81
-\OT1/ptm/m/n/10 Ist $\OML/ztmcm/m/it/10 L$ \OT1/ptm/m/n/10 ei-ne re-gul[]are Spra-che, so gibt es ver-schie-de-ne end-li-che Au-to-ma-ten (oh-ne unereich-ba-re Zust[]ande) mit
+ (./Bilder/main.tex
+<Turingmachine/turing.png, id=814, 1027.84pt x 1027.84pt>
+File: Turingmachine/turing.png Graphic file (type png)
+<use Turingmachine/turing.png>
+Package pdftex.def Info: Turingmachine/turing.png  used on input line 3.
+(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
+<Berechenbarkeit/predic.png, id=815, 1027.84pt x 1027.84pt>
+File: Berechenbarkeit/predic.png Graphic file (type png)
+<use Berechenbarkeit/predic.png>
+Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 4.
+(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
+<Automaten/finit1.png, id=816, 1027.84pt x 1027.84pt>
+File: Automaten/finit1.png Graphic file (type png)
+<use Automaten/finit1.png>
+Package pdftex.def Info: Automaten/finit1.png  used on input line 5.
+(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
+<ReguläreSprachen/regul.png, id=817, 1027.84pt x 1027.84pt>
+File: ReguläreSprachen/regul.png Graphic file (type png)
+<use ReguläreSprachen/regul.png>
+Package pdftex.def Info: ReguläreSprachen/regul.png  used on input line 6.
+(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
+[] []
  []
 
-[25] [26] [27]) [28] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux))
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
+[] [] 
+ []
+
+) [30
+
+
+
+ <./Turingmachine/turing.png (PNG copy)> <./Berechenbarkeit/predic.png (PNG copy)> <./Automaten/finit1.png (PNG copy)> <./ReguläreSprachen/regul.png (PNG copy)>] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Bilder/main.aux))
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: CCB9F4436DB730A8234D52E03F6F8164;16769.
+(rerunfilecheck)             Checksum: 0F19B4070C3ADA6440FB4BFDFAAC9C45;16844.
  ) 
 Here is how much of TeX's memory you used:
- 29250 strings out of 476025
- 577073 string characters out of 5790017
- 1880388 words of memory out of 5000000
- 49016 multiletter control sequences out of 15000+600000
- 558843 words of font info for 134 fonts, out of 8000000 for 9000
+ 29650 strings out of 476025
+ 584063 string characters out of 5790017
+ 1878388 words of memory out of 5000000
+ 49400 multiletter control sequences out of 15000+600000
+ 584641 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,104p,3216b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on script.pdf (29 pages, 286462 bytes).
+ 101i,16n,104p,3231b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on script.pdf (31 pages, 8526142 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 814 compressed objects within 9 object streams
- 135 named destinations out of 1000 (max. 500000)
- 828 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 962 PDF objects out of 1000 (max. 8388607)
+ 862 compressed objects within 9 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 856 words of extra memory for PDF output out of 10000 (max. 10000000)
 

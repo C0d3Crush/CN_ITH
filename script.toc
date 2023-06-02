@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{9}{subsection.2.14}%
 \contentsline {subsection}{\numberline {2.15}Definition (partiell berechenbar)}{9}{subsection.2.15}%
 \contentsline {subsection}{\numberline {2.16}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{9}{subsection.2.16}%
-\contentsline {subsection}{\numberline {2.17}Bemerkung}{9}{subsection.2.17}%
+\contentsline {subsection}{\numberline {2.17}Bemerkung}{10}{subsection.2.17}%
 \contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{10}{subsection.2.18}%
 \contentsline {subsection}{\numberline {2.19}Bemerkung}{11}{subsection.2.19}%
 \contentsline {subsection}{\numberline {2.20}Church- Turing- These}{11}{subsection.2.20}%
@@ -44,11 +44,11 @@
 \contentsline {subsection}{\numberline {3.5}Definition (Universell)}{13}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Bemerkung}{13}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Satz ($s_n^m$ - Theorem)}{13}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Definition (diagonales Halteproblem)}{13}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.8}Definition (diagonales Halteproblem)}{14}{subsection.3.8}%
 \contentsline {subsection}{\numberline {3.9}Proposition}{14}{subsection.3.9}%
 \contentsline {subsection}{\numberline {3.10}Satz}{14}{subsection.3.10}%
 \contentsline {subsection}{\numberline {3.11}m-Reduktion}{14}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Bemerkung}{14}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.12}Bemerkung}{15}{subsection.3.12}%
 \contentsline {subsection}{\numberline {3.13}Satz}{15}{subsection.3.13}%
 \contentsline {subsection}{\numberline {3.14}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{15}{subsection.3.14}%
 \contentsline {subsection}{\numberline {3.15}Lemma}{16}{subsection.3.15}%
@@ -75,27 +75,28 @@
 \contentsline {subsection}{\numberline {4.9}Beispiel}{22}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{22}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Satz}{22}{subsection.4.11}%
-\contentsline {section}{\numberline {5}Reguläre Sprachen}{23}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{23}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{23}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Bemerkung}{23}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{23}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Proposition}{24}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Definition}{24}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Lemma}{24}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Satz}{24}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Korollar}{24}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{25}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{25}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Satz}{25}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{25}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Bemerkung}{26}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{26}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{26}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}Bemerkung}{26}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}Proposition}{26}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{26}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Satz}{26}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{27}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{27}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Beispiel}{28}{subsection.5.23}%
+\contentsline {section}{\numberline {5}Reguläre Sprachen}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Bemerkung}{24}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{24}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Proposition}{25}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Definition}{25}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Lemma}{25}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Satz}{25}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Korollar}{26}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{26}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{26}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Satz}{26}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{27}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Bemerkung}{27}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{27}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{27}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}Bemerkung}{27}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}Proposition}{27}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{27}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}Satz}{28}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{28}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{29}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}Beispiel}{29}{subsection.5.23}%
+\contentsline {section}{\numberline {6}Bilder}{30}{section.6}%
