@@ -93,18 +93,19 @@
 \newcommand{\coversection}[3]{
   %\newpage
   %\thispagestyle{empty}
+  \mysection{#2}
   \begin{center}
-    \vspace*{\fill}
+    %\vspace*{\fill}
     %\includegraphics[width=0.5\linewidth]{#1}
-    \vspace*{0.5cm} % Anpassung des Abstands
-    \par
-    \mysection{#2}
+    %\vspace*{0.5cm} % Anpassung des Abstands
+    
     %\Large\textbf{#2}
-    \par\vspace{0.5cm} % Anpassung des Abstands
+    \vspace{0.5cm} % Anpassung des Abstands
     \begin{quote}
       \itshape\small\raggedleft #3
     \end{quote}
-    \par\vspace{\fill}
+    \vspace{0.5cm} % Anpassung des Abstands
+    %\par\vspace{\fill}
   \end{center}
   %\newpage
 }
