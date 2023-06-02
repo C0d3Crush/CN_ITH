@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  31 MAY 2023 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  2 JUN 2023 02:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,7 +763,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 ...umberline {3.13}Satz}{16}{subsection.3.13}
+l.52 ...umberline {3.13}Satz}{15}{subsection.3.13}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `script.toc'.
@@ -803,27 +803,20 @@ Overfull \hbox (2.7409pt too wide) in paragraph at lines 72--73
 \openout2 = `Turingmachine/main.aux'.
 
  (./Turingmachine/main.tex
-<Turingmachine/turing.png, id=653, 1027.84pt x 1027.84pt>
-File: Turingmachine/turing.png Graphic file (type png)
-<use Turingmachine/turing.png>
-Package pdftex.def Info: Turingmachine/turing.png  used on input line 1.
-(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-|[]\OT1/ptm/b/n/14.4 Turingmachine|
+[][]\OT1/ptm/b/n/14.4 Turingmachine|
  []
 
-[6
-
-
-
- <./Turingmachine/turing.png (PNG copy)>]
-<Turingmachine/turing_sym.png, id=659, 371.3875pt x 273.02pt>
+<Turingmachine/turing_sym.png, id=653, 371.3875pt x 273.02pt>
 File: Turingmachine/turing_sym.png Graphic file (type png)
 <use Turingmachine/turing_sym.png>
 Package pdftex.def Info: Turingmachine/turing_sym.png  used on input line 16.
 (pdftex.def)             Requested size: 236.01561pt x 173.50742pt.
+[6
 
+
+
+ <./Turingmachine/turing_sym.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 \OT1/ptm/m/n/10 Das Sym-bol $\U/msa/m/n/10 ^^C$ \OT1/ptm/m/n/10 hei^^Yt \OT1/ptm/b/n/10 Blank\OT1/ptm/m/n/10 . Die Ele-men-te von $\OT1/ztmcm/m/n/10 ^^A$ \OT1/ptm/m/n/10 hei-^^Yen \OT1/ptm/b/n/10 in-struk-tio-nen\OT1/ptm/m/n/10 . F[]ur ei-ne In-struk-ti-on
  []
@@ -838,22 +831,22 @@ Overfull \hbox (45.2562pt too wide) in paragraph at lines 34--35
 \OT1/ptm/m/n/10 Die Kon-fi-gu-ra-ti-on C ist ei-ne \OT1/ptm/b/n/10 Stopp-kon-fi-gra-ti-on \OT1/ptm/m/n/10 von M, wenn es kei-ne In-struk-ti-on $\OML/ztmcm/m/it/10 i \OMS/ztmcm/m/n/10 2 \OT1/ztmcm/m/n/10 ^^A$ \OT1/ptm/m/n/10 mit Be-din-gungs-teil $\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 q; w[]\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 p[]\OT1/ztmcm/m/n/10 )\OML/ztmcm/m/it/10 ; []  ; w[]\OT1/ztmcm/m/n/10 (\OML/ztmcm/m/it/10 p[]\OT1/ztmcm/m/n/10 ))$
  []
 
-[7 <./Turingmachine/turing_sym.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \OT1/ptm/m/n/10 Sei $\OML/ztmcm/m/it/10 M \OT1/ztmcm/m/n/10 = (\OML/ztmcm/m/it/10 Q; \OT1/ztmcm/m/n/10 ^^F\OML/ztmcm/m/it/10 ; \OT1/ztmcm/m/n/10 ^^@\OML/ztmcm/m/it/10 ; \OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 ; s; F\OT1/ztmcm/m/n/10 )$ \OT1/ptm/m/n/10 ei-ne k-DTM. F[]ur Kon-fi-gu-ra-ti-on $\OML/ztmcm/m/it/10 C \OT1/ztmcm/m/n/10 = \OML/ztmcm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \OT1/ptm/m/n/10 und $\OML/ztmcm/m/it/10 C[] \OT1/ztmcm/m/n/10 =
  []
 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
+
+ []
+
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 72--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--77
-
- []
-
-[9]
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -861,30 +854,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 97.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [10] [11]) [12]
+) [9] [10]) [11]
 \openout2 = `Berechenbarkeit/main.aux'.
 
  (./Berechenbarkeit/main.tex
-<Berechenbarkeit/predic.png, id=690, 1027.84pt x 1027.84pt>
-File: Berechenbarkeit/predic.png Graphic file (type png)
-<use Berechenbarkeit/predic.png>
-Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 1.
-(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-|[]\OT1/ptm/b/n/14.4 Berechenbarkeit|
+[][]\OT1/ptm/b/n/14.4 Berechenbarkeit|
  []
 
-[13
 
-
-
- <./Berechenbarkeit/predic.png (PNG copy)>]
 Overfull \hbox (0.83827pt too wide) in paragraph at lines 5--7
 \OT1/ptm/m/n/10 der \OT1/ptm/b/n/10 Co-de \OT1/ptm/m/n/10 von $\OML/ztmcm/m/it/10 M$\OT1/ptm/m/n/10 . Re-le-vant ist hier-bei dass es ei-ne ge-eig-ne-te ef-fek-ti-ve Co-die-rung von Tu-ring-ma-chi-nen durch Bin[]arw[]orter
  []
 
-[14]
+[12
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
@@ -914,63 +901,51 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 40.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [15] [16]
+) [13] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 189--189
 
  []
 
-[17] [18]
+[15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 237--237
 
  []
 
-[19] [20]) [21]
+[17] [18]) [19]
 \openout2 = `Automaten/main.aux'.
 
  (./Automaten/main.tex
-<Automaten/finit1.png, id=741, 1027.84pt x 1027.84pt>
-File: Automaten/finit1.png Graphic file (type png)
-<use Automaten/finit1.png>
-Package pdftex.def Info: Automaten/finit1.png  used on input line 1.
-(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-|[]\OT1/ptm/b/n/14.4 Automaten und Gram-ma-ti-ken|
+[][]\OT1/ptm/b/n/14.4 Automaten und Gram-ma-ti-ken|
  []
 
-[22
 
-
-
- <./Automaten/finit1.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-[23]
+[20
+
+
+
+] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
-[24]) [25]
+) [22]
 \openout2 = `ReguläreSprachen/main.aux'.
 
  (./ReguläreSprachen/main.tex
-<ReguläreSprachen/regul.png, id=760, 1027.84pt x 1027.84pt>
-File: ReguläreSprachen/regul.png Graphic file (type png)
-<use ReguläreSprachen/regul.png>
-Package pdftex.def Info: ReguläreSprachen/regul.png  used on input line 1.
-(pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-|[]\OT1/ptm/b/n/14.4 Regul[]are Spra-chen|
+[][]\OT1/ptm/b/n/14.4 Regul[]are Spra-chen|
  []
 
-[26
+[23
 
 
 
- <./ReguläreSprachen/regul.png (PNG copy)>] [27] [28]
+] [24]
 Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
@@ -980,23 +955,23 @@ Underfull \hbox (badness 1087) in paragraph at lines 81--81
 \OT1/ptm/m/n/10 Ist $\OML/ztmcm/m/it/10 L$ \OT1/ptm/m/n/10 ei-ne re-gul[]are Spra-che, so gibt es ver-schie-de-ne end-li-che Au-to-ma-ten (oh-ne unereich-ba-re Zust[]ande) mit
  []
 
-[29] [30]) [31] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux))
+[25] [26] [27]) [28] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux))
 Package rerunfilecheck Info: File `script.out' has not changed.
 (rerunfilecheck)             Checksum: CCB9F4436DB730A8234D52E03F6F8164;16769.
  ) 
 Here is how much of TeX's memory you used:
- 29281 strings out of 476025
- 577839 string characters out of 5790017
- 1882388 words of memory out of 5000000
- 49040 multiletter control sequences out of 15000+600000
+ 29250 strings out of 476025
+ 577073 string characters out of 5790017
+ 1880388 words of memory out of 5000000
+ 49016 multiletter control sequences out of 15000+600000
  558843 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,16n,104p,3216b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on script.pdf (32 pages, 8312956 bytes).
+Output written on script.pdf (29 pages, 286462 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 824 compressed objects within 9 object streams
- 138 named destinations out of 1000 (max. 500000)
- 848 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 889 PDF objects out of 1000 (max. 8388607)
+ 814 compressed objects within 9 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 828 words of extra memory for PDF output out of 10000 (max. 10000000)
 
