@@ -49,7 +49,6 @@
 \lhead{\leftmark}
 \rhead{\thepage}
 
-
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -78,6 +77,12 @@
   \label{sec:\thesection}%
 }
 
+% Funktion für eine Section
+\newcommand{\mysectionstar}[1]{%
+  \section*{#1}%
+  \label{sec:\thesection}%
+}
+
 % Funktion für eine Subsection
 \newcommand{\mysubsection}[1]{%
   \subsection{#1}%
@@ -91,24 +96,40 @@
 }
 
 \newcommand{\coversection}[3]{
-  %\newpage
-  %\thispagestyle{empty}
-  \mysection{#2}
+  \clearpage % Start the section on a new page
+  \thispagestyle{empty} % No page number on the section page
+  
+  \vspace*{2cm} % Vertical spacing
+  
   \begin{center}
-    %\vspace*{\fill}
-    %\includegraphics[width=0.5\linewidth]{#1}
-    %\vspace*{0.5cm} % Anpassung des Abstands
-    
-    %\Large\textbf{#2}
-    \vspace{0.5cm} % Anpassung des Abstands
-    \begin{quote}
-      \itshape\small\raggedleft #3
-    \end{quote}
-    \vspace{0.5cm} % Anpassung des Abstands
-    %\par\vspace{\fill}
+    \includegraphics[width=0.5\linewidth]{#1} % Adjust the width as needed
   \end{center}
-  %\newpage
+  
+  \vspace{2cm} % Vertical spacing
+  
+  \mysectionstar{\LARGE\textbf{#2}} % Section title
+  
+  \vspace{1cm} % Vertical spacing
+  
+  \begin{flushright}
+    \textit{\small #3} % Quote
+  \end{flushright}  
+
+  \vfill % Fill the remaining vertical space with whitespace
+  
+  \begin{center}
+    \Large\textbf{Section \thesection} % Section number
+  \end{center}
+  
+  \vspace{2cm} % Vertical spacing
+  
+  \vfill % Fill the remaining vertical space with whitespace
+  
+  \clearpage % Add an empty page after the section page
 }
+
+
+
 
 
 

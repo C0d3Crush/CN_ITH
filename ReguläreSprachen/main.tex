@@ -1,16 +1,14 @@
 \coversection{ReguläreSprachen/regul.png}{Reguläre Sprachen}{A regular language can be thought of as a collection of sentences in a secret code. This secret code has a set of rules that determine which sentences are valid. You can think of it like a secret handshake, where only certain movements are allowed to be performed in a particular order.\\ \hspace*{\fill} - ChatGPT}
 \mysubsection{Definition (Äquivalenzrelation)} Sei A eine Menge. Eine Äquivalenzrelation auf A ist eine Relation $~ \leq A^{2}$, so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
 \begin{itemize}
-    \item [(i)] $a \sim a \forall a \in A $ (Reflexivität)
-    \item [(ii)] $a \sim b \Rightarrow  b \sim a \forall a, b, c \in A$ (Symetrie)
-    \item [(iii)] $a \sim b, b \sim c \rightarrow a \sim c$ (Transitivität)
+    \item [(i)] $a \sim a \quad \forall a \in A $ (Reflexivität)
+    \item [(ii)] $a \sim b \Rightarrow  b \sim a \quad \forall a, b, c \in A$ (Symetrie)
+    \item [(iii)] $a \sim b, b \sim c \rightarrow a \sim c \quad \forall a, b, c \in A$(Transitivität)
 \end{itemize}
 Die \textbf{Äquivalenzklasse} eines Elements $a \in A$ bezüglich $\sim$ ist die Menge $[a]_{~} := {a' \in A : a' ~a}$. Der \textbf{Index} von $\sim$ ist die Kardinalität der Menge $A_{/\sim} := {[a]_{\sim} : a \in A}$ falls diese endlich ist und $\infty$  andernfalls.
 
 \mysubsection{Definition (A-Äquivalenz)} Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA mit erweiterter Übergangsfunktion 
-$\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $~_A$ auf $\Sigma^{*}$
-$\cdots$
-
+$\delta^{*}: Q \times \Sigma \rightarrow Q$. Die A-Äquivalenz ist die Relation $\sim_A$ auf $\Sigma^{*}$ mit \[u \sim_A v \Leftrightarrow \delta^*(s, u) = \delta^*(s,v) \quad \forall u, v \in \Sigma^*\]
 \mysubsection{Bemerkung} Sei $A = (Q, \Sigma, \Delta, s, F)$ eine DEA.
 \begin{itemize}
     \item [(i)] Die A-Äquivalenz ist eine Äquivalenzrelation.
@@ -18,17 +16,14 @@ $\cdots$
     \item [(iii)] Es gilt $L(A) = \bigcup \limits_{w \in L(A)} [w]_{\sim A}$.
 \end{itemize}
 
-\mysubsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim ?\leq ?(\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \forall u, v, w \in Sigma^{*}$.
-
+\mysubsection{Definition (Rechtskongruenz)} Sei $\Sigma$ ein Alpha. Eine Rechtskongruenz auf $\Sigma^{*}$ ist eine Äquivalenzrelation $\sim \subseteq (\Sigma^{*})^{2}$ mit $u \sim v \Rightarrow uw \sim vw \quad \forall u, v, w \in \Sigma^{*}$.
 \mysubsection{Proposition}
 Sei $A = (Q, \Sigma, \Delta, s, F)$ ein DEA. Die A-Äquivalenz $\sim_{A}$ ist eine Rechtskonqruenz auf $\Sigma^{*}$.
 \begin{proof}
   Seien $u, v, w \in \Sigma^{*}$ mit $u \sim_{A} v$. Dann gilt 
-  \[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\]
-  \[= \delta_{det,A}^{*}(s, vw).\] (hier benutzen wir \hyperref[subsec:4.3]{Bemerkung 4.3} und \hyperref[subsec:4.5]{Bemerkung 4.5})    
-\end{proof} Dann gilt $uw\sim_{A}vw.$
-$\Box $
-Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von $\sim_{A}$ ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gibt es einen DEA A mit $L(A) = L$
+  \[\delta_{det, A}^{*}(s, uw) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s, u), w) = \delta_{det,A}^{*}(\delta_{det,A}^{*}(s,v), w)\] \[= \delta_{det,A}^{*}(s, vw).\] (hier benutzen wir \hyperref[subsec:4.3]{Bemerkung 4.3} und \hyperref[subsec:4.5]{Bemerkung 4.5})    
+\end{proof} 
+Dann gilt $uw\sim_{A}vw.$ Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von $\sim_{A}$ ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ mit endlichem Index, so gibt es einen DEA A mit $L(A) = L$
 
 \mysubsection{Definition} Sei $\Sigma$ eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz $\sim$ auf $\Sigma^{*}$ mit endlichem Index. Es bezeichne
 \[A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}\]
@@ -123,15 +118,20 @@ Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M _ (Q, \Sigma, \Delta, s
 \end{proof}
 Unsere bisherigen Betrachtungen erlauben verschiedene Äquivalenten Charkterisierungen der Klasse der regulären Sprachen.
 
-\mysubsection{Satz (Satz von Myhill und Nerode)} Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M = (Q, \Sigma, \Delta, s, F)$ der Minimalautomat von $L$. Dann gilt:
-\begin{itemize}
-  \item [(i)] $L(M) = L$
-  \item [(ii)] Ist $A$ ein DEA mit Zustandsmenge $Q_A$ und $L(A) = L$, so gilt $|Q_A| \leq |Q|$.
-  \item [(iii)] Ist $A$ ein DEA mit $|Q|$ Zuständen und $L(A) = L$, so gilt $A \cong M$. 
-\end{itemize}
+%Sei $L$ eine reguläre Sprache über $\Sigma$ und sei $M = (Q, \Sigma, \Delta, s, F)$ der Minimalautomat von $L$. Dann gilt:
+%\begin{itemize}
+%  \item [(i)] $L(M) = L$
+%  \item [(ii)] Ist $A$ ein DEA mit Zustandsmenge $Q_A$ und $L(A) = L$, so gilt $|Q_A| \leq |Q|$.
+%  \item [(iii)] Ist $A$ ein DEA mit $|Q|$ Zuständen und $L(A) = L$, so gilt $A \cong M$. 
+%\end{itemize}
 
-$\cdots$
+%\begin{proof}
+%  (i) $\Leftrightarrow$ (iii) ist die Aussage von Korollar 5.9. Die Relation $\sim_L$ ist nach Bemerkung 5.14 eine Rechtskongruenz und es gilt $L = \bigcup \limits_{w \in L} [w]_{\sim L}$. Somit folgt (ii) $\Rightarrow (iii)$.  Die Implikation (iii) $\Rightarrow$ (ii) folgt aus Bemerkung 5.17 (ii) und Proposition 5.18
+%\end{proof}
+%Wir wollen nun ein Kriterium beschreiben das hilft nicht reguläre sprachen zu erkennen.
 
+
+\mysubsection{Satz (Satz von Myhill und Nerode)} 
 Für eine Sprache $L$ über einem Alphabet $\Sigma$ sind die folgenden Aussagen äquivalent:
 \begin{itemize}
   \item [(i)] $L$ ist regulär.
