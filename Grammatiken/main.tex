@@ -1,0 +1,55 @@
+\coversection{Automaten/finit1.png}{Formale Grammatiken}{\\ \hspace*{\fill} - ChatGPT}
+\paragraph*{Idee:} Konstruktion aller Wörter einer Sprache.
+\paragraph*{Beispiel:} 
+\begin{itemize}
+    \item \(L=\{0^n\}_{n\in\mathbb{N}_0}\)
+    \item S Startsymbol
+    \item \(S\to X,S\to 0S\) Regel \( \quad (S, \lambda), (S, 0S)\)
+    \item \(S\to 0S\to 00S\to 000S\to 000\)
+
+
+\end{itemize}
+\mysubsection{Definition (Grammatiken)}
+    Eine Grammatik ist ien Tupel \(G=(N,T,P,S)\). Dabei ist 
+    \begin{itemize}
+        \item N das Alphabet der Nichtterminalsymbole/Variablen 
+        \item T das Alphabet der Terminalsymbole mit \(N\cup T=\varnothing \)
+        \item \(P\subseteq((n\cup T)^*\backslash T^*)\times (N\cup T)^*\) eine endliche Menge von Regeln
+        \item \(S\in\mathbb{N}\) das Startsymbol
+    \end{itemize}
+    EIne Satzform von G ist ein Wort \(s\in(N\cup T)^*\) und eine Terminalwort von G ist ein Wort \(t\in T^*\).
+\mysubsection{Definition (Ableitung)}
+    Sei \(G=(N,T,P,S)\) eine Grammatik. Eine Satzform \(w'\) von G ist in einem Schritt aus einer Satzform w von G ableitbar, wenn es Satzformen u,v,x,y von G gibt, so dass \(w=xuy,u\to v\in P\) und \(w'=xvy\) gelten. Es bezeichne \(\to_G\) die Relation auf der Menge der Satzformen von G, sodass \(w\to_Gw'\) genau dann für Satzformen von G gilt, wenn w' aus w in einem Schritt ableitbar ist.\\
+    Für Satzformen u,v von G ist eine Ableitung von v aus u eine Folge \(u=w_1,\dots,w_n=v\) mit \(w_i\to_Gw_{i+1}\) \(\forall i\in[n-1]\) und eine Ableitung von v in G ist eine Ableitung von v aus S in G. Für \(n\in\mathbb{N}\) schreiben wir \(u\to^n_Gv\) wenn es eine Ableitung von v aus u der Länge n gibt und wir schreiben \(u\to^*_Gv\) wenn eine Ableitung von v aus u in G existiert.
+\mysubsection{Definition (Erzeugte Sprache)}
+    Sei \(G=N,T,P,S\) eine Grammatik. Die von G erzeugte Sprache \(L(G)\) ist die Menge aller Wörter \(w\in T^*\) für die es eine Ableitung von w in G gibt.
+\mysubsection{Lemma} 
+    Sei \(G=(N,T,P,S)\) eine Grammatik und seien u,v,x,y Satzformen von G und seien \(n,m\in\mathbb{N}\) mit \(u\to_G^nv\) und \(w\to_u^nxuy\).\\
+    Dann gilt \(w\to_u^{m+n-1}xvy\).
+\begin{proof}
+    Sei \(\alpha _1,\dots,\alpha_n\) ein Ableitung von xuy aus w und \(\beta_1,\dots,\beta_m\) eine Ableitung von v aus u. Dann ist\\ 
+    \(\alpha_1,\dots,\alpha_{n-1},x\beta_1y,\dots,x\beta_my=xvy\)\\
+    eine Ableitung von xvy aus w in G der Länge n+m-1.\par\bigskip
+    Im folgenden beschäftigen wir uns mit dem Thema welche Sprache Grammatiken verschiedener Komplexitätsstufen erzeugen können.
+\end{proof}
+
+\mysubsection{Satz}
+    Eine Sprache ist genau dann rekuriv aufzählbar, wenn sie von einer Grammatik erzeugt wird.
+\paragraph*{Beweisidee} Wird eine Sprache L von einer Grammatik erzeugt, so ist L die erkannte Sprache einer TM, die in geeigneter Weise Ableitungen von G erzeugt, prüft ob diese Ableitung dem Wort der Eingabe entspricht und gegebenfalss akzeptiert. Wenn eine Ableitung der Eingabe gefunden ist.\par\bigskip
+Gegebn eine rekursiv aufzählbare Sprace L und eine TM, die L erkennt. So konstruieren wir ähnlich dem Postschen Korrespondenzproblems Regeln und Symobole, sodass wir die Arbeitsweise der TM modellieren können und entsprechend mit einem Terminalwort enden wenn dies von der TM erkannt wird.
+\mysubsection{Rechtslinear}
+    Eine Grammatik \(G=(N,T,P,S)\) ist rechtslinear, wenn alle Regeln von der Form 
+    \[X\in uy \text{ oder } X\to u\]
+    mit \(X,y\in\mathbb{N}\) und \(u\in T^*\) sind.\par\bigskip 
+    Hier ist es sinnvoll endliche Automaten zu betrachten bei denen es nicht \(\forall\) Zustände q und Eingabesymbole a ein Tripel \((q,a,q')\) in der Übergangsrelation geben muss. Solche Automaten sind zwangsläufig nicht deterministisch.
+\mysubsection{Satz}
+Eine Sprache ist genu dann regulär, wenn sie von einer rechtslinearen Grammatik erzeugt wird.
+\paragraph*{Beweisidee}
+Zunächst überzeugt man sich davon, dass eine Sprache L genau dann von einer rechtlinearen Grammatik erzeugt wird, wenn sie von einer Grammatik \(G=(N,T,P,S)\) erzeugt wird bei der alle Regeln von der Form \(X\to ay\) oder \(X\to \lambda\)\\
+mit \(x,y\in\mathbb{N}\) und \(a\in T\) sind. Eine Solche Grammatik wird als Grammatik in Simulationsform bezeichnet.\par\bigskip
+Die Sprache L die von einer rechtslinearen Grammatik (in Simulationsform) gebildet wird von dem EA 
+\[A=(N,T,\Delta,S,\{X\in N: X\to \lambda\in P\})\]
+mit 
+\[\Delta=\{(X,a,y)\in N\times T\times N:X\to ay\in P\}\]
+erkannt.\\
+Umgekehrt ist es einfach zu sehen, dass jede Reguläre Sprace von einer rechtslinearen Grammatik erzeugt wird.

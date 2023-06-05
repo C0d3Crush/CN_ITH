@@ -77,12 +77,6 @@
   \label{sec:\thesection}%
 }
 
-% Funktion für eine Section
-\newcommand{\mysectionstar}[1]{%
-  \section*{#1}%
-  \label{sec:\thesection}%
-}
-
 % Funktion für eine Subsection
 \newcommand{\mysubsection}[1]{%
   \subsection{#1}%
@@ -102,39 +96,24 @@
   \vspace*{2cm} % Vertical spacing
   
   \begin{center}
-    \includegraphics[width=0.5\linewidth]{#1} % Adjust the width as needed
+    %\includegraphics[width=0.5\linewidth]{#1} % Adjust the width as needed
   \end{center}
   
   \vspace{2cm} % Vertical spacing
   
-  \mysectionstar{\LARGE\textbf{#2}} % Section title
+  \mysection{\textbf{#2}} % Section title
   
   \vspace{1cm} % Vertical spacing
   
   \begin{flushright}
     \textit{\small #3} % Quote
   \end{flushright}  
-
   \vfill % Fill the remaining vertical space with whitespace
-  
-  \begin{center}
-    \Large\textbf{Section \thesection} % Section number
-  \end{center}
-  
   \vspace{2cm} % Vertical spacing
-  
   \vfill % Fill the remaining vertical space with whitespace
-  
   \clearpage % Add an empty page after the section page
 }
-
-
-
-
-
-
 \begin{document}
-
 
 \begin{titlepage}
   
@@ -164,15 +143,19 @@
     \vfill
   
 \end{titlepage}
+
 \newpage
+
 \tableofcontents
+
 \newpage
+
 \include{Grundlagen/main}
 \include{Turingmachine/main}
 \include{Berechenbarkeit/main}
 \include{Automaten/main}
 \include{ReguläreSprachen/main}
+\include{Grammatiken/main}
 \include{Bilder/main}
-
 
 \end{document}
