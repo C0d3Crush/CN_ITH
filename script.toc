@@ -103,8 +103,8 @@
 \contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{34}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{34}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{34}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Lemma}{34}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Satz}{34}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.4}Lemma}{35}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Satz}{35}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Rechtslinear}{35}{subsection.6.6}%
 \contentsline {subsection}{\numberline {6.7}Satz}{35}{subsection.6.7}%
 \contentsline {section}{\numberline {7}Bilder}{36}{section.7}%

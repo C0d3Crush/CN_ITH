@@ -1001,6 +1001,9 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty

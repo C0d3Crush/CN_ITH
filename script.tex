@@ -42,6 +42,65 @@
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{xcolor}
+
+\usepackage{xcolor}
+
+%%%%%%%%% DARK THEME %%%%%%%%%%%%
+% Define the dark mode colors
+%\definecolor{background}{HTML}{212121} % Dark gray background
+%\definecolor{textcolor}{HTML}{FFFFFF} % White text
+%\definecolor{accentcolor}{HTML}{00BCD4} % Teal accent color
+%\definecolor{sectioncolor}{HTML}{FF4081} % Soft pink section headings
+
+% Set the dark mode theme
+%\pagecolor{background} % Set the background color
+%\color{textcolor} % Set the text color
+
+% Set the color for section headings
+%\usepackage{titlesec}
+%\titleformat{\section}{\normalfont\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+%%%%%%%%% DARK THEME %%%%%%%%%%%
+
+% Define the dark mode colors
+\definecolor{background}{HTML}{212121} % Dark gray background
+\definecolor{textcolor}{HTML}{FFFFFF} % White text
+\definecolor{sectioncolor}{HTML}{FF4081} % Soft pink section headings
+\definecolor{accentcolor}{HTML}{00BCD4} % Teal accent color
+\colorlet{linkcolor}{blue} % Default hyperlink color in light mode
+
+
+
+% Default mode (light mode)
+\pagecolor{white} % Set the background color
+\color{black} % Set the text color
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
+
+% Dark mode toggle command
+\newif\ifdarkmode
+\darkmodetrue % Set default mode to light mode
+
+\makeatletter
+\newcommand{\toggleDarkMode}{%
+    \ifdarkmode
+        % Dark mode
+        \pagecolor{background} % Set the background color
+        \color{textcolor} % Set the text color
+        \colorlet{linkcolor}{white} % Set link color to white in dark mode
+        \titleformat{\section}{\normalfont\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+    \else
+        % Light mode
+        \pagecolor{white} % Set the background color
+        \color{black} % Set the text color
+        \titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
+        \colorlet{linkcolor}{blue} % Set link color to blue in light mode
+    \fi
+    \hypersetup{linkcolor=linkcolor, urlcolor=linkcolor}
+
+}
+\makeatother
+
 
 
 \pagestyle{fancy}
@@ -51,7 +110,8 @@
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    %linkcolor=blue,
+    %linkcolor=white,
     urlcolor=blue,
     citecolor=blue,
     linktoc=all
@@ -114,6 +174,7 @@
   \clearpage % Add an empty page after the section page
 }
 \begin{document}
+\toggleDarkMode % Set the mode based on \darkmodetrue or \darkmodefalse
 
 \begin{titlepage}
   
