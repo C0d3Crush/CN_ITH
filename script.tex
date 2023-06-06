@@ -89,12 +89,16 @@
         \color{textcolor} % Set the text color
         \colorlet{linkcolor}{white} % Set link color to white in dark mode
         \titleformat{\section}{\normalfont\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+        \fancyhead[L]{\textcolor{textcolor}{\leftmark}} % Set header color in dark mode
+        \renewcommand{\headrule}{\textcolor{textcolor}{\hrule}} % Set header rule color in dark mode
     \else
         % Light mode
         \pagecolor{white} % Set the background color
         \color{black} % Set the text color
         \titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
         \colorlet{linkcolor}{blue} % Set link color to blue in light mode
+        \fancyhead[L]{\leftmark} % Set header color in light mode
+        \renewcommand{\headrule}{} % Remove header rule in light mode
     \fi
     \hypersetup{linkcolor=linkcolor, urlcolor=linkcolor}
 
