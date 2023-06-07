@@ -2,14 +2,14 @@
 \contentsline {section}{\numberline {1}Grundlagen}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Notationen und begriffe}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Alphabet, Wörter und Sprachen}{4}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Definition (Alphabet)}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1}Definition (Alphabet)}{5}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Definition (Wörter)}{5}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.3}Definition (Binäraphabet, Binärwörter)}{5}{subsubsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1.2.4}Sprache}{5}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1.2.5}Definition}{5}{subsubsection.1.2.5}%
 \contentsline {subsubsection}{\numberline {1.2.6}Definition (Verkettung)}{5}{subsubsection.1.2.6}%
 \contentsline {subsubsection}{\numberline {1.2.7}Definition (Präfix, Infix, Suffix)}{5}{subsubsection.1.2.7}%
-\contentsline {subsubsection}{\numberline {1.2.8}Definition (präfixfrei)}{5}{subsubsection.1.2.8}%
+\contentsline {subsubsection}{\numberline {1.2.8}Definition (präfixfrei)}{6}{subsubsection.1.2.8}%
 \contentsline {subsubsection}{\numberline {1.2.9}Definition (Homomorphismus)}{6}{subsubsection.1.2.9}%
 \contentsline {subsubsection}{\numberline {1.2.10}Definition (Längenlexikographische Ordnung)}{6}{subsubsection.1.2.10}%
 \contentsline {subsubsection}{\numberline {1.2.11}Bemerkung}{6}{subsubsection.1.2.11}%

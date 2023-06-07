@@ -1,3 +1,6 @@
+% !TeX TS-program = pdflatex -shell-escape
+
+
 \documentclass{article}
 \usepackage{dsfont}
 \usepackage{caption}
@@ -43,9 +46,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{xcolor}
-
-\usepackage{xcolor}
-
+\usepackage{graphicx}
+\usepackage{svg}
 
 
 
@@ -68,6 +70,7 @@
 % Define the dark mode colors
 \definecolor{background}{HTML}{212121} % Dark gray background
 \definecolor{textcolor}{HTML}{FFFFFF} % White text
+\definecolor{textcolorBlack}{HTML}{FFFFFF} % White text
 \definecolor{sectioncolor}{HTML}{FF4081} % Soft pink section headings
 \definecolor{accentcolor}{HTML}{00BCD4} % Teal accent color
 \colorlet{linkcolor}{blue} % Default hyperlink color in light mode
@@ -106,6 +109,8 @@
             linkcolor=white,
         }
     \else
+        \definecolor{textcolor}{HTML}{000000} % White text
+
         % Light mode
         \colorlet{tikztextcolor}{black} % Use the default text color in light mode
         \colorlet{tikzaccentcolor}{red} % Use the default accent color in light mode    
