@@ -1199,11 +1199,6 @@ INPUT ./Turingmachine/main.tex
 INPUT Turingmachine/main.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri9.tfm
-INPUT ./Turingmachine/turing_sym.png
-INPUT ./Turingmachine/turing_sym.png
-INPUT Turingmachine/turing_sym.png
-INPUT ./Turingmachine/turing_sym.png
-INPUT ./Turingmachine/turing_sym.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd

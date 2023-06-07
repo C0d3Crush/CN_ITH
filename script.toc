@@ -17,23 +17,23 @@
 \contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{6}{subsubsection.1.2.13}%
 \contentsline {section}{\numberline {2}\textbf {Turingmachine}}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{9}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Definition (Rechnung)}{9}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Bemerkung}{9}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Definition (total)}{9}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Definition (akzeptierte Sprache)}{10}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.7}Definition (akzeptierte Sprache)}{9}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Definition(entscheidbar)}{10}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Definition(rekursiv aufzählbar)}{10}{subsection.2.9}%
 \contentsline {subsection}{\numberline {2.10}Bemerkung}{10}{subsection.2.10}%
 \contentsline {subsection}{\numberline {2.11}Bemerkung}{10}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}Bemerkung}{10}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}Definition (Ausgabe)}{11}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{11}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.13}Definition (Ausgabe)}{10}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{10}{subsection.2.14}%
 \contentsline {subsection}{\numberline {2.15}Definition (partiell berechenbar)}{11}{subsection.2.15}%
 \contentsline {subsection}{\numberline {2.16}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{11}{subsection.2.16}%
 \contentsline {subsection}{\numberline {2.17}Bemerkung}{11}{subsection.2.17}%
-\contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{11}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{12}{subsection.2.18}%
 \contentsline {subsection}{\numberline {2.19}Bemerkung}{13}{subsection.2.19}%
 \contentsline {subsection}{\numberline {2.20}Church- Turing- These}{13}{subsection.2.20}%
 \contentsline {section}{\numberline {3}\textbf {Berechenbarkeit}}{14}{section.3}%
@@ -72,39 +72,39 @@
 \contentsline {subsection}{\numberline {4.6}Bemerkung}{25}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache)}{25}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Definition (regulär)}{25}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Beispiel}{25}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.9}Beispiel}{26}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{26}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Satz}{26}{subsection.4.11}%
-\contentsline {section}{\numberline {5}\textbf {Reguläre Sprachen}}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{28}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{28}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Bemerkung}{28}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{28}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Proposition}{28}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Definition}{28}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Lemma}{29}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Satz}{29}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Korollar}{29}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{29}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{29}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Satz}{30}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{30}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Bemerkung}{30}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{30}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{30}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}Bemerkung}{31}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}Proposition}{31}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{31}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Satz}{31}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{32}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{32}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Beispiel}{32}{subsection.5.23}%
-\contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{33}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{34}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{34}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{34}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Lemma}{35}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Satz}{35}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Rechtslinear}{35}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Satz}{35}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Bilder}{36}{section.7}%
+\contentsline {section}{\numberline {5}\textbf {Reguläre Sprachen}}{28}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{29}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{29}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Bemerkung}{29}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{29}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Proposition}{29}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Definition}{29}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Lemma}{30}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Satz}{30}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Korollar}{30}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{30}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{30}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Satz}{31}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{31}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Bemerkung}{31}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{31}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{31}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}Bemerkung}{32}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}Proposition}{32}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{32}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}Satz}{32}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{33}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{33}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}Beispiel}{33}{subsection.5.23}%
+\contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{34}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{35}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{35}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{35}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Lemma}{36}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Satz}{36}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Rechtslinear}{36}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Satz}{36}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Bilder}{37}{section.7}%

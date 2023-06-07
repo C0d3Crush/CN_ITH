@@ -32,6 +32,7 @@ $\forall m, n \in \mathbb{N}$ existiert eine berechenbare Funktion $s_n^m : \mat
   \item Es wird bestimmt an welcher Stelle der Standardaufzählung der Code von auftaucht und diese Stelle wird ausgegeben.
 \end{itemize}
 Sei $s_n^m$ die von S berechnete $(m+1)$-äre partielle Funktion. Dann ist $s_n^m$ eine Funktion wie gewünscht. Es gibt überabzählbar viele Binärsprachen, denn: Betrachte Aufzählung von Binärsprachen $L_1, L_2, \cdots$ 
+
 \begin{table}[ht]
   \centering
   \renewcommand{\arraystretch}{2} % Adjust the value to increase or decrease the cell size
@@ -40,14 +41,15 @@ Sei $s_n^m$ die von S berechnete $(m+1)$-äre partielle Funktion. Dann ist $s_n^
     $\mathds{1}_{L_1}(0)$ & $\mathds{1}_{L_1}(1)$ & $\mathds{1}_{L_1}(2)$ & $\mathds{1}_{L_1}(3)$ \\
     $\mathds{1}_{L_2}(0)$ & $\mathds{1}_{L_2}(1)$ & \tikzmarknode{L2-2}{$\mathds{1}_{L_2}(2)$} & $\mathds{1}_{L_2}(3)$ \\
   \end{tabular}
-  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
-  \caption{Standardaufzählung}
-  
-  \begin{tikzpicture}[overlay, remember picture, red, >=stealth]
-    \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
-  \end{tikzpicture}
 \end{table}
 
+
+\createDiagram{Standardaufzählung}
+{
+\begin{tikzpicture}[overlay, remember picture, red, >=stealth]
+  \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+\end{tikzpicture}
+}
 $L$ mit $\mathds{1}_L(i)$ = 
 $\begin{cases}
     0, & \text{wenn } \mathds{1}_{L_i}(i) = 1 \\
@@ -70,14 +72,14 @@ $\begin{cases}
     $\Phi_{L_1}(0)$ & $\Phi_{L_1}(1)$ & $\Phi_{L_1}(2)$ & $\Phi_{L_1}(3)$ \\
     $\Phi_{L_2}(0)$ & $\Phi_{L_2}(1)$ & \tikzmarknode{L2-2}{$\Phi_{L_2}(2)$} & $\Phi_{L_2}(3)$ \\
   \end{tabular}
-  \captionsetup{labelformat=empty, justification=centering, skip=10pt}
-  \caption{Standardaufzählung}
 \end{table}
 
-\begin{tikzpicture}[overlay, remember picture, green, >=stealth]
-  \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
-\end{tikzpicture}
-
+\createDiagram{Standardaufzählung}
+{
+  \begin{tikzpicture}[overlay, remember picture, green, >=stealth]
+    \draw [->, thick] ([yshift=1ex]L0-0.south) -- ([yshift=-1ex]L2-2.north);
+  \end{tikzpicture}
+}
 $\varphi$ mit $\varphi(i)$ = 
 $\begin{cases}
     \uparrow, & \text{wenn } \Phi_i(i) \downarrow\\
@@ -111,7 +113,9 @@ Wird nicht aufgezählt.
 \subsubsection*{Gegeben: } Endlich viele typen von Spielsteinen mit jeweils zwei beschrifteten Feldern: "oberes Feld, unteres Feld". Beschritungen sind nichtleere Wörter über einem Alphabet. Spielsteine sind vom gleichen Typ, wenn die beiden oberen Felder gleich beschriftet sind und die beiden unteren Felder gleich beschriftet sind. Es gibt von jedem Typ beliebig viele steine. 
 
 \subsubsection*{Gesucht: }Können ein oder mehrere (aber endlich viele) Spielsteine so nebeneinander gelegt werden, dass sich oben und unten von links nach rechts gelesen das gleiche Wort ergibt?
-\begin{center}
+
+\createDiagram{Dominosteinspiel}
+{
   \begin{tikzpicture}
     % Define styles for Dominoes
     \tikzstyle{domino}=[rectangle, draw, minimum width=1cm, minimum height=2cm, inner sep=0pt]
@@ -141,9 +145,9 @@ Wird nicht aufgezählt.
     \node at ([yshift=4mm]d5.center) {1};
     \node at ([yshift=-4mm]d5.center) {011};
   
-    \end{tikzpicture}
-    \vspace{1cm}\\
-    \begin{tikzpicture}
+  \end{tikzpicture}
+  \vspace{1cm}\\
+  \begin{tikzpicture}
 
       % Define styles for Dominoes
       \tikzstyle{domino}=[rectangle, draw, minimum width=1cm, minimum height=2cm, inner sep=0pt]
@@ -181,7 +185,11 @@ Wird nicht aufgezählt.
       % Arrow pointing to the leftmost domino
       \draw[->, thick] (-1.5,0) -- (d1.west);
 
-      \end{tikzpicture}
+  \end{tikzpicture}
+}
+
+\begin{center}
+  
         
   \end{center}
 

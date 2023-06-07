@@ -46,6 +46,9 @@
 
 \usepackage{xcolor}
 
+
+
+
 %%%%%%%%% DARK THEME %%%%%%%%%%%%
 % Define the dark mode colors
 %\definecolor{background}{HTML}{212121} % Dark gray background
@@ -68,7 +71,8 @@
 \definecolor{sectioncolor}{HTML}{FF4081} % Soft pink section headings
 \definecolor{accentcolor}{HTML}{00BCD4} % Teal accent color
 \colorlet{linkcolor}{blue} % Default hyperlink color in light mode
-
+% Anpassung des Caption-Stils
+\DeclareCaptionFormat{white}{\color{white}#1#2#3\par}
 
 
 % Default mode (light mode)
@@ -85,23 +89,42 @@
 \newcommand{\toggleDarkMode}{%
     \ifdarkmode
         % Dark mode
+        \captionsetup{format=white}
+        \colorlet{tikztextcolor}{textcolor} % Use the dark mode text color
+        \colorlet{tikzaccentcolor}{accentcolor} % Use the dark mode accent color    
         \pagecolor{background} % Set the background color
         \color{textcolor} % Set the text color
         \colorlet{linkcolor}{white} % Set link color to white in dark mode
         \titleformat{\section}{\normalfont\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
         \fancyhead[L]{\textcolor{textcolor}{\leftmark}} % Set header color in dark mode
         \renewcommand{\headrule}{\textcolor{textcolor}{\hrule}} % Set header rule color in dark mode
+        % TikZ settings for dark mode
+        \tikzset{
+            text=white,
+            accentcolor=accentcolor,
+            sectioncolor=sectioncolor,
+            linkcolor=white,
+        }
     \else
         % Light mode
+        \colorlet{tikztextcolor}{black} % Use the default text color in light mode
+        \colorlet{tikzaccentcolor}{red} % Use the default accent color in light mode    
         \pagecolor{white} % Set the background color
         \color{black} % Set the text color
         \titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
         \colorlet{linkcolor}{blue} % Set link color to blue in light mode
         \fancyhead[L]{\leftmark} % Set header color in light mode
         \renewcommand{\headrule}{} % Remove header rule in light mode
+        % TikZ settings for light mode
+        \tikzset{
+            text=black,
+            accentcolor=tikzaccentcolor,
+            sectioncolor=tikzaccentcolor,
+            linkcolor=linkcolor,
+        }
     \fi
     \hypersetup{linkcolor=linkcolor, urlcolor=linkcolor}
-
+    \color{tikztextcolor} % Set the text color
 }
 \makeatother
 
@@ -172,12 +195,20 @@
   \begin{flushright}
     \textit{\small #3} % Quote
   \end{flushright}  
-  \vfill % Fill the remaining vertical space with whitespace
-  \vspace{2cm} % Vertical spacing
-  \vfill % Fill the remaining vertical space with whitespace
   \clearpage % Add an empty page after the section page
 }
+
+\newcommand{\createDiagram}[2]{%
+  \begin{figure}[htp]
+    \centering
+    #2
+    \caption{#1}
+    \label{fig:#1}
+  \end{figure}%
+}
+
 \begin{document}
+
 \toggleDarkMode % Set the mode based on \darkmodetrue or \darkmodefalse
 
 \begin{titlepage}

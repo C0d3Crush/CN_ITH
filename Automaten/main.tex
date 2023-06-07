@@ -55,6 +55,7 @@ Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die Sprache L(A) := \{w $\in \Sigm
 \mysubsection{Definition (regulär)} 
 Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben REG für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
 
+\newpage
 \mysubsection{Beispiel}
 Sei A := (\{$q_{0}$, $q_{1}$\}, \{0, 1\}, $\Delta$, $q_{0}$, \{$q_{1}$\}) mit $\Delta$ = \{($q_{0}$)\}
 Übergangsdiagramm und übergangstabelle von sehen wie folgt aus:
@@ -67,9 +68,22 @@ Sei A := (\{$q_{0}$, $q_{1}$\}, \{0, 1\}, $\Delta$, $q_{0}$, \{$q_{1}$\}) mit $\
         \hline
         $q_{1}$, * & $q_{1}$ & $q_{0}$ \\
         \hline
-    \end{tabular}            
+    \end{tabular}
 \end{center}
-[Hier muss noch ein Übergangsdiagramm hin!]
+\createDiagram{Übergangstabelle}{}
+
+\createDiagram{Übergangsdiagramm}
+{
+    \begin{tikzpicture}[->,>=latex,shorten >=1pt,auto,node distance=3cm,semithick]
+        \tikzstyle{state}=[draw,circle,minimum size=2cm]
+        
+        \node[state, initial] (q0) {$q_0$};
+        \node[state, accepting] (q1) [right of=q0] {$q_1$};
+    
+        \path (q0) edge [bend left] node {0, 1} (q1)
+        (q1) edge [bend left] node {0, 1} (q0);
+      \end{tikzpicture}
+    }
 
 
 \subsection*{Übergangsdiagramm:}

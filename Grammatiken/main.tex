@@ -22,7 +22,7 @@
     Eine \textbf{Satzform} von G ist ein Wort \(s\in(N\cup T)^*\) und eine \textbf{Terminalwort} von G ist ein Wort \(t\in T^*\).
 \mysubsection{Definition (Ableitung)}
     Sei \(G=(N,T,P,S)\) eine Grammatik. Eine Satzform \(w'\) von G ist in einem Schritt aus einer Satzform w von G \textbf{ableitbar}, wenn es Satzformen u,v,x,y von G gibt, so dass \(w=xuy,u\to v\in P\) und \(w'=xvy\) gelten. Es bezeichne \(\to_G\) die Relation auf der Menge der Satzformen von G, sodass \(w\to_Gw'\) genau dann für Satzformen von G gilt, wenn w' aus w in einem Schritt ableitbar ist.\\
-    Für Satzformen u,v von G ist eine \textbf{Ableitung} von v aus u eine Folge \(u=w_1,\cdots,w_n=v\) mit \(w_i\to_Gw_{i+1}\) \(\forall i\in[n-1]\) und eine Ableitung von v in G ist eine \textbf{Ableitung} von v aus S in G. Für \(n\in\mathbb{N}\) schreiben wir \(u\to^n_Gv\) wenn es eine Ableitung von v aus u der Länge n gibt und wir schreiben \(u\to^*_Gv\) wenn eine Ableitung von v aus u in G existiert.\\\\
+    Für Satzformen u,v von G ist eine \textbf{Ableitung} von v aus u eine Folge \(u=w_1,\cdots,w_n=v\) mit \(w_i\to_Gw_{i+1}\) \(\forall i\in[n-1]\) und eine Ableitung von v in G ist eine \textbf{Ableitung} von v aus S in G. Für \(n\in\mathbb{N}\) schreiben wir \(u\to^n_Gv\) wenn es eine Ableitung von $v$ aus $u$ der Länge $n$ gibt und wir schreiben \(u\to^*_Gv\) wenn eine Ableitung von v aus u in G existiert.\\\\
     \textit{Erklärung:}\\
     Stell dir vor, du möchtest ein Rezept zum Backen von Kuchen haben. Das Rezept besteht aus verschiedenen Schritten, wie zum Beispiel das Mischen der Zutaten und das Backen im Ofen. In ähnlicher Weise kann man sich eine Grammatik vorstellen, die Regeln für den Aufbau von Sätzen in einer Sprache festlegt.
     Nehmen wir an, du hast eine Grammatik namens G, die aus Buchstaben (N) und Wörtern (T) besteht. Diese Grammatik hat auch Regeln (P) und einen Startpunkt (S). Eine Satzform ist ein Satz, der in der Grammatik G gebildet werden kann.
@@ -32,7 +32,7 @@
     
     
 \mysubsection{Definition (Erzeugte Sprache)}
-    Sei \(G=N,T,P,S\) eine Grammatik. Die von G erzeugte Sprache \(L(G)\) ist die Menge aller Wörter \(w\in T^*\) für die es eine Ableitung von w in G gibt.
+    Sei \(G=(N,T,P,S)\) eine Grammatik. Die von G erzeugte Sprache \(L(G)\) ist die Menge aller Wörter \(w\in T^*\) für die es eine Ableitung von w in G gibt.
 \mysubsection{Lemma} 
     Sei \(G=(N,T,P,S)\) eine Grammatik und seien u,v,x,y Satzformen von G und seien \(n,m\in\mathbb{N}\) mit \(u\to_G^nv\) und \(w\to_u^nxuy\).\\
     Dann gilt \(w\to_u^{m+n-1}xvy\).
@@ -46,8 +46,8 @@
 \mysubsection{Satz}
     Eine Sprache ist genau dann rekuriv aufzählbar, wenn sie von einer Grammatik erzeugt wird.
 \paragraph*{Beweisidee} 
-    Wird eine Sprache L von einer Grammatik erzeugt, so ist L die erkannte Sprache einer TM, die in geeigneter Weise Ableitungen von G erzeugt, prüft ob diese Ableitung dem Wort der Eingabe entspricht und gegebenfalss akzeptiert. Wenn eine Ableitung der Eingabe gefunden ist.\par\bigskip
-    Gegebn eine rekursiv aufzählbare Sprace L und eine TM, die L erkennt. So konstruieren wir ähnlich dem Postschen Korrespondenzproblems Regeln und Symobole, sodass wir die Arbeitsweise der TM modellieren können und entsprechend mit einem Terminalwort enden wenn dies von der TM erkannt wird.
+    Wird eine Sprache $L$ von einer Grammatik erzeugt, so ist $L$ die erkannte Sprache einer TM, die in geeigneter Weise Ableitungen von $G$ erzeugt, prüft ob diese Ableitung dem Wort der Eingabe entspricht und gegebenfalss akzeptiert. Wenn eine Ableitung der Eingabe gefunden ist.\par\bigskip
+    Gegeben eine rekursiv aufzählbare Sprace $L$ und eine TM, die $L$ erkennt. So konstruieren wir ähnlich dem Postschen Korrespondenzproblems Regeln und Symobole, sodass wir die Arbeitsweise der TM modellieren können und entsprechend mit einem Terminalwort enden wenn dies von der TM erkannt wird.
 \mysubsection{Rechtslinear}
     Eine Grammatik \(G=(N,T,P,S)\) ist rechtslinear, wenn alle Regeln von der Form 
     \[X\in uy \text{ oder } X\to u\]
