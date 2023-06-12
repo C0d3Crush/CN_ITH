@@ -1,0 +1,5 @@
+Add potenzautomat -> anmerkung aus dem tutorium
+
+Satz von Myhill und nerode ->add links
+
+6.10 bei abbildung einen hyperref und italic font für alle abb machen

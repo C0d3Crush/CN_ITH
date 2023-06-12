@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  7 JUN 2023 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  12 JUN 2023 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -659,7 +659,7 @@ Package: transparent 2022-10-27 v1.5 Transparency with color stacks
  (/usr/local/texlive/2023/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 150.
+Package hyperref Info: Option `colorlinks' set `true' on input line 148.
 \c@proposition=\count322
  (/usr/local/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
 File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking positions in a document
@@ -707,34 +707,38 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \c@newproposition=\count323
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 215.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 213.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux
 
 LaTeX Warning: Label `fig:Standardaufzählung' multiply defined.
 
-) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux) (./Bilder/main.aux))
+) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux
+
+LaTeX Warning: Label `fig:Satz-Baum' multiply defined.
+
+) (./Bilder/main.aux))
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -791,19 +795,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 215.
+Package hyperref Info: Link coloring ON on input line 213.
 (./script.out) (./script.out)
 \@outlinefile=\write4
 \openout4 = `script.out'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 234.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 232.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=445, 263.48438pt x 263.48438pt>
+<qrcode.png, id=481, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 238.
+Package pdftex.def Info: qrcode.png  used on input line 236.
 (pdftex.def)             Requested size: 94.4048pt x 94.404pt.
  [1
 
@@ -853,7 +857,7 @@ l.52 ...umberline {3.13}Satz}{18}{subsection.3.13}
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einführung.png, id=691, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einführung.png, id=745, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einführung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einführung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einführung.png  used on input line 3.
@@ -1127,38 +1131,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 [31] [32]) [33]
 \openout2 = `Grammatiken/main.aux'.
 
- (./Grammatiken/main.tex [34
+ (./Grammatiken/main.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) [34
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 24--32
+Underfull \hbox (badness 10000) in paragraph at lines 25--33
 
  []
 
 [35
 
-]) [36]
+] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+
+ []
+
+[37]
+Overfull \hbox (1.74472pt too wide) in paragraph at lines 145--146
+ [][] 
+ []
+
+[38]
+
+LaTeX Warning: Command \" invalid in math mode on input line 191.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 200.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 210.
+
+) [39]
 \openout2 = `Bilder/main.aux'.
 
  (./Bilder/main.tex
-<Turingmachine/turing.png, id=899, 1027.84pt x 1027.84pt>
+<Turingmachine/turing.png, id=967, 1027.84pt x 1027.84pt>
 File: Turingmachine/turing.png Graphic file (type png)
 <use Turingmachine/turing.png>
 Package pdftex.def Info: Turingmachine/turing.png  used on input line 3.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Berechenbarkeit/predic.png, id=900, 1027.84pt x 1027.84pt>
+<Berechenbarkeit/predic.png, id=968, 1027.84pt x 1027.84pt>
 File: Berechenbarkeit/predic.png Graphic file (type png)
 <use Berechenbarkeit/predic.png>
 Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 4.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Automaten/finit1.png, id=901, 1027.84pt x 1027.84pt>
+<Automaten/finit1.png, id=969, 1027.84pt x 1027.84pt>
 File: Automaten/finit1.png Graphic file (type png)
 <use Automaten/finit1.png>
 Package pdftex.def Info: Automaten/finit1.png  used on input line 5.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<ReguläreSprachen/regul.png, id=902, 1027.84pt x 1027.84pt>
+<ReguläreSprachen/regul.png, id=970, 1027.84pt x 1027.84pt>
 File: ReguläreSprachen/regul.png Graphic file (type png)
 <use ReguläreSprachen/regul.png>
 Package pdftex.def Info: ReguläreSprachen/regul.png  used on input line 6.
@@ -1173,7 +1199,7 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
 [] [] 
  []
 
-) [37
+) [40
 
 
 
@@ -1182,21 +1208,21 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: 06E16A1025CE088B24CA6D85E66DA778;17844.
+(rerunfilecheck)             Checksum: 4BC922C1368B96A51551C5B4000BD4E7;19284.
  ) 
 Here is how much of TeX's memory you used:
- 30715 strings out of 476025
- 607795 string characters out of 5790017
+ 30960 strings out of 476025
+ 613589 string characters out of 5790017
  1877388 words of memory out of 5000000
- 50408 multiletter control sequences out of 15000+600000
+ 50636 multiletter control sequences out of 15000+600000
  584641 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,15n,104p,3231b,1191s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,15n,104p,3231b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (38 pages, 8535810 bytes).
+Output written on script.pdf (41 pages, 8545487 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 947 compressed objects within 10 object streams
- 161 named destinations out of 1000 (max. 500000)
- 915 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1125 PDF objects out of 1200 (max. 8388607)
+ 1015 compressed objects within 11 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 987 words of extra memory for PDF output out of 10000 (max. 10000000)
 

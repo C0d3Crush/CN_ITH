@@ -1,6 +1,5 @@
 % !TeX TS-program = pdflatex -shell-escape
 
-
 \documentclass{article}
 \usepackage{dsfont}
 \usepackage{caption}
@@ -72,7 +71,7 @@
 \definecolor{textcolor}{HTML}{FFFFFF} % White text
 \definecolor{textcolorBlack}{HTML}{FFFFFF} % White text
 \definecolor{sectioncolor}{HTML}{FF4081} % Soft pink section headings
-\definecolor{accentcolor}{HTML}{00BCD4} % Teal accent color
+\definecolor{accentcolor}{HTML}{DC143C} % Teal accent color
 \colorlet{linkcolor}{blue} % Default hyperlink color in light mode
 % Anpassung des Caption-Stils
 \DeclareCaptionFormat{white}{\color{white}#1#2#3\par}
@@ -86,15 +85,13 @@
 
 % Dark mode toggle command
 \newif\ifdarkmode
-\darkmodetrue % Set default mode to light mode
+\darkmodefalse % Set default mode to light mode
 
 \makeatletter
 \newcommand{\toggleDarkMode}{%
     \ifdarkmode
         % Dark mode
         \captionsetup{format=white}
-        \colorlet{tikztextcolor}{textcolor} % Use the dark mode text color
-        \colorlet{tikzaccentcolor}{accentcolor} % Use the dark mode accent color    
         \pagecolor{background} % Set the background color
         \color{textcolor} % Set the text color
         \colorlet{linkcolor}{white} % Set link color to white in dark mode
@@ -123,18 +120,19 @@
         % TikZ settings for light mode
         \tikzset{
             text=black,
-            accentcolor=tikzaccentcolor,
-            sectioncolor=tikzaccentcolor,
+            accentcolor=accentcolor,
+            sectioncolor=sectioncolor,
             linkcolor=linkcolor,
         }
+        \tikzset{
+        every picture/.style={text=black}, % Set default text color to black
+        every node/.style={text=black}, % Set default text color for nodes to black
+}
     \fi
     \hypersetup{linkcolor=linkcolor, urlcolor=linkcolor}
-    \color{tikztextcolor} % Set the text color
+    %\color{tikztextcolor} % Set the text color
 }
 \makeatother
-
-
-
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\leftmark}

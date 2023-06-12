@@ -1,3 +1,4 @@
+\usetikzlibrary{trees}
 \coversection{Automaten/finit1.png}{Formale Grammatiken}{\\ \hspace*{\fill} - ChatGPT}
 \paragraph*{Idee:} Konstruktion aller Wörter einer Sprache.
 \paragraph*{Beispiel:} 
@@ -67,4 +68,150 @@
         \Delta=\{(X,a,y)\in N\times T\times N:X\to ay\in P\}
     \]
     erkannt.\\
-    Umgekehrt ist es einfach zu sehen, dass jede Reguläre Sprace von einer rechtslinearen Grammatik erzeugt wird.
+    Umgekehrt ist es einfach zu sehen, dass jede Reguläre Sprace von einer rechtslinearen Grammatik erzeugt wird. 
+
+\mysubsection{Beispiel}
+    Die Sprache \(\{0\}^*\) wird von der rechtlinearen Grammatik \[ G = (\{S\},\ \{0,\ 1\}^*,\ \{S \to 0S,\ S \to \lambda\},\ S)\] erzeugt von EA \[A = (\{S\},\ \{0,\ 1\}^*,\ \{(S,\ 0,\ S)\},\ S, \{S\})\] erkannt. Sowohl auf der Seite der Machinenmodelle als auch auf der Seite der Grammatiken gibt es weitere wichtige Sprachklassen, die sich ergeben wenn der Maschinenarbeitsweise oder Menge der zulässigen Regeln weniger stark eingeschränkt wird bei EA und rechtslinear Grammatiken.
+
+\mysubsection{Definition (kontextfrei)} 
+    Eine Grammatik \(G = (N,\ T,\ P,\ S)\) von der From \[X \to w\] mit \(X \in N\) und \(w \in (N \cup T)^*\) sind. Eine Sprache ist \textbf{kontextfrei}, wenn sie von einer Kontextfreien Grammatik erzeugt wird. Die Menge aller kontextfreien Sprachen bezeichnen wir mit \textbf{CF}.
+
+\mysubsection{Definition (lexikographische Ordnung)}
+    Sei \(\Sigma \) ein Alphabet. Die \textbf{lexikographische Ordnung} aud \(\Sigma^*\) ist die lineare Ordnung \(leq\) aud \(\Sigma^*\) für doe \(u \leq v\) für \(u, v \in \Sigma^*\) genau dann gilt wenn eine der folgenden Bedingungen erfüllt ist.
+    \begin{itemize}
+        \item [(L1)] \( u \sqsubseteq v\).
+        \item [(L2)] Es gibt ein \(i \in [min \{|u|, |v|\}] \) mit \( u(j) = v (j) \quad \forall j \in [i - 1]\) und \(u (i) \not = v (i)\) und \(u (i) \leq v(i)\) für eine gebildete, lineare Ordung \(\leq\) auf \(\Sigma\)
+    \end{itemize}
+    Schreiben wir \(\leq\) für eine lineare Ordnung, so bedeutet \(u < v\) für Elemente \(u, v\), dass \(u \leq v\) und \(u \not = v\) gelten.\\\\ Vetrachte \(G = (\{S, X\}, \{0, 1\}, P, S)\) mit \[P = \{S \to XX,\ X \to 0X1,\ X \to \lambda\}\] 
+    
+    \newpage
+    Betrachte Ableitung \(S,\ XX, X0X1,\ 0x10x1,\ 0X101,\ 00X1101,\ 001101\)
+
+    \vspace{1cm}
+    \begin{center}
+        \begin{tikzpicture}[level distance=2cm,
+            level 1/.style={sibling distance=5cm},
+            level 2/.style={sibling distance=2cm}]
+            
+            \node {S}
+            child 
+            {
+                node {X}
+                child{node {0}}
+                child 
+                {
+                    node {X}
+                    child {node {0}}
+                    child 
+                    {
+                        node{X}
+                        child{node {$\lambda$}}
+                    }
+                    child{node {1}}
+                }
+                child {node {1}}
+              }
+              child 
+              {
+                node {X}
+                child 
+                {
+                    node {0}
+                }
+                child 
+                {
+                    node {X}
+                    child 
+                    {
+                        node {$\lambda$}
+                    }
+                }
+                child 
+                {
+                    node {1}
+                }
+            };
+              
+            \node[right=1cm] at (current bounding box.east) 
+            {
+                \begin{minipage}{6cm}
+                    \begin{itemize}
+                        \item oben Wurzel
+                        \item die Ordnung der Knoten/ Ecken ist wichtig
+                        \item Knoten/ Ecken haben Beschriftungen
+                    \end{itemize}
+                \end{minipage}
+            };
+        \end{tikzpicture}
+    \end{center}
+    \createDiagram{Satz-Baum}{ }
+    \begin{center}
+        \begin{tikzpicture}[level distance=2cm,
+            level 1/.style={sibling distance=5cm},
+            level 2/.style={sibling distance=2cm}]
+            
+            \node {$\lambda$}
+            child 
+            {
+                node {1}
+                child{node {11}
+                    child{node {111}}
+                    child{node {112}}
+                }
+                child{node {12}}
+            }
+            child 
+            {
+                node {2}
+                child{node {21}}
+            }
+            child 
+            {
+                node {3}
+                child{node {31}}
+                child{node {32}}
+                child{node {33}}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+    \createDiagram{Satz-Baum}{ }
+    \begin{itemize}
+        \item Abbildung 12 repräsentiert die Sprache $T = \{\lambda, 1, 2, 3, 11, 12, 21, 31, 32, 33, 111, 112\}$.
+        \item Der Wurzelknoten ist $\lambda$.
+        \item Die Reihenfolge ist lexikographisch.
+    \end{itemize}
+    
+\mysubsection{Definition (Baum)} 
+    Eine endliche nicht leere Sprache T heißt \textbf{Baum}, wenn sie unter Präfixbildung abgeschlossen ist, also wenn für alle \(w \in T\) und \(p \sqsubseteq w\) auch \(p \in T\) gilt. Ein Wort \(w \in T\) heißt \textbf{Blatt} von T, wenn w bezüglich \(\sqsubseteq \) maximal in T istm also wenn \(w = w' \quad \forall w' \in T\) mit \(w \sqsubseteq w'\) gilt. Wörter \(w \in T\), die keine Blätter von T sind heißen \textbf{innere Ecken} von T.
+
+\mysubsection{Lemma}
+    Sei \(\Sigma\) eine Alphabet und \(\leq\) lie lexikographische Ordnung auf \(\Sigma^*\). Seien \(u, w \in \Sigma^*\) mit \(u \not \sqsubseteq w\) und \(u \leq w\). Seien \(v_1<\cdots<v_n \in \Sigma^*\) mit \(v_1 \not = \lambda\). Dann gilt \(u < u v_1< \cdots < uv_n < w\)
+
+    \[HIER ABB EINFÜGEN\]
+
+    \begin{proof}
+        Für \(v, v' \in \Sigma^*\) mit \(v \leq v'\) gilt offenba \(uv \leq uv'\)m es genügt also zu zeigen, dass \(uv \leq w \quad \forall v \in \Sigma^*\) gilt. Wegen \(u \not \sqsubseteq w\) existiert \(i \in [min \{|u|, |w|\}]\) mit \(u(j) = w(j) \quad \forall j \in [i-1]\) und \(u(i) < w(i)\). Für \(v \in \Sigma^*\) gilt dann \((uv)(j)=w(j) \quad \forall j \in [i - 1]\) und \((uv)(j)<w(i)\), also \(uv < w\).
+    \end{proof}
+
+\mysubsection{Lemma}
+    Sei T ein Baum, \(\leq\) die lexikographische Ordnung auf T, \(p \in T\) und \(Q:=\{w\in T: p\sqsubseteq w\}\). Es gelten \(p = min Q\) und \(Q = \{w \in T : min Q \leq w \leq max \leq max Q\}\). 
+
+    \[HIER ABB EINFÜGEN\]
+
+    \begin{proof}
+        Offensichtlich gilt \(p = min Q\). Für \(w \in Q\) gilt \(min Q \leq w \leq max Q\) nach Definition von min Q und max Q. Für \(w \not \in Q\) mit \(w \sqsubseteq w' \quad \forall w' \in Q\), also \(w < min Q\). Für \(w \not \in Q\) mit \(w \not \sqsubseteq p \quad \exists i \in [min {|p|, |w|}]\) mit \(w(i) \not = p(i)\), insbesondere existiert also ein minimales solches i und nach Definition von \(\leq\) folgt damit \(w \leq w' \quad \forall w'\in Q\) oder \(w' \leq w \quad w' \in Q\), insbesondere also wegen \( w \not \in Q\) somit \( w < min \ Q\) oder \(max \ Q < w\).
+    \end{proof}
+
+\mysubsection{Definition (Beschrftung)} 
+    Eine \textbf{Beschrftung} eines Baumes T mit Elementen einer Menge X ist eine Funktion \(b: T \to X\).
+
+\mysubsection{Definition (Blattwort)}
+    Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). \[HIER ABB EINFÜGEN\] Blattwort: 001101
+
+\mysubsection{Definition (Ableitungsbaum)} 
+    Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und sei \(d:= max (\{|w|: x \to w \in P\} \cup \{1\})\). Ein \textbf{Ableitungsbaum} einer Satzform \(w \in (N \cup T)^*\) aus \(A \in N\) ind G ist ein paar (T, b) aus einem Baum \(T \subseteq [d]^*\) und einer Beschriftung \(b: T \to N \cup T \cup {\lambda}\) mit \(b(\lambda) = A\) und Blattwort w, so dass für alle inneren Ecken t von T eine Regel \(C \to v \in P\) existiert, so dass folgendes gilt.
+    \begin{itemize}
+        \item [(i)] \(b(t) = X\)
+        \item [(ii)] \(\{t' \in T : t \sqsubseteq t' \text{ und } |t'| = |t| + 1\} = \{ta : a \in max \{|v|, 1\}\}\)
+    \end{itemize}
