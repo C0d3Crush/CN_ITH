@@ -189,6 +189,7 @@
     Sei \(\Sigma\) eine Alphabet und \(\leq\) lie lexikographische Ordnung auf \(\Sigma^*\). Seien \(u, w \in \Sigma^*\) mit \(u \not \sqsubseteq w\) und \(u \leq w\). Seien \(v_1<\cdots<v_n \in \Sigma^*\) mit \(v_1 \not = \lambda\). Dann gilt \(u < u v_1< \cdots < uv_n < w\)
 
     \[HIER ABB EINFÜGEN\]
+    \createDiagram{}{}
 
     \begin{proof}
         Für \(v, v' \in \Sigma^*\) mit \(v \leq v'\) gilt offenba \(uv \leq uv'\)m es genügt also zu zeigen, dass \(uv \leq w \quad \forall v \in \Sigma^*\) gilt. Wegen \(u \not \sqsubseteq w\) existiert \(i \in [min \{|u|, |w|\}]\) mit \(u(j) = w(j) \quad \forall j \in [i-1]\) und \(u(i) < w(i)\). Für \(v \in \Sigma^*\) gilt dann \((uv)(j)=w(j) \quad \forall j \in [i - 1]\) und \((uv)(j)<w(i)\), also \(uv < w\).
@@ -198,6 +199,7 @@
     Sei T ein Baum, \(\leq\) die lexikographische Ordnung auf T, \(p \in T\) und \(Q:=\{w\in T: p\sqsubseteq w\}\). Es gelten \(p = min Q\) und \(Q = \{w \in T : min Q \leq w \leq max \leq max Q\}\). 
 
     \[HIER ABB EINFÜGEN\]
+    \createDiagram{}{}
 
     \begin{proof}
         Offensichtlich gilt \(p = min Q\). Für \(w \in Q\) gilt \(min Q \leq w \leq max Q\) nach Definition von min Q und max Q. Für \(w \not \in Q\) mit \(w \sqsubseteq w' \quad \forall w' \in Q\), also \(w < min Q\). Für \(w \not \in Q\) mit \(w \not \sqsubseteq p \quad \exists i \in [min {|p|, |w|}]\) mit \(w(i) \not = p(i)\), insbesondere existiert also ein minimales solches i und nach Definition von \(\leq\) folgt damit \(w \leq w' \quad \forall w'\in Q\) oder \(w' \leq w \quad w' \in Q\), insbesondere also wegen \( w \not \in Q\) somit \( w < min \ Q\) oder \(max \ Q < w\).
@@ -207,11 +209,29 @@
     Eine \textbf{Beschrftung} eines Baumes T mit Elementen einer Menge X ist eine Funktion \(b: T \to X\).
 
 \mysubsection{Definition (Blattwort)}
-    Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). \[HIER ABB EINFÜGEN\] Blattwort: 001101
+    Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). Blattwort: 001101 \[HIER ABB EINFÜGEN\] 
+    \createDiagram{}{}
 
 \mysubsection{Definition (Ableitungsbaum)} 
     Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und sei \(d:= max (\{|w|: x \to w \in P\} \cup \{1\})\). Ein \textbf{Ableitungsbaum} einer Satzform \(w \in (N \cup T)^*\) aus \(A \in N\) ind G ist ein paar (T, b) aus einem Baum \(T \subseteq [d]^*\) und einer Beschriftung \(b: T \to N \cup T \cup {\lambda}\) mit \(b(\lambda) = A\) und Blattwort w, so dass für alle inneren Ecken t von T eine Regel \(C \to v \in P\) existiert, so dass folgendes gilt.
     \begin{itemize}
         \item [(i)] \(b(t) = X\)
         \item [(ii)] \(\{t' \in T : t \sqsubseteq t' \text{ und } |t'| = |t| + 1\} = \{ta : a \in max \{|v|, 1\}\}\)
+        \item [(iii)] \(b(ta) = v(a) \quad \forall a \in [|v|]\)
+        \item [(iv)] \(b(t1) = \lambda \text{ falls } v = \lambda\)
+    \end{itemize}
+    Die \textbf{Blätter} von (T, b) sind die Blätter von T und die \textbf{inneren Ecken} von (T, b) sind die inneren Ecken von T.
+
+\mysubsection{Beispiel}     
+    Sei \(G = (\{S\},\ \{0,\ 1\},\ \{S \to 0S1,\ S \to \lambda\},\ S),\ T = \{\lambda,\ 1,\ 2,\ 3,\ 21,\ 22,\ 23,\ 221\}\) und sei \(b:T\to\{S,\ 0,\ 1,\ \lambda\}\) die Beschriftung mit \(b(\lambda) = b(2) = b(22) = S,\ b(1) = b(21) = 0\) und \(b(221) = \lambda\). Dann ist (T, b) ein Ableitungsbaum von 0011 aus S un G. Die \textbf{Darstellung} von T sieht wi folgt aus: \[HIERABBEINFÜGEN\]
+    \createDiagram{Darstellung von T}{}
+
+    \[Visualisierung 1 + 2 \]
+    \createDiagram{Colorization}{}
+
+\mysubsection{Satz (Pumping-Lemma für kontextfreie Sprachen)}
+    Sei \(Sigma\) ein Alphabet. Für jede kontextfreie Sprache \(L \subseteq \Sigma^*\) gibt es eine Konstante \(\in \mathbb{N}\), so dass folgendes gilt:\\ Ist \(z \in L\) mit \(|z| \geq k\), so gibt es Wörter \(u, v, w, x, y \in \Sigma^*\) mit \(z = uvwxy\), so dass folgendes gilt.
+    \begin{itemize}
+        \item [(i)] \(vx \not = \lambda\)
+        \item [(ii)]\(|vwx| \leq k\)
     \end{itemize}

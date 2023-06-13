@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  12 JUN 2023 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  13 JUN 2023 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,6 +718,12 @@ LaTeX Warning: Label `fig:Standardaufzählung' multiply defined.
 
 LaTeX Warning: Label `fig:Satz-Baum' multiply defined.
 
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
 ) (./Bilder/main.aux))
 \openout1 = `script.aux'.
 
@@ -804,7 +810,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=481, 263.48438pt x 263.48438pt>
+<qrcode.png, id=489, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
 Package pdftex.def Info: qrcode.png  used on input line 236.
@@ -857,7 +863,7 @@ l.52 ...umberline {3.13}Satz}{18}{subsection.3.13}
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einführung.png, id=745, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einführung.png, id=757, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einführung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einführung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einführung.png  used on input line 3.
@@ -1160,31 +1166,35 @@ Overfull \hbox (1.74472pt too wide) in paragraph at lines 145--146
 LaTeX Warning: Command \" invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 200.
+LaTeX Warning: Command \" invalid in math mode on input line 201.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 210.
+LaTeX Warning: Command \" invalid in math mode on input line 212.
 
-) [39]
+[39]
+
+LaTeX Warning: Command \" invalid in math mode on input line 226.
+
+) [40]
 \openout2 = `Bilder/main.aux'.
 
  (./Bilder/main.tex
-<Turingmachine/turing.png, id=967, 1027.84pt x 1027.84pt>
+<Turingmachine/turing.png, id=988, 1027.84pt x 1027.84pt>
 File: Turingmachine/turing.png Graphic file (type png)
 <use Turingmachine/turing.png>
 Package pdftex.def Info: Turingmachine/turing.png  used on input line 3.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Berechenbarkeit/predic.png, id=968, 1027.84pt x 1027.84pt>
+<Berechenbarkeit/predic.png, id=989, 1027.84pt x 1027.84pt>
 File: Berechenbarkeit/predic.png Graphic file (type png)
 <use Berechenbarkeit/predic.png>
 Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 4.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Automaten/finit1.png, id=969, 1027.84pt x 1027.84pt>
+<Automaten/finit1.png, id=990, 1027.84pt x 1027.84pt>
 File: Automaten/finit1.png Graphic file (type png)
 <use Automaten/finit1.png>
 Package pdftex.def Info: Automaten/finit1.png  used on input line 5.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<ReguläreSprachen/regul.png, id=970, 1027.84pt x 1027.84pt>
+<ReguläreSprachen/regul.png, id=991, 1027.84pt x 1027.84pt>
 File: ReguläreSprachen/regul.png Graphic file (type png)
 <use ReguläreSprachen/regul.png>
 Package pdftex.def Info: ReguläreSprachen/regul.png  used on input line 6.
@@ -1199,7 +1209,7 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
 [] [] 
  []
 
-) [40
+) [41
 
 
 
@@ -1208,21 +1218,21 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: 4BC922C1368B96A51551C5B4000BD4E7;19284.
+(rerunfilecheck)             Checksum: FB33CC9D5557B265A2A901855E96C4EF;19695.
  ) 
 Here is how much of TeX's memory you used:
- 30960 strings out of 476025
- 613589 string characters out of 5790017
+ 30975 strings out of 476025
+ 613818 string characters out of 5790017
  1877388 words of memory out of 5000000
- 50636 multiletter control sequences out of 15000+600000
+ 50643 multiletter control sequences out of 15000+600000
  584641 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,15n,104p,3231b,1381s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (41 pages, 8545487 bytes).
+Output written on script.pdf (42 pages, 8548044 bytes).
 PDF statistics:
- 1125 PDF objects out of 1200 (max. 8388607)
- 1015 compressed objects within 11 object streams
- 175 named destinations out of 1000 (max. 500000)
- 987 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1148 PDF objects out of 1200 (max. 8388607)
+ 1037 compressed objects within 11 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 1003 words of extra memory for PDF output out of 10000 (max. 10000000)
 

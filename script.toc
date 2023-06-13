@@ -115,5 +115,7 @@
 \contentsline {subsection}{\numberline {6.13}Lemma}{39}{subsection.6.13}%
 \contentsline {subsection}{\numberline {6.14}Definition (Beschrftung)}{39}{subsection.6.14}%
 \contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{39}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{39}{subsection.6.16}%
-\contentsline {section}{\numberline {7}Bilder}{40}{section.7}%
+\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{40}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.17}Beispiel}{40}{subsection.6.17}%
+\contentsline {subsection}{\numberline {6.18}Satz (Pumping-Lemma für kontextfreie Sprachen)}{40}{subsection.6.18}%
+\contentsline {section}{\numberline {7}Bilder}{41}{section.7}%
