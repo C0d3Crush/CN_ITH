@@ -1,6 +1,8 @@
 % !TeX TS-program = pdflatex -shell-escape
 
 \documentclass{article}
+\usepackage{tikz}
+\usepackage{booktabs}
 \usepackage{dsfont}
 \usepackage{caption}
 \usepackage{amsmath}
@@ -85,7 +87,7 @@
 
 % Dark mode toggle command
 \newif\ifdarkmode
-\darkmodefalse % Set default mode to light mode
+\darkmodetrue % Set default mode to light mode
 
 \makeatletter
 \newcommand{\toggleDarkMode}{%

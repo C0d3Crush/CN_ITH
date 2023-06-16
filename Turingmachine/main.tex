@@ -152,35 +152,37 @@ Für Alphabet $\Sigma, \Gamma$ und eine partielle Funktion $\Phi : \Sigma^* \lea
   wobei $\underline{a} \not \in \Gamma$ für $a \in \Gamma$. Hierbei bedeutet \underline{a}, dass das simulierte Feld mit a beschriftet ist und dass dort der simulierte Kopf steht. Weiter spielt $\Box$ die Rolle des k-Tupels $(\Box, \cdots, \Box)$ um der Tatsache gerecht zu werden, dan alle Felderzu Begin mit $\Box$ beschriftet sind.
   \createDiagram{Spurentechnik}
   {
-    \begin{tikzpicture}[cell/.style={rectangle, draw=black, minimum size=1cm}, node distance=0cm]
+  }
+
+  \begin{tikzpicture}[cell/.style={rectangle, draw=black, minimum size=1cm}, node distance=0cm]
 
     % Erstes Band
     \node[cell] (cell11) {...};
     \node[cell, right=of cell11, draw=red] (cell12) {0};
-    \node[cell, right=of cell12, draw=tikzaccentcolor] (cell13) {0};
-    \node[cell, right=of cell13, draw=tikzaccentcolor] (cell14) {1};
-    \node[cell, right=of cell14, draw=tikzaccentcolor] (cell15) {...};
+    \node[cell, right=of cell12, draw=accentcolor] (cell13) {0};
+    \node[cell, right=of cell13, draw=accentcolor] (cell14) {1};
+    \node[cell, right=of cell14, draw=accentcolor] (cell15) {...};
     
     % Zweites Band
-    \node[cell, below=0.5cm of cell11, draw=tikzaccentcolor] (cell21) {...};
-    \node[cell, right=of cell21, draw=tikzaccentcolor] (cell22) {1};
-    \node[cell, right=of cell22, draw=tikzaccentcolor] (cell23) {0};
+    \node[cell, below=0.5cm of cell11, draw=accentcolor] (cell21) {...};
+    \node[cell, right=of cell21, draw=accentcolor] (cell22) {1};
+    \node[cell, right=of cell22, draw=accentcolor] (cell23) {0};
     \node[cell, right=of cell23, draw=red] (cell24) {0};
-    \node[cell, right=of cell24, draw=tikzaccentcolor] (cell25) {...};
+    \node[cell, right=of cell24, draw=accentcolor] (cell25) {...};
     
     % Drittes Band
-    \node[cell, below=0.5cm of cell21, draw=tikzaccentcolor] (cell31) {...};
-    \node[cell, right=of cell31, draw=tikzaccentcolor] (cell32) {0};
+    \node[cell, below=0.5cm of cell21, draw=accentcolor] (cell31) {...};
+    \node[cell, right=of cell31, draw=accentcolor] (cell32) {0};
     \node[cell, right=of cell32, draw=red] (cell33) {1};
-    \node[cell, right=of cell33, draw=tikzaccentcolor] (cell34) {1};
-    \node[cell, right=of cell34, draw=tikzaccentcolor] (cell35) {...};
+    \node[cell, right=of cell33, draw=accentcolor] (cell34) {1};
+    \node[cell, right=of cell34, draw=accentcolor] (cell35) {...};
     
     % Vertikales Band
-    \node[cell, right=5cm of cell22, minimum height=4.13cm, align=center, draw=tikzaccentcolor] (cell41) {...};
+    \node[cell, right=5cm of cell22, minimum height=4.13cm, align=center, draw=accentcolor] (cell41) {...};
     \node[cell, right=0cm of cell41, minimum height=4.13cm, align=center, draw=red] (cell42) {1 \\\\\\ 0 \\\\\\ 1};
-    \node[cell, right=0cm of cell42, minimum height=4.13cm, align=center, draw=tikzaccentcolor] (cell43) {1 \\\\\\ 0 \\\\\\ 1};
-    \node[cell, right=0cm of cell43, minimum height=4.13cm, align=center, draw=tikzaccentcolor] (cell44) {1 \\\\\\ 0 \\\\\\ 1};
-    \node[cell, right=0cm of cell44, minimum height=4.13cm, align=center, draw=tikzaccentcolor] (cell45) {...};
+    \node[cell, right=0cm of cell42, minimum height=4.13cm, align=center, draw=accentcolor] (cell43) {1 \\\\\\ 0 \\\\\\ 1};
+    \node[cell, right=0cm of cell43, minimum height=4.13cm, align=center, draw=accentcolor] (cell44) {1 \\\\\\ 0 \\\\\\ 1};
+    \node[cell, right=0cm of cell44, minimum height=4.13cm, align=center, draw=accentcolor] (cell45) {...};
 
 
     % Pfeil
@@ -205,7 +207,6 @@ Für Alphabet $\Sigma, \Gamma$ und eine partielle Funktion $\Phi : \Sigma^* \lea
     \draw[->, very thick, black] (cell25.east) -- (cell41.west);
 
     \end{tikzpicture}
-  }
   \newpage
     
   \item Von beliebigen bandalphabet zu $\{\Box, 0, 1\}$: Andere bandalphabete können bei einem \textbf{Alphabetwechel} zum Bandalphabet $\{\Box, 0, 1\}$ simuliert werden um ein Symbol des vorherigen Bandlaphabets durch ein Binärwort zu beschreiben. Die TM liest stets nur ein Feld, es wird dabei also nötig sein die Zustandsmenge so zu erweitern, dass angrenzende Felder im Zustand gespeichert weden können.

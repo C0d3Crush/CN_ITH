@@ -105,7 +105,7 @@
 \contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{35}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Lemma}{36}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Satz}{36}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Rechtslinear}{36}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.6}Definition (Rechtslinear)}{36}{subsection.6.6}%
 \contentsline {subsection}{\numberline {6.7}Satz}{36}{subsection.6.7}%
 \contentsline {subsection}{\numberline {6.8}Beispiel}{37}{subsection.6.8}%
 \contentsline {subsection}{\numberline {6.9}Definition (kontextfrei)}{37}{subsection.6.9}%
@@ -113,9 +113,24 @@
 \contentsline {subsection}{\numberline {6.11}Definition (Baum)}{39}{subsection.6.11}%
 \contentsline {subsection}{\numberline {6.12}Lemma}{39}{subsection.6.12}%
 \contentsline {subsection}{\numberline {6.13}Lemma}{39}{subsection.6.13}%
-\contentsline {subsection}{\numberline {6.14}Definition (Beschrftung)}{39}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{39}{subsection.6.15}%
+\contentsline {subsection}{\numberline {6.14}Definition (Beschrftung)}{40}{subsection.6.14}%
+\contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{40}{subsection.6.15}%
 \contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{40}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}Beispiel}{40}{subsection.6.17}%
-\contentsline {subsection}{\numberline {6.18}Satz (Pumping-Lemma für kontextfreie Sprachen)}{40}{subsection.6.18}%
-\contentsline {section}{\numberline {7}Bilder}{41}{section.7}%
+\contentsline {subsection}{\numberline {6.17}Beispiel}{41}{subsection.6.17}%
+\contentsline {subsection}{\numberline {6.18}Lemma}{41}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}Lemma}{41}{subsection.6.19}%
+\contentsline {subsection}{\numberline {6.20}Satz (Pumping-Lemma für kontextfreie Sprachen)}{42}{subsection.6.20}%
+\contentsline {subsection}{\numberline {6.21}Beispiel}{43}{subsection.6.21}%
+\contentsline {subsection}{\numberline {6.22}Beschreibung (Kellerautomat)}{43}{subsection.6.22}%
+\contentsline {subsection}{\numberline {6.23}Satz}{43}{subsection.6.23}%
+\contentsline {subsection}{\numberline {6.24}Beispiel}{43}{subsection.6.24}%
+\contentsline {subsection}{\numberline {6.25}Definition (Kontextsensitiv)}{43}{subsection.6.25}%
+\contentsline {subsection}{\numberline {6.26}Definition (nicht verkürzend)}{44}{subsection.6.26}%
+\contentsline {subsection}{\numberline {6.27}Satz}{44}{subsection.6.27}%
+\contentsline {subsection}{\numberline {6.28}Beschreibung (linear beschränkter Automat)}{44}{subsection.6.28}%
+\contentsline {subsection}{\numberline {6.29}Satz}{44}{subsection.6.29}%
+\contentsline {subsection}{\numberline {6.30}Beispiel}{44}{subsection.6.30}%
+\contentsline {subsection}{\numberline {6.31}Definition}{44}{subsection.6.31}%
+\contentsline {subsection}{\numberline {6.32}Satz}{45}{subsection.6.32}%
+\contentsline {subsection}{\numberline {6.33}Beispiel}{45}{subsection.6.33}%
+\contentsline {section}{\numberline {7}Bilder}{46}{section.7}%
