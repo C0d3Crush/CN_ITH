@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  23 JUN 2023 23:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  24 JUN 2023 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,7 +828,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=549, 263.48438pt x 263.48438pt>
+<qrcode.png, id=545, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
 Package pdftex.def Info: qrcode.png  used on input line 238.
@@ -872,7 +872,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 ...umberline {3.13}Satz}{18}{subsection.3.13}
+l.54 ...em, Emil Port, 1946)}{18}{subsection.3.14}
                                                   % [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [2])
 \tf@toc=\write5
 \openout5 = `script.toc'.
@@ -881,7 +881,7 @@ l.52 ...umberline {3.13}Satz}{18}{subsection.3.13}
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/EinfÃ¼hrung.png, id=848, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/EinfÃ¼hrung.png, id=842, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/EinfÃ¼hrung.png Graphic file (type png)
 <use Grundlagen/svg_files/EinfÃ¼hrung.png>
 Package pdftex.def Info: Grundlagen/svg_files/EinfÃ¼hrung.png  used on input line 3.
@@ -900,157 +900,30 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 ]
-Underfull \hbox (badness 2005) in paragraph at lines 45--46
-\T1/lmr/m/n/10 Das Sym-bol $\U/msa/m/n/10 ^^C$ \T1/lmr/m/n/10 heiÿt \T1/lmr/bx/n/10 Blank\T1/lmr/m/n/10 . Die Ele-men-te von $\OT1/lmr/m/n/10 ^^A$ \T1/lmr/m/n/10 hei-ÿen \T1/lmr/bx/n/10 in-struk-tio-nen\T1/lmr/m/n/10 . Für ei-ne In-struk-ti-on
+Overfull \hbox (96.7652pt too wide) in paragraph at lines 45--46
+\T1/lmr/m/n/10 Das Sym-bol $\U/msa/m/n/10 ^^C$ \T1/lmr/m/n/10 heiÿt \T1/lmr/bx/n/10 Blank\T1/lmr/m/n/10 . Die Ele-men-te von $\OT1/lmr/m/n/10 ^^A$ \T1/lmr/m/n/10 hei-ÿen \T1/lmr/bx/n/10 in-struk-tio-nen\T1/lmr/m/n/10 . Für ei-ne In-struk-ti-on $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q[]; a[]; []  ; a[]; q[]; a[]; []  ; a[]; B[]; []  ; B[]\OT1/lmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 52--52
-\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 ei-ne k-DTM. Für Kon-fi-gu-ra-ti-on $\OML/lmm/m/it/10 C \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 C[] \OT1/lmr/m/n/10 =
+Overfull \hbox (40.5955pt too wide) in paragraph at lines 59--60
+\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 ei-ne k-DTM. Für Kon-fi-gu-ra-ti-on $\OML/lmm/m/it/10 C \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 C[] \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$
  []
 
 [8
 
 ] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 86--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--91
-
- []
-
-
-Overfull \hbox (20.09167pt too wide) in paragraph at lines 101--102
+Overfull \hbox (20.09167pt too wide) in paragraph at lines 128--129
 []\T1/lmr/m/n/10 Ist die rech-nung von M zur Ein-ga-be $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 die end-li-che Rech-nung $\OML/lmm/m/it/10 C[]; []  ; C[]$\T1/lmr/m/n/10 , so gilt $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 ) =
  []
 
 [10]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 111.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 139.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [11]
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no ] in font nullfont!
+
+LaTeX Warning: Command \" invalid in math mode on input line 191.
+
 [12]) [13]
 \openout2 = `Berechenbarkeit/main.aux'.
 
@@ -1185,22 +1058,22 @@ LaTeX Warning: Command \" invalid in math mode on input line 466.
 \openout2 = `Bilder/main.aux'.
 
  (./Bilder/main.tex
-<Turingmachine/turing.png, id=1101, 1027.84pt x 1027.84pt>
+<Turingmachine/turing.png, id=1095, 1027.84pt x 1027.84pt>
 File: Turingmachine/turing.png Graphic file (type png)
 <use Turingmachine/turing.png>
 Package pdftex.def Info: Turingmachine/turing.png  used on input line 3.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Berechenbarkeit/predic.png, id=1102, 1027.84pt x 1027.84pt>
+<Berechenbarkeit/predic.png, id=1096, 1027.84pt x 1027.84pt>
 File: Berechenbarkeit/predic.png Graphic file (type png)
 <use Berechenbarkeit/predic.png>
 Package pdftex.def Info: Berechenbarkeit/predic.png  used on input line 4.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<Automaten/finit1.png, id=1103, 1027.84pt x 1027.84pt>
+<Automaten/finit1.png, id=1097, 1027.84pt x 1027.84pt>
 File: Automaten/finit1.png Graphic file (type png)
 <use Automaten/finit1.png>
 Package pdftex.def Info: Automaten/finit1.png  used on input line 5.
 (pdftex.def)             Requested size: 236.01561pt x 236.00613pt.
-<RegulÃ¤reSprachen/regul.png, id=1104, 1027.84pt x 1027.84pt>
+<RegulÃ¤reSprachen/regul.png, id=1098, 1027.84pt x 1027.84pt>
 File: RegulÃ¤reSprachen/regul.png Graphic file (type png)
 <use RegulÃ¤reSprachen/regul.png>
 Package pdftex.def Info: RegulÃ¤reSprachen/regul.png  used on input line 6.
@@ -1224,21 +1097,21 @@ Overfull \hbox (2.2222pt too wide) in paragraph at lines 3--8
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: ABEA272584A649F8CEBADEAD9ACD88CA;21700.
+(rerunfilecheck)             Checksum: 0687C03E1090F2C53CDE73ABC04D5F2B;21529.
  ) 
 Here is how much of TeX's memory you used:
- 31439 strings out of 476025
- 621038 string characters out of 5790017
+ 31437 strings out of 476025
+ 621013 string characters out of 5790017
  1877388 words of memory out of 5000000
- 51080 multiletter control sequences out of 15000+600000
+ 51079 multiletter control sequences out of 15000+600000
  590626 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,104p,3231b,1454s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (47 pages, 8575288 bytes).
+Output written on script.pdf (47 pages, 8571043 bytes).
 PDF statistics:
- 1264 PDF objects out of 1440 (max. 8388607)
- 1147 compressed objects within 12 object streams
- 204 named destinations out of 1000 (max. 500000)
- 1123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1258 PDF objects out of 1440 (max. 8388607)
+ 1141 compressed objects within 12 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 1115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
