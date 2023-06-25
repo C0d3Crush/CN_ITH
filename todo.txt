@@ -5,3 +5,7 @@ Satz von Myhill und nerode ->add links
 6.10 bei abbildung einen hyperref und italic font für alle abb machen
 
 2.15 partiell berechenbar - links
+
+verkettung sprache plural machen
+
+und l1 o l1 zu l1 o l2

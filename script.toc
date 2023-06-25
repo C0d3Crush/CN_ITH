@@ -92,7 +92,7 @@
 \contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{31}{subsection.5.13}%
 \contentsline {subsection}{\numberline {5.14}Bemerkung}{31}{subsection.5.14}%
 \contentsline {subsection}{\numberline {5.15}Definition (Parition)}{31}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{31}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{32}{subsection.5.16}%
 \contentsline {subsection}{\numberline {5.17}Bemerkung}{32}{subsection.5.17}%
 \contentsline {subsection}{\numberline {5.18}Proposition}{32}{subsection.5.18}%
 \contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{32}{subsection.5.19}%

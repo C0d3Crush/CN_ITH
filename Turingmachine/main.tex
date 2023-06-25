@@ -136,7 +136,7 @@
 \mysubsection{Definition (charackteristische Funktion, partielle charachteristische Funktion)} 
   Sei L eine Sprache über dem Alphabet \(\Sigma\)
   \begin{itemize}
-    \item [(i)] Die \textbf{charackteristische Funktion} von L als Sprache über \(\Sigma\) ist die Funktion \(\mathbbm{1}_L : \Sigma \rightarrow \{0, 1\} mit \mathbbm{1}_L = 1 \forall w \in L und \mathbbm{1}_L (u) = 0 \forall w \in \Sigma^* / L\).
+    \item [(i)] Die \textbf{charackteristische Funktion} von L als Sprache über \(\Sigma\) ist die Funktion \(\mathbbm{1}_L : \Sigma \rightarrow \{0, 1\}\) mit \(\mathbbm{1}_L = 1 \forall w \in L\) und \(\mathbbm{1}_L (u) = 0 \forall w \in \Sigma^* / L\).
     \item [(ii)] Die \textbf{ partielle charackteristische Funktion} von L als Sprache über \(\Sigma\) ist die partielle Funktion \(x_L : \Sigma^* \leadsto \{1\} mit x_L(w) = 1 \forall w \in L und x_L(w) \uparrow  \forall w \in \Sigma^* / L\). 
   \end{itemize}
 
@@ -151,7 +151,8 @@
 
 \mysubsection{Bemerkung (normiert)} 
   Eine 1-DTM \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) heißt \textbf{normiert}, wenn \(Q = {0,\cdots, n}\) für eine \(n \in \mathbb{N}_{0}, \Sigma = {0, 1}, \Gamma = {\Box, 0, 1}, s = 0, F = {s}\). Alle TMs mit Eingabealphabet {0,1} lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln. 
-  \paragraph*{Von Nichtdeterminismus zu Determinismus}: Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}.
+\paragraph*{Von Nichtdeterminismus zu Determinismus:} 
+  Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}.
   \createDiagram{Breitensuche}
   {}
 
