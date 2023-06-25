@@ -134,4 +134,6 @@
 \contentsline {subsection}{\numberline {6.31}Definition}{44}{subsection.6.31}%
 \contentsline {subsection}{\numberline {6.32}Satz}{45}{subsection.6.32}%
 \contentsline {subsection}{\numberline {6.33}Beispiel}{45}{subsection.6.33}%
-\contentsline {section}{\numberline {7}Bilder}{46}{section.7}%
+\contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{46}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{47}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Bilder}{48}{section.8}%
