@@ -9,10 +9,10 @@
     \item [(ii)] \(a \sim b \Rightarrow  b \sim a \quad \forall a, b, c \in A\) (Symetrie)
     \item [(iii)] \(a \sim b, b \sim c \rightarrow a \sim c \quad \forall a, b, c \in A\)(Transitivität)
   \end{itemize}
-  Die \textbf{Äquivalenzklasse} eines Elements \(a \in A\) bezüglich \(\sim\) ist die Menge \([a]_{~} := {a' \in A : a' ~a}\). Der \textbf{Index} von \(\sim\) ist die Kardinalität der Menge \(A_{/\sim} := {[a]_{\sim} : a \in A}\) falls diese endlich ist und \(\infty\)  andernfalls.
+  Die \textbf{Äquivalenzklasse} eines Elements \(a \in A\) bezüglich \(\sim\) ist die Menge \([a]_{~} := {a' \in A : a' ~a}\). Der \textbf{Index} von \(\sim\) ist die Kardinalität der Menge \(A_{/\sim} := {[a]_{\sim} : a \in A}\) falls diese endlich ist und \(\infty\) andernfalls.
 
 \mysubsection{Definition (A-Äquivalenz)} 
-  Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA mit erweiterter Übergangsfunktion \(\delta^{*}: Q \times \Sigma \rightarrow Q\). Die A-Äquivalenz ist die Relation \(\sim_A auf \Sigma^{*}\) mit 
+  Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA mit erweiterter Übergangsfunktion \(\delta^{*}: Q \times \Sigma \rightarrow Q\). Die A-Äquivalenz ist die Relation \(\sim_A\) auf \(\Sigma^{*}\) mit 
 \[
   u \sim_A v \Leftrightarrow \delta^*(s, u) = \delta^*(s,v) \quad \forall u, v \in \Sigma
 \]
@@ -39,7 +39,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
   \end{proof} 
   Dann gilt \(uw\sim_{A}vw\). Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von \(\sim_{A}\) ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) mit endlichem Index, so gibt es einen DEA A mit L(A) = L
 
-\mysubsection{Definition} 
+\mysubsection{Definition(DEA-Konstruktion für Äquivalenzklassen)} 
   Sei \(\Sigma\) eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index. Es bezeichne
   \[
     A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}
