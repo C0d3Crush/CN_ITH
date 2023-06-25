@@ -41,7 +41,7 @@ Hier sind einige weitere Ressourcen, die dir beim Lernen und Verstehen des Kurse
 
 Zusätzlich zum Skript gibt es auch eine Karteikartensammlung, die alle Definitionen des Skripts abdeckt. Die Karteikarten dienen als nützliches Hilfsmittel zur Wiederholung und Vertiefung des gelernten Stoffs. Die Karteikartensammlung ist im Anki-Format mit der Dateiendung .apkg erstellt.
 
-Um auf die Karteikarten zuzugreifen, kannst du entweder den Ordner "Karteikarten" herunterladen, der das gesamte Anki-Deck enthält, oder du kannst die Karteikartensammlung als separate Datei mit der Erweiterung .apkg aus den Releases herunterladen.
+Um die Karteikarten verwenden zu können, benötigst du die Anki-App, die auf deinem Gerät installiert sein muss. Du kannst die Anki-App von der offiziellen GitHub-Seite der Entwickler herunterladen: [https://github.com/ankitects/anki].
 
-
+Um auf die Karteikarten zuzugreifen, kannst du entweder den Ordner "Karteikarten" herunterladen, der das gesamte Anki-Deck enthält, oder du kannst die Karteikartensammlung als separate .apkg-Datei aus den Releases herunterladen.
 
