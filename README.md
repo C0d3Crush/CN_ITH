@@ -1,6 +1,6 @@
 # ITH-Script
 
-Das ITH-Skript ist ein umfassendes Mitschrift-Skript für die Einführung in dei theoretische Informatik. Es ist als PDF-Datei verfügbar und enthält wichtige Informationen.
+Das ITH-Skript ist ein umfassendes Mitschrift-Skript für die Einführung in die theoretische Informatik. Es ist als PDF-Datei verfügbar und enthält wichtige Informationen.
 
 ## Inhaltsverzeichnis
 
@@ -8,6 +8,7 @@ Das ITH-Skript ist ein umfassendes Mitschrift-Skript für die Einführung in dei
 - [Lizenz](#lizenz)
 - [Fehler melden und Beitrag leisten](#fehler-melden-und-beitrag-leisten)
 - [Weiterführende Ressourcen](#weiterführende-ressourcen)
+- [Karteikartensammlung](#karteikartensammlung)
 
 ## Verwendung des Skripts
 
@@ -16,7 +17,6 @@ Das Skript.pdf ist das Hauptergebnis dieses Repositories. Du kannst es einfach h
 Unter dem Abschnitt "Releases" findest du die aktuellste stabile Version des Skripts, die als vollständig und fehlerfrei gilt. Lade diese Version herunter, um die neueste fertige Version des Skripts zu erhalten.
 
 **Hinweis:** Es könnte eine neuere, aber möglicherweise fehlerhafte Version des Skripts mit dem Namen "Skript.pdf" unter den anderen Dateien im Repository geben. Diese Version enthält möglicherweise noch Fehler und ist noch nicht vollständig überarbeitet. Verwende sie auf eigenes Risiko.
-
 
 ## Lizenz
 
@@ -36,4 +36,12 @@ Hier sind einige weitere Ressourcen, die dir beim Lernen und Verstehen des Kurse
 - Vossen, G., & Witt, K. U. (2016). Grundkurs Theoretische Informatik: Eine anwendungsbezogene Einführung-Für Studierende in allen Informatik-Studiengängen. Springer Vieweg.
 
 - https://moodle.uni-heidelberg.de/course/view.php?id=16134
+- 
+## Karteikartensammlung
+
+Zusätzlich zum Skript gibt es auch eine Karteikartensammlung, die alle Definitionen des Skripts abdeckt. Die Karteikarten dienen als nützliches Hilfsmittel zur Wiederholung und Vertiefung des gelernten Stoffs. Die Karteikartensammlung ist im Anki-Format mit der Dateiendung .apkg erstellt.
+
+Um die Karteikarten verwenden zu können, benötigst du die Anki-App, die auf deinem Gerät installiert sein muss. Du kannst die Anki-App von der offiziellen GitHub-Seite der Entwickler herunterladen: [https://github.com/ankitects/anki].
+
+Um auf die Karteikarten zuzugreifen, kannst du entweder den Ordner "Karteikarten" herunterladen, der das gesamte Anki-Deck enthält, oder du kannst die Karteikartensammlung als separate .apkg-Datei aus den Releases herunterladen.
 
