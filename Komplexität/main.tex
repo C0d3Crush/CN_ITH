@@ -8,4 +8,112 @@
     \end{itemize}
 
 \mysubsection{Definition (Rechenzeit)}
-    Sei \(M = (Q, \Sigma, \Gamma \Delta, s, F)\) eine DTM
+    Sei \(M = (Q, \Sigma, \Gamma \Delta, s, F)\) eine DTM. Es bezeichne \(time_M:\Sigma^* \to \mathbb{N}_0\) die partielle Funktion mit \(dom(time_M) = dom (\varphi_M)\), so dass \(time_M(w)\) für alle \(w \in dom (\varphi_M)\) die länge der Rechnung von M zur Eingabe w ist. Die \textbf{rechenzeit} von M zur Eingabe \(w \in dom (\varphi_M)\) ist \(time_M(w)\). 
+    \medskip
+    Da im Folgenden nahezu alle Aussagen nur im Hinblick auf die Betrachtung Eingabelänge \(\to \infty\) sinnvoll sind, lassen wir in der nächsten Definition \textbf{endlich} viele Ausnahmen zu.
+
+\mysubsection{Definition (zeitbeschränkt)}
+    Eine \textbf{Zeitbeschranke} ist eine berechenabre Funktion \(t: \mathbb{N}_0 \to \mathbb{N}_0\) mit \(t(n)\leq n\). Sei \(t: \mathbb{N}\to \mathbb{R}_{\leq 0}\) eine Funktion. Eine TM M ist \textbf{t-zeitbeschränkt}, wenn M total ist und es ein \(n_0 \in \mathbb{N}_0\) gibt, so dass \(\forall w \in \Sigma^{\leq n_0}\) alle Rechnungen von M zur Eingabe w hächstens Länge \(t(|w|)\) haben.
+    \medskip
+    Ist n ein Variablensymbol und t ein Term, der eine Funktion \(f: n \mapsto t\) festlegt, so verwendet man auch die Zeichnung t-zeitbeschränkt und Stelle von f-zeitbeschränkt. Man spricht also zum Beispiel von \(n^2\)-zeitbeschränkt der \(3x^3\)-zeitbeschränkt oder auch von \(f(n)\)-zeitbeschränkt für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{N}_0\). Betrachten wie eine Funktion \(t: \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) als Zeitschranke, so ist damit die Fukntion \(t': \mathbb{N}_0 \to \mathbb{N}_0\), \(n \mapsto \lfloor t(n)\rfloor\) gemeint.
+
+\mysubsection{Satz (lineare Beschleunigung)}
+    Sei \(\tilde{c} > 1\), \(\epsilon > 0\) und \(t: \mathbb{N_0} \to \mathbb{R}_{\leq 0}\) mit \(t(n) \leq (1+ \epsilon)n \quad \forall n \in \mathbb{N}_0\). Ist M eine \(\tilde{c}\cdot t(n)\)-zeitbeschränkt k-DTM, \(k \leq 2\), so gibt es auch eine \(t(n)\)-zeitbeschränkte k-TM M' mit L(M) = L(M').
+
+\paragraph*{Beweisskizze:}    
+    Die Idee ist es sei \(c \leq 2\) wir wollen c Felder in einen Vektor der Länge c zusammenfassen und damit das Bandalphabet vergrößern und andererseits ungefähr "c Schritte auf einmal machen".
+    Mit einem neuen Bandalphabet 
+    \[
+        ((\Gamma \cup \{\underline{a}: a \in \Gamma\})^c/\{\Box\}^c) \cup \{\Box\} \cup \Sigma
+    \]
+    dabei übernimmt \(\Box\) die Rolle von \(\{\Box\}^c\) und die Markierung ist für den Kopf der urspünglichen TM. 
+    \medskip
+    Konstruktion einer neuen TM M', die schneller ist als eine gegebene TM M.
+    \begin{itemize}
+        \item [1.Schritt:] Transformation der Eingabe in die "komprimierte" Form auf dem 2.Band (|w|+1 Schritte)
+        \item [2.Schritt:] Simulation von M bandweise (1. und 2. Band vertauscht). Wir benutzen Vektoren der Lönge c um c Felder von M darzusetellen. Zeichen mit einer Markierung \_ , markieren den Köpfen den simulierten TM M.
+        \item [3.Schritt:] Die TM M' speichert in ihren Zuständen die Beiden Felder rechts und links des Feldes wo die simulierten Köpfe von M sind. 
+        \begin{itemize}
+            \item Simulation von c Schritten von M.
+            \item Update der Felder, die von M verändert wurden 6 Schritte notwendig
+        \end{itemize}
+    \end{itemize}
+    Insgesamt macht M' also \(|w|+ 1 + 6\cdot \frac{\tilde{c}t(|w|)}{c} + 10 \approx \frac{6\tilde{c}}{c} t(|w|) = t(|w|)\) für \(c := 6\tilde{c}\). 
+    \medskip
+    In gewissem Sinne ist die obige Konstruktion invers zum Alphabetwechel des bandalphabets bei der Konstruktion normierter TM. Entsprechend steigt die Laufzeit auch nur um einen konstanten Faktor wenn wir die TM normieren 
+
+\mysubsection{Satz(Alphabetwechel)}
+    Ist M eine \(t(n)\)- zeitbeschränkte k-TM M mit Eingabealphabet \{0, 1\}, so gilt es eine Konstante \(c \leq 1\) und eine \(ct(n)\)-zeitbeschränkte k-TM M' mit Eingabealphabet \{0, 1\}, Bandalphabet \(\{\Box, 0, 1\}\) und L(M') = L(M).
+    \medskip
+    \(\leadsto\) Konstanten spielen nur eine untergeordnete Rolle für uns.
+
+\mysubsection{Definition(Landau-Symbole)}
+    Für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) sei
+    \begin{itemize}
+        \item [] \(o(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \forall \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq \epsilon f(n)\}\)
+        \item [] \(O(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
+        \item [] \(\theta(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists c, \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n > n_0 : \epsilon f(n) \leq g(n) \leq cf(n)\}\)
+        \item [] \(\Omega (f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \geq \epsilon f(n)\}\)
+        \item [] \(w(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \forall c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
+    \end{itemize}
+
+\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)}
+    Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) Funktion dann gilt:
+    \begin{itemize}
+        \item [(i)] \(g \in o(f) \Leftrightarrow f \in w(g)\)
+        \item [(ii)] \(g \in O(f) \Leftrightarrow f \in \Omega(g)\)
+        \item [(iii)] \(g \in \theta(f) \Leftrightarrow ( g \in O(f) \text{ und }g \in \Omega(f))\)
+    \end{itemize}
+
+\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)}
+    Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_+\) Funktion dann gilt: 
+    \begin{itemize}
+        \item [(i)] \(g \in o(f) \Leftrightarrow \underset{n \to \infty}{\lim} \frac{g(n)}{f(n)} = 0\)
+        \item [(ii)] \(g \in O(f) \Leftrightarrow \underset{n \to \infty}{\lim sub} \frac{g(n)}{f(n)} < \infty\)
+        \item [(iii)] \(g \in \Omega(f) \Leftrightarrow \underset{n \to \infty}{\lim inf} \frac{g(n)}{f(n)} > 0\)
+        \item [(iv)]\(g \in w(f) \Leftrightarrow \underset{n \to \infty}{\lim} \frac{g(n)}{f(n)} = \infty\)
+    \end{itemize}
+    Bei diesen Klassen ist es üblich " = " statt " \(\in\) " zu verwenden, also beispielsweise \(g = O(f)\) statt \(g \in O(f)\) zu schreiben.
+    \medskip
+    Unsere Konstruktion für lineare Beschleunigungbedurfte mehrere Bänder. Tatsächlich kann es einen Unterschied machen ob ein oder mehrere Bänder zur Verfügung stehen. Als Beispiel betrachten wir Binärpalindrome:\\ Für \(w \in \{0, 1\}^*\). Sei \(w^R = w(|w| \cdots w(1))\). Die Sprache der Binärpalindrome ist folglich \(\{w \in \{0, 1\}^* : w = w^R \}\).
+
+\mysubsection{Proposition} 
+    Es gibt eine \(t(n)\)- zeitbeschränkte DTM M mit \(L(M) = \{w \in \{0, 1\}^* : w = w^R\}\) und \(t(n) = O(n)\).
+    \begin{proof}
+        Eine 2-DTM M die die Eingabe von links nach rechts durchläuft und dabei die Eingabe auf das 2.Band kopiert, dann auf dem ersten Band den Kopf zurück auf die Ausgangsposition bringt, dann gleichzeitig die Eingabe vpn links nach rehcts und die Kopie symbolweise vergeicht und genau dann akzeptiert, wenn alle Vergleiche positiv waren, dann erkennt M die Binärpalindrome.
+    \end{proof}
+
+\mysubsection{Satz (Zeitbeschränkung einer Turingmaschine)}
+    Ist M eine \(t(n)\)-zeitbeschränkte 1-DTM mit \(L(M) = \{w \in \{0, 1\}^* : w = w^R\}\), so ist \(t(n) = \Omega (n^2)\)
+    \begin{proof}
+        Sei M eine \(t(n)\)-zeitbeschränkter 1-DTM mit Eingabealphabet \{0, 1\}, \(L := \{ww^R : w \in \{0, 1\}^*\} \subseteq L(M)\) und \(t(n) \not = \Omega (n^2)\). Wir zeigen \(L \not = L(M)\). Aus der Existenz von M folgt die Existenz einer \((2t(n) + 1)\)-zeitbeschränkte TM M' mit Zustandsmenge Q wobei \(|Q \leq 2|\), Eingabealphabet \{0, 1\} und L(M) = L(M'), so dass der Kopd von M' am Ende jeder Rechnung auf dem Feld steht auf dem er am Anfang stand. Wir betrachten die Felder auf dem Band von M' als beginnend mit dem Feld auf dem der Kopf zu Rechungsbeginn steht mit dem natürlichen Zahlen 1, 2, 3, ...\\ Für jede Rechung R von M' sie \(C_i (R)\) die Folge \(q_1, \cdots, q_l\) von Zuständen von M', so dass M' während der Rechung R insgesamt l und die Grenze zwischen i und i+1 überschritt und so dass \(q_j\) für \(j \in [l]\) der Zustand ist, in dem sich M' unmittelbar vor dem Auführen der Anweisungen befindet, die das j-te übertreten auslöst. Die Folgen \(C_i(R)\) werden Crossing-Sequenz von M' gennant.\\ Die wesentliche Eigenschaft dieser Crossing-Sequenzen, die wir benutzen, ist wie folgt:\\ Ist R eine akzeptierte Rechung von M' zur Eingabe u und S eine Rechung zur Eingabe v und sind \(i \in [|u|]\) und \(j \in [|v|]\) mit \(C_i(R) = C_j(S)\), so gilt 
+        \[
+            u(1) \cdots u(i) v(j+1) \cdots v(|v|) \in L(M')   
+        \]
+        Wir nutzen die kurze laufzeit von M' nun mittels Schubfachprinzip gleiche Crossing-Sequenzen zu Rechnungen von unterschiedlichen Eingaben zu finden, um zu folgern, dass M' ein Wort akzeptiert, das nicht in L liegt. \\ Sei \(\epsilon := \frac{1}{300 \log_2 |Q|}\). Aus \(t(n) \not = \Omega(n^2)\) folgt die Existenz eines und mit \(\epsilon n \leq 1\). Sei \(n' := \frac{n}{4}\).\\ Für jedes Wort \(L' := \{w' 0^{\frac{n}{2} w'^R : w' \in \{0, 1\}^{=\frac{n}{4}}}\} \subseteq L\) betrachten wir die kürzeste Crossing-Sequenz \(C_w \in \{C_{n'}(R), \cdots, C_{n-n'}(R)\}\) einer akzeptierten Rechung R von M' zur Engabe w. Für jede Rechung von M' zu einer Eingabe \(w \in \{0, 1\}^{= n}\) gilt 
+        \[
+            \sum\limits_{i=n'}^{n-n'}|C_i(R)| \leq 2t(n)+1
+        \]
+        wobei |C| die länge von C bezeichnet. Für jedes Wort \(w \in \{0, 1\}^{=n}\) folgt damit 
+        \[
+            |C_w| \leq \frac{2t(n)+1}{n-2n' + 1} \leq \frac{4cn^2}{\frac{n}{2} + 1} \leq 16\epsilon u    
+        \]
+        Die Anzahl der Crossing-Sequenzen von M' der länge \(16\epsilon n -1\) ist höchstens 
+        \[
+            (|Q| + 1)^{16\epsilon n} \leq \frac{1}{2} (2|Q|)^{16 \epsilon n} \leq \frac{1}{2} |Q|^{32 \epsilon n} \leq 2^{n'-1} 
+        \]
+        \(mit \Rightarrow |Q| = 2^{\log_2 |Q|}\) \\ Die Anzahl der Wörter in L' ist aber \(2^{n'}\). Es gibt also voneinander verschiedene Wörter in L' ist und \(i \in [|u|]\) und \(j \in [|v|]\) mit \(C_i(R) = C_j(S)\) wobei R die Rechung von u ist und S die Rechung von v in M'. Es gibt also einen Präfix u' von u mit \(|u'| \leq n'\) und einen Suffix v' von v mit \(|v'| \leq n'\), sodass \(u' v' \in L(M') = L(M)\) gilt. Da u und v verschieden sind gilt \(u' v' \not \in L\). 
+        \medskip
+        Im Sinne von \hyperref[subsec:7.9]{Satz 7.9} macht es zwar einen Unterschied ob TM mit einem oder mit mehreren Bändern betrachtet werden, der Anstieg der Laufzeit ist bei Simulation mehrerer Bänder auf einem band mittels Spurentechnik aber nur quadratisch.
+    \end{proof}
+
+\mysubsection{Satz(Reduktion auf 1-Band-TM)} 
+    Ist M eine \(t(n)\)- zeitbeschränkte TM, so gibt es eine \(t'(n)\)- zeitbeschränkte 1-TM mit \(t'(n) = O((t(n))^2)\), die dieselbe Sprache erkennt. Während der laufzeitanstieg bei der Reduktion auf ein Band quadratisch sein kann, ist die Reduktion von k auf zwei Bänder effizienter möglich 
+
+\mysubsection{Satz(Codekonstruktion und Simulation)}
+    Ist für alle deterministischen TM \(M = (\{0, \cdots, n\}, \{0, 1\}, \{0, 1, \Box\}, \Delta, 0, \{0\})\) und für alle Wörter \(w \in \{0, 1\}^*\) das Wort code (M, w) ein geeigneter Codefür (M, w), so gibt es eine 2-Dtm N, so dass folgendes gilt:
+
+    \begin{itemize}
+        \item [(i)] \(\forall\) DTM U wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U den Code code(M, w) genau dann, wenn M das Binärwort w akzeptiert.
+        \item [(ii)] Für alle zeitschranken t, alle t-zeitbeschränkten DTM M wie oben, gibt es ein \(n_0\), sodass \(\forall w \in \{0, 1\}^{\leq n_0}\) eine Konstante \(c \in \mathbb{N}\) gibt, sodass die Rechnung von U zur Eingabe code(M, w) Länge höchstens \(ct(|w|)\log(t(|w|))\) hat.
+    \end{itemize}

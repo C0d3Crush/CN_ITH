@@ -136,4 +136,14 @@
 \contentsline {subsection}{\numberline {6.33}Beispiel}{45}{subsection.6.33}%
 \contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{46}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{47}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Bilder}{48}{section.8}%
+\contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{47}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{47}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{48}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)}{48}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)}{48}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)}{48}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Proposition}{48}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)}{49}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)}{49}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)}{50}{subsection.7.11}%
+\contentsline {section}{\numberline {8}Bilder}{51}{section.8}%
