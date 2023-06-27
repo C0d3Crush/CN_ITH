@@ -146,4 +146,3 @@
 \contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)}{49}{subsection.7.9}%
 \contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)}{49}{subsection.7.10}%
 \contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)}{50}{subsection.7.11}%
-\contentsline {section}{\numberline {8}Bilder}{51}{section.8}%

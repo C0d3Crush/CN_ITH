@@ -117,3 +117,43 @@
         \item [(i)] \(\forall\) DTM U wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U den Code code(M, w) genau dann, wenn M das Binärwort w akzeptiert.
         \item [(ii)] Für alle zeitschranken t, alle t-zeitbeschränkten DTM M wie oben, gibt es ein \(n_0\), sodass \(\forall w \in \{0, 1\}^{\leq n_0}\) eine Konstante \(c \in \mathbb{N}\) gibt, sodass die Rechnung von U zur Eingabe code(M, w) Länge höchstens \(ct(|w|)\log(t(|w|))\) hat.
     \end{itemize}
+
+    \begin{proof}
+        \textbf{Idee: }
+            \begin{enumerate}
+                \item Verwende \hyperref[subsec:2.18]{Spurentechnick} um die womöglich vielen Bänder von M auf einem Band zu simulieren.
+                \item Inteligentes Speichermanagement: Simulierte Köpfe bleiben in der Mitte simuliertes Band "bewegt" sich + geschicktes Lücken lassen im Speicher.
+            \end{enumerate}
+            Bild für den Fall, dass M eine Band hat
+            \[ABBHIEREINFÜGEN\]
+            Genauer verfügt U bei Eingabe \(code(M,w)\) wie folgt:
+            \begin{itemize}
+                \item Zu Beinn werden einige Initisierungsschritte ausgeführt, die es erlauben die k Bänder von M in jeweils einer Spur auf den ersten Band von U geeignet zu simulieren, wobei auf dem zweiten Band eine Repräsentition von M erstellt wird. Es wird aber sichergestellt, beispielsweise mittels mehrerer Spuren auf dem zweiten Band, dass das zweite Band noch verwendet werden kann um mit un der Abschnittslänge linearem Aufwand Abschnitte auf dem ersten NBand verschienen zu können.
+                \item Während der Simulation von M wird jede Spur auf dem ersten Band von U in Abschnitte unterteilt 
+                \begin{itemize}
+                    \item Die Felder auf dem ersten Band von U auf dem der Kopf zu Beginn steht bildet für alle Spren \(i \in [k]\) den aus einem Feld bestehenden Abschnitt \(H^{(i)}\). Die Simulation von M wird so mittels angepasster Spurentechnik durchgeführt, dass die Simulierte Kopfposition auf jeder Spur \(z \in [k]\) das Feld im Abschnitt \(H^{(i)}\) ist und auf keiner Spur wird dieses Feld am Ende der Simulation eines Schrittes von M mit \# Beschrieben sein.
+                    \item Auf jeder Spur \(i \in [k]\) ist unmittelbar links von \(H^{(i)}\) der Abschnitt \(L_1^{(i)}\) der Länge 2 und für jedes \(j \leq 1\) unmittelbar links von \(L_j^{(i)}\) der Abschnitt \(L_{j+1}^{(i)}\) der länge \(2^{j+1}\). 
+                    \item Analog ist auf jeder Spur \(i \in [k]\) unmittenbar rechts von \(H^{(i)}\) der Abschnitt \(R_1^{(i)}\) der Abschnitt \(R_{j+1}^{(i)}\) der länge \(2^{j+1}\).
+                    \item Jder Abschnitt auf einer Spur \(i \in [k]\), außer \(H^{(i)}\), wird beim ersten Verwenden in dem Sinne als halb leer initialisiert, dass er zur Hälfte mit den die Blank-Symbole von M repräsentierenden Symbolen beschrieben.
+                    \item Zu jeden Zeitpunkt stehen die Lückensymbole \# in einem Abschnitt am weitesten links im Abschnitt.
+                    \item Ein Abschnitt \(L_j^{(i)}\) oder \(R_j^{(i)}\) heißt \textbf{leer}, wenn alle Symbole in diesem Abschnitt \# sind, \textbf{halb leer} wenn die Hälfte der Symbole in diesem Abschnitt \# oder er nicht initial ist und \textbf{voll} wenn kein Symbol in diesem Abschnitt \# ist.
+                    \item Die Darstellung der durch die Spuren repräsentierten bändervon M ist dabei so zu verstehen, dass die sich wie bei derSpurentechnick üblichen Darstellung der Bänder ergeben wenn die Felder mit den Lückensymbolen \# ignoriert werden.
+                    \item Vor Simulationsbegin wird w als Eingabe an die simulierte Maschine M übergeben ohne dabei die Lückensymbole \# zu überschreiben. 
+                \end{itemize}
+                \item Werden nun die Bandbewegungen geeignet durch die Spurenmanipulationen realisiert, so kann U die Turingmaschine M simulieren, da den Abschnitt \(H^{(i)}\) die zur Simulation nötigen Informationen über die gegenwärtige Konfiguration von M entnommen werden können.
+                \item Bandbewegungen nach links (die Kopfbewegung nach rechts sinnvoll) werden durch manipulationen der entsprechenden Spur wie folgt simuliert:
+                \begin{itemize}
+                    \item Für das minimale \(j_0 \leq 1\), so dass \(R_{j_0}^{(i)}\) nicht leer ist, ersetzt das erste Symbol der rechten Hälfte von \(R_{j_0}^{(i)}\) das Symbol im Abschnitt \(H^{(i)}\) und die \(2^{j_0 - 1}-1\) weitere Symbole Symbole der rechten Hälfte von \(R_{j_0}^{(i)}\) werden im unveränderter Reihenfolge auf die rechten Hälften von \(R_1^{(i)}, \cdots, R_{j_0-1}^{(i)}\) geschrieben.
+                    \item Die von \# verschiedenen Symbole der Abschnitte \(L_1^{(i)}, \cdots, L_{j_0^{(i)}}\) werden im unveränderter Reihenfolge auf den Abschnitt \(L_{j_0}^{(i)}\) und die rechten Hälften der Abschnitte \(L_1^{(i)}, \cdots, L_{j_0 -1}^{(i)}\) geschrieben und die Symbole in den linken Hälften der Abschnitte \(L_1^{(i)}, \cdots, L_{j_0 -1}^{(i)}\) werden durch \# überschrieben.
+                    \item Schließlich wird das nun ersetzte Symbol, das zuvor im Abschnitt \(H^{(i)}\) stand auf die rechte Hälfte des Abschnitts \(L_1^{(i)}\) geschrieben.
+                \end{itemize}
+                \item Bandbewegungen nach rehcts werden analog simuliert.
+                \item Die Bandbewegungen lassen sich eindeutig in dieser Weise simulieren da für alle \( j \leq 1\) zu jede, Zeitpunkt für die Abschnitte \(L_j^{(i)}\) und \(R_j^{(i)}\) folgendes gilt: Entweder sind beide Abschnitte halb voll oder einer ist leer und der andere voll.
+                \item Beisliel hier!
+                \item Die Laufzeit von U ergibt sich im Wesentlchen aus der Simulation der Bandbewegungen. Bei einer Bandbewegung ist die Anzahl der bewtrachteten Felder \(O(\sum\limits_{j = 1}^{j_0} 2^j) = O(2^{j_0})\) für ein \(j_0 \leq 1\). Dank des zweiten Bandes lassen solche Bandbewegungen im Zeit \(O(2^{j_0})\) durchführen. Ist t die Laufzeit von M zur Eingabe w, so ist eine solche Bandbewegung höchstens \(\frac{t}{2^{j_0}}\) und durchzuführen. Als Laufzeit von U ergibt sich so bis auf konstante Faktoren \(\sum\limits_{j_0 = 1}^{\log_2 t} \frac{t}{2^{j_0}} = t\log_2 t\).
+                \begin{itemize}
+                    \item \(\frac{t}{2^{j_0}}\) \(\to\) häufigkeit
+                    \item \(2^{j_0}\) \(\to \) Kosten
+                \end{itemize}
+            \end{itemize}
+    \end{proof}
