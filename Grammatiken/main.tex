@@ -278,14 +278,14 @@
 \mysubsection{Definition (Blattwort)}
     Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). Blattwort: 001101 \[HIER ABB EINFÜGEN\] 
     \createDiagram{}{}
-
+\newpage
 \mysubsection{Definition (Ableitungsbaum)} 
-    Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und sei \(d:= max (\{|w|: x \to w \in P\} \cup \{1\})\). Ein \textbf{Ableitungsbaum} einer Satzform \(w \in (N \cup T)^*\) aus \(A \in N\) ind G ist ein paar (T, b) aus einem Baum \(T \subseteq [d]^*\) und einer Beschriftung \(b: T \to N \cup T \cup {\lambda}\) mit \(b(\lambda) = A\) und Blattwort w, so dass für alle inneren Ecken t von T eine Regel \(C \to v \in P\) existiert, so dass folgendes gilt.
+    In einer kontextfreien Grammatik \(G = (N,\ T,\ P,\ S)\) ist ein \textbf{Ableitungsbaum} für eine Satzform \(w \in (N \cup T)^*\) aus \(A \in N\) ein paar (T, b), bestehend aus einem Baum T und einer Beschriftung \(b: T \to N \cup T \cup \{\lambda\}\). Der baum T ist eine Teilmenge von \([d]^*\), wobei \(d:= max (\{|w|: x \to w \in P\} \cup \{1\})\). Die Wurzel des baumes ist mit dem Symbol A beschriftet und das Blattwort entspricht der Satzform w. Für jede innere Ecke t im Baum T existiert eine Regel \(X \to v \in P\), sodass Folgendes gilt.    \footnote{Tex. Ed. sug.}
     \begin{itemize}
         \item [(i)] \(b(t) = X\)
         \item [(ii)] \(\{t' \in T : t \sqsubseteq t' \text{ und } |t'| = |t| + 1\} = \{ta : a \in max \{|v|, 1\}\}\)
         \item [(iii)] \(b(ta) = v(a) \quad \forall a \in [|v|]\)
-        \item [(iv)] \(b(t1) = \lambda \text{ falls } v = \lambda\)
+        \item [(iv)] \(b(t_1) = \lambda \text{ falls } v = \lambda\)
     \end{itemize}
     Die \textbf{Blätter} von (T, b) sind die Blätter von T und die \textbf{inneren Ecken} von (T, b) sind die inneren Ecken von T.
 

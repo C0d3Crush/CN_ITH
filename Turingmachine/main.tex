@@ -120,7 +120,8 @@
   Eine Sprache L über einem Alphabet \(\Sigma\) ist genau dann entscheidbar, wenn L und \(L^c :=(\Sigma^*)/L\) rekursiv aufzähbar sind.
 
 \mysubsection{Definition (Ausgabe)} 
-  Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-TM und \(C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) eine Konfigration von M. Die Ausgabe \(out_M(C)\) von M bei Konfiguration C ist das Präfix w \(\sqsubseteq w_1(p_1), \cdots, w_1(|w_1|)\) maximale Länge mit \(w \in (\Gamma / {\Box})^*\).
+  Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-TM und \(C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) eine Konfigration von M.Die Ausgabe \(out_M(C)\) von M bei Konfiguration C ist das längste Präfix w, das aus den Symbolen der Bänder von M besteht und den folgenden Bedingungen genügt: \(w \in (\Gamma / {\Box})^*\), \( w_1(p_1), \cdots, w_1(|w_1|)\) sind Präfixe von w.\footnote{Ed. sug. text}
+
 
 \mysubsection{Definition (berechnete Funktion)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-DTM und \(n \in \mathbb{N}\). Die von M berechnete \textbf{n-äre partielle Funktion} \(\Phi_M\) ist die partielle Funktion \(\Phi_M : (\Sigma^*)^n \leadsto (\Gamma / {\Box})^*\), so dass \(\forall (w_1, \cdots, w_n) \in (\Sigma^*)^n\) folgendes gilt:

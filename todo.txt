@@ -10,4 +10,6 @@ verkettung sprache plural machen
 
 und l1 o l1 zu l1 o l2
 
-!! Komplexität hinzufügen und release
+!! Komplexität hinzufügen und release. nur noch release! 
+
+Füge abbildungen aus Komplexität hinzu dann release!!

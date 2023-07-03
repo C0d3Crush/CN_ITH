@@ -116,33 +116,39 @@
 \contentsline {subsection}{\numberline {6.13}Lemma}{39}{subsection.6.13}%
 \contentsline {subsection}{\numberline {6.14}Definition (Beschriftung)}{40}{subsection.6.14}%
 \contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{40}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{40}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{41}{subsection.6.16}%
 \contentsline {subsection}{\numberline {6.17}Beispiel}{41}{subsection.6.17}%
 \contentsline {subsection}{\numberline {6.18}Lemma}{41}{subsection.6.18}%
-\contentsline {subsection}{\numberline {6.19}Lemma}{41}{subsection.6.19}%
-\contentsline {subsection}{\numberline {6.20}Satz (Pumping-Lemma für kontextfreie Sprachen)}{42}{subsection.6.20}%
-\contentsline {subsection}{\numberline {6.21}Beispiel}{43}{subsection.6.21}%
-\contentsline {subsection}{\numberline {6.22}Beschreibung (Kellerautomat)}{43}{subsection.6.22}%
-\contentsline {subsection}{\numberline {6.23}Satz}{43}{subsection.6.23}%
-\contentsline {subsection}{\numberline {6.24}Beispiel}{43}{subsection.6.24}%
-\contentsline {subsection}{\numberline {6.25}Definition (Kontextsensitiv)}{43}{subsection.6.25}%
-\contentsline {subsection}{\numberline {6.26}Definition (nicht verkürzend)}{44}{subsection.6.26}%
-\contentsline {subsection}{\numberline {6.27}Satz}{44}{subsection.6.27}%
-\contentsline {subsection}{\numberline {6.28}Beschreibung (linear beschränkter Automat)}{44}{subsection.6.28}%
-\contentsline {subsection}{\numberline {6.29}Satz}{44}{subsection.6.29}%
-\contentsline {subsection}{\numberline {6.30}Beispiel}{44}{subsection.6.30}%
-\contentsline {subsection}{\numberline {6.31}Definition}{44}{subsection.6.31}%
-\contentsline {subsection}{\numberline {6.32}Satz}{45}{subsection.6.32}%
-\contentsline {subsection}{\numberline {6.33}Beispiel}{45}{subsection.6.33}%
-\contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{46}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{47}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{47}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{47}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{48}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)}{48}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)}{48}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)}{48}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}Proposition}{48}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)}{49}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)}{49}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)}{50}{subsection.7.11}%
+\contentsline {subsection}{\numberline {6.19}Lemma}{42}{subsection.6.19}%
+\contentsline {subsection}{\numberline {6.20}Satz (Pumping-Lemma für kontextfreie Sprachen)}{43}{subsection.6.20}%
+\contentsline {subsection}{\numberline {6.21}Beispiel}{44}{subsection.6.21}%
+\contentsline {subsection}{\numberline {6.22}Beschreibung (Kellerautomat)}{44}{subsection.6.22}%
+\contentsline {subsection}{\numberline {6.23}Satz}{44}{subsection.6.23}%
+\contentsline {subsection}{\numberline {6.24}Beispiel}{44}{subsection.6.24}%
+\contentsline {subsection}{\numberline {6.25}Definition (Kontextsensitiv)}{44}{subsection.6.25}%
+\contentsline {subsection}{\numberline {6.26}Definition (nicht verkürzend)}{45}{subsection.6.26}%
+\contentsline {subsection}{\numberline {6.27}Satz}{45}{subsection.6.27}%
+\contentsline {subsection}{\numberline {6.28}Beschreibung (linear beschränkter Automat)}{45}{subsection.6.28}%
+\contentsline {subsection}{\numberline {6.29}Satz}{45}{subsection.6.29}%
+\contentsline {subsection}{\numberline {6.30}Beispiel}{45}{subsection.6.30}%
+\contentsline {subsection}{\numberline {6.31}Definition}{45}{subsection.6.31}%
+\contentsline {subsection}{\numberline {6.32}Satz}{46}{subsection.6.32}%
+\contentsline {subsection}{\numberline {6.33}Beispiel}{46}{subsection.6.33}%
+\contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{47}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{48}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{48}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{48}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{49}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)*}{49}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)*}{49}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)*}{49}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Proposition(Binärpalindrome erkennen)*}{49}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)*}{50}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)*}{50}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)*}{51}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}Satz (Universelle TM-Simulation mit Zeitbeschränkung)*}{53}{subsection.7.12}%
+\contentsline {subsection}{\numberline {7.13}Definition (Zeitbeschränkte Funktionen und Sprachen)*}{53}{subsection.7.13}%
+\contentsline {subsection}{\numberline {7.14}Definition (Zeitkonsturierbar)}{53}{subsection.7.14}%
+\contentsline {subsection}{\numberline {7.15}Bemerkung (Polynomielle Zeitkonstruierbarkeit)*}{53}{subsection.7.15}%
+\contentsline {subsection}{\numberline {7.16}Satz (Zeithirarchiesatz dür deterministische TM)*}{54}{subsection.7.16}%
+\contentsline {subsection}{\numberline {7.17}Proposition(Zeitbeschränkte TM-Äquivalenz)*}{54}{subsection.7.17}%
