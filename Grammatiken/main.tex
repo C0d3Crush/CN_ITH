@@ -218,6 +218,8 @@
         Für \(v, v' \in \Sigma^*\) mit \(v \leq v'\) gilt offenba \(uv \leq uv'\)m es genügt also zu zeigen, dass \(uv \leq w \quad \forall v \in \Sigma^*\) gilt. Wegen \(u \not \sqsubseteq w\) existiert \(i \in [min \{|u|, |w|\}]\) mit \(u(j) = w(j) \quad \forall j \in [i-1]\) und \(u(i) < w(i)\). Für \(v \in \Sigma^*\) gilt dann \((uv)(j)=w(j) \quad \forall j \in [i - 1]\) und \((uv)(j)<w(i)\), also \(uv < w\).
     \end{proof}
 
+\newpage
+
 \mysubsection{Lemma}
     Sei T ein Baum, \(\leq\) die lexikographische Ordnung auf T, \(p \in T\) und \(Q:=\{w\in T: p\sqsubseteq w\}\). Es gelten \(p = min Q\) und \(Q = \{w \in T : min Q \leq w \leq max \leq max Q\}\). 
 
@@ -266,8 +268,6 @@
             };
         \end{tikzpicture}
     }
-    \newpage
-
     \begin{proof}
         Offensichtlich gilt \(p = min Q\). Für \(w \in Q\) gilt \(min Q \leq w \leq max Q\) nach Definition von min Q und max Q. Für \(w \not \in Q\) mit \(w \sqsubseteq w' \quad \forall w' \in Q\), also \(w < min Q\). Für \(w \not \in Q\) mit \(w \not \sqsubseteq p \quad \exists i \in [min {|p|, |w|}]\) mit \(w(i) \not = p(i)\), insbesondere existiert also ein minimales solches i und nach Definition von \(\leq\) folgt damit \(w \leq w' \quad \forall w'\in Q\) oder \(w' \leq w \quad w' \in Q\), insbesondere also wegen \( w \not \in Q\) somit \( w < min \ Q\) oder \(max \ Q < w\).
     \end{proof}
@@ -275,9 +275,58 @@
 \mysubsection{Definition (Beschriftung)} 
     Eine \textbf{Beschrftung} eines Baumes T mit Elementen einer Menge X ist eine Funktion \(b: T \to X\).
 
+\newpage
+
 \mysubsection{Definition (Blattwort)}
-    Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). Blattwort: 001101 \[HIER ABB EINFÜGEN\] 
-    \createDiagram{}{}
+    Sei \(\Sigma\) eine ALphabet, sei (T,b) ein Paar aus einem Baum T und einer Beschrifung \(b: T \to \Sigma \cup \{\lambda\}\) und sei \(t_1, \cdots, t_n\) dieFolge der Blätter von T in lexikographischer Reihenfolge. Das \textbf{Blattwort} von (T, b) ist \(b(t_1) \cdot b(t_n)\). Blattwort: 001101
+    \createDiagram{Blattwort}
+    {
+        \begin{tikzpicture}[level distance=2cm,
+            level 1/.style={sibling distance=5cm},
+            level 2/.style={sibling distance=2cm}]
+            
+            \node (node1) {S}
+            child 
+            {
+                node (node2) {X}
+                child{node (node3) {0}}
+                child 
+                {
+                    node (node4){X}
+                    child {node (node5){0}}
+                    child 
+                    {
+                        node (node6){X}
+                        child{node (node7) {$\lambda$}}
+                    }
+                    child{node (node8) {1}}
+                }
+                child {node (node9) {1}}
+              }
+              child 
+              {
+                node (node10) {X}
+                child 
+                {
+                    node (node11) {0}
+                }
+                child 
+                {
+                    node (node12){X}
+                    child 
+                    {
+                        node (node13){$\lambda$}
+                    }
+                }
+                child 
+                {
+                    node (node14){1}
+                }
+            };
+            \draw[->, draw=blue, line width=2pt] (node5) -- (node7) -- (node8) -- (node11) -- (node13) -- (node14);
+
+        \end{tikzpicture}
+    }
 \newpage
 \mysubsection{Definition (Ableitungsbaum)} 
     In einer kontextfreien Grammatik \(G = (N,\ T,\ P,\ S)\) ist ein \textbf{Ableitungsbaum} für eine Satzform \(w \in (N \cup T)^*\) aus \(A \in N\) ein paar (T, b), bestehend aus einem Baum T und einer Beschriftung \(b: T \to N \cup T \cup \{\lambda\}\). Der baum T ist eine Teilmenge von \([d]^*\), wobei \(d:= max (\{|w|: x \to w \in P\} \cup \{1\})\). Die Wurzel des baumes ist mit dem Symbol A beschriftet und das Blattwort entspricht der Satzform w. Für jede innere Ecke t im Baum T existiert eine Regel \(X \to v \in P\), sodass Folgendes gilt.    \footnote{Tex. Ed. sug.}

@@ -102,13 +102,10 @@
   effektiv \(\leadsto\) eine TM erlefigt dies in endicher Zeit. Da sich der durch TM formatierte  Berechenbarkeitsbegriff, also die Formalisierung dessen was effektiv durchführbar ist, auch äquivalent durch rekursive Funktion definieren lässt, weden entscheidbare Sprachen auch als rekuriv bezeichnet.
 
 \mysubsection{Definition(rekursiv aufzählbar)} 
-  Eine Sprache L ist genau dann \textbf{rekursiv aufzähbar}, wenn es eine k-TM mit akzeptierten Sprache L gibt. Wir schreiben \textbf{RE} für die Klasse der rekursiv aufzählbaren Sprachen. Die Aufzählbarkeit leitet sich daraus ab, dass es für eine rekuriv aufzählbare Sprache L über einem Alphabet \(\Sigma\) möglich ist effektive Verfahren anzugeben ,die die Wörter von L aufzählen, also dass eine endlich oder unendliche Aufzählung von \(A = w_1, w_2, \cdots \) mit \( {w_1, w_2, \cdots} = L\) existiert.
-
-\paragraph*{Bemerkung vom Author: }
-  Rekursiv aufzählbar" ist ein Begriff der verwendet wird um eine Menge zu beschreiben, die wir mit einem Computerprogramm oder Algorithmus "auflisten" können. Stellen Sie sich vor, Sie haben eine Box mit nummerierten Bällen, und Sie haben ein Programm, das Bälle aus der Box zieht. Wenn Sie sicherstellen können, dass Sie jeden Ball in der Box mindestens einmal ziehen, egal wie lange es dauert, dann ist die Menge der Bälle in der Box "rekursiv aufzählbar
-
-\paragraph*{Bemerkung vom Author: }
-  Wenn wir sagen, dass eine Sprache "rekursiv aufzählbar" ist, bedeutet das, dass es einen Algorithmus oder ein Computerprogramm gibt, das alle Wörter in dieser Sprache "auflisten" kann. Es könnte einige Wörter mehrmals auflisten und es könnte eine sehr lange Zeit dauern, aber es würde schließlich jedes Wort in der Sprache "treffen". Eine "k-TM" ist eine Art von Maschine, die wir in der theoretischen Informatik verwenden, um diese Art von Aufzählung zu machen. Wenn es eine k-TM gibt, die eine Sprache akzeptiert, bedeutet das, dass die Sprache rekursiv aufzählbar ist.
+  Eine Sprache L ist genau dann \textbf{rekursiv aufzähbar}, wenn es eine k-TM mit akzeptierten Sprache L gibt. Wir schreiben \textbf{RE} für die Klasse der rekursiv aufzählbaren Sprachen. Die Aufzählbarkeit leitet sich daraus ab, dass es für eine rekuriv aufzählbare Sprache L über einem Alphabet \(\Sigma\) möglich ist effektive Verfahren anzugeben ,die die Wörter von L aufzählen, also dass eine endlich oder unendliche Aufzählung von \(A = w_1, w_2, \cdots \) mit \( {w_1, w_2, \cdots} = L\) existiert.\vspace{0.5cm}
+  \\
+  Eine Menge wird beschreiben, die wir mit einem Computerprogramm oder Algorithmus "auflisten" können. Stellen Sie sich vor, Sie haben eine Box mit nummerierten Bällen, und Sie haben ein Programm, das Bälle aus der Box zieht. Wenn Sie sicherstellen können, dass Sie jeden Ball in der Box mindestens einmal ziehen, egal wie lange es dauert, dann ist die Menge der Bälle in der Box "rekursiv aufzählbar
+  \footnote{Ed. sug. text}
 
 \mysubsection{Bemerkung} 
   Jede entscheidbare Sprache ist rekursiv aufzähbar.
@@ -120,7 +117,7 @@
   Eine Sprache L über einem Alphabet \(\Sigma\) ist genau dann entscheidbar, wenn L und \(L^c :=(\Sigma^*)/L\) rekursiv aufzähbar sind.
 
 \mysubsection{Definition (Ausgabe)} 
-  Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-TM und \(C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) eine Konfigration von M.Die Ausgabe \(out_M(C)\) von M bei Konfiguration C ist das längste Präfix w, das aus den Symbolen der Bänder von M besteht und den folgenden Bedingungen genügt: \(w \in (\Gamma / {\Box})^*\), \( w_1(p_1), \cdots, w_1(|w_1|)\) sind Präfixe von w.\footnote{Ed. sug. text}
+  Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) ein k-TM und \(C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) eine Konfiguration von M. Die Ausgabe \(out_M(C)\) von M bei Konfiguration C ist das Präfix \(w \sqsubseteq w_1(p_1) \cdots w_1(|w_1|)\) maximale länge mit \(w \in (\Gamma / \{\Box\})^*\).
 
 
 \mysubsection{Definition (berechnete Funktion)} 
@@ -132,7 +129,11 @@
   Für \(w_1, \cdots, w_n \in \Sigma^*\) schreiben wir statt \(\Phi_M(w_1, \cdots, w_n)\) auch \(M(w_1, \cdots, w_n)\).
 
 \mysubsection{Definition (partiell berechenbar)}
-  Für Alphabet \(\Sigma, \Gamma\) und eine partielle Funktion \(\Phi : \Sigma^* \leadsto \Gamma^*\) ist \(\Phi\) \textbf{partiell berechenbar}, wenn es eine \(k \in \mathbb{N}\) gibt und eine k-DTM M mit \(\Phi_M = \Phi\) gibt. Ist \(\Phi\) total und partiell berechenbar, so ist \(\Phi\) berechenbar. Wir schreiben \textbf{RF} für die Klasse der partiellen Funktionen.\\Mittels der Induktivität von \(\mathbb{N}_0\) und\( {0, 1}^*\) können so auch partielle Funktionen, die von oder nach \(\mathbb{N}_0\) abbilden als (partielle) berechenbare Funktion bezeichnent werden. Beispielsweise ist eine partielle Funktion \(\Phi : \mathbb{N}_0 \leadsto \mathbb{N}_0\) dennoch genau dann partiell berechenbar, wenn die partielle Funktion bin \(\circ \Phi \circ bin^{-1}\) partiell berechenbar ist. Gewissermaßen verfügen die hier definierten TM über zewi Ausgabemechanismen. Die Ausgabeim engeren Sinne in Definition 2.13 und das Ablesen vn Akzeptanz anhand des schließlich erreichten Zustands in Definition 2.7. Im Sinne der folgenden Bemerkung wäre der zweiten Fall nicht notwendig, allerdings ist dies ein wichtiger spezialfall.
+  Für Alphabet \(\Sigma, \Gamma\) und eine partielle Funktion \(\Phi : \Sigma^* \leadsto \Gamma^*\) ist \(\Phi\) \textbf{partiell berechenbar}, wenn es eine \(k \in \mathbb{N}\) gibt und eine k-DTM M mit \(\Phi_M = \Phi\) gibt. Ist \(\Phi\) total und partiell berechenbar, so ist \(\Phi\) berechenbar.\\
+  
+  Mittels der Induktivität von \(\mathbb{N}_0\) und \(\{0, 1\}^*\) können so auch partielle Funktionen, die von oder nach \(\mathbb{N}_0\) abbilden als (partielle) berechenbare Funktion bezeichnent werden. Beispielsweise ist eine partielle Funktion \(\Phi : \mathbb{N}_0 \leadsto \mathbb{N}_0\) dennoch genau dann partiell berechenbar, wenn die partielle Funktion \(bin \circ \Phi \circ bin^{-1}\) partiell berechenbar ist. Gewissermaßen verfügen die hier definierten TM über zewi Ausgabemechanismen. Die Ausgabe im engeren Sinne in \hyperref[subsec:2.13]{Definition 2.13 (Ausgabe)} und das Ablesen von Akzeptanz anhand des schließlich erreichten Zustands in \hyperref[subsec:2.7]{Definition 2.7 (Akzeptierte Sprache)}. Im Sinne der folgenden Bemerkung wäre der zweiten Fall nicht notwendig, allerdings ist dies ein wichtiger spezialfall.\\
+
+  Wir schreiben \textbf{RF} für die Klasse der partiellen Funktionen
 
 \mysubsection{Definition (charackteristische Funktion, partielle charachteristische Funktion)} 
   Sei L eine Sprache über dem Alphabet \(\Sigma\)
