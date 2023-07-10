@@ -1388,6 +1388,10 @@ INPUT ./Automaten/main.tex
 INPUT Automaten/main.tex
 INPUT ./Automaten/main.tex
 INPUT Automaten/main.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm5.tfm
 INPUT ./ReguläreSprachen/main.tex
 INPUT ./ReguläreSprachen/main.tex
 INPUT ./ReguläreSprachen/main.tex
@@ -1410,10 +1414,6 @@ INPUT ./Grammatiken/main.tex
 INPUT Grammatiken/main.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm5.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx6.tfm
 INPUT ./Komplexität/main.tex

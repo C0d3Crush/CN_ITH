@@ -182,9 +182,14 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \item [(iii)]\(uv^iw \in L \forall i \in \mathbb{N}_0\) (?ist das w noch in dem wort oder ist es ausserhalt aber in l?)
   \end{itemize} 
   \begin{proof}
-  %Sei L \subseteq \Sigma^* eine reguläre Sprache und ... ein DEA mit L(A) = L und erweiterter Übergangsfunktion \delta^*: Q \times \Sigma^* \to Q. Sei k := |Q|. Sei z \in L  mit |z| \geq k. (Falls kein solches z existiert ist nichts zu zeigen). Die Funktion f: \{0,\cdots, k\} \to Q, i \mapsto \delta^*(s, z(1) \cdots z(i)) ise keine Injektion, denn es gibt |\{0, \cdots, k\}| = k + 1 > |Q|. Sieen j_1, j_2 \in \{0, \cdots, k\} mit j_1, j_2 und f(j_1) = f(j_2). Sei u := z(1)\cdots z(j_1), v = z(j_1+1)\cdots z(j_2), w = z(j_2 + 1) \cdots z(|w|). Dann gilt z = uvw. Aus j_1 < j_2 folgt v \not = \lambda. Aus j_2 \leq k folgt |uv| \leq k. Es bleibt zu zeigen, dass uv^iw\in L \forall i \in \mathbb{N}_0 gilt. Dafür genügt es zu zeigen \delta^*(s, uv^i) = \delta^*(s, u) (*). Denn dann gilt mit Bemerkung 4.3(iii) und Bemerkung 4.5 \[\delta^*(s, uv^iw) = \delta^*(\delta^*(s, uv^i), w) = %\delta^*(\delat^*(s, u), w) = \delta^*(\delta^*(s, uv), w) = \delta^*(s, uvw)\] und damit uv^iw \in L. Wir zeigen (*) mittels vollständiger Induktion über i.\\
-  %i = 0\\
-  %Gelte nun \delta^*(s, uv^{i-1}) = \delta^*(s, u) für ein i \in \mathbb{N}. %Wieder folgt \[\delta^*(s, uw^i) = \delta^*(\delta^*(s, uv^{i-^})) ...\]
+    Sei \(L \subseteq \Sigma^*\) eine reguläre Sprache und \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA mit L(A) = L und erweiterter Übergangsfunktion \(\delta^*: Q \times \Sigma^* \to Q\). Sei k := |Q|. Sei \(z \in L\)  mit \(|z| \geq k\). (Falls kein solches z existiert ist nichts zu zeigen). Die Funktion \(f: \{0,\cdots, k\} \to Q\), \(i \mapsto \delta^*(s, z(1) \cdots z(i))\) ist keine Injektion, denn es gibt \(|\{0, \cdots, k\}| = k + 1 > |Q|\). Seien \(j_1, j_2 \in \{0, \cdots, k\}\) mit \(j_1, j_2\) und \(f(j_1) = f(j_2)\). Sei \(u := z(1)\cdots z(j_1)\), \(v = z(j_1+1)\cdots z(j_2)\), \(w = z(j_2 + 1) \cdots z(|w|)\). Dann gilt z = uvw. Aus \(j_1 < j_2\) folgt \(v \not = \lambda\). Aus \(j_2 \leq k\) folgt \(|uv| \leq k\). Es bleibt zu zeigen, dass \(uv^iw\in L \forall i \in \mathbb{N}_0\) gilt. Dafür genügt es zu zeigen \(\delta^*(s, uv^i) = \delta^*(s, u)\) \(\circledast \).Denn dann gilt mit \hyperref[subsec:4.3]{Bemerkung 4.3(iii)} und \hyperref[subsec:4.5]{Bemerkung 4.5} 
+    \[
+      \delta^*(s, uv^iw) = \delta^*(\delta^*(s, uv^i), w) = \delta^* (\delta^*(s, u), w) = \delta^*(\delta^*(s, uv), w) = \delta^*(s, uvw)
+    \] 
+    und damit \(uv^iw \in L\). Wir zeigen \(\circledast \) mittels vollständiger Induktion über i. i = 0. Gelte nun \(\delta^*(s, uv^{i-1}) = \delta^*(s, u)\) für ein \(i \in \mathbb{N}\). Wieder folgt 
+    \[
+      \delta^{*}(s, uw^i) = \delta^*(\delta^*(s, uv^{i-1}), v) \stackrel{\text{I.H}}{=} \delta^*(\delta^*(s,u), v) = \delta^*(s, uv) = f(j_2) = f(j_1) = \delta^*(s,u).
+    \]
   \end{proof}
 
   \mysubsection{Beispiel} 

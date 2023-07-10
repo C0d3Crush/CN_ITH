@@ -5,7 +5,7 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Definition (Alphabet)}{6}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Definition (Wörter)}{6}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.3}Definition (Binäraphabet, Binärwörter)}{6}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Sprache}{6}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4}Definitio (Sprache)}{6}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1.2.5}Definition(Wortmengen-Notation)*}{6}{subsubsection.1.2.5}%
 \contentsline {subsubsection}{\numberline {1.2.6}Definition (Verkettung)}{6}{subsubsection.1.2.6}%
 \contentsline {subsubsection}{\numberline {1.2.7}Definition (Präfix, Infix, Suffix)}{6}{subsubsection.1.2.7}%
@@ -17,7 +17,7 @@
 \contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{7}{subsubsection.1.2.13}%
 \contentsline {section}{\numberline {2}\textbf {Turingmachine}}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Definition (Rechnung)}{10}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Bemerkung}{10}{subsection.2.5}%
@@ -67,15 +67,15 @@
 \contentsline {section}{\numberline {4}\textbf {Automaten}}{24}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Definition (Endliche Automaten)}{25}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{25}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Bemerkung }{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Bemerkung (Eigenschaften von endlichen Automaten)*}{26}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Definition (Übergangsfunktion eines DEA)}{26}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Bemerkung }{26}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Bemerkung}{26}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.5}Bemerkung (Folgerungen für DEA)}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Bemerkung(Eindeutigkeit endlicher Automaten)*}{26}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache)}{26}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Definition (regulär)}{26}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Beispiel}{27}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{27}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}Satz}{27}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.9}Beispiel (Endlicher Automat A)*}{27}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{28}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Satz(Charakterisierung regulärer Sprachen)*}{28}{subsection.4.11}%
 \contentsline {section}{\numberline {5}\textbf {Reguläre Sprachen}}{29}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Definition (Äquivalenzrelation)}{30}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Definition (A-Äquivalenz)}{30}{subsection.5.2}%
@@ -103,6 +103,7 @@
 \contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{35}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{36}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{36}{subsection.6.2}%
+\contentsline {paragraph}{Erklärung:}{36}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{36}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Lemma}{37}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Satz}{37}{subsection.6.5}%

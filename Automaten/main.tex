@@ -1,114 +1,156 @@
 \coversection{Automaten/finit1.png}{Automaten}{Imagine you're in a city with a limited number of locations (like a park, library, cafe, etc.). You can move from one place to another following specific paths (like roads). The paths you take depend on some rules, like the time of the day, or the type of ticket you have. The places you can reach with these rules represent different states in a finite automaton, and the rules themselves act like the transition function.\\ \hspace*{\fill} - ChatGPT}
-Wir wollen Turingmahinen un stark einschränken. Wir betrahten ein Modell, das im wesentlichen ohne speicher
-zurechtkommt (=Tm ohne band $\longrightarrow$  brauchen es nur für die Eingabe).
-Der Ausgabemechanismus kennt nur Akzeptanz und Nichtakzeptanz.\\\\
-Als TM kann der wie folgt realisiert werden:
+Wir wollen Turingmahinen un stark einschränken. Wir betrahten ein Modell, das im wesentlichen ohne speicher zurechtkommt (=Tm ohne band \(\longrightarrow\)  brauchen es nur für die Eingabe). Der Ausgabemechanismus kennt nur Akzeptanz und Nichtakzeptanz. Als TM kann der wie folgt realisiert werden:
 \begin{itemize}
     \item Es ist nur ein Band erlaubt.
-    \item Bei jedem Rechenschritt bewegt sich der Kopf nach rechts. Ob und wie die Felder des Bandes dabei überschreiben werden spielt dann keine Rolle, denn der Kopf kann nie zurück bewegt werden; wir lehen aber fest, dass Symbole nicht überschrieben werden. Die Symbole die des Bandalphabet $\Gamma $ neben denen des Eingabealphabets $\Sigma $ und des $\square $  Symbols ?? hat ?? spielen keine Rolle. Wir legen hier $\varGamma $ = $\Sigma \cup $ \{$\square $\} fest.
-    \item Beim Einlesen des ersten $\square $ Symbols muss die Rechnung der Machine enden. Wir soll die Rechnung nicht vor dem Einlesen des ersten $\square $ Symbols enden. 
+    \item Bei jedem Rechenschritt bewegt sich der Kopf nach rechts. Ob und wie die Felder des Bandes dabei überschreiben werden spielt dann keine Rolle, denn der Kopf kann nie zurück bewegt werden; wir lehen aber fest, dass Symbole nicht überschrieben werden. Die Symbole die des Bandalphabet \(\Gamma\)  neben denen des Eingabealphabets \(\Sigma\)  und des \(\Box\) Symbols hat spielen keine Rolle. Wir legen hier \(\varGamma  = \Sigma \cup  \{\square \}\) fest.
+    \item Beim Einlesen des ersten \(\square\)  Symbols muss die Rechnung der Machine enden. Wir soll die Rechnung nicht vor dem Einlesen des ersten \(\square\) Symbols enden. 
 \end{itemize}
-??Die?? bedeutet, dass wir DM M = (Q, $\Sigma$m $\Sigma\cup $\{$\square $\}), $\delta$, s, F) die nur Instruktionen der Form (q, a, q', a, R) mit q $\in$ Q und a $\in \sigma$ hat.
-Dies sind nun stark eingeschränkte TM. Wir wählen eine äquivalente Form, die als endliche Automaten bezeichnet werden. 
+Dies bedeutet, dass wir TM \(M = (Q, \Sigma, \Sigma \cup \{\square \}, \Delta, s, F)\) die nur Instruktionen der Form (q, a, q', a, R) mit \(q \in Q\) und \(a \in \sigma\) hat. Dies sind nun stark eingeschränkte TM. Wir wählen eine äquivalente Form, die als endliche Automaten bezeichnet werden. 
 
 \mysubsection{Definition (Endliche Automaten)}
-Ein endicher Automat, kurz EA, ist ein Tupel A = (Q, $\Sigma$, $\delta$, s, F). Dabei ist 
-\begin{itemize}
-    \item Q eine endliche Menge, der Zustandsmenge;
-    \item $\Sigma$ das Eingabealphabet;
-    \item $\Delta \subseteq$ Q x $\sigma$ x Q die Übergangsrelation, eine relation, so dass es für alle q $\in$ Q und a$\in$ $\sigma$ ein q' $/in$ Q mit (q, a, q');
-    \item s $\in$ Q der Startzustand;
-    \item F $\subseteq$ die Menge der akzeptierten Zustände.
-\end{itemize}
-er endliche Automat A ist ein deterministischer endlicher Automa,
-kurz DEA, wenn es $\forall$ (q,a) $\in$ Q x $\sigma$ genau ein q' gibt mit (q,a,q') $\in$ $\delta$. 
-Im Sinne der obigen Betrachtung entspricht ein EA A = (Q, $\Sigma$m $\Delta$, s, F) der 1-TM $M_{a}$ = (Q, $\sigma$, ...)
-$\leadsto $ Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
-\mysubsection{Definition (Übergangsfunktion eines EA)}
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die \textbf{Übergangsfunktion} von A ist die Funktion $\delta_{A}$ : Q $\times \Sigma\rightarrow 2^{Q}$ (=Potenzmenge von Q) mit $\delta_{A}$(q,a) = \{q'$\in$ Q : (q, a, q')$\in \Delta$\} $\forall$q $\in$ Q, a$\in \Sigma$ \textbf{erweiterte Übergangsfunktion} von A ist die Funktion $\delta_{A}^{*}$ : Q $\times \Sigma^{*} \rightarrow 2^{Q}$ $\delta_{A}^{*}$(q, $\lambda$) = \{q\} und $\delta_{A}^{*}$(q, aw) = $\bigcup \limits_{q'\in \delta_{A}(q,a)}$ $\delta_{A}^{*}$(q', w) $\forall$q$\in$Q a$\in \Sigma$ und w$\in \Sigma^{*}$. Für $Q_{0} \subseteq Q$ und w $\in \Sigma^{*}$ schreiben wir $\delta_{A}^{*}$ ($Q_{0}$, w) statt $\bigcup \limits_{q \in Q_{0}}$ $\delta_{A}^{*}$(q,w). Für einen EA A = (Q, $\Sigma$, $\Delta$, s, F) ,mit entsprechnder TM $M_{A}$ = (Q, $\Sigma$, $\Gamma$, $\Delta$', s, F), q $\in$ Q und w $\in$ $\Sigma^{*}$ ist $\delta_{A}^{*}$(s,w) die Menge der zustände, die sich als erst Komp.?? der ubtem?? Konfig einer Rechnung von $M_{A}$ zur Eingabe zu ergeben.
+    Ein endicher Automat, kurz EA, ist ein Tupel \(A = (Q, \Sigma, \Delta, s, F)\). Dabei ist 
+    \begin{itemize}
+        \item Q eine endliche Menge, der Zustandsmenge;
+        \item \(\Sigma\) das Eingabealphabet;
+        \item \(\Delta \subseteq Q \times \sigma \times Q\) die Übergangsrelation, eine relation, so dass es für alle \(q \in Q\) und \( a\in \sigma\) ein \(q' \in Q\) mit (q, a, q');
+        \item \(s \in Q\) der Startzustand;
+        \item \(F \subseteq Q\) die Menge der akzeptierten Zustände.
+    \end{itemize}
+    Der endliche Automat A ist ein deterministischer endlicher Automa,
+    kurz DEA, wenn es \(\quad \forall (q,a) \in Q x \sigma\) genau ein q' gibt mit \((q,a,q') \in \Delta\). Im Sinne der obigen Betrachtung entspricht ein EA \(A = (Q, \Sigma, \Delta, s, F)\) der 1-TM \(M_{a} = (Q, \sigma, \sigma \cup \{\Box\}, \{(q, a, q', a, R) : (q, a, q') \in \Delta\}, s, F)\).
+        \paragraph*{\(\leadsto\)}
+            Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
 
-\mysubsection{Bemerkung }
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA
+\mysubsection{Definition (Übergangsfunktion eines EA)}
+    Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. Die \textbf{Übergangsfunktion} von A ist die Funktion \(\delta_{A} : Q \times \Sigma \rightarrow 2^{Q}\) \footnote{(=Potenzmenge von Q)} mit 
+    \[
+        \delta_{A}(q,a) = \{q'\in Q : (q, a, q')\in \Delta\} \quad \forall q \in Q, a \in \Sigma
+    \] 
+    \textbf{erweiterter Übergangsfunktion} von A ist die Funktion 
+    \[
+        \delta_{A}^{*} : Q \times \Sigma^{*} \rightarrow 2^{Q} \delta_{A}^{*}(q, \lambda) = \{q\}
+    \] 
+    und 
+    \[
+        \delta_{A}^{*}(q, aw) = \bigcup \limits_{q'\in \delta_{A}(q,a)} \delta_{A}^{*}(q', w) \quad \forall q\in Q a\in \Sigma
+    \]
+    und 
+    \(w\in \Sigma^{*}\). Für \(Q_{0} \subseteq Q\) und \(w \in \Sigma^{*}\) schreiben wir \(\delta_{A}^{*} (Q_{0}, w)\) statt \(\bigcup \limits_{q \in Q_{0}} \delta_{A}^{*}(q,w)\).
+    \\ Für einen EA \(A = (Q, \Sigma, \Delta, s, F)\), mit entsprechnder TM \(M_{A} = (Q, \Sigma, \Gamma, \Delta', s, F), q \in Q\) und \(w \in \Sigma^{*}\) ist \(\delta_{A}^{*}(s,w)\) die Menge der zustände, die sich als erst Komp.?? der letzten Konfig einer Rechnung von \(M_{A}\) zur Eingabe zu ergeben.
+
+\mysubsection{Bemerkung (Eigenschaften von endlichen Automaten)*}
+Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA
 \begin{itemize}
-    \item [(i)] $\forall$ q $\in$ Q und a$\in \Sigma$ gilt $\delta_{A}^{*}$(q,a) = $\delta_{A}$(q, a).
-    \item [(ii)] Ist A ein DEA, q $\in$ Q, a $\in \Sigma$ und w $\in \Sigma^{*}$, und $\lvert \delta_{A}^{*}(q,w) \rvert$ = 1??.
-    \item[(iii)] Seien u,v $\in \Sigma^{*}$ $\forall$ q $\in$ Q gilt $\delta_{A}^{*}$(q, uv) = $\delta_{A}^{*}(\delta_{A}^{*}(Q_{0}, u), v)$.
+    \item [(i)] \( \forall q \in Q\) und \(a\in \Sigma\) gilt \(\delta_{A}^{*}(q,a) = \delta_{A}(q, a)\).
+    \item [(ii)] Ist A ein DEA, \(q \in Q\), \(a \in \Sigma\) und \(w \in \Sigma^{*}\), und \(\lvert \delta_{A}^{*}(q,w) \rvert\) = 1.
+    \item[(iii)] Seien \(u,v \in \Sigma^{*} \quad \forall q \in Q\) gilt \(\delta_{A}^{*}(q, uv) = \delta_{A}^{*}(\delta_{A}^{*}(Q_{0}, u), v)\).
 \end{itemize}
 
 \mysubsection{Definition (Übergangsfunktion eines DEA)}
-Sei A = (Q, $\Sigma$,  $\Delta$, s, F) eine DEA. Auch die Funktion $\delta_{det, A}$: Q $\times \Sigma \rightarrow$ Q mit $\delta_{A}(q,a)$ = \{$\delta_{det, A}(q, a)$\} $\forall$ q $\in$ Q und a $\in \Sigma$ wird auch \textbf{Übergangsfunktion} von A gennant. Analoges gilt für $\delta_{det, A}^{*}$($Q_{0}$, w) statt $\bigcup \limits_{q \in Q_{0}}\{\delta_{det, A}^{*}(q, w)\}$.
+Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det, A}: Q \times \Sigma \rightarrow Q\) mit \(\delta_{A}(q,a) = \{\delta_{det, A}(q, a)\} \quad \forall q \in Q\) und \(a \in \Sigma\) wird auch \textbf{Übergangsfunktion} von A gennant. Analoges gilt für \(\delta_{det, A}^{*}(Q_{0}, w)\) statt \(\bigcup \limits_{q \in Q_{0}}\{\delta_{det, A}^{*}(q, w)\}\).
 
-\mysubsection{Bemerkung }
-Ist A = (Q, $\Sigma$, $\Delta$, s, F) ein DEA, so gelten Berkung 4.3 (i) und (iii) auch wenn $\delta_{A}$ durch $\delta_{det, A}$ und $\delta_{A}^{*}$ durch $\delta_{det, A}^{*}$ ersetzt wird.
+\mysubsection{Bemerkung (Folgerungen für DEA)}
+    Ist \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA, so gelten \hyperref[subsec:4.3]{Berkung 4.3 (i)} und \hyperref[subsec:4.3]{(iii)} auch wenn \(\delta_{A}\) durch \(\delta_{det, A}\) und \(\delta_{A}^{*}\) durch \(\delta_{det, A}^{*}\) ersetzt wird.
 
-\mysubsection{Bemerkung}
-Sei Q eine endliche Menge, $\Sigma$ ein Alphabet, s$\in$ Q, und F$\subseteq$ Q. 
-
-\begin{itemize}
-    \item [(i)] $\forall$ Funktionen $\delta$ : Q $\times \Sigma \rightarrow 2^{Q}$ gibt es genau einen EA A = (Q, $\Sigma$, $\Delta$, s, F) mit $\delta_{A}$ = $\delta$.
-    \item [(ii)] $\forall$ Funktionen $\delta$ : Q $\times \Sigma \rightarrow$ Q gibt es genau einen $\delta_{det, A}$ = $\delta$. 
-\end{itemize}
+\mysubsection{Bemerkung(Eindeutigkeit endlicher Automaten)*}
+    Sei Q eine endliche Menge, \(\Sigma\) ein Alphabet, \(s\in Q\), und \(F\subseteq Q\). 
+    \begin{itemize}
+        \item [(i)] \(\forall\) Funktionen \(\delta : Q \times \Sigma \rightarrow 2^{Q}\) gibt es genau einen EA \(A = (Q, \Sigma, \Delta, s, F)\) mit \(\delta_{A} = \delta\).
+        \item [(ii)] \(\forall\) Funktionen \(\delta : Q \times \Sigma \rightarrow Q\) gibt es genau einen \(\delta_{det, A} = \delta\). 
+    \end{itemize}
 
 \mysubsection{Definition (akzeptierte Sprache)}
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. Die Sprache L(A) := \{w $\in \Sigma^{*}$ : $\delta_{A}^{*}$(s, w)$\cap$ F $\neq \varnothing $\} ist die \textbf{akzeptierte Sprache} von A.
+    Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. Die Sprache \(L(A) := \{w \in \Sigma^{*} : \delta_{A}^{*}(s, w)\cap F \neq \varnothing \}\) ist die \textbf{akzeptierte Sprache} von A.
 
 \mysubsection{Definition (regulär)} 
-Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben REG für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
+    Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben REG für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
 
 \newpage
-\mysubsection{Beispiel}
-Sei A := (\{$q_{0}$, $q_{1}$\}, \{0, 1\}, $\Delta$, $q_{0}$, \{$q_{1}$\}) mit $\Delta$ = \{($q_{0}$)\}
-Übergangsdiagramm und übergangstabelle von sehen wie folgt aus:
-\begin{center}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{Zustand/Symbol} & \textbf{0} & \textbf{1} \\
-        \hline
-        $q_{0}$ & $q_{0}$ & $q_{1}$ \\
-        \hline
-        $q_{1}$, * & $q_{1}$ & $q_{0}$ \\
-        \hline
-    \end{tabular}
-\end{center}
-\createDiagram{Übergangstabelle}{}
+\mysubsection{Beispiel (Endlicher Automat A)*}
+    Sei \(A := (\{q_{0}, q_{1}\}, \{0, 1\}, \Delta, q_{0}, \{q_{1}\}) mit \Delta = \{(q_{0})\}\)
+    Übergangsdiagramm und übergangstabelle von sehen wie folgt aus:
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \textbf{Zustand/Symbol} & \textbf{0} \footnote{die Elemente von \(\Sigma\)} & \textbf{1} \footnote{die Elemente von \(\Sigma\)} \\
+            \hline
+            \( \rightarrow\) \footnote{Startzustand} \(q_{0}\) & \(q_{0}\) & \(q_{1}\) \\
+            \hline
+            \(q_{1}\), * \footnote{\(\in F\)} & \(q_{1}\) \footnote{\((q_1, 0, a_1) \in \Delta\) (wenn a in \(q_1\) ist und 0 einliest, ghet A in \(q_1\) über)} & \(q_{0}\) \\
+            \hline
+        \end{tabular}
+    \end{center}
 
-\createDiagram{Übergangsdiagramm}
-{
-    \begin{tikzpicture}[->,>=latex,shorten >=1pt,auto,node distance=3cm,semithick]
-        \tikzstyle{state}=[draw,circle,minimum size=2cm]
-        
-        \node[state, initial] (q0) {$q_0$};
-        \node[state, accepting] (q1) [right of=q0] {$q_1$};
-    
-        \path (q0) edge [bend left] node {0, 1} (q1)
-        (q1) edge [bend left] node {0, 1} (q0);
-      \end{tikzpicture}
+    \createDiagram{Übergangstabelle}
+    {
+
     }
 
+    \createDiagram{Übergangsdiagramm}
+    {
+        \begin{tikzpicture}[->,>=latex,shorten >=1pt,auto,node distance=3cm,semithick]
+            \tikzstyle{state}=[draw,circle,minimum size=2cm]
+            
+        %    \node[state, initial] (q0) {q_0};
+        %    \node[state, accepting] (q1) [right of=q0] {q_1};
+        
+        %    \path (q0) edge [bend left] node {0, 1} (q1)
+        %    (q1) edge [bend left] node {0, 1} (q0);
+        \end{tikzpicture}
+    }
 
-\subsection*{Übergangsdiagramm:}
-Für jeden Zustand gibt es einen Kreis. Zustände in F bekommen einen Doppelkreis. Für (q, a, q') $\in \Delta$ für einen Pfeil von dem Kreis von q zu dem Kreis von q' mit der Beschreibung a. Zusätzlich gibt es einen Pfeil (ohne Beschriftung) aus dem "Nichts" zus deom Kreis des Starzustandes.\\\\
-Ähnlich wie bei allgemeinen und normierten TM bleibt die Klasse der akzeptierten Sprachen glich wenn man nur deterministisch endliche Automaten zulässt. Um dies zu beweisen führen wir den Potentautomaten ein.
-
+    \paragraph*{Übergangsdiagramm:}
+        Für jeden Zustand gibt es einen Kreis. Zustände in F bekommen einen Doppelkreis. Für (q, a, q') \(\in \Delta\) für einen Pfeil von dem Kreis von q zu dem Kreis von q' mit der Beschreibung a. Zusätzlich gibt es einen Pfeil (ohne Beschriftung) aus dem "Nichts" zus deom Kreis des Starzustandes. Ähnlich wie bei allgemeinen und normierten TM bleibt die Klasse der akzeptierten Sprachen glich wenn man nur deterministisch endliche Automaten zulässt. Um dies zu beweisen führen wir den Potentautomaten ein.
+\newpage
 \mysubsection{Definition (Potenzautomaten)}
-Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA. der \textbf{Potenzautomat} von A ist der DEA $P_{A}$ = ($2^{Q}$, $\Sigma$, $\Delta$', \{s\}, \{P$\subseteq$Q : P$\cup$F $\neq \varnothing $ \}) mit \[\delta_{det, P_{A}}(Q_{0}, a) = \bigcup\limits_{q \in Q_0} \delta_A (q, a) \quad \forall Q_0 \subseteq Q \quad \forall a \in \Sigma \] 
-\textit{Anmerkung: Es gibt eine einfache möglichkeit einen nicht Deterministischen Automaten in einen Deterministischen umzuwanden. Das wird hier in Zukunft beschrieben. Siehe Tutoriumaufschrieb. (das wird hier in zukunft angefügt)}
+    Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. der \textbf{Potenzautomat} von A ist der DEA \(P_{A} = (2^{Q}, \Sigma, \Delta', \{s\}, \{P \subseteq Q : P \cup F \neq \varnothing  \})\) mit 
+    \[
+        \delta_{det, P_{A}}(Q_{0}, a) = \bigcup\limits_{q \in Q_0} \delta_A (q, a) \quad \forall Q_0 \subseteq Q \quad \forall a \in \Sigma 
+    \] 
 
-\mysubsection{Satz}
-Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
+    \textit
+    {
+        Anmerkung: Es gibt eine einfache möglichkeit einen nicht Deterministischen Automaten in einen Deterministischen umzuwanden. Das wird hier in Zukunft beschrieben. Siehe Tutoriumaufschrieb. (das wird hier in zukunft angefügt)
+    }
 
-\begin{proof}
-    Sei A = (Q, $\Sigma$, $\Delta$, s, F) ein EA mit Potenzautomat $P_{A}$. Es genügt zu zeigen, dass L(A) = L($P_{A}$). Hierfür genügt es zu zeigen, dass:
-    \[\delta_{det,P}^{*} = \delta_{A}^{*}(s, w) \forall w \in \Sigma^{*} (*)\]
-    Denn damit folgt
-    \[w \in  L (P_{A}) \Leftrightarrow \delta_{P_{A}}^{*}(\{s\}, w) \cap \{P\subseteq Q : P\cap F \neq \varnothing \} \neq \varnothing \] 
-    \[\Leftrightarrow \delta_{det, P_{A}}^{*}(\{s\}, w) \cap F \neq \varnothing \]
-    \[\underset{\text{(*)}}{\Leftrightarrow } \delta_{A}^{*}(\{s\}, w) \cap F \neq \varnothing \]
-    \[\Leftrightarrow w \in L(A)\] Wir zeigen (*) mittels vollständiger Induktion über $\lvert$w$\rvert$. Es gilt $\delta_{det, P_{A}}^{*}$(\{s\}, $\lambda$) = $\delta_{A}^{*}$(s, $\lambda$). Sei w $\in \Sigma^{+}$ mit $\delta_{det, A}^{*}$(\{s\}, v) = $\delta_{A}^{*}$(s, v) $\forall$ v $\in \Sigma^{\leq \lvert w \rvert - 1}$. Nun zeigen wir (*) Sei va := w mit a $\in \Sigma$ und $\lvert$v$\rvert$ = $\lvert$w$\rvert$ - 1.
-    \[\delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\hyperref[subsec:4.5]{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
-    \[\underset{\text{Ind. hyp}}{=} \delta_{det, P_{A}}^{*}(\delta_{det, P_{A}}^{*}(\{s\}, v), a)\]
-    \[ = \bigcup \limits_{q \in \delta_{det, A}^{*}}\delta_{A}(q, a)\]
-    \[ = \delta_{A}^{*}(\delta_{A}^{*}(s, v), a)\]
-    \[ = \delta_{A}^{*}(s, va)\]
-    \[ = \delta_{A}^{*}(s, w)\]
-\end{proof}
+\mysubsection{Satz(Charakterisierung regulärer Sprachen)*}
+    Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
+
+    \begin{proof}
+        Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA mit Potenzautomat \(P_{A}\). Es genügt zu zeigen, dass \(L(A) = L(P_{A})\). Hierfür genügt es zu zeigen, dass:
+        \[
+            \delta_{det,P}^{*} = \delta_{A}^{*}(s, w) \quad \forall w \in \Sigma^{*} \circledast 
+        \]
+        Denn damit folgt
+        \[
+            w \in  L (P_{A}) \Leftrightarrow \delta_{P_{A}}^{*}(\{s\}, w) \cap \{P\subseteq Q : P\cap F \neq \varnothing \} \neq \varnothing 
+        \] 
+        \[
+            \Leftrightarrow \delta_{det, P_{A}}^{*}(\{s\}, w) \cap F \neq \varnothing 
+        \]
+        \[
+            \underset{\circledast}{\Leftrightarrow } \delta_{A}^{*}(\{s\}, w) \cap F \neq \varnothing 
+        \]
+        \[
+            \Leftrightarrow w \in L(A)
+        \]
+        Wir zeigen \(\circledast \) mittels vollständiger Induktion über \(\lvert w \rvert\). Es gilt \(\delta_{det, P_{A}}^{*}(\{s\}, \lambda) = \delta_{A}^{*}(s, \lambda)\). Sei \(w \in \Sigma^{+}\) mit \(\delta_{det, A}^{*}(\{s\}, v) = \delta_{A}^{*}(s, v) \quad \forall v \in \Sigma^{\leq \lvert w \rvert - 1}\). Nun zeigen wir \(\circledast \) Sei va := w mit \(a \in \Sigma und \lvert v \rvert = \lvert w \rvert - 1\).
+        \[
+            \delta_{det, P_{A}}^{*} (\{s\}, w) \underset{\hyperref[subsec:4.5]{Bem 4.5}}{=} \delta_{det, P_{A}}^{*} (\delta_{det, P_{A}}^{*}(\{s\}, v), a)
+        \]
+        \[
+            \underset{\text{Ind. hyp}}{=} \delta_{det, P_{A}}^{*}(\delta_{det, P_{A}}^{*}(\{s\}, v), a)
+        \]
+        \[
+            = \bigcup \limits_{q \in \delta_{det, A}^{*}}\delta_{A}(q, a)
+        \]
+        \[
+        = \delta_{A}^{*}(\delta_{A}^{*}(s, v), a)
+        \]
+        \[ 
+            = \delta_{A}^{*}(s, va)
+        \]
+        \[ 
+            = \delta_{A}^{*}(s, w)
+        \]
+    \end{proof}
