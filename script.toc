@@ -154,6 +154,14 @@
 \contentsline {subsection}{\numberline {7.17}Proposition(Zeitbeschränkte TM-Äquivalenz)*}{56}{subsection.7.17}%
 \contentsline {subsection}{\numberline {7.18}Satz (Zeithirarchiesatz für nichtdeterministische TM)}{56}{subsection.7.18}%
 \contentsline {subsection}{\numberline {7.19}Definition(abstraktes Komplexitätsmaß)}{57}{subsection.7.19}%
-\contentsline {subsection}{\numberline {7.20}Definition}{57}{subsection.7.20}%
+\contentsline {subsection}{\numberline {7.20}Definition(T-Beschränkte TM und DCOM)*}{57}{subsection.7.20}%
 \contentsline {subsection}{\numberline {7.21}Satz (Lückensatz)}{57}{subsection.7.21}%
 \contentsline {paragraph}{Genauer:}{57}{subsection.7.21}%
+\contentsline {section}{\numberline {8}\textbf {Komplexitätsklassen P und NP}}{58}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definition(Komplexitätsklassen P, FP und NP)*}{59}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Definition (p-m-Reduktion)}{59}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Bemerkung(Eigenschaften der p-m-Reduktion)*}{59}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Definition (\textbf {NP}-schwer, \textbf {NP}-vollständig)}{59}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Definition (aussagenlogische Formel)}{59}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Definition(Grundbegriffe der aussagenlogischen Formeln)*}{59}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Definition (konjunktive Normalform)}{59}{subsection.8.7}%

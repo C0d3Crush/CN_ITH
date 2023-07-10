@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  5 JUL 2023 14:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  10 JUL 2023 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -739,7 +739,7 @@ LaTeX Warning: Label `fig:' multiply defined.
 
 LaTeX Warning: Label `fig:' multiply defined.
 
-) (./Komplexität/main.aux))
+) (./Komplexität/main.aux) (./Komplexitätsklassen P und NP/main.aux))
 \openout1 = `script.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
@@ -826,7 +826,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=630, 263.48438pt x 263.48438pt>
+<qrcode.png, id=662, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
 Package pdftex.def Info: qrcode.png  used on input line 239.
@@ -875,11 +875,19 @@ l.54 ...em, Emil Port, 1946)}{19}{subsection.3.14}
 \tf@toc=\write5
 \openout5 = `script.toc'.
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 252.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 252.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 252.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 252.
  [4]
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einführung.png, id=973, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einführung.png, id=1026, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einführung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einführung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einführung.png  used on input line 3.
@@ -910,15 +918,6 @@ Overfull \hbox (40.5955pt too wide) in paragraph at lines 59--60
 [9
 
 ] [10]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 108.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 108.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
-
 Overfull \hbox (20.09167pt too wide) in paragraph at lines 126--127
 []\T1/lmr/m/n/10 Ist die rech-nung von M zur Ein-ga-be $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 die end-li-che Rech-nung $\OML/lmm/m/it/10 C[]; []  ; C[]$\T1/lmr/m/n/10 , so gilt $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 ) =
  []
@@ -1098,26 +1097,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--210
 
 LaTeX Warning: Command \" invalid in math mode on input line 244.
 
-) [57] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux) (./Komplexität/main.aux))
+) [57]
+\openout2 = `"Komplexitätsklassen P und NP/main.aux"'.
+
+ (./Komplexitätsklassen P und NP/main.tex [58
+
+
+
+
+]) [59
+
+] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux) (./Komplexität/main.aux) (./Komplexitätsklassen P und NP/main.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: 580DE61F0671AE1548B1E2C4C8CFB2BF;27176.
+(rerunfilecheck)             Checksum: 4262209EA9AC1A91B6F334D77CE2FF9E;29435.
  ) 
 Here is how much of TeX's memory you used:
- 31576 strings out of 476025
- 622710 string characters out of 5790017
+ 31631 strings out of 476025
+ 624515 string characters out of 5790017
  1877388 words of memory out of 5000000
- 51177 multiletter control sequences out of 15000+600000
+ 51214 multiletter control sequences out of 15000+600000
  604205 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,104p,3231b,1456s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (58 pages, 618190 bytes).
+Output written on script.pdf (60 pages, 627904 bytes).
 PDF statistics:
- 1463 PDF objects out of 1728 (max. 8388607)
- 1334 compressed objects within 14 object streams
- 239 named destinations out of 1000 (max. 500000)
- 1263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1523 PDF objects out of 1728 (max. 8388607)
+ 1392 compressed objects within 14 object streams
+ 250 named destinations out of 1000 (max. 500000)
+ 1327 words of extra memory for PDF output out of 10000 (max. 10000000)
 

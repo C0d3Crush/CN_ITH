@@ -238,7 +238,7 @@
         \item [(ii)] Die Relation \(\{(e, x, t) \in \mathbb{N}_0 \times \{0, 1\}^* \times \mathbb{N}_0 : \phi(e,x) = t\}\) ist im Sinne entscheidbar, dass die Funktion \(\psi : \mathbb{N}_0 \times \{0, 1\}^* \times \mathbb{N}_0 \to \{0, 1\}\) mit \(\psi(e, x, t) = 1 \Leftrightarrow \phi (e,x) = t \quad \forall e, x, t\) berechenbar ist.
     \end{itemize}
 
-\mysubsection{Definition}
+\mysubsection{Definition(T-Beschränkte TM und DCOM)*}
     Sei \(t: \mathbb{N}_0 \to \mathbb{N}_0\) eine Funktion für \(e \in \mathbb{N}_0\) wird die TM \(M_e\) als \textbf{t - \(\phi\) - beschränkt} bezeichnet, wenn \(M_e\) total ist und es ein \(n_0 \in \mathbb{N}_0\) gibt, sodass \(\phi(e, x) \leq t(|x|) \quad \forall x \in \{0, 1\}^{\geq n_0}\) gilt. Wir setzen:
     \[
         \textbf{DCOM}^{\phi}(t) := \{L(M) \subseteq \{0, 1\}^* : M ist t - \phi - beschränkt\}  

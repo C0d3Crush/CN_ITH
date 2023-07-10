@@ -1,0 +1,49 @@
+\coversection{ReguläreSprachen/regul.png}{Komplexitätsklassen P und NP}
+{}
+
+\mysubsection{Definition(Komplexitätsklassen P, FP und NP)*}
+    Wir setzen 
+    \[
+        \textbf{P} := \textbf{DTIME} (poly),\quad \textbf{FP} := \textbf{FTIME}(poly),\quad \textbf{NP} := \textbf{NTIME}(poly)   
+    \]
+    wobei poly := \{\(n^c + c, c \in \mathbb{N}_0\)\}
+    Offenbar gilt \textbf{P} \(\subseteq\) \textbf{NP}, allerding ist unklar ob \textbf{P} \(\not \subseteq\) \textbf{NP}.
+
+\mysubsection{Definition (p-m-Reduktion)}
+    Eine Sprache A über \{0, 1\} ist in \textbf{polynomieller Zeit manny-to-one- reduzierbar}, auch \textbf{p-m-reduzierbar}, kurz \(A \leq^P_m B\), auf eine Sprache B über \{0, 1\}, wenn es eine Funktion \(f \in\textbf{FP}\) gibt, so dass 
+    \[
+        w\in A \Leftrightarrow f (w) \in B, \quad \forall w \in \{0, 1\}^*  
+    \] 
+    gilt. Gelte \(A \leq^P_m\) und \(B \leq^P_m\), so sind A und B \textbf{p-m-äquivalent}, kurz \(A=^P_m B\)
+
+\mysubsection{Bemerkung(Eigenschaften der p-m-Reduktion)*}
+    \begin{itemize}
+        \item [(i)] \(\leq^P_m\) transitiv
+        \item [(ii)] Seien A und B Sprachen mit \(A \leq ^P_m B\)
+        \item [(iii)] Alle Sprachen \(L \in \textbf{P}\) mit \(\varnothing \not = L \not = \{0,1\}^*\) sind p-m-äquivalent.
+    \end{itemize}
+
+\mysubsection{Definition (\textbf{NP}-schwer, \textbf{NP}-vollständig)}
+    Eine Sprache S wird als \textbf{NP}- Schwer bezeichnetm, wenn \(L \leq ^P_m S \quad \forall L \in \textbf{NP}\) gilt. Gilt zusätzlich \(S \in \textbf{NP}\), so wird S als \textbf{NP}-vollständig bezeichnet.
+
+    \paragraph*{Nächstes ziel:} 
+        Finden eines NP-vollständigen Problems.
+
+\mysubsection{Definition (aussagenlogische Formel)}
+    Sei Var eine abzählbare Menge mit \(\lnot, \Delta, \not \in Var\). Die Menge der \textbf{aussagenlogischen Formeln} A ist die ??? Inklusion kleinster Menge von Wörtern über \(Var \cup \{\lnot, \wedge, (,)\}\) mit \(a \in A \quad \forall a \in Var\) und \(\lnot \varphi, (\varphi \wedge \psi) \in A \quad \varphi, \psi \in A\). Für \(\varphi, \psi, \in A\) schreiben wir statt \(\lnot(\lnot \varphi \wedge \lnot \psi)\) auch \((\varphi \vee \psi)\) und statt (\(\lnot \varphi \vee \psi\)) auch (\(\varphi \to \psi\)). Wie üblich vereibaren wir Klammerregeln zur besseren lesbarkeit: \\ \(\lnot\) bidet stärker als \(\wedge\) und \(\vee\). 
+    \paragraph*{Beispielsweise}
+        \(\lnot a \wedge b \wedge c = ((\lnot a \wedge b)\wedge c)\)
+    
+\mysubsection{Definition(Grundbegriffe der aussagenlogischen Formeln)*}
+    \begin{itemize}
+        \item [(i)]DieElemente von Var heißen \textbf{Variablen}.
+        \item [(ii)] Für \(\varphi, \varphi_1, \cdots, \varphi_n \in A\) mit \(n \in \mathbb{N}\) heißt die aussagen ??? Formel \( \lnot \varphi\) \textbf{Negation} von \(\varphi\), die aussagen ??? Formel \(\varphi_1 \wedge \cdots \wedge \varphi_n\) heißt \textbf{Konjunktion} von \(\varphi_1, \cdots, \varphi_n\) und \(\varphi_1 \vee \cdots \vee \varphi_n\) heißt \textbf{Disjunktion} von \(\varphi_1, \cdots, \varphi_n\).
+    \end{itemize}
+
+\mysubsection{Definition (konjunktive Normalform)}
+\begin{itemize}
+    \item [(i)] Ein \textbf{Literal} ist eine variable oder eine negaltion einer Variablen.
+    \item [(ii)] Eine \textbf{disjunktive Klausel} ist eine Disjunktion von Literalen.
+    \item [(iii)] Eine aussagen??? Formel in \textbf{konjunktiver Normalform}, kurz KNF ist eine Konjunktion disjunkiver klauseln
+\end{itemize}
+

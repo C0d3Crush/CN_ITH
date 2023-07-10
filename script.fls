@@ -1175,6 +1175,9 @@ INPUT Grammatiken/main.aux
 INPUT ./Komplexität/main.aux
 INPUT Komplexität/main.aux
 INPUT Komplexität/main.aux
+INPUT ./Komplexitätsklassen P und NP/main.aux
+INPUT Komplexitätsklassen P und NP/main.aux
+INPUT Komplexitätsklassen P und NP/main.aux
 OUTPUT script.aux
 INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1274,6 +1277,23 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 OUTPUT script.toc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT ./Grundlagen/main.tex
 INPUT ./Grundlagen/main.tex
 INPUT ./Grundlagen/main.tex
@@ -1295,8 +1315,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
@@ -1313,21 +1331,6 @@ INPUT ./Turingmachine/main.tex
 INPUT Turingmachine/main.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri9.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmmi8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmsy8.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
@@ -1423,6 +1426,16 @@ INPUT ./Komplexität/main.tex
 INPUT Komplexität/main.tex
 INPUT ./Komplexität/main.tex
 INPUT Komplexität/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+OUTPUT Komplexitätsklassen P und NP/main.aux
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT Komplexitätsklassen P und NP/main.tex
+INPUT ./Komplexitätsklassen P und NP/main.tex
+INPUT Komplexitätsklassen P und NP/main.tex
 INPUT script.aux
 INPUT ./Grundlagen/main.aux
 INPUT Grundlagen/main.aux
@@ -1445,6 +1458,9 @@ INPUT Grammatiken/main.aux
 INPUT ./Komplexität/main.aux
 INPUT Komplexität/main.aux
 INPUT Komplexität/main.aux
+INPUT ./Komplexitätsklassen P und NP/main.aux
+INPUT Komplexitätsklassen P und NP/main.aux
+INPUT Komplexitätsklassen P und NP/main.aux
 INPUT ./script.out
 INPUT ./script.out
 INPUT /Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk
