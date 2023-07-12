@@ -15,3 +15,6 @@ und l1 o l1 zu l1 o l2
 Füge abbildungen aus Komplexität hinzu dann release!!
 
 Definition (Übergangsfunktion eines EA) was ist komp. ?? mark: "??"
+
+
+Fix syntax in automaten!!!

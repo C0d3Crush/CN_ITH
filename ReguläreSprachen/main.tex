@@ -6,10 +6,19 @@
   Sei A eine Menge. Eine Äquivalenzrelation auf A ist eine Relation \(\sim \leq A^{2}\), so dass die folgende Eigenschaft erfüllt sind. (wie bei Relationen üblich verwenden wir Infixnotation)
   \begin{itemize}
     \item [(i)] \(a \sim a \quad \forall a \in A\)  (Reflexivität)
-    \item [(ii)] \(a \sim b \Rightarrow  b \sim a \quad \forall a, b, c \in A\) (Symetrie)
+    \item [(ii)] \(a \sim b \Rightarrow  b \sim a \quad \forall a, b \in A\) (Symetrie)
     \item [(iii)] \(a \sim b, b \sim c \rightarrow a \sim c \quad \forall a, b, c \in A\)(Transitivität)
   \end{itemize}
   Die \textbf{Äquivalenzklasse} eines Elements \(a \in A\) bezüglich \(\sim\) ist die Menge \([a]_{~} := {a' \in A : a' ~a}\). Der \textbf{Index} von \(\sim\) ist die Kardinalität der Menge \(A_{/\sim} := {[a]_{\sim} : a \in A}\) falls diese endlich ist und \(\infty\) andernfalls.
+
+  \paragraph*{Erklärung:}
+    Die Anzahl der Elemente in einer Äquivalenzklasse, und der Index von \(\sim\) gibt die Kardinalität der Menge \(A_{/\sim}\) an, wenn sie endlich ist, oder \(\infty\), wenn sie unendlich ist. \footnote{exp. Ed. Sug.}
+
+  \paragraph*{Beispiel:}
+  \begin{itemize}
+    \item In der Menge der ganzen Zahlen könnte die Äquivalenzrelation 'Teilbarkeit' sein, bei der a \(\sim\) b bedeutet, dass a ohne Rest durch b teilbar ist.
+    \item In der Menge der Personen könnte die Äquivalenzrelation "gleiches Alter" sein, bei der a \(\sim\) b bedeutet, dass a und b das gleiche Alter haben. \footnote{Textbsp. Ed. sug.}
+  \end{itemize}
 
 \mysubsection{Definition (A-Äquivalenz)} 
   Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA mit erweiterter Übergangsfunktion \(\delta^{*}: Q \times \Sigma \rightarrow Q\). Die A-Äquivalenz ist die Relation \(\sim_A\) auf \(\Sigma^{*}\) mit 
@@ -26,7 +35,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \end{itemize}
 
 \mysubsection{Definition (Rechtskongruenz)} 
-  Sei \(\Sigma\) ein Alpha. Eine Rechtskongruenz auf \(\Sigma^{*}\) ist eine Äquivalenzrelation \(\sim \subseteq (\Sigma^{*})^{2}\) mit \(u \sim v \Rightarrow uw \sim vw \quad \forall u, v, w \in \Sigma^{*}\).
+  Sei \(\Sigma\) ein Alphabet Eine Rechtskongruenz auf \(\Sigma^{*}\) ist eine Äquivalenzrelation \(\sim \subseteq (\Sigma^{*})^{2}\) mit \(u \sim v \Rightarrow uw \sim vw \quad \forall u, v, w \in \Sigma^{*}\).
 
 \mysubsection{Proposition} 
   Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA. Die A-Äquivalenz \(\sim_{A}\) ist eine Rechtskonqruenz auf \(\Sigma^{*}\).

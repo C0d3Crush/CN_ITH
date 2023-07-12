@@ -19,6 +19,64 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cellspace/cellspace.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/keyval.tex
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -104,16 +162,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -1172,9 +1220,9 @@ INPUT ReguläreSprachen/main.aux
 INPUT ./Grammatiken/main.aux
 INPUT Grammatiken/main.aux
 INPUT Grammatiken/main.aux
-INPUT ./Komplexität/main.aux
-INPUT Komplexität/main.aux
-INPUT Komplexität/main.aux
+INPUT ./Zeitkomplexität/main.aux
+INPUT Zeitkomplexität/main.aux
+INPUT Zeitkomplexität/main.aux
 INPUT ./Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
@@ -1276,6 +1324,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 OUTPUT script.toc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
@@ -1316,8 +1366,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./Turingmachine/main.tex
 INPUT ./Turingmachine/main.tex
@@ -1378,6 +1426,9 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT ./Automaten/main.tex
 INPUT ./Automaten/main.tex
 INPUT ./Automaten/main.tex
@@ -1416,16 +1467,16 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx6.tfm
-INPUT ./Komplexität/main.tex
-INPUT ./Komplexität/main.tex
-INPUT ./Komplexität/main.tex
-OUTPUT Komplexität/main.aux
-INPUT ./Komplexität/main.tex
-INPUT ./Komplexität/main.tex
-INPUT ./Komplexität/main.tex
-INPUT Komplexität/main.tex
-INPUT ./Komplexität/main.tex
-INPUT Komplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+OUTPUT Zeitkomplexität/main.aux
+INPUT ./Zeitkomplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+INPUT Zeitkomplexität/main.tex
+INPUT ./Zeitkomplexität/main.tex
+INPUT Zeitkomplexität/main.tex
 INPUT ./Komplexitätsklassen P und NP/main.tex
 INPUT ./Komplexitätsklassen P und NP/main.tex
 INPUT ./Komplexitätsklassen P und NP/main.tex
@@ -1455,9 +1506,9 @@ INPUT ReguläreSprachen/main.aux
 INPUT ./Grammatiken/main.aux
 INPUT Grammatiken/main.aux
 INPUT Grammatiken/main.aux
-INPUT ./Komplexität/main.aux
-INPUT Komplexität/main.aux
-INPUT Komplexität/main.aux
+INPUT ./Zeitkomplexität/main.aux
+INPUT Zeitkomplexität/main.aux
+INPUT Zeitkomplexität/main.aux
 INPUT ./Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
@@ -1479,11 +1530,13 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

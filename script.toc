@@ -40,28 +40,36 @@
 \contentsline {section}{\numberline {3}\textbf {Berechenbarkeit}}{15}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Definition (Code)}{16}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{16}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Bemerkung}{16}{subsection.3.3}%
+\contentsline {paragraph}{Konvention: }{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Bemerkung(Unendlich viele Indizes)*}{16}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Definition (U)}{16}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Definition (Universell)}{17}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Bemerkung}{17}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Satz ($s_n^m$ - Theorem)}{17}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.6}Bemerkung(Universelle Turingmaschine U)*}{17}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Satz (\(s_n^m\) - Theorem)}{17}{subsection.3.7}%
 \contentsline {subsection}{\numberline {3.8}Definition (diagonales Halteproblem)}{18}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Proposition}{18}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Satz}{18}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}m-Reduktion}{18}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Bemerkung}{18}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Satz}{19}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.9}Proposition(Diagonales Halteproblem)*}{18}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Satz(Diagonalhalteproblem - Nicht entscheidbar)*}{18}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Definition (m-Reduktion)}{18}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Bemerkung(Entscheidbarkeit unter Reduzibilität)*}{18}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Satz(Nicht-Entscheidbarkeit des initialen Halteproblems)*}{19}{subsection.3.13}%
+\contentsline {paragraph}{Idee: }{19}{subsection.3.13}%
+\contentsline {paragraph}{Dominosteinspiel!}{19}{subsection.3.13}%
+\contentsline {subparagraph}{Gegeben: }{19}{subsection.3.13}%
+\contentsline {subparagraph}{Gesucht: }{19}{subsection.3.13}%
 \contentsline {subsection}{\numberline {3.14}Definition (Postsches Korrespondenzproblem, Emil Port, 1946)}{19}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Lemma}{20}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Lemma}{20}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Lemma}{21}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Beispiel}{22}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Satz}{22}{subsection.3.19}%
+\contentsline {paragraph}{Plan: }{20}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Lemma(PCP-Reduktion: \(\Gamma \to \Sigma \))*}{20}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Lemma(Reduktion von MPCP über \(\Sigma \) auf PCP über \(\Sigma \))*}{20}{subsection.3.16}%
+\contentsline {paragraph}{Idee: }{20}{subsection.3.16}%
+\contentsline {paragraph}{\(* \in \Sigma \)}{20}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Lemma(Reduktion von \(H_{init}\) auf \(MPCP_{\Box , 0, 1, *, 6, +}\))*}{21}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Beispiel(TM \(M_e\) mit \(e \in \mathbb {N}_0\)))*}{22}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Satz(Unentscheidbarkeit des Post'schen Korrespondenzproblems)*}{22}{subsection.3.19}%
 \contentsline {subsection}{\numberline {3.20}Fixpunktsatz, Rekusionstheorem und Satz von Rice}{22}{subsection.3.20}%
 \contentsline {subsubsection}{\numberline {3.20.1}Definition (Fixpunktsatz)}{22}{subsubsection.3.20.1}%
 \contentsline {subsubsection}{\numberline {3.20.2}Satz (Fixpunktsatz, Hartley Rogers jr., 1967)}{22}{subsubsection.3.20.2}%
 \contentsline {subsubsection}{\numberline {3.20.3}Satz (Rekursionstheorem, Stephen Cole Kleen, 1938)}{23}{subsubsection.3.20.3}%
-\contentsline {subsubsection}{\numberline {3.20.4}Korollar}{23}{subsubsection.3.20.4}%
+\contentsline {subsubsection}{\numberline {3.20.4}Korollar(Existenz eines fixierten Punktes in der berechenbaren Funktionenfamilie)*}{23}{subsubsection.3.20.4}%
 \contentsline {subsubsection}{\numberline {3.20.5}Definition (Indexmenge)}{23}{subsubsection.3.20.5}%
 \contentsline {subsubsection}{\numberline {3.20.6}Satz (Satz von Rice, Henry Horden Rice, 1951)}{23}{subsubsection.3.20.6}%
 \contentsline {section}{\numberline {4}\textbf {Automaten}}{24}{section.4}%
@@ -69,9 +77,9 @@
 \contentsline {subsection}{\numberline {4.2}Definition (Übergangsfunktion eines EA)}{25}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Bemerkung (Eigenschaften von endlichen Automaten)*}{26}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Definition (Übergangsfunktion eines DEA)}{26}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Bemerkung (Folgerungen für DEA)}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Bemerkung (Folgerungen für DEA)*}{26}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Bemerkung(Eindeutigkeit endlicher Automaten)*}{26}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache)}{26}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache Automat)}{26}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Definition (regulär)}{26}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Beispiel (Endlicher Automat A)*}{27}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{28}{subsection.4.10}%
@@ -82,16 +90,16 @@
 \contentsline {subsection}{\numberline {5.3}Bemerkung}{30}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Definition (Rechtskongruenz)}{30}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Proposition}{30}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Definition(DEA-Konstruktion für Äquivalenzklassen)}{30}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.6}Definition(DEA-Konstruktion für Äquivalenzklassen)}{31}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}Lemma}{31}{subsection.5.7}%
 \contentsline {subsection}{\numberline {5.8}Satz}{31}{subsection.5.8}%
 \contentsline {subsection}{\numberline {5.9}Korollar}{31}{subsection.5.9}%
 \contentsline {subsection}{\numberline {5.10}Definition(erreichbar)}{31}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{31}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.11}Definition(isomorph)}{32}{subsection.5.11}%
 \contentsline {subsection}{\numberline {5.12}Satz}{32}{subsection.5.12}%
 \contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{32}{subsection.5.13}%
 \contentsline {subsection}{\numberline {5.14}Bemerkung}{32}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{32}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{33}{subsection.5.15}%
 \contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{33}{subsection.5.16}%
 \contentsline {subsection}{\numberline {5.17}Bemerkung}{33}{subsection.5.17}%
 \contentsline {subsection}{\numberline {5.18}Proposition}{33}{subsection.5.18}%
@@ -99,70 +107,79 @@
 \contentsline {subsection}{\numberline {5.20}Satz}{33}{subsection.5.20}%
 \contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{34}{subsection.5.21}%
 \contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{34}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Beispiel}{34}{subsection.5.23}%
-\contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{35}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{36}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{36}{subsection.6.2}%
-\contentsline {paragraph}{Erklärung:}{36}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{36}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Lemma}{37}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Satz}{37}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Definition (Rechtslinear)}{37}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Satz}{37}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Beispiel}{38}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}Definition (kontextfrei)}{38}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}Definition (lexikographische Ordnung)}{38}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}Definition (Baum)}{40}{subsection.6.11}%
-\contentsline {subsection}{\numberline {6.12}Lemma}{40}{subsection.6.12}%
-\contentsline {subsection}{\numberline {6.13}Lemma}{41}{subsection.6.13}%
-\contentsline {subsection}{\numberline {6.14}Definition (Beschriftung)}{41}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{42}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{43}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}Beispiel}{43}{subsection.6.17}%
-\contentsline {subsection}{\numberline {6.18}Lemma}{43}{subsection.6.18}%
-\contentsline {subsection}{\numberline {6.19}Lemma}{44}{subsection.6.19}%
-\contentsline {subsection}{\numberline {6.20}Satz (Pumping-Lemma für kontextfreie Sprachen)}{45}{subsection.6.20}%
-\contentsline {subsection}{\numberline {6.21}Beispiel}{46}{subsection.6.21}%
-\contentsline {subsection}{\numberline {6.22}Beschreibung (Kellerautomat)}{46}{subsection.6.22}%
-\contentsline {subsection}{\numberline {6.23}Satz}{46}{subsection.6.23}%
-\contentsline {subsection}{\numberline {6.24}Beispiel}{46}{subsection.6.24}%
-\contentsline {subsection}{\numberline {6.25}Definition (Kontextsensitiv)}{46}{subsection.6.25}%
-\contentsline {subsection}{\numberline {6.26}Definition (nicht verkürzend)}{47}{subsection.6.26}%
-\contentsline {subsection}{\numberline {6.27}Satz}{47}{subsection.6.27}%
-\contentsline {subsection}{\numberline {6.28}Beschreibung (linear beschränkter Automat)}{47}{subsection.6.28}%
-\contentsline {subsection}{\numberline {6.29}Satz}{47}{subsection.6.29}%
-\contentsline {subsection}{\numberline {6.30}Beispiel}{47}{subsection.6.30}%
-\contentsline {subsection}{\numberline {6.31}Definition}{47}{subsection.6.31}%
-\contentsline {subsection}{\numberline {6.32}Satz}{48}{subsection.6.32}%
-\contentsline {subsection}{\numberline {6.33}Beispiel}{48}{subsection.6.33}%
-\contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{49}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{50}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{50}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{50}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{51}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)*}{51}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)*}{51}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)*}{51}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}Proposition(Binärpalindrome erkennen)*}{51}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)*}{52}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)*}{52}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)*}{53}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}Satz (Universelle TM-Simulation mit Zeitbeschränkung)*}{55}{subsection.7.12}%
-\contentsline {subsection}{\numberline {7.13}Definition (Zeitbeschränkte Funktionen und Sprachen)*}{55}{subsection.7.13}%
-\contentsline {subsection}{\numberline {7.14}Definition (Zeitkonsturierbar)}{55}{subsection.7.14}%
-\contentsline {subsection}{\numberline {7.15}Bemerkung (Polynomielle Zeitkonstruierbarkeit)*}{55}{subsection.7.15}%
-\contentsline {subsection}{\numberline {7.16}Satz (Zeithirarchiesatz dür deterministische TM)}{56}{subsection.7.16}%
-\contentsline {subsection}{\numberline {7.17}Proposition(Zeitbeschränkte TM-Äquivalenz)*}{56}{subsection.7.17}%
-\contentsline {subsection}{\numberline {7.18}Satz (Zeithirarchiesatz für nichtdeterministische TM)}{56}{subsection.7.18}%
-\contentsline {subsection}{\numberline {7.19}Definition(abstraktes Komplexitätsmaß)}{57}{subsection.7.19}%
-\contentsline {subsection}{\numberline {7.20}Definition(T-Beschränkte TM und DCOM)*}{57}{subsection.7.20}%
-\contentsline {subsection}{\numberline {7.21}Satz (Lückensatz)}{57}{subsection.7.21}%
-\contentsline {paragraph}{Genauer:}{57}{subsection.7.21}%
-\contentsline {section}{\numberline {8}\textbf {Komplexitätsklassen P und NP}}{58}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Definition(Komplexitätsklassen P, FP und NP)*}{59}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Definition (p-m-Reduktion)}{59}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Bemerkung(Eigenschaften der p-m-Reduktion)*}{59}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Definition (\textbf {NP}-schwer, \textbf {NP}-vollständig)}{59}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Definition (aussagenlogische Formel)}{59}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Definition(Grundbegriffe der aussagenlogischen Formeln)*}{59}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Definition (konjunktive Normalform)}{59}{subsection.8.7}%
+\contentsline {subsection}{\numberline {5.23}Beispiel}{35}{subsection.5.23}%
+\contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{37}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{37}{subsection.6.2}%
+\contentsline {paragraph}{Erklärung:}{37}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Definition (Erzeugte Sprache)}{37}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Lemma}{38}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Satz}{38}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Definition (Rechtslinear)}{38}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Satz}{38}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Beispiel}{39}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Definition (kontextfrei)}{39}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}Definition (lexikographische Ordnung)}{39}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}Definition (Baum)}{41}{subsection.6.11}%
+\contentsline {subsection}{\numberline {6.12}Lemma}{41}{subsection.6.12}%
+\contentsline {subsection}{\numberline {6.13}Lemma}{42}{subsection.6.13}%
+\contentsline {subsection}{\numberline {6.14}Definition (Beschriftung)}{42}{subsection.6.14}%
+\contentsline {subsection}{\numberline {6.15}Definition (Blattwort)}{43}{subsection.6.15}%
+\contentsline {subsection}{\numberline {6.16}Definition (Ableitungsbaum)}{44}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.17}Beispiel}{44}{subsection.6.17}%
+\contentsline {subsection}{\numberline {6.18}Lemma}{44}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}Lemma}{45}{subsection.6.19}%
+\contentsline {subsection}{\numberline {6.20}Satz (Pumping-Lemma für kontextfreie Sprachen)}{46}{subsection.6.20}%
+\contentsline {subsection}{\numberline {6.21}Beispiel}{47}{subsection.6.21}%
+\contentsline {subsection}{\numberline {6.22}Beschreibung (Kellerautomat)}{47}{subsection.6.22}%
+\contentsline {subsection}{\numberline {6.23}Satz}{47}{subsection.6.23}%
+\contentsline {subsection}{\numberline {6.24}Beispiel}{47}{subsection.6.24}%
+\contentsline {subsection}{\numberline {6.25}Definition (Kontextsensitiv)}{47}{subsection.6.25}%
+\contentsline {subsection}{\numberline {6.26}Definition (nicht verkürzend)}{48}{subsection.6.26}%
+\contentsline {subsection}{\numberline {6.27}Satz}{48}{subsection.6.27}%
+\contentsline {subsection}{\numberline {6.28}Beschreibung (linear beschränkter Automat)}{48}{subsection.6.28}%
+\contentsline {subsection}{\numberline {6.29}Satz}{48}{subsection.6.29}%
+\contentsline {subsection}{\numberline {6.30}Beispiel}{48}{subsection.6.30}%
+\contentsline {subsection}{\numberline {6.31}Definition}{48}{subsection.6.31}%
+\contentsline {subsection}{\numberline {6.32}Satz}{49}{subsection.6.32}%
+\contentsline {subsection}{\numberline {6.33}Beispiel}{49}{subsection.6.33}%
+\contentsline {section}{\numberline {7}\textbf {Zeitkomplexität}}{50}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{51}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{51}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{51}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{52}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)*}{52}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)*}{52}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)*}{52}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Proposition(Binärpalindrome erkennen)*}{52}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Satz (Zeitbeschränkung einer Turingmaschine)*}{53}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}Satz(Reduktion auf 1-Band-TM)*}{53}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}Satz(Codekonstruktion und Simulation)*}{54}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}Satz (Universelle TM-Simulation mit Zeitbeschränkung)*}{56}{subsection.7.12}%
+\contentsline {subsection}{\numberline {7.13}Definition (Zeitbeschränkte Funktionen und Sprachen)*}{56}{subsection.7.13}%
+\contentsline {subsection}{\numberline {7.14}Definition (Zeitkonsturierbar)}{56}{subsection.7.14}%
+\contentsline {subsection}{\numberline {7.15}Bemerkung (Polynomielle Zeitkonstruierbarkeit)*}{56}{subsection.7.15}%
+\contentsline {subsection}{\numberline {7.16}Satz (Zeithirarchiesatz dür deterministische TM)}{57}{subsection.7.16}%
+\contentsline {subsection}{\numberline {7.17}Proposition(Zeitbeschränkte TM-Äquivalenz)*}{57}{subsection.7.17}%
+\contentsline {subsection}{\numberline {7.18}Satz (Zeithirarchiesatz für nichtdeterministische TM)}{57}{subsection.7.18}%
+\contentsline {subsection}{\numberline {7.19}Definition(abstraktes Komplexitätsmaß)}{58}{subsection.7.19}%
+\contentsline {subsection}{\numberline {7.20}Definition(T-Beschränkte TM und DCOM)*}{58}{subsection.7.20}%
+\contentsline {subsection}{\numberline {7.21}Satz (Lückensatz)}{58}{subsection.7.21}%
+\contentsline {paragraph}{Genauer:}{58}{subsection.7.21}%
+\contentsline {section}{\numberline {8}\textbf {Komplexitätsklassen P und NP}}{59}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definition(Komplexitätsklassen P, FP und NP)*}{60}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Definition (p-m-Reduktion)}{60}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Bemerkung(Eigenschaften der p-m-Reduktion)*}{60}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Definition (\textbf {NP}-schwer, \textbf {NP}-vollständig)}{60}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Definition (aussagenlogische Formel)}{60}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Definition(Grundbegriffe der aussagenlogischen Formeln)*}{60}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Definition (konjunktive Normalform)}{60}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Wahrheitswert}{61}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Definition (logisch äquivalent)}{61}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Definition (SAT)}{61}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Bemerkung ()*}{61}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Satz (Satz von Cock)}{61}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}Definition (k-konjunktive Normalform)}{63}{subsection.8.13}%
+\contentsline {subsection}{\numberline {8.14}Definition (k-SAT)}{63}{subsection.8.14}%
+\contentsline {subsection}{\numberline {8.15}Bemerkung}{63}{subsection.8.15}%
+\contentsline {subsection}{\numberline {8.16}Satz}{63}{subsection.8.16}%

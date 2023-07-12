@@ -47,3 +47,155 @@
     \item [(iii)] Eine aussagen??? Formel in \textbf{konjunktiver Normalform}, kurz KNF ist eine Konjunktion disjunkiver klauseln
 \end{itemize}
 
+\mysubsection{Wahrheitswert}
+    Eine \textbf{Belegung} ist eine Funktion \(b : Var \to \{0,1\}\). Der \textbf{Wahrheitswert} \(val_b(\varphi)\) einer Formel \(\varphi\) für eine Belegung b ist induktiv wie folg definiert. 
+    \vspace*{0.5cm}
+    \\
+    \(
+        \forall a \in Var \text{ sei } val_b(a) = b(a) \text{ und für } \varphi, \psi \in A \text{ sei} 
+    \)
+    \begin{equation}
+        val_b(\lnot \varphi) := 
+        \begin{cases}
+            1 & val_b(\varphi) = 0\\
+            0 & val_b(\varphi) = 1\\
+        \end{cases}    
+    \end{equation}
+    und 
+    \begin{equation}
+        val_b(\varphi \wedge \psi) := 
+        \begin{cases}
+            1 & val_b(\varphi) = val_b(\psi) = 1\\
+            0 & \text{sonst}\\
+        \end{cases}    
+    \end{equation}
+    Eine aussagenlogische Formel \(\varphi\) heißt \textbf{erfüllbar}, wenn es eine Belegung b gibt, sodass \(val_b = 1\) gilt.
+
+\mysubsection{Definition (logisch äquivalent)}
+    Zwei aussagenlogische Formel \(\psi\) und \(\varphi\) sind \textbf{logisch äquivalent} falls \(val_b(\varphi) = val_b(\psi) \quad \forall\) Belegungen b gilt.
+
+\mysubsection{Definition (SAT)}
+    Wir setzen 
+    \[
+        SAT := \{\varphi \in A : \varphi \text{ist in KNF und erfüllbar}\}  
+    \]
+
+\mysubsection{Bemerkung ()*}
+    Es gibt SAT \(\in\) \textbf{NP}.
+
+\mysubsection{Satz (Satz von Cock)}
+    Die Sprache SAT ist \textbf{NP}-vollständig. 
+    \begin{proof}
+        Nach \hyperref[subsec:8.11]{Bemerkung 8.11} gilt SAT \(\in\) \textbf{NP}. Es genügt also zu zeigen, dass es \(\forall p \in poly\) und p-zeitbeschränkten TM M eine Funktion g \(\in\) \textbf{FP} gibt, sodass \(\forall w \in \{0, 1\}^*\) die aussagenlogische From g(w) ind KNF genau dann erfüllbar ist, wenn \(w \in L(M)\). Dafür wählen wir g(w) so, dass g(w) in wesentlich der Aussage u entspricht. Sei \(c \in \mathbb{N}_0\) und \(p: \mathbb{N} \to \mathbb{N}\), \(n \to n^c + c\) und sei \(M = (Q, \{0, 1\}, \Gamma, \Delta, s, F)\) eine p-zeitbeschränkte TM. \hyperref[subsec:7.10]{Satz 7.10} und \hyperref[subsec:7.4]{Satz 7.4} erlauben uns anzunehmen, dass M eine 1-TM mit Bandalphabet \(\Gamma = \{\Box, 0, 1\}\) ist. Sei \(w \in \{0, 1\}^*\) und \(n :=|w|\).
+        \vspace*{0.5cm}
+        \\
+        Wir setzen \(I:= [p(n)]\) und \(J: \{-p(n)+1, \cdots, p(n)+1\}\). Wir definieren nun eine ganze Ansammlung an variablen, die die Arbeitsweise von M bei eingabe w codieren.
+        \begin{center}
+            \setlength{\extrarowheight}{3pt} % Adjust the length as needed
+            \begin{tabular}{l|p{10cm}}
+                Variable & Aussage \\
+                \hline
+                \hline
+                \(T_{i, j, a}\) mit \(i \in I, j \in J, a \in \Gamma\) & Zum Zeitpunkt i ist a das Symbol auf Feld j \\
+                \hline
+                \(p_{i, j}\) mit \(i \in I, j \in J\) & Zum Zeitpunkt i steht der Kopf auf dem Feld j \\
+                \hline
+                \(S_{i, q}\) mit \(i \in I, q \in Q\) & Zum Zeitpunkt ist der Zustand q \\
+                \hline
+                \(D_{i, 0}\) & Der i-te 'Listeneintrag' ist eine Wiederholung einer vorangehenden Stoppkonfiguration. \\
+                \hline
+                \(D_{i, d}\) mit \(i \in I\) und \(d \in \Delta\) & Die Instruktion d bezeugt im Sinne \hyperref[subsec:2.3]{Definition 2.3(Nachfolgekonfiguration)}, dass der (i+1)-te 'Listeneintrag' Nachfolgekonfiguration des i-ten 'Listeneintrags ist' \\
+            \end{tabular}    
+        \end{center}
+        \paragraph*{\(\leadsto\)}
+            Wir haben eine Liste/ Logbuch mit den variablen \(D_{i, 0}\), \(D_{i, d}\), die im i-ten Feld beschreiben was M im i-ten Schritt der Rechnung macht.
+        
+        Es bleibt g(w) zu konstruieren, so dass \(val_b(g(w)) = 1\) für eine Belegung b gilt, wenn b eine Liste darstellt, die einer rechnung von M zur Eingabe w (gegebenenfalls mit Wiederholungen der Stoppkonfiguration) entspricht.
+        \vspace*{0.5cm}
+        \\
+        Wir geben dazu g(w). Teilformeln die wir nicht als KNF angeben, lassen sich leicht in solche umwandeln. 
+        \vspace*{0.5cm}
+        \\
+        Die Startkonfiguration wird korrekt realisiert:
+        \[
+            S_{1,S}, \quad P_{1, 1}, \quad \bigwedge \limits_{j\in [n]} T_{1,j, w(j)},\quad \bigwedge \limits_{J/[n]} T_{1, j, \Box}   
+        \]
+        Zu jedem zeitpunkt sind die relevanten Felder mit höchstens einem Symbol beschriftet:
+        \[
+            \bigwedge \limits_{(i, j, a, a') \in I \times J \times \Gamma \times \Gamma : a \not = a'} (T_{i, j, a} \to \lnot T_{i, j, a'})
+        \]
+        Zu jedem Zeitpunkt gibt es höchstens eine aktuelle Kopfposition.
+        \[
+            \bigwedge \limits_{(i, j, j') \in I \times J \times J : j \not = j'} (P_{i, j} \to \lnot P_{i, j'})      
+        \]
+        Zu jedem Zeitpunkt gibt es hächstens eine aktuellen Zustand
+        \[
+            \bigwedge \limits_{(i, q, q') \in I \times Q \times Q : q \not = q'} (S_{i, q} \to \lnot S_{i, q'})      
+        \]
+        Zu jedem Zeitunkt gibt es höchstens eine auszuführende Instruktion oder es wird die vorherige wieerholt:
+        \[
+            \bigwedge \limits_{(i, d, d') \in I \times \Delta^+ \times \Delta^+ : d \not = d'} (D_{i, d} \to \lnot D_{i, d'})      
+        \]
+        Zu jedem Zeitpunkt kann sich nur das Feld ändern auf dem der Kopf steht: 
+        \[
+            \bigwedge \limits_{(i, j, a) \in I^- \times J \times \Gamma} ((T_{i, j, a \wedge \lnot P_{i, j}}) \to T_{i+1, j, a})      
+        \]
+        Wird eine Stoppkonfiguration wiederholt, ändert sich das Band, Kopfposition und Zustand nicht:
+        \[
+            \bigwedge \limits_{(i, j, a) \in I^- \times J \times \Gamma} ((D_{i,0} \wedge T_{i, j, a}) \to T_{i+ 1, j, a} )
+        \]
+        \[
+            \bigwedge \limits_{(i, j) \in I^- \times J } ((D_{i,0} \wedge P_{i, j}) \to P_{i+ 1, j} )
+        \]
+        \[
+            \bigwedge \limits_{(i,q) \in I^- \times Q } ((D_{i,0} \wedge S_{i, q}) \to S_{i+ 1, q})
+        \]
+        Zu denem Zeitpunkt gibt es eine auszuführende Instruktion oder es wird die vorherige Konfiguration wiederholt:
+        \[
+            \bigwedge \limits_{i \in I} \bigvee \limits_{d \in \Delta^+} D_{i, d}
+        \]
+        Konfigurationen, die den Bedingungsteil einer Instruktion erfüllen werden nicht wiederholt:
+        \[
+            \bigwedge \limits_{(i, j(q, a, a', a', B)) \in I^- \times J \times \Delta} ((S_{i, q} \wedge P_{i, j} \wedge T_{i, j, a}) \to \lnot D_{i, 0})  
+        \]
+        Gibt es zu einer Konfiguration eine auszuführende Instruktion, so muss deren Bedingungsteil durch die Konfiguration erfüllt werden
+        \[
+            \bigwedge \limits_{(i, (q, a, q', a', B)) \in I^- \times \Delta} D_{i, (q, a, q',a',B)} \to S_{i,q}
+        \]  
+        \[
+            \bigwedge \limits_{(i, j,(q, a, q', a', B)) \in I^- \times J \times  \Delta} (D_{i, (q, a, q',a',B) \wedge P_{i, j}} \to T_{i,j, a})
+        \]  
+        Wird eine Instruktion angewendet, so muss die Nachfolgekonfiguration aus dieser Instruktion aus der Vorgängerkonfiguration hervorgehen:
+        \[
+            \bigwedge \limits_{(i, (q, a, q', a', B)) \in I^- \times \Delta} (D_{i, (q, a, q',a',B)} \to S_{i + 1, q'})
+        \]  
+        \[
+            \bigwedge \limits_{(i, j, (q, a, q', a', B)) \in I^- \times J \times \Delta} (D_{i, (q, a, q',a',B)} \wedge P_{i, j} \to T_{i + 1, j, a})
+        \] 
+        \[
+            \bigwedge \limits_{(i, j, (q, a, q', a', B)) \in I^- \times J \times \Delta} (D_{i, (q, a, q',a',B)}\wedge P_{i, j} \to P_{i + 1, j, + \delta_B})
+        \]  
+        wobei \(\delta_L := -1\), \(\delta_S := 0\), \(\delta_R:= 1\).
+        \vspace*{0.5cm}
+        \\
+        Es wird eine Stoppkonfiguration erreicht und zum Zeitpunkt p(n) ist der Zustand akzeptierend:
+        \[
+            D_{p(n), 0}, \quad \bigvee \limits_{q \in F} S_{p(n), q}.    
+        \]
+        Nach Konstrukton ist damit g(w) genau dann erfüllbar, wenn es eine endliche Rechnung von M zur Eingabe w gibt, die höchstens Länge p(n) hat, also genau, wenn \(w \in L(M)\) gilt.
+    \end{proof}
+
+\mysubsection{Definition (k-konjunktive Normalform)}
+    Für \(k \in \mathbb{N}\) ist eine aussagenlogische Formel in k-konjunktive Normalform, kurz k-KNF, falls sie eine Konjunktion disjunkiver Klauseln, die jeweils die Länge hächstens k haben, ist.
+
+\mysubsection{Definition (k-SAT)}
+    Für \(k \in \mathbb{N}\)
+    \[
+        k-SAT := \{ \varphi \in A : \varphi ist im k-KNF und erfüllbar\}     
+    \]
+
+\mysubsection{Bemerkung}
+    Für \(k \in \mathbb{N}\) gilt k-SAT \(\in\) \textbf{NP}.
+
+\mysubsection{Satz}
+    Für \(k \leq 3\) ist SAT \textbf{NP}- vollständig.

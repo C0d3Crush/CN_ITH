@@ -49,7 +49,7 @@ Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA
 \mysubsection{Definition (Übergangsfunktion eines DEA)}
 Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det, A}: Q \times \Sigma \rightarrow Q\) mit \(\delta_{A}(q,a) = \{\delta_{det, A}(q, a)\} \quad \forall q \in Q\) und \(a \in \Sigma\) wird auch \textbf{Übergangsfunktion} von A gennant. Analoges gilt für \(\delta_{det, A}^{*}(Q_{0}, w)\) statt \(\bigcup \limits_{q \in Q_{0}}\{\delta_{det, A}^{*}(q, w)\}\).
 
-\mysubsection{Bemerkung (Folgerungen für DEA)}
+\mysubsection{Bemerkung (Folgerungen für DEA)*}
     Ist \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA, so gelten \hyperref[subsec:4.3]{Berkung 4.3 (i)} und \hyperref[subsec:4.3]{(iii)} auch wenn \(\delta_{A}\) durch \(\delta_{det, A}\) und \(\delta_{A}^{*}\) durch \(\delta_{det, A}^{*}\) ersetzt wird.
 
 \mysubsection{Bemerkung(Eindeutigkeit endlicher Automaten)*}
@@ -59,45 +59,54 @@ Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det
         \item [(ii)] \(\forall\) Funktionen \(\delta : Q \times \Sigma \rightarrow Q\) gibt es genau einen \(\delta_{det, A} = \delta\). 
     \end{itemize}
 
-\mysubsection{Definition (akzeptierte Sprache)}
+\mysubsection{Definition (akzeptierte Sprache Automat)}
     Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. Die Sprache \(L(A) := \{w \in \Sigma^{*} : \delta_{A}^{*}(s, w)\cap F \neq \varnothing \}\) ist die \textbf{akzeptierte Sprache} von A.
 
 \mysubsection{Definition (regulär)} 
-    Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben REG für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
+    Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben \textbf{REG} für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
 
 \newpage
 \mysubsection{Beispiel (Endlicher Automat A)*}
-    Sei \(A := (\{q_{0}, q_{1}\}, \{0, 1\}, \Delta, q_{0}, \{q_{1}\}) mit \Delta = \{(q_{0})\}\)
-    Übergangsdiagramm und übergangstabelle von sehen wie folgt aus:
+    Sei \(A := (\{q_{0}, q_{1}\}, \{0, 1\}, \Delta, q_{0}, \{q_{1}\})\) mit \(\Delta = \{(q_{0})\}\). Das Übergangsdiagramm und die Übergangstabelle sehen wie folgt aus:
+
     \begin{center}
         \begin{tabular}{|c|c|c|}
             \hline
-            \textbf{Zustand/Symbol} & \textbf{0} \footnote{die Elemente von \(\Sigma\)} & \textbf{1} \footnote{die Elemente von \(\Sigma\)} \\
+            \textbf{Zustand/Symbol} & \textbf{0} \footnotemark[1] & \textbf{1} \footnotemark[2] \\
             \hline
-            \( \rightarrow\) \footnote{Startzustand} \(q_{0}\) & \(q_{0}\) & \(q_{1}\) \\
+            \( \rightarrow\) \footnotemark[3] \(q_{0}\) & \(q_{0}\) & \(q_{1}\) \\
             \hline
-            \(q_{1}\), * \footnote{\(\in F\)} & \(q_{1}\) \footnote{\((q_1, 0, a_1) \in \Delta\) (wenn a in \(q_1\) ist und 0 einliest, ghet A in \(q_1\) über)} & \(q_{0}\) \\
+            \(q_{1}\), * \footnotemark[4] & \(q_{1}\) \footnotemark[5] & \(q_{0}\) \\
             \hline
         \end{tabular}
     \end{center}
-
+    \begin{enumerate}
+        \item  die Elemente von \(\Sigma\)
+        \item  die Elemente von \(\Sigma\)
+        \item  Startzustand
+        \item  Zustand \(\in F\)
+        \item  \((q_1, 0, a_1) \in \Delta\) (wenn a in \(q_1\) ist und 0 einliest, geht A in \(q_1\) über)
+    \end{enumerate}
     \createDiagram{Übergangstabelle}
     {
 
     }
 
-    \createDiagram{Übergangsdiagramm}
-    {
-        \begin{tikzpicture}[->,>=latex,shorten >=1pt,auto,node distance=3cm,semithick]
-            \tikzstyle{state}=[draw,circle,minimum size=2cm]
-            
-        %    \node[state, initial] (q0) {q_0};
-        %    \node[state, accepting] (q1) [right of=q0] {q_1};
+    \begin{center}
+        \begin{tikzpicture}[->,>=stealth,shorten >=1pt,auto,node distance=3cm,semithick]
+          \tikzstyle{every state}=[fill=white,draw=black,text=black,minimum size=25pt]
         
-        %    \path (q0) edge [bend left] node {0, 1} (q1)
-        %    (q1) edge [bend left] node {0, 1} (q0);
+          \node[state] (q1) {\(q_1\)};
+          \node[state] (q2) [right of=q1] {\(q_2\)};
+        
+          \path (q1) edge [loop above] node {0} (q1)
+                (q1) edge [bend left] node {1} (q2)
+                (q2) edge [bend left] node {0} (q1)
+                (q2) edge [loop above] node {1} (q2);
         \end{tikzpicture}
-    }
+    \end{center}
+
+    \createDiagram{Übergangsdiagramm}{}
 
     \paragraph*{Übergangsdiagramm:}
         Für jeden Zustand gibt es einen Kreis. Zustände in F bekommen einen Doppelkreis. Für (q, a, q') \(\in \Delta\) für einen Pfeil von dem Kreis von q zu dem Kreis von q' mit der Beschreibung a. Zusätzlich gibt es einen Pfeil (ohne Beschriftung) aus dem "Nichts" zus deom Kreis des Starzustandes. Ähnlich wie bei allgemeinen und normierten TM bleibt die Klasse der akzeptierten Sprachen glich wenn man nur deterministisch endliche Automaten zulässt. Um dies zu beweisen führen wir den Potentautomaten ein.
