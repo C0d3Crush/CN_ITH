@@ -84,7 +84,7 @@
 \mysubsection{Definition (Rechnung)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-DTM. Eine \textbf{endliche partielle Rechnung} von M ist eine endliche Folge \(C_{1}, \cdots, C_{n}\) von Konfig von M mit \(C_{i} \rightarrow_{M} C_{i+1} \forall i \in [n-1]\). Eine \textbf{unendliche partielle Rechnung} von M ist eine unendliche Folge \(C_{1}, C_{2}, \cdots\) von Konfigration von M mit \(C_{1} \rightarrow_{M} C_{1+1} \forall i \in \mathbb{N}\). Eine \textbf{Rechnung von M zur Eingabe } \((w_{1}, \cdots, w_{n}) \in (\Sigma^*)^n\) (mit \(n \in \mathbb{N}\)) ist eine endliche partielle Rechnung \(start_M = C_1, \cdots, C_m\) bei der \(C_m\) eine Stoppkonfiguration von M oder eine unendliche partielle rechnung \(start_M(w_1, \cdots, w_n) = C_1, C_2, \cdots\)
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Eindeutige Rechnungen bei k-DTM.)*} 
   Ist M eine k-DTM, so gilt es \(\forall n \in \mathbb{N}\) und \((w_1, \cdots, w_n) \in (\Sigma^*)^n\) genau eine Rechnung zur Eingabe \((w_1, \cdots, w_n)\).
 
 \mysubsection{Definition (total)} 
@@ -93,32 +93,27 @@
 \mysubsection{Definition (akzeptierte Sprache)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-TM. Eine Stoppkonfiguration \((q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) von M ist \textbf{akzeptierend}, wenn \(q \in F\). Die \textbf{akzeptierte Sprache L(M)} von M ist die Sprache über dem Alphabet \(\Sigma\) so dass \(w \in L(M)\) gilt, wenn es eien endliche Rechnung \(C_1, \cdots, C_n\) von M zur Eingabe w gibt, bei der \(C_n\) eine akzeptierende Stoppkonfigration von M ist. 
 
-\paragraph*{Hinweis: } 
-  Für nicht deterministische TM heißt das insbesondere, dass es für die Wörter w in der  akzeptierten Sprache nur mindestend \textbf{eine} im einer akzeptierten Stoppkonfigration endende endliche Rechnung zur Eingabe w geben muss. Für Wörter w, die nicht in L(M) sind, sind \textbf{alle} rechnungen von M zur Eingabe am Ende nicht in einer akzeptierten Stoppkonfigration oder unendlich.
+  \paragraph*{Hinweis: } 
+    Für nicht deterministische TM heißt das insbesondere, dass es für die Wörter w in der  akzeptierten Sprache nur mindestend \textbf{eine} im einer akzeptierten Stoppkonfigration endende endliche Rechnung zur Eingabe w geben muss. Für Wörter w, die nicht in L(M) sind, sind \textbf{alle} rechnungen von M zur Eingabe am Ende nicht in einer akzeptierten Stoppkonfigration oder unendlich.
 
-\mysubsection{Definition(entscheidbar)}
-  Eine Sprache L ist genau dann \textbf{entscheidbar}, wenn es eien totale k-TM M mit L(M) = L gibt. Wir schreiben \textbf{REC} für die Klasse der entscheidbaren Sprachen. Der Begriff entscheidbar für Sprachen ergibt sich hier daraus, dass effektiv entschieden werden kann ob eine gegebene Eingabe in der Sprache liegt oder nicht. Insbesondere steht? dies voraus, dass Eingabe, die nicht in der Sprache liegen effektiv als nicht in der Sprache liegend erkannt werden. 
-\paragraph*{Begriff: } 
-  effektiv \(\leadsto\) eine TM erlefigt dies in endicher Zeit. Da sich der durch TM formatierte  Berechenbarkeitsbegriff, also die Formalisierung dessen was effektiv durchführbar ist, auch äquivalent durch rekursive Funktion definieren lässt, weden entscheidbare Sprachen auch als rekuriv bezeichnet.
-
+    Zeitbeschränkte Funktionen und Sprachen
 \mysubsection{Definition(rekursiv aufzählbar)} 
   Eine Sprache L ist genau dann \textbf{rekursiv aufzähbar}, wenn es eine k-TM mit akzeptierten Sprache L gibt. Wir schreiben \textbf{RE} für die Klasse der rekursiv aufzählbaren Sprachen. Die Aufzählbarkeit leitet sich daraus ab, dass es für eine rekuriv aufzählbare Sprache L über einem Alphabet \(\Sigma\) möglich ist effektive Verfahren anzugeben ,die die Wörter von L aufzählen, also dass eine endlich oder unendliche Aufzählung von \(A = w_1, w_2, \cdots \) mit \( {w_1, w_2, \cdots} = L\) existiert.\vspace{0.5cm}
   \\
   Eine Menge wird beschreiben, die wir mit einem Computerprogramm oder Algorithmus "auflisten" können. Stellen Sie sich vor, Sie haben eine Box mit nummerierten Bällen, und Sie haben ein Programm, das Bälle aus der Box zieht. Wenn Sie sicherstellen können, dass Sie jeden Ball in der Box mindestens einmal ziehen, egal wie lange es dauert, dann ist die Menge der Bälle in der Box "rekursiv aufzählbar
   \footnote{Ed. sug. text}
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Entscheidbare Sprache und rekursiv aufzählbare Sprache)*} 
   Jede entscheidbare Sprache ist rekursiv aufzähbar.
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Endliche Sprachen sind entscheidbar.)*} 
   Alle endlichen Sprachen sind entscheidbar.
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Entscheidbarkeit und Aufzählbarkeit.)*} 
   Eine Sprache L über einem Alphabet \(\Sigma\) ist genau dann entscheidbar, wenn L und \(L^c :=(\Sigma^*)/L\) rekursiv aufzähbar sind.
 
 \mysubsection{Definition (Ausgabe)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) ein k-TM und \(C = (q, w_1, \cdots, w_k, p_1, \cdots, p_k)\) eine Konfiguration von M. Die Ausgabe \(out_M(C)\) von M bei Konfiguration C ist das Präfix \(w \sqsubseteq w_1(p_1) \cdots w_1(|w_1|)\) maximale länge mit \(w \in (\Gamma / \{\Box\})^*\).
-
 
 \mysubsection{Definition (berechnete Funktion)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-DTM und \(n \in \mathbb{N}\). Die von M berechnete \textbf{n-äre partielle Funktion} \(\Phi_M\) ist die partielle Funktion \(\Phi_M : (\Sigma^*)^n \leadsto (\Gamma / {\Box})^*\), so dass \(\forall (w_1, \cdots, w_n) \in (\Sigma^*)^n\) folgendes gilt:
@@ -142,7 +137,7 @@
     \item [(ii)] Die \textbf{ partielle charackteristische Funktion} von L als Sprache über \(\Sigma\) ist die partielle Funktion \(x_L : \Sigma^* \leadsto \{1\}\) mit \(x_L(w) = 1 \quad \forall w \in L\) und \(x_L(w) \uparrow \quad \forall w \in \Sigma^* / L\). 
   \end{itemize}
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Entscheidbarkeit und Berechenbarkeit)*} 
   Sei L eine Sprache über einem Alphabet \(\Sigma\). 
   \begin{itemize}
     \item [(i)] L ist genau dann entscheidbar, wenn \(\mathbbm{1}_L\) berechenbar ist.
@@ -152,139 +147,120 @@
 \newpage
 
 \mysubsection{Bemerkung (normiert)} 
-  Eine 1-DTM \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) heißt \textbf{normiert}, wenn \(Q = {0,\cdots, n}\) für eine \(n \in \mathbb{N}_{0}, \Sigma = {0, 1}, \Gamma = {\Box, 0, 1}, s = 0, F = {s}\). Alle TMs mit Eingabealphabet {0,1} lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln. 
-\paragraph*{Von Nichtdeterminismus zu Determinismus:} 
-  Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}.
-  \createDiagram{Breitensuche}
-  {}
+  Eine 1-DTM \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) heißt \textbf{normiert}, wenn \(Q = {0,\cdots, n}\) für eine \(n \in \mathbb{N}_{0}, \Sigma = {0, 1}, \Gamma = {\Box, 0, 1}, s = 0, F = {s}\). Alle TMs mit Eingabealphabet {0,1} lassen sich mit folgenden Schritten in eine normierte TM mit gleicher erkannter Sprache und gleicher berechneter Funktion umwandeln.
 
-  \begin{tikzpicture}
-    [
-      level distance=1.5cm,  level 1/.style={sibling distance=3cm},  
-      level 2/.style={sibling distance=1.5cm},  
-      every node/.style={align=center, text=textcolor}
-    ] 
-    \node (0) {\(wort_M(w)\)}
-      child 
-      {
-        node (1) {\(C_1\)}
-        child {node (3) {\(C_3\)}}
-        child {node (4) {\(C_4\)}}
-      }
-      child 
-      {
-        node (2) {\(C_2\)}
-        child {node (5) {\(C_5\)}}
-        child {node (6) {\(C_6\)}}
-      };
-
-    \path[->,red,thick] 
-                      (0) edge (1)
-                      (1) edge (2)
-                      (2) edge (3)
-                      (3) edge (4)
-                      (4) edge (5)
-                      (5) edge (6);
-  \end{tikzpicture}
-
-  \paragraph{Von mehreren Bändern zu einem Band}: Intuitiv können k Bänder auf ein Band simuliert werden, indem die Felder des einen Bandes in k-teilfelder unterteilt werden, die jeweils die gleiche Bandalphabetbuchstaben wie zufor als Beschreibung zulassen und es zudem erlaubt zu markieren, dass der simulierte Kopf des simulierten Bandes dort steht. Eine dieser Idee folgende Konstruktion wird als \textbf{Spurentechnik} bezeichnet. Formal: Übergang vom Bandalphabet \(\Gamma\) zu 
-  \[
-    ((\Gamma \cup{\underline{a} : a \in \Gamma})^{k}/{\Box}^{k}) \cup {\Box}
-  \] 
-  wobei \(\underline{a} \not \in \Gamma für a \in \Gamma\). Hierbei bedeutet \(\underline{a}\), dass das simulierte Feld mit a beschriftet ist und dass dort der simulierte Kopf steht. Weiter spielt \(\Box\) die Rolle des k-Tupels \((\Box, \cdots, \Box)\) um der Tatsache gerecht zu werden, dan alle Felderzu Begin mit \(\Box\) beschriftet sind.
+  \paragraph*{Von Nichtdeterminismus zu Determinismus:} 
+    Eine DTM kann die Rechnungen einer nichtdeterministischen TM parallel im Sinne von abwechend schrittweise durchführen um schließlich das Verhalten der simulierten TM zu ??. Dies entspricht einer \textbf{Breitensuche im Rechnungsbaum}.
+    \createDiagram{Breitensuche}
+    {}
+    \begin{center}
+      \begin{tikzpicture}
+        [
+          level distance=1.5cm,  level 1/.style={sibling distance=3cm},  
+          level 2/.style={sibling distance=1.5cm},  
+          every node/.style={align=center, text=textcolor}
+        ] 
+        \node (0) {\(wort_M(w)\)}
+          child 
+          {
+            node (1) {\(C_1\)}
+            child {node (3) {\(C_3\)}}
+            child {node (4) {\(C_4\)}}
+          }
+          child 
+          {
+            node (2) {\(C_2\)}
+            child {node (5) {\(C_5\)}}
+            child {node (6) {\(C_6\)}}
+          };
   
-  \createDiagram{Spurentechnik}
-  {
-    \begin{tikzpicture}[cell/.style={rectangle, draw=black, minimum size=1cm}, node distance=0cm]
-
-      % Erstes Band
-      \node[cell] (cell11) {...};
-      \node[cell, right=of cell11, draw=red] (cell12) {0};
-      \node[cell, right=of cell12, draw=accentcolor] (cell13) {0};
-      \node[cell, right=of cell13, draw=accentcolor] (cell14) {1};
-      \node[cell, right=of cell14, draw=accentcolor] (cell15) {...};
-      
-      % Zweites Band
-      \node[cell, below=0.5cm of cell11, draw=accentcolor] (cell21) {...};
-      \node[cell, right=of cell21, draw=accentcolor] (cell22) {1};
-      \node[cell, right=of cell22, draw=accentcolor] (cell23) {0};
-      \node[cell, right=of cell23, draw=red] (cell24) {0};
-      \node[cell, right=of cell24, draw=accentcolor] (cell25) {...};
-      
-      % Drittes Band
-      \node[cell, below=0.5cm of cell21, draw=accentcolor] (cell31) {...};
-      \node[cell, right=of cell31, draw=accentcolor] (cell32) {0};
-      \node[cell, right=of cell32, draw=red] (cell33) {1};
-      \node[cell, right=of cell33, draw=accentcolor] (cell34) {1};
-      \node[cell, right=of cell34, draw=accentcolor] (cell35) {...};
-      
-      % Vertikales Band
-      \node[cell, right=5cm of cell22, minimum height=4.13cm, align=center, draw=accentcolor] (cell41) {...};
-      \node[cell, right=0cm of cell41, minimum height=4.13cm, align=center, draw=red] (cell42) {1 \\\\\\ 0 \\\\\\ 1};
-      \node[cell, right=0cm of cell42, minimum height=4.13cm, align=center, draw=accentcolor] (cell43) {1 \\\\\\ 0 \\\\\\ 1};
-      \node[cell, right=0cm of cell43, minimum height=4.13cm, align=center, draw=accentcolor] (cell44) {1 \\\\\\ 0 \\\\\\ 1};
-      \node[cell, right=0cm of cell44, minimum height=4.13cm, align=center, draw=accentcolor] (cell45) {...};
-
-
-      % Pfeil
-      \draw[->, very thick] ([yshift=0.25cm]cell12.north) -- (cell12.north);
-
-      % Pfeil
-      \draw[->, very thick] ([yshift=0.25cm]cell24.north) -- (cell24.north);
-
-      % Pfeil
-      \draw[->, very thick] ([yshift=0.25cm]cell33.north) -- (cell33.north);
-
-      % Pfeil
-      \draw[->, very thick] ([yshift=0.25cm]cell42.north) -- (cell42.north);
-
-      % Buchstabe am Pfeil
-      \node[above=0.2cm of cell12.north] {\(\varphi\)};
-
-      % Buchstabe am Pfeil
-      \node[above=0.2cm of cell42.north] {q};
-
-      % Pfeil von links nach rechts über den Bändern
-      \draw[->, very thick, black] (cell25.east) -- (cell41.west);
-
-    \end{tikzpicture}
-  }
-
-  \newpage
-    
-  \paragraph{Von beliebigen bandalphabet zu \(\{\Box, 0, 1\}\)}: Andere bandalphabete können bei einem \textbf{Alphabetwechel} zum Bandalphabet \(\{\Box, 0, 1\}\) simuliert werden um ein Symbol des vorherigen Bandlaphabets durch ein Binärwort zu beschreiben. Die TM liest stets nur ein Feld, es wird dabei also nötig sein die Zustandsmenge so zu erweitern, dass angrenzende Felder im Zustand gespeichert weden können.
+        \path[->,red,thick] 
+                          (0) edge (1)
+                          (1) edge (2)
+                          (2) edge (3)
+                          (3) edge (4)
+                          (4) edge (5)
+                          (5) edge (6);
+      \end{tikzpicture}
   
-  \usetikzlibrary{arrows, positioning, calc}
-  \createDiagram{Alphabetwechel}
-  {}
-    \begin{tikzpicture}[cell/.style={rectangle, draw=black, minimum size=1cm}, arrow/.style={->, >=stealth, thick, shorten <=1pt, shorten >=1pt}, dashedline/.style={dashed, shorten <=1pt, shorten >=1pt}]
+    \end{center}
 
-    % Oberes Band
-    \foreach \i/\label in {1/A,2/B,3/C,4/D,5/E,6/F,7/G} 
+    \paragraph{Von mehreren Bändern zu einem Band}: Intuitiv können k Bänder auf ein Band simuliert werden, indem die Felder des einen Bandes in k-teilfelder unterteilt werden, die jeweils die gleiche Bandalphabetbuchstaben wie zufor als Beschreibung zulassen und es zudem erlaubt zu markieren, dass der simulierte Kopf des simulierten Bandes dort steht. Eine dieser Idee folgende Konstruktion wird als \textbf{Spurentechnik} bezeichnet. Formal: Übergang vom Bandalphabet \(\Gamma\) zu 
+    \[
+      ((\Gamma \cup{\underline{a} : a \in \Gamma})^{k}/{\Box}^{k}) \cup {\Box}
+    \] 
+    wobei \(\underline{a} \not \in \Gamma für a \in \Gamma\). Hierbei bedeutet \(\underline{a}\), dass das simulierte Feld mit a beschriftet ist und dass dort der simulierte Kopf steht. Weiter spielt \(\Box\) die Rolle des k-Tupels \((\Box, \cdots, \Box)\) um der Tatsache gerecht zu werden, dan alle Felderzu Begin mit \(\Box\) beschriftet sind.
+    
+    \createDiagram{Spurentechnik}
     {
-      \node[cell] (ucell\i) at (\i, 0) {\label};
+      \begin{tikzpicture}[cell/.style={rectangle, draw=black, minimum size=1cm}, node distance=0cm]
+
+        % Erstes Band
+        \node[cell] (cell11) {...};
+        \node[cell, right=of cell11, draw=red] (cell12) {0};
+        \node[cell, right=of cell12, draw=accentcolor] (cell13) {0};
+        \node[cell, right=of cell13, draw=accentcolor] (cell14) {1};
+        \node[cell, right=of cell14, draw=accentcolor] (cell15) {...};
+        
+        % Zweites Band
+        \node[cell, below=0.5cm of cell11, draw=accentcolor] (cell21) {...};
+        \node[cell, right=of cell21, draw=accentcolor] (cell22) {1};
+        \node[cell, right=of cell22, draw=accentcolor] (cell23) {0};
+        \node[cell, right=of cell23, draw=red] (cell24) {0};
+        \node[cell, right=of cell24, draw=accentcolor] (cell25) {...};
+        
+        % Drittes Band
+        \node[cell, below=0.5cm of cell21, draw=accentcolor] (cell31) {...};
+        \node[cell, right=of cell31, draw=accentcolor] (cell32) {0};
+        \node[cell, right=of cell32, draw=red] (cell33) {1};
+        \node[cell, right=of cell33, draw=accentcolor] (cell34) {1};
+        \node[cell, right=of cell34, draw=accentcolor] (cell35) {...};
+        
+        % Vertikales Band
+        \node[cell, right=5cm of cell22, minimum height=4.13cm, align=center, draw=accentcolor] (cell41) {...};
+        \node[cell, right=0cm of cell41, minimum height=4.13cm, align=center, draw=red] (cell42) {1 \\\\\\ 0 \\\\\\ 1};
+        \node[cell, right=0cm of cell42, minimum height=4.13cm, align=center, draw=accentcolor] (cell43) {1 \\\\\\ 0 \\\\\\ 1};
+        \node[cell, right=0cm of cell43, minimum height=4.13cm, align=center, draw=accentcolor] (cell44) {1 \\\\\\ 0 \\\\\\ 1};
+        \node[cell, right=0cm of cell44, minimum height=4.13cm, align=center, draw=accentcolor] (cell45) {...};
+
+
+        % Pfeil
+        \draw[->, very thick] ([yshift=0.25cm]cell12.north) -- (cell12.north);
+
+        % Pfeil
+        \draw[->, very thick] ([yshift=0.25cm]cell24.north) -- (cell24.north);
+
+        % Pfeil
+        \draw[->, very thick] ([yshift=0.25cm]cell33.north) -- (cell33.north);
+
+        % Pfeil
+        \draw[->, very thick] ([yshift=0.25cm]cell42.north) -- (cell42.north);
+
+        % Buchstabe am Pfeil
+        \node[above=0.2cm of cell12.north] {\(\varphi\)};
+
+        % Buchstabe am Pfeil
+        \node[above=0.2cm of cell42.north] {q};
+
+        % Pfeil von links nach rechts über den Bändern
+        \draw[->, very thick, black] (cell25.east) -- (cell41.west);
+
+      \end{tikzpicture}
+    }
+
+    \newpage
+      
+    \paragraph{Von beliebigen bandalphabet zu \(\{\Box, 0, 1\}\)}: Andere bandalphabete können bei einem \textbf{Alphabetwechel} zum Bandalphabet \(\{\Box, 0, 1\}\) simuliert werden um ein Symbol des vorherigen Bandlaphabets durch ein Binärwort zu beschreiben. Die TM liest stets nur ein Feld, es wird dabei also nötig sein die Zustandsmenge so zu erweitern, dass angrenzende Felder im Zustand gespeichert weden können.
+    
+    \usetikzlibrary{arrows, positioning, calc}
+    \createDiagram{Alphabetwechel}
+    {
+
+    \includegraphics*[width=0.5\textwidth]{Turingmachine/alphabet_wech.png}
+
     }
     
-    % Unteres Band
-    \foreach \i/\label in {0/1,1/2,2/3,3/4,4/5,5/6,6/7,7/8,8/9,9/10,10/11,11/12,12/13,13/14} 
-    {
-      \node[cell] (lcell\i) at (\i/2+0.25, -3.5) {\label};
-    }
-    
-    % Verbindungslinien
-    \foreach \i in {1,...,7} 
-    {
-      \pgfmathtruncatemacro\j{2*\i-2}
-      \pgfmathtruncatemacro\k{2*\i-1}
-      \draw[dashedline] (ucell\i.south west) -- (lcell\k.north west);
-    }
-    
-    % Pfeil auf die erste Zelle
-    \draw[arrow] (1,2) -- (ucell1);
-
-    \end{tikzpicture}
-
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Entscheidbarkeit, Aufzählbarkeit, Berechenbarkeit.)*} 
   Sei \(L \subseteq \{0, 1\}^*\) eine Sprache und sei \(\Phi : \{0, 1\}^* \leadsto \{0, 1\}^*\) eine partielle Funktion.
   \begin{itemize}
     \item [(i)] L ist genau dann entscheidbar, wenn L akzeptierte Sprache einer totalen normierten TM ist. 
@@ -292,4 +268,5 @@
     \item [(iii)] \(\Phi\) ist genau dann partiell berechenbar, wenn \(\Phi\) berechnete Funktion einer normierten TM ist.
   \end{itemize}
 
-\paragraph*{Church- Turing- These} Berechenbarkeit auf eienr Turingmachine entspricht intuitiver Berechenbarkeit.
+\paragraph*{Church- Turing- These} 
+  Berechenbarkeit auf einer Turingmachine entspricht intuitiver Berechenbarkeit.

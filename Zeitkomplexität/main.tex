@@ -8,14 +8,17 @@
     \end{itemize}
 
 \mysubsection{Definition (Rechenzeit)}
-    Sei \(M = (Q, \Sigma, \Gamma \Delta, s, F)\) eine DTM. Es bezeichne \(time_M:\Sigma^* \to \mathbb{N}_0\) die partielle Funktion mit \(dom(time_M) = dom (\varphi_M)\), so dass \(time_M(w)\) für alle \(w \in dom (\varphi_M)\) die länge der Rechnung von M zur Eingabe w ist. Die \textbf{rechenzeit} von M zur Eingabe \(w \in dom (\varphi_M)\) ist \(time_M(w)\). \\
+    Sei \(M = (Q, \Sigma, \Gamma \Delta, s, F)\) eine DTM. Es bezeichne \(time_M:\Sigma^* \leadsto \mathbb{N}_0\) die partielle Funktion mit \(dom(time_M) = dom (\varphi_M)\), so dass \(time_M(w)\) für alle \(w \in dom (\varphi_M)\) die länge der Rechnung von M zur Eingabe w ist. Die \textbf{rechenzeit} von M zur Eingabe \(w \in dom (\varphi_M)\) ist \(time_M(w)\). \\
     Da im Folgenden nahezu alle Aussagen nur im Hinblick auf die Betrachtung Eingabelänge \(\to \infty\) sinnvoll sind, lassen wir in der nächsten Definition \textbf{endlich} viele Ausnahmen zu.
 
 \mysubsection{Definition (zeitbeschränkt)}
-    Eine \textbf{Zeitschranke} ist eine berechenabre Funktion \(t: \mathbb{N}_0 \to \mathbb{N}_0\) mit \(t(n)\leq n \quad \forall n \in \mathbb{N}_0\).\\ Sei \(t: \mathbb{N}\to \mathbb{R}_{\leq 0}\) eine Funktion. Eine TM M ist \textbf{t-zeitbeschränkt}, wenn M total ist und es ein \(n_0 \in \mathbb{N}_0\) gibt, so dass \(\forall w \in \Sigma^{\leq n_0}\) alle Rechnungen von M zur Eingabe w höchstens Länge \(t(|w|)\) haben.\vspace{0.5cm}\\Ist n ein Variablensymbol und t ein Term, der eine Funktion \(f: n \mapsto t\) festlegt, so verwendet man auch die Zeichnung t-zeitbeschränkt an Stelle von f-zeitbeschränkt. Man spricht also zum Beispiel von \(n^2\)-zeitbeschränkt der \(3x^3\)-zeitbeschränkt oder auch von \(f(n)\)-zeitbeschränkt für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{N}_0\). Betrachten wie eine Funktion \(t: \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) als Zeitschranke, so ist damit die Fukntion \(t': \mathbb{N}_0 \to \mathbb{N}_0\), \(n \mapsto \lfloor t(n)\rfloor\) gemeint.
+    Eine \textbf{Zeitschranke} ist eine berechenbare Funktion \(t: \mathbb{N}_0 \to \mathbb{N}_0\) mit \(t(n)\leq n \quad \forall n \in \mathbb{N}_0\).\\ Sei \(t: \mathbb{N}\to \mathbb{R}_{\geq 0}\) eine Funktion. Eine TM M ist \textbf{t-zeitbeschränkt}, wenn M total ist und es ein \(n_0 \in \mathbb{N}_0\) gibt, so dass \(\forall w \in \Sigma^{\leq n_0}\) alle Rechnungen von M zur Eingabe w höchstens Länge \(t(|w|)\) haben.
+    \vspace{0.5cm}
+    \\
+    Ist n ein Variablensymbol und t ein Term, der eine Funktion \(f: n \mapsto t\) festlegt, so verwendet man auch die Zeichnung t-zeitbeschränkt an Stelle von f-zeitbeschränkt. Man spricht also zum Beispiel von \(n^2\)-zeitbeschränkt der \(3x^3\)-zeitbeschränkt oder auch von \(f(n)\)-zeitbeschränkt für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{N}_0\). Betrachten wir eine Funktion \(t: \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) als Zeitschranke, so ist damit die Fukntion \(t': \mathbb{N}_0 \to \mathbb{N}_0\), \(n \mapsto \lfloor t(n)\rfloor\) gemeint.
 
 \mysubsection{Satz (lineare Beschleunigung)}
-    Sei \(\tilde{c} > 1\), \(\epsilon > 0\) und \(t: \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) mit \(t(n) \leq (1+ \epsilon)n \quad \forall n \in \mathbb{N}_0\). Ist M eine \(\tilde{c}\cdot t(n)\)-zeitbeschränkt k-DTM, \(k \leq 2\), so gibt es auch eine \(t(n)\)-zeitbeschränkte k-TM M' mit L(M) = L(M').
+    Sei \(\tilde{c} > 1\), \(\epsilon > 0\) und \(t: \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) mit \(t(n) \leq (1+ \epsilon)n \quad \forall n \in \mathbb{N}_0\). Ist M eine \(\tilde{c}\cdot t(n)\)-zeitbeschränkt k-DTM, \(k \leq 2\), so gibt es auch eine \(t(n)\)-zeitbeschränkte k-TM M' mit L(M) = L(M').
     \paragraph*{Beweisskizze:}    
         Die Idee ist es sei \(c \leq 2\) wir wollen c Felder in einen Vektor der Länge c zusammenfassen und damit das Bandalphabet vergrößern und andererseits ungefähr "c Schritte auf einmal machen".
         Mit einem neuen Bandalphabet 
@@ -35,23 +38,23 @@
         \end{itemize}
         Insgesamt macht M' also \(|w|+ 1 + 6\cdot \frac{\tilde{c}t(|w|)}{c} + 10 \approx \frac{6\tilde{c}}{c} t(|w|) = t(|w|)\) für \(c := 6\tilde{c}\). In gewissem Sinne ist die obige Konstruktion invers zum \hyperref[subsec:2.18]{Alphabetwechel des bandalphabets bei der Konstruktion normierter TM}. Entsprechend steigt die Laufzeit auch nur um einen konstanten Faktor wenn wir die TM normieren 
 
-\mysubsection{Satz(Alphabetwechel)}
-    Ist M eine \(t(n)\)- zeitbeschränkte k-TM M mit Eingabealphabet \{0, 1\}, so gilt es eine Konstante \(c \leq 1\) und eine \(ct(n)\)-zeitbeschränkte k-TM M' mit Eingabealphabet \{0, 1\}, Bandalphabet \(\{\Box, 0, 1\}\) und L(M') = L(M).
+\mysubsection{Satz (Alphabetwechel)}
+    Ist M eine \(t(n)\)- zeitbeschränkte k-TM M mit Eingabealphabet \{0, 1\}, so gilt es eine Konstante \(c \geq 1\) und eine \(ct(n)\)-zeitbeschränkte k-TM M' mit Eingabealphabet \{0, 1\}, Bandalphabet \(\{\Box, 0, 1\}\) und L(M') = L(M).
     \medskip
     \(\leadsto\) Konstanten spielen nur eine untergeordnete Rolle für uns.
 
 \mysubsection{Definition(Landau-Symbole)*}
-    Für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) sei
+    Für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) sei
     \begin{itemize}
-        \item [] \(o(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \forall \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq \epsilon f(n)\}\)
-        \item [] \(O(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
-        \item [] \(\theta(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists c, \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n > n_0 : \epsilon f(n) \leq g(n) \leq cf(n)\}\)
-        \item [] \(\Omega (f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \exists \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \geq \epsilon f(n)\}\)
-        \item [] \(w(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\leq 0} : \forall c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
+        \item [] \(o(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \forall \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq \epsilon f(n)\}\)
+        \item [] \(O(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
+        \item [] \(\theta(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists c, \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n > n_0 : \epsilon f(n) \leq g(n) \leq cf(n)\}\)
+        \item [] \(\Omega (f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \geq \epsilon f(n)\}\)
+        \item [] \(w(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \forall c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
     \end{itemize}
 
 \mysubsection{Bemerkung(Eigenschaften Landau-Symbole)*}
-    Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_{\leq 0}\) Funktion dann gilt:
+    Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) Funktion dann gilt:
     \begin{itemize}
         \item [(i)] \(g \in o(f) \Leftrightarrow f \in w(g)\)
         \item [(ii)] \(g \in O(f) \Leftrightarrow f \in \Omega(g)\)
@@ -104,10 +107,10 @@
     Ist M eine \(t(n)\)- zeitbeschränkte TM, so gibt es eine \(t'(n)\)- zeitbeschränkte 1-TM mit \(t'(n) = O((t(n))^2)\), die dieselbe Sprache erkennt. Während der laufzeitanstieg bei der Reduktion auf ein Band quadratisch sein kann, ist die Reduktion von k auf zwei Bänder effizienter möglich 
 
 \mysubsection{Satz(Codekonstruktion und Simulation)*}
-    Ist für alle deterministischen TM \(M = (\{0, \cdots, n\}, \{0, 1\}, \{0, 1, \Box\}, \Delta, 0, \{0\})\) und für alle Wörter \(w \in \{0, 1\}^*\) das Wort code (M, w) ein geeigneter Codefür (M, w), so gibt es eine 2-Dtm N, so dass folgendes gilt:
+    Ist für alle deterministischen TM \(M = (\{0, \cdots, n\}, \{0, 1\}, \{0, 1, \Box\}, \Delta, 0, \{0\})\) und für alle Wörter \(w \in \{0, 1\}^*\) das Wort code (M, w) ein geeigneter Codefür (M, w), so gibt es eine 2-DTM U, so dass folgendes gilt:
 
     \begin{itemize}
-        \item [(i)] \(\forall\) DTM U wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U den Code code(M, w) genau dann, wenn M das Binärwort w akzeptiert.
+        \item [(i)] \(\forall\) DTM M wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U den Code code(M, w) genau dann, wenn M das Binärwort w akzeptiert.
         \item [(ii)] Für alle zeitschranken t, alle t-zeitbeschränkten DTM M wie oben, gibt es ein \(n_0\), sodass \(\forall w \in \{0, 1\}^{\leq n_0}\) eine Konstante \(c \in \mathbb{N}\) gibt, sodass die Rechnung von U zur Eingabe code(M, w) Länge höchstens \(ct(|w|)\log(t(|w|))\) hat.
     \end{itemize}
 

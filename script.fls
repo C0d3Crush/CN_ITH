@@ -1226,6 +1226,9 @@ INPUT Zeitkomplexität/main.aux
 INPUT ./Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
+INPUT ./Platzkomplexität/main.aux
+INPUT Platzkomplexität/main.aux
+INPUT Platzkomplexität/main.aux
 OUTPUT script.aux
 INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1386,6 +1389,11 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/bbm/bbm6.tfm
+INPUT ./Turingmachine/alphabet_wech.png
+INPUT ./Turingmachine/alphabet_wech.png
+INPUT Turingmachine/alphabet_wech.png
+INPUT ./Turingmachine/alphabet_wech.png
+INPUT ./Turingmachine/alphabet_wech.png
 INPUT ./Berechenbarkeit/main.tex
 INPUT ./Berechenbarkeit/main.tex
 INPUT ./Berechenbarkeit/main.tex
@@ -1487,6 +1495,16 @@ INPUT ./Komplexitätsklassen P und NP/main.tex
 INPUT Komplexitätsklassen P und NP/main.tex
 INPUT ./Komplexitätsklassen P und NP/main.tex
 INPUT Komplexitätsklassen P und NP/main.tex
+INPUT ./Platzkomplexität/main.tex
+INPUT ./Platzkomplexität/main.tex
+INPUT ./Platzkomplexität/main.tex
+OUTPUT Platzkomplexität/main.aux
+INPUT ./Platzkomplexität/main.tex
+INPUT ./Platzkomplexität/main.tex
+INPUT ./Platzkomplexität/main.tex
+INPUT Platzkomplexität/main.tex
+INPUT ./Platzkomplexität/main.tex
+INPUT Platzkomplexität/main.tex
 INPUT script.aux
 INPUT ./Grundlagen/main.aux
 INPUT Grundlagen/main.aux
@@ -1512,6 +1530,9 @@ INPUT Zeitkomplexität/main.aux
 INPUT ./Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
 INPUT Komplexitätsklassen P und NP/main.aux
+INPUT ./Platzkomplexität/main.aux
+INPUT Platzkomplexität/main.aux
+INPUT Platzkomplexität/main.aux
 INPUT ./script.out
 INPUT ./script.out
 INPUT /Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk

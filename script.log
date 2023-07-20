@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  12 JUL 2023 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  21 JUL 2023 00:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -775,7 +775,7 @@ LaTeX Warning: Label `fig:' multiply defined.
 
 LaTeX Warning: Label `fig:' multiply defined.
 
-) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux))
+) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux) (./Platzkomplexit√§t/main.aux))
 \openout1 = `script.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
@@ -862,7 +862,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 24
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=698, 263.48438pt x 263.48438pt>
+<qrcode.png, id=790, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
 Package pdftex.def Info: qrcode.png  used on input line 244.
@@ -906,7 +906,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 ...em, Emil Port, 1946)}{19}{subsection.3.14}
+l.60 ...amma \to \Sigma \))*}{20}{subsection.3.15}
                                                   % [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [3])
 \tf@toc=\write5
 \openout5 = `script.toc'.
@@ -923,7 +923,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einf√ºhrung.png, id=1087, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einf√ºhrung.png, id=1225, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einf√ºhrung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einf√ºhrung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einf√ºhrung.png  used on input line 3.
@@ -954,28 +954,35 @@ Overfull \hbox (40.5955pt too wide) in paragraph at lines 59--60
  []
 
 [10]
-Overfull \hbox (20.09167pt too wide) in paragraph at lines 126--127
+Overfull \hbox (20.09167pt too wide) in paragraph at lines 121--122
 []\T1/lmr/m/n/10 Ist die rech-nung von M zur Ein-ga-be $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 die end-li-che Rech-nung $\OML/lmm/m/it/10 C[]; []  ; C[]$\T1/lmr/m/n/10 , so gilt $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 ) =
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 141.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 136.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [12]
 
-LaTeX Warning: Command \" invalid in math mode on input line 194.
+LaTeX Warning: Command \" invalid in math mode on input line 192.
 
-[13]) [14]
+[13]
+<Turingmachine/alphabet_wech.png, id=1284, 503.8825pt x 259.97125pt>
+File: Turingmachine/alphabet_wech.png Graphic file (type png)
+<use Turingmachine/alphabet_wech.png>
+Package pdftex.def Info: Turingmachine/alphabet_wech.png  used on input line 261.
+(pdftex.def)             Requested size: 236.01561pt x 121.76997pt.
+) [14 <./Turingmachine/alphabet_wech.png>]
 \openout2 = `Berechenbarkeit/main.aux'.
 
  (./Berechenbarkeit/main.tex [15
@@ -1126,7 +1133,7 @@ Overfull \hbox (19.16823pt too wide) in paragraph at lines 365--366
 ] [25
 
 ]
-Overfull \hbox (18.9114pt too wide) in paragraph at lines 50--51
+Overfull \hbox (18.9114pt too wide) in paragraph at lines 52--53
 \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 a \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 ^^F$ \T1/lmr/m/n/10 wird auch \T1/lmr/bx/n/10 ‹ber-gangs-funk-ti-on \T1/lmr/m/n/10 von A gen-nant. Ana-lo-ges gilt f¸r $\OML/lmm/m/it/10 ^^N[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 Q[]; w\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 statt $[]\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 ^^N[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q; w\OT1/lmr/m/n/10 )\OMS/lmsy/m/n/10 g$\T1/lmr/m/n/10 . 
  []
 
@@ -1183,39 +1190,39 @@ LaTeX Warning: Command \" invalid in math mode on input line 511.
 
 
 ]
-Overfull \hbox (2.60947pt too wide) in paragraph at lines 15--16
+Overfull \hbox (2.60947pt too wide) in paragraph at lines 15--19
 \T1/lmr/m/n/10 Zeich-nung t-zeitbeschr‰nkt an Stel-le von f-zeitbeschr‰nkt. Man spricht al-so zum Bei-spiel von $\OML/lmm/m/it/10 n[]$\T1/lmr/m/n/10 -zeitbeschr‰nkt
  []
 
 [51
 
 ] [52]
-Overfull \hbox (59.66278pt too wide) in paragraph at lines 85--87
+Overfull \hbox (59.66278pt too wide) in paragraph at lines 88--90
 \T1/lmr/m/n/10 F¸r je-des Wort $\OML/lmm/m/it/10 L[] \OT1/lmr/m/n/10 := \OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 w[]\OT1/lmr/m/n/10 0[]\OMS/lmsy/m/n/10 g ^^R \OML/lmm/m/it/10 L$ \T1/lmr/m/n/10 be-trach-ten wir die k¸r-zes-te Crossing-Sequenz $\OML/lmm/m/it/10 C[] \OMS/lmsy/m/n/10 2 f\OML/lmm/m/it/10 C[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 )\OML/lmm/m/it/10 ; []  ; C[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 )\OMS/lmsy/m/n/10 g$
  []
 
 [53]
 
-LaTeX Warning: Command \" invalid in math mode on input line 121.
+LaTeX Warning: Command \" invalid in math mode on input line 124.
 
 [54] [55] [56]
-Overfull \hbox (74.29489pt too wide) in paragraph at lines 192--193
+Overfull \hbox (74.29489pt too wide) in paragraph at lines 195--196
 []\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te ef-fek-ti-ve Auf-z‰h-lung de-ter-mi-nis-ti-sche TM der Form $\OT1/lmr/m/n/10 (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; n\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\U/msa/m/n/10 ^^C\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
  []
 
 
-Overfull \hbox (26.95222pt too wide) in paragraph at lines 203--205
+Overfull \hbox (26.95222pt too wide) in paragraph at lines 206--208
 \T1/lmr/m/n/10 Sei t ei-ne Zeit-schran-ke und T ei-ne zeit-kon-stu-rier-ba-re Zeit-schran-ke mit $\OML/lmm/m/it/10 t\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n \OT1/lmr/m/n/10 + 1) = \OML/lmm/m/it/10 o\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 T\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ))$\T1/lmr/m/n/10 . Dann gilt $[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 t\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 )) \OMS/lmsy/m/n/10 6^^R
  []
 
 
-Overfull \hbox (5.78096pt too wide) in paragraph at lines 205--210
+Overfull \hbox (5.78096pt too wide) in paragraph at lines 208--213
 []\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te Auf-z‰h-lung von TM der Form $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; m\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\U/msa/m/n/10 ^^C\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
  []
 
 [57]
 
-LaTeX Warning: Command \" invalid in math mode on input line 244.
+LaTeX Warning: Command \" invalid in math mode on input line 247.
 
 ) [58]
 \openout2 = `"Komplexit√§tsklassen P und NP/main.aux"'.
@@ -1226,41 +1233,91 @@ LaTeX Warning: Command \" invalid in math mode on input line 244.
 
 
 ]
-Overfull \hbox (6.95421pt too wide) in paragraph at lines 13--14
+Overfull \hbox (6.95421pt too wide) in paragraph at lines 15--16
 \T1/lmr/m/n/10 Eine Spra-che A ¸ber {0, 1} ist in \T1/lmr/bx/n/10 po-ly-no-mi-el-ler Zeit manny-to-one- re-du-zier-bar\T1/lmr/m/n/10 , auch \T1/lmr/bx/n/10 p-m-reduzierbar\T1/lmr/m/n/10 ,
  []
 
 [60
 
-]
-Overfull \hbox (11.95377pt too wide) in paragraph at lines 89--93
+] [61]
+Overfull \hbox (11.95377pt too wide) in paragraph at lines 93--97
 []\T1/lmr/m/n/10 Nach [][]Be-mer-kung 8.11[][] gilt SAT $\OMS/lmsy/m/n/10 2$ \T1/lmr/bx/n/10 NP\T1/lmr/m/n/10 . Es ge-n¸gt al-so zu zei-gen, dass es $\OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 poly$ \T1/lmr/m/n/10 und p-zeitbeschr‰nkten
  []
 
-[61] [62]
+[62] [63]
 
-LaTeX Warning: Command \" invalid in math mode on input line 194.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 206.
 
-) [63] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./Regul√§reSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux))
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leq' on input line 206.
+
+[64]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leq' on input line 263.
+
+[65]) [66]
+\openout2 = `Platzkomplexit√§t/main.aux'.
+
+ (./Platzkomplexit√§t/main.tex [67
+
+
+
+
+]
+Overfull \hbox (29.37924pt too wide) in paragraph at lines 5--7
+\T1/lmr/m/n/10 Eine \T1/lmr/bx/n/10 TM vom Offline-Typ \T1/lmr/m/n/10 ist ei-ne k-TM $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 mit $\OML/lmm/m/it/10 k \OMS/lmsy/m/n/10 ^^U \OT1/lmr/m/n/10 3$ \T1/lmr/m/n/10 und wie folgt an-ge-pas-s-ter/eingeschr‰nkter
+ []
+
+[68
+
+]
+
+LaTeX Warning: Command \" invalid in math mode on input line 53.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 53.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 54.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 55.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 56.
+
+)
+Overfull \hbox (25.90398pt too wide) in paragraph at lines 71--269
+\T1/lmr/m/n/10 Sei s ei-ne Platz-schran-ke und S ei-ne platz-kon-stru-ier-ba-re Platz-schran-ke mit $\OML/lmm/m/it/10 s\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/10 o\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 S\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ))$\T1/lmr/m/n/10 . Dann gilt \T1/lmr/bx/n/10 DSPACE\T1/lmr/m/n/10 (s(n))
+ []
+
+[69] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./Regul√§reSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux) (./Platzkomplexit√§t/main.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: 3FD719F39F41918EF5AC9086615A050E;34494.
+(rerunfilecheck)             Checksum: B0B87FDE5C7C47C3329F48A0790EB634;43448.
  ) 
 Here is how much of TeX's memory you used:
- 32138 strings out of 476025
- 632715 string characters out of 5790017
+ 32045 strings out of 476025
+ 631467 string characters out of 5790017
  1875388 words of memory out of 5000000
- 51674 multiletter control sequences out of 15000+600000
+ 51541 multiletter control sequences out of 15000+600000
  604493 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,117p,1907b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (64 pages, 681149 bytes).
+Output written on script.pdf (70 pages, 717959 bytes).
 PDF statistics:
- 1637 PDF objects out of 1728 (max. 8388607)
- 1496 compressed objects within 15 object streams
- 274 named destinations out of 1000 (max. 500000)
- 1399 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1818 PDF objects out of 2073 (max. 8388607)
+ 1666 compressed objects within 17 object streams
+ 306 named destinations out of 1000 (max. 500000)
+ 1594 words of extra memory for PDF output out of 10000 (max. 10000000)
 

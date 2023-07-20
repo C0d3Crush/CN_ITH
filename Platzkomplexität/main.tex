@@ -1,0 +1,71 @@
+\coversection{ReguläreSprachen/regul.png}{Platzkomplexität}
+{}
+
+\mysubsection{Definition (TM vom Offline-Typ)}
+    Eine \textbf{TM vom Offline-Typ} ist eine k-TM \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) mit \(k \geq 3\) und wie folgt angepasster/eingeschränkter Arbeitsweise.
+    \begin{enumerate}
+        \item Auf dem ersten band, dem \textbf{Eingabeband}, wird der Kopf nur auf die mit der Eingabe beschriebenen und die beiden unmittelbar angrenzenden Felder bewegt und es werden keine Symbole durch andere ersetzt.
+        \item Auf dem k-ten Band, den \textbf{Azsgabeband}, wird der Kopf nie nach links bewegt.
+        \item die Ausgabe von M bei Konfig \((q, w_1,\cdots, w_k, p_1, \cdots, p_k)\) ist das Präfix w von \(w_k(1) \cdots w_k(|w_k|)\) maximaler Länge mit \(w \in (\Gamma / \{\Box\})^*\).
+    \end{enumerate}
+    Die Bänder \(2, \cdots, k-1\) sind die Arbeitsbänder.
+
+\mysubsection{Definition(Platzbedarf)}
+    Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine DTM vom Offline Typ. Es bezeichne \(space_M : \Sigma^* \mapsto \mathbb{N}_0\) die partielle Funktion mit \(dom(space_M) = dom(\varphi_M)\), so dass \(space_M(w)\) für alle \(w \in dom(\varphi_M)\) die maximale Anzahl der auf einem einzelnem Arbeitsband von Kopf besuchten Felder ist. Für \(w \in \Sigma^*\) heißt \(space_M(w)\) der \textbf{Platzbedarf} von M bei Eingabe w.
+
+\mysubsection{Definition (platzbeschränkt)}
+    Eine \textbf{platzschranke} ist eine berechenbare Funktion \(s: \mathbb{N}_0 \to \mathbb{N}_0\) mit \(s(n) \geq \log n\) für alle \(n \in \mathbb{N}\) und \(s(0) \geq 1\). Sei \(s : \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) eine Funktion. Eine TM \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) ist \textbf{s-platzbeschränkt}, wenn M total ist und es ein \(n_0 \in \mathbb{N}\) gibt, so dass \(\forall w \in \Sigma^{\geq n_0}\) in alle Rechnungen von M auf allen Arbeitsbändern höchstens \(s (|w|)\) Felder besucht werden.
+
+\mysubsection{Satz(lineare Kompression)}
+    Sei \(c > 1\) und sei \(s: \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) mit \(s(n)\geq 1\) für alle \(n \in \mathbb{N}_0\). Ist M eine \(c \cdot s(n)\)-platzbeschränkte TM mit k Arbeitsbändern, so gibt es eine eine s(n)-platzbeschränkte TM M' mit k-Arbeitsbändern und L(M') = L(M).
+    \begin{proof}
+        Speichere mehrere Felder in einem Feld durch ein größeres Alphabet.
+    \end{proof}
+
+\mysubsection{Satz(Alphabetwechel)}
+    Ist M eine s(n)-platzbeschrenkte TM mit k Arbeitsbändern und Eingabealphabet \(\{0, 1\}\), so gibt es eine Konstante \(c \geq 1\) und eine \(c \cdot s(n)\)-platzbeschränkte TM M' mit k Arbeitsbändern, Eingabealphabet \(\{0, 1\}\), Bandalphabet \(\{\Box, 0, 1\}\) und L(M') = L(M).
+    \vspace*{0.5cm}
+    \\
+    Wie bei \(time_M\) handelt e sich auch bei \(space_M\) um ein abstraktes Komplexitätsmaß. Insbesondere gilt die Aussage des Lückensatzes auch für platzbeschränkt.
+
+\mysubsection{Satz(Abstraktes Komplexitätsmaß)*}
+    Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine TM. Die partielle Funktion \(space_M\) ist ein abstraktes Komplexitätsmaß
+    \begin{proof}
+        Übung.
+    \end{proof}
+
+\mysubsection{Satz (Spurentechnik und DTM)*}
+    Ist für alle (deterministische) TM der Form \(M = (\{0, \cdots, n\}, \{0, 1\}, \{\Box, 0, 1\}, \Delta, 0, \{1\})\) und alle wörter \(w \in \{0, 1\}^*\) das Wort code(M,w) ein geeigneter Code (M, w), so gibt es eine (deterministische) TM mit einem Arbeeitsband, so dass dolgendes gilt:
+    \begin{itemize}
+        \item [(i)] \(\forall\) TM M wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U die eingabe code(M,w) genau dann wenn M das Binärwort w akzeptiert.
+        \item [(ii)] Für alle Platzschranken s und alle s-platzbeschrenkten TM M wie oben gibt es ein \(c_1, n_0 \in \mathbb{N}\), sodass alle wörter \(w \in \{0, 1\}^{\geq n_0}\) in der Rechnungenvon U zur Eingabe code(M,w) auf dem Arbeitsband höchstens \(cs(|w|)\) Felder besucht werden.
+    \end{itemize} 
+    \begin{proof}
+        Die TM U arbeitet wie im Sinne bei der Normierung verwendete Spurentechnik, wobei bei Eingabe code(M,w) auf einer zusätzlichen Spur eine geeignete Darstellung von M erzeugt wird. Dies hat konstante Länge, für hinreichendlanges w werden auf dieser Spur also weniger als \(s(|w|)\) Felder benötigt.
+        \vspace*{0.5cm}
+        \\
+        Ist M deterministisch, so kann U auch deterministisch definiert werden.
+    \end{proof}
+
+\mysubsection{Definition(Klassen der Platzbeschränkten TM)*}
+    Für eine Menge S von Funktionen von \(\mathbb{N}_0\) nach \(\mathbb{R}_{\geq 0}\) definieren wir:
+    \begin{itemize}
+        \item \textbf{DSPACE}(s) := \(\{L(M) \subseteq \{0, 1\}^* : Für ein s \in S ist M eine s-platzbeschränkte DTM\}\)
+        \item \textbf{FSPACE}(s) := \(\{\varphi_M : \{0, 1\}^* \to \mathbb{N}_0 : Für ein s \in S ist M eine s-platzbeschranke DTM\}\)
+        \item \textbf{NSPACE}(s) := \(\{L(M) \subseteq \{0, 1\}^* : Für ein s \in S ist M eine s-platzbeschrenkte TM\}\)
+        \item \textbf{CONSPACE}(s) := \(\{\{0, 1\}^* / L(M) : Für ein s \in S ise M eine s-platzbeschrenkte TM\}\)
+    \end{itemize}
+    Für eine Funktion \(s : \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) setzen wir \textbf{DSPACE}(s) := \textbf{DSPACE}(\{s\}) und analog für die anderen Klassen.
+
+\mysubsection{Definition (Platzkonstruierbar)}
+    eine Platzschranke s ist genau dann \textbf{platzkonstruierbar}, wenn es eine DTM M mit Eingabealphabet \(\{1\}\) gibt, sodass, \(space_M(1^n) = s(n)\) für alle \(n \in \mathbb{N}_0\) gilt.
+
+\mysubsection{Bemerkung (Platzkonstruierbare Funktionen: Eigenschaften)*}
+    \begin{itemize}
+        \item [(i)] Die Platzschranke s mit \(s(0) = 1\) und \(s(n) = \lfloor \log n\rfloor \) für \(n \in \mathbb{N}\) ist platzkonstruierbar 
+        \item [(ii)] Ist p ein Polynom in einer Variable über \(\mathbb{Z}\) mit \(p(n) \geq n +1\) für alle \(n \geq \mathbb{N}_0\), so ist \(s : \mathbb{N}_0 \to \mathbb{N}_0, \quad n \mapsto p(n)\) platzkonstruierbar.
+        \item [(iii)] ist s platzkonstruierbar, so ist auch \(s: \mathbb{N}_0 \to \mathbb{N}_0, \quad n \mapsto 2^{s(n)}\) platzkonstruierbar.
+    \end{itemize}
+
+\mysubsection{Satz (Platzhirarchiesatz für DTM)}
+    Sei s eine Platzschranke und S eine platzkonstruierbare Platzschranke mit \(s(n) = o(S(n))\). Dann gilt \textbf{DSPACE}(s(n)) \(\not \subseteq\) \textbf{DSPACE}(S(n)).

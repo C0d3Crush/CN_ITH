@@ -7,6 +7,8 @@ Wir wollen Turingmahinen un stark einschränken. Wir betrahten ein Modell, das i
 \end{itemize}
 Dies bedeutet, dass wir TM \(M = (Q, \Sigma, \Sigma \cup \{\square \}, \Delta, s, F)\) die nur Instruktionen der Form (q, a, q', a, R) mit \(q \in Q\) und \(a \in \sigma\) hat. Dies sind nun stark eingeschränkte TM. Wir wählen eine äquivalente Form, die als endliche Automaten bezeichnet werden. 
 
+Hinweis: Durch die Einschränkungen wird die Leistungsfähigkeit der Turingmaschine erheblich reduziert. Sie kann nun nicht mehr so allgemeine Berechnungen durchführen wie eine herkömmliche Turingmaschine.
+
 \mysubsection{Definition (Endliche Automaten)}
     Ein endicher Automat, kurz EA, ist ein Tupel \(A = (Q, \Sigma, \Delta, s, F)\). Dabei ist 
     \begin{itemize}
@@ -59,7 +61,7 @@ Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det
         \item [(ii)] \(\forall\) Funktionen \(\delta : Q \times \Sigma \rightarrow Q\) gibt es genau einen \(\delta_{det, A} = \delta\). 
     \end{itemize}
 
-\mysubsection{Definition (akzeptierte Sprache Automat)}
+\mysubsection{Definition (akzeptierte Sprache)}
     Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. Die Sprache \(L(A) := \{w \in \Sigma^{*} : \delta_{A}^{*}(s, w)\cap F \neq \varnothing \}\) ist die \textbf{akzeptierte Sprache} von A.
 
 \mysubsection{Definition (regulär)} 

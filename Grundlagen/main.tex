@@ -69,7 +69,7 @@
     \end{itemize}
 
 \mysubsubsection{Definition (präfixfrei)}
-    Eine Sprache heißt \textbf{präfixfrei}, wenn \(u\sqsubseteq v \Rightarrow u = v \forall u,v \in L\).
+    Eine Sprache heißt \textbf{präfixfrei}, wenn \(u\sqsubseteq v \Rightarrow u = v \quad \forall u,v \in L\).
 
 \mysubsubsection{Definition (Homomorphismus)}
     Für Sprache L und M heißt eine Funktion \(\varphi : L \rightarrow M\) \textbf{Homomorphismus von Sprachen}, wenn \(\varphi(uv) = \varphi (u) \varphi (v) \forall u, v \in L\) gilt.
@@ -83,8 +83,8 @@
 \end{itemize}
 \textbf{Bemerkung: }Oft gehen wir von einer impliziten Ordnung auf \(\Sigma\) aus. Ist \(\Sigma = {a_{1}, \cdots, a_{n}}\) so gilt\( a_{1}\leq \cdots \leq a_{n}
 \)
-\mysubsubsection{Bemerkung} 
-    Sei \(\Sigma\) ein Alphabet \(\forall w \in \Sigma^{*}\) ist \({v\in \Sigma^{*} : v \leq_{llex}w}\) endlich. Dies erlaubt es uns für ein Alphabet \(\Sigma\) die Wörter über \(\Sigma\) in längenlexilographischen Reihenfolge \(w_{1}, w_{2}, \cdots\) zu betrachten, wobei wir \(w_{i}\) für \(i \in \mathbb{N}\) als kleinstes Element von \(\Sigma^{*}/{w_{1},\cdots, w_{i-1}}\) gewählt sei. Wir identifizieren oft \(\mathbb{N}_{0} mit {0, 1}^{*}\) indem wir \(i \in \mathbb{N}_{0}\) mit in die längenlexilographische Reihenfolge (i+1)-ten Wort\( w_{i+1} \in {0,1}^{*} \)identifiziernen.
+\mysubsubsection{Bemerkung(Endliche längenlexikographische Reihenfolge)*} 
+    Sei \(\Sigma\) ein Alphabet \(\forall w \in \Sigma^{*}\) ist \({v\in \Sigma^{*} : v \leq_{llex}w}\) endlich. Dies erlaubt es uns für ein Alphabet \(\Sigma\) die Wörter über \(\Sigma\) in längenlexilographischen Reihenfolge \(w_{1}, w_{2}, \cdots\) zu betrachten, wobei wir \(w_{i}\) für \(i \in \mathbb{N}\) als kleinstes Element von \(\Sigma^{*}/{w_{1},\cdots, w_{i-1}}\) gewählt sei. Wir identifizieren oft \(\mathbb{N}_{0}\) mit \(\{0, 1\}^{*}\) indem wir \(i \in \mathbb{N}_{0}\) mit in die längenlexilographische Reihenfolge (i+1)-ten Wort \( w_{i+1} \in \{0,1\}^{*}\) identifiziernen.
     \begin{center}
         \begin{tabular}{ c c c c c }
             \(\mathbb{N}_{0}\) & 0 & 1 & 2 & 3\\ 
@@ -92,8 +92,8 @@
         \end{tabular}
     \end{center}
 
-\mysubsubsection{Definition}
+\mysubsubsection{Definition(Binärwort-Funktion in längenlexikographischer Reihenfolge)*}
     Es bezeichnet bin : \(\mathbb{N}_{0} \rightarrow \{0, 1\}^{*}\) die Funktion, für die bin(i) das in längenlexikographischer Reihenfolge (i+1)-te Binärwort ist \(\forall i \in \mathbb{N}_{0}\)
 
-\mysubsubsection{Bemerkung}
+\mysubsubsection{Bemerkung(Beziehung zwischen Binärworten und Dezimalzahlen)*}
     \(\forall i \in \mathbb{N}_{0}\) ist 1 bin(i) die Binärdarstellung von i+1. Umgekehrt ist \(\forall w \in {0, 1}^{*}\) das \((2^{|w|} + \underset{i \in [|w|]}{\Sigma} w(i) 2^{|w|-i})\)-te Binärwort.

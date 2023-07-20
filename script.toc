@@ -12,31 +12,30 @@
 \contentsline {subsubsection}{\numberline {1.2.8}Definition (präfixfrei)}{7}{subsubsection.1.2.8}%
 \contentsline {subsubsection}{\numberline {1.2.9}Definition (Homomorphismus)}{7}{subsubsection.1.2.9}%
 \contentsline {subsubsection}{\numberline {1.2.10}Definition (Längenlexikographische Ordnung)}{7}{subsubsection.1.2.10}%
-\contentsline {subsubsection}{\numberline {1.2.11}Bemerkung}{7}{subsubsection.1.2.11}%
-\contentsline {subsubsection}{\numberline {1.2.12}Definition}{7}{subsubsection.1.2.12}%
-\contentsline {subsubsection}{\numberline {1.2.13}Bemerkung}{7}{subsubsection.1.2.13}%
+\contentsline {subsubsection}{\numberline {1.2.11}Bemerkung(Endliche längenlexikographische Reihenfolge)*}{7}{subsubsection.1.2.11}%
+\contentsline {subsubsection}{\numberline {1.2.12}Definition(Binärwort-Funktion in längenlexikographischer Reihenfolge)*}{7}{subsubsection.1.2.12}%
+\contentsline {subsubsection}{\numberline {1.2.13}Bemerkung(Beziehung zwischen Binärworten und Dezimalzahlen)*}{7}{subsubsection.1.2.13}%
 \contentsline {section}{\numberline {2}\textbf {Turingmachine}}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definition (Turingmachine, Alan Tuing, 1936)}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Definition (Konfiguration)}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Definition (Nachfolgekonfiguration)}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Definition (Rechnung)}{10}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Bemerkung}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.5}Bemerkung (Eindeutige Rechnungen bei k-DTM.)*}{10}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Definition (total)}{10}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Definition (akzeptierte Sprache)}{10}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Definition(entscheidbar)}{11}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Definition(rekursiv aufzählbar)}{11}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Bemerkung}{11}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Bemerkung}{11}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}Bemerkung}{11}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}Definition (Ausgabe)}{11}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}Definition (berechnete Funktion)}{11}{subsection.2.14}%
-\contentsline {subsection}{\numberline {2.15}Definition (partiell berechenbar)}{12}{subsection.2.15}%
-\contentsline {subsection}{\numberline {2.16}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{12}{subsection.2.16}%
-\contentsline {subsection}{\numberline {2.17}Bemerkung}{12}{subsection.2.17}%
-\contentsline {subsection}{\numberline {2.18}Bemerkung (normiert)}{13}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.8}Definition(rekursiv aufzählbar)}{11}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Bemerkung (Entscheidbare Sprache und rekursiv aufzählbare Sprache)*}{11}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Bemerkung (Endliche Sprachen sind entscheidbar.)*}{11}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Bemerkung (Entscheidbarkeit und Aufzählbarkeit.)*}{11}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Definition (Ausgabe)}{11}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}Definition (berechnete Funktion)}{11}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Definition (partiell berechenbar)}{12}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}Definition (charackteristische Funktion, partielle charachteristische Funktion)}{12}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.16}Bemerkung (Entscheidbarkeit und Berechenbarkeit)*}{12}{subsection.2.16}%
+\contentsline {subsection}{\numberline {2.17}Bemerkung (normiert)}{13}{subsection.2.17}%
 \contentsline {paragraph}{Von mehreren Bändern zu einem Band}{13}{figure.caption.3}%
 \contentsline {paragraph}{Von beliebigen bandalphabet zu \(\{\Box , 0, 1\}\)}{14}{figure.caption.4}%
-\contentsline {subsection}{\numberline {2.19}Bemerkung}{14}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.18}Bemerkung (Entscheidbarkeit, Aufzählbarkeit, Berechenbarkeit.)*}{14}{subsection.2.18}%
 \contentsline {section}{\numberline {3}\textbf {Berechenbarkeit}}{15}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Definition (Code)}{16}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Definition (standardaufzählung)}{16}{subsection.3.2}%
@@ -79,7 +78,7 @@
 \contentsline {subsection}{\numberline {4.4}Definition (Übergangsfunktion eines DEA)}{26}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Bemerkung (Folgerungen für DEA)*}{26}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Bemerkung(Eindeutigkeit endlicher Automaten)*}{26}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache Automat)}{26}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.7}Definition (akzeptierte Sprache)}{26}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Definition (regulär)}{26}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Beispiel (Endlicher Automat A)*}{27}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Definition (Potenzautomaten)}{28}{subsection.4.10}%
@@ -99,15 +98,15 @@
 \contentsline {subsection}{\numberline {5.12}Satz}{32}{subsection.5.12}%
 \contentsline {subsection}{\numberline {5.13}Definition (L-Äquivalenz)}{32}{subsection.5.13}%
 \contentsline {subsection}{\numberline {5.14}Bemerkung}{32}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Definition (Parition)}{33}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Definition (Verefeinerung)}{33}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.15}Definition (Partion)}{33}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}Definition (Verfeinerung)}{33}{subsection.5.16}%
 \contentsline {subsection}{\numberline {5.17}Bemerkung}{33}{subsection.5.17}%
 \contentsline {subsection}{\numberline {5.18}Proposition}{33}{subsection.5.18}%
 \contentsline {subsection}{\numberline {5.19}Definition (Minimalautomat)}{33}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Satz}{33}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.20}Satz(Charakterisierung regulärer Sprachen)*}{33}{subsection.5.20}%
 \contentsline {subsection}{\numberline {5.21}Satz (Satz von Myhill und Nerode)}{34}{subsection.5.21}%
 \contentsline {subsection}{\numberline {5.22}Satz (Pumping-Lemma)}{34}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Beispiel}{35}{subsection.5.23}%
+\contentsline {paragraph}{Beispiel}{35}{subsection.5.22}%
 \contentsline {section}{\numberline {6}\textbf {Formale Grammatiken}}{36}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Definition (Grammatiken)}{37}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Definition (Ableitung)}{37}{subsection.6.2}%
@@ -147,7 +146,7 @@
 \contentsline {subsection}{\numberline {7.1}Definition (Rechenzeit)}{51}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Definition (zeitbeschränkt)}{51}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Satz (lineare Beschleunigung)}{51}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Satz(Alphabetwechel)}{52}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}Satz (Alphabetwechel)}{52}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Definition(Landau-Symbole)*}{52}{subsection.7.5}%
 \contentsline {subsection}{\numberline {7.6}Bemerkung(Eigenschaften Landau-Symbole)*}{52}{subsection.7.6}%
 \contentsline {subsection}{\numberline {7.7}Bemerkung(Eigenschaften Landau-Symbole)*}{52}{subsection.7.7}%
@@ -173,13 +172,38 @@
 \contentsline {subsection}{\numberline {8.4}Definition (\textbf {NP}-schwer, \textbf {NP}-vollständig)}{60}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}Definition (aussagenlogische Formel)}{60}{subsection.8.5}%
 \contentsline {subsection}{\numberline {8.6}Definition(Grundbegriffe der aussagenlogischen Formeln)*}{60}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Definition (konjunktive Normalform)}{60}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Wahrheitswert}{61}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.7}Definition (konjunktive Normalform)}{61}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Definition (Wahrheitswert)}{61}{subsection.8.8}%
 \contentsline {subsection}{\numberline {8.9}Definition (logisch äquivalent)}{61}{subsection.8.9}%
 \contentsline {subsection}{\numberline {8.10}Definition (SAT)}{61}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}Bemerkung ()*}{61}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}Satz (Satz von Cock)}{61}{subsection.8.12}%
-\contentsline {subsection}{\numberline {8.13}Definition (k-konjunktive Normalform)}{63}{subsection.8.13}%
-\contentsline {subsection}{\numberline {8.14}Definition (k-SAT)}{63}{subsection.8.14}%
-\contentsline {subsection}{\numberline {8.15}Bemerkung}{63}{subsection.8.15}%
-\contentsline {subsection}{\numberline {8.16}Satz}{63}{subsection.8.16}%
+\contentsline {subsection}{\numberline {8.11}Bemerkung (Das Erfüllbarkeitsproblem SAT in der Komplexitätsklasse NP)*}{61}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Satz (Satz von Cock)}{62}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}Definition (k-konjunktive Normalform)}{64}{subsection.8.13}%
+\contentsline {subsection}{\numberline {8.14}Definition (k-SAT)}{64}{subsection.8.14}%
+\contentsline {subsection}{\numberline {8.15}Bemerkung(k-SAT als Entscheidungsproblem in der Komplexitätsklasse NP)*}{64}{subsection.8.15}%
+\contentsline {subsection}{\numberline {8.16}Satz (NP-Vollständigkeit von k-SAT für k \(\leq \) 3)*}{64}{subsection.8.16}%
+\contentsline {subsection}{\numberline {8.17}Definition (Graphen (V, E))*}{64}{subsection.8.17}%
+\contentsline {subsection}{\numberline {8.18}Definition (k-Färbung)}{64}{subsection.8.18}%
+\contentsline {subsection}{\numberline {8.19}Definition (k-COLORING)}{65}{subsection.8.19}%
+\contentsline {subsection}{\numberline {8.20}Bemerkung(NP-Eigenschaft von COLORING und k-COLORING)*}{65}{subsection.8.20}%
+\contentsline {subsection}{\numberline {8.21}Satz(NP-Vollständigkeit von 3-Coloring)*}{65}{subsection.8.21}%
+\contentsline {subsection}{\numberline {8.22}Korrolar (k-COLORING NP-vollständig für k \(\leq \) 3)*}{65}{subsection.8.22}%
+\contentsline {subsection}{\numberline {8.23}Korrolar(COLORING NP-vollständig)*}{65}{subsection.8.23}%
+\contentsline {subsection}{\numberline {8.24}Definition (EXACTCOVER)}{65}{subsection.8.24}%
+\contentsline {subsection}{\numberline {8.25}Bemerkung (EXACTCOVER NP Eigenschaft)*}{65}{subsection.8.25}%
+\contentsline {subsection}{\numberline {8.26}Satz (EXACTCOVER NP-vollständig)*}{65}{subsection.8.26}%
+\contentsline {subsection}{\numberline {8.27}Definition (SUBSETSUM)}{65}{subsection.8.27}%
+\contentsline {subsection}{\numberline {8.28}Bemerkung(SUBSETSUM NP Eigenschaft)*}{65}{subsection.8.28}%
+\contentsline {subsection}{\numberline {8.29}Satz(SUBSETSUM NP-vollständig)*}{66}{subsection.8.29}%
+\contentsline {section}{\numberline {9}\textbf {Platzkomplexität}}{67}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Definition (TM vom Offline-Typ)}{68}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Definition(Platzbedarf)}{68}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Definition (platzbeschränkt)}{68}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Satz(lineare Kompression)}{68}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Satz(Alphabetwechel)}{68}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Satz(Abstraktes Komplexitätsmaß)*}{68}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Satz (Spurentechnik und DTM)*}{69}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Definition(Klassen der Platzbeschränkten TM)*}{69}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Definition (Platzkonstruierbar)}{69}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Bemerkung (Platzkonstruierbare Funktionen: Eigenschaften)*}{69}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}Satz (Platzhirarchiesatz für DTM)}{69}{subsection.9.11}%

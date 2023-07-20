@@ -51,9 +51,9 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \mysubsection{Definition(DEA-Konstruktion für Äquivalenzklassen)} 
   Sei \(\Sigma\) eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index. Es bezeichne
   \[
-    A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L}
+    A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L})
   \]
-  den DEA mit \(\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}\) und \(a \in \Sigma\). Die Wohldefiniertheit von \(\delta_{det, A_{\sim}, L}\) ergibt sich daraus, dass \(\sim\) eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass \(L(A_{\sim, L}) = L\) gilt betrachten wr zunächst die Arbeitsweise von \(A_{\sim, L}\).
+  den DEA mit \(\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}\) und \(a \in \Sigma\). Die Wohldefiniertheit von \(\delta_{det, A_{\sim}, L}\) ergibt sich daraus, dass \(\sim\) eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass \(L(A_{\sim, L}) = L\) gilt betrachten wir zunächst die Arbeitsweise von \(A_{\sim, L}\).
 
 \mysubsection{Lemma} 
   Sei \(\Sigma\) ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index und sei \(\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}\) die erweiterte Übergangsfunktion von \(A_{\sim, L}\). Dann gilt \(\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}\). 
@@ -86,7 +86,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
   Sei \(A_{i} = (Q_{i}, \Sigma, \Delta_{i}, s_{i}, F_{i})\) für \(i \in {1,2}\) ein EA mit Übergangsfunktion \(\delta_{i}\). Die endliche Automaten \(A_{1}\) und \(A_{2}\) sind \textbf{isomorph}, kurz \(A_{1}? \cong A_{2}\), wenn es eine Projektion \(f:Q_{1}\rightarrow Q_{2}\) gibt, sodass folgendes gilt:
   \begin{itemize}
     \item [(i)] \(f(s_{1}) = s_{2}\)
-    \item [(ii)] \(\delta_{2}(f(q_{1}), a) = f(\delta_{1}(q_{1}), a)\)
+    \item [(ii)] \(\delta_{2}(f(q_{1}), a) = f(\delta_{1}(q_{1}, a))\)
     \item [(iii)] \(f(F_1) = F_2\)
   \end{itemize}
 
@@ -110,7 +110,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
   \[
     uw \in L \leftrightarrow \delta^*_{det, A} (s, uw) \in F \leftrightarrow \delta^*_{det, A} (s, vw) \in F \leftrightarrow vw \in L
   \] 
-  Dies führt zum Begriff der L-Äquivalenz und zeigt, dass die Parition in die Äquivalenzklassen von \(\sim\) Vereinfacht der Parition in die Äquivalenzklasse der L-Äquivalenz ist.
+  Dies führt zum Begriff der L-Äquivalenz und zeigt, dass die Partion in die Äquivalenzklassen von \(\sim\) Vereinfacht der Partion in die Äquivalenzklasse der L-Äquivalenz ist.
 
 \mysubsection{Definition (L-Äquivalenz)} 
   Sei L eine Sprache über einem Alphabet \(\Sigma\). Die \textbf{L-Äquivalenz} von L als Sprache ist die Relation \(\sim_L\) auf \(\Sigma^*\) mit 
@@ -125,31 +125,31 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \item [(ii)] Es gilt \(L = \bigcup \limits_{w \in L}[w]_{\sim L}\).
   \end{itemize}
 
-\mysubsection{Definition (Parition)} 
-  Sei A eine Menge. Eine Parition von A ist eine Menge \(\mathcal{A} = {A_1, \cdots, A_n}\) paarweise disjunkt nichtleere Teilmengen von A mit \(\bigcup \limits_{i \in [n]} A_i = A\).
+\mysubsection{Definition (Partion)} 
+  Sei A eine Menge. Eine Partion von A ist eine Menge \(\mathcal{A} = {A_1, \cdots, A_n}\) paarweise disjunkt nichtleere Teilmengen von A mit \(\bigcup \limits_{i \in [n]} A_i = A\).
 
-\mysubsection{Definition (Verefeinerung)} 
-  Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) Paritionen einer Menge A. Die Parition \(\mathcal{A}_2\) \textbf{Verefeinert} \(\mathcal{A}_1\) (heißt Verefeinerung von \(\mathcal{A}_1\)), wenn es \(\forall A_2 \in \mathcal{A}_2\) ein \(A_1 \in \mathcal{A}_1\), mit \(A_2 \subseteq A_1\) gibt.
+\mysubsection{Definition (Verfeinerung)} 
+  Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) partionen einer Menge A. Die Partion \(\mathcal{A}_2\) \textbf{Verefeinert} \(\mathcal{A}_1\) (heißt Verfeinerung von \(\mathcal{A}_1\)), wenn es \(\forall A_2 \in \mathcal{A}_2\) ein \(A_1 \in \mathcal{A}_1\), mit \(A_2 \subseteq A_1\) gibt.
 
 \mysubsection{Bemerkung} 
-  Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) Paritionen einer Menge \(A_1\), so dass \(A_2\) die Parition \(\mathcal{A}_1\) verefeinert.
+  Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) Paritionen einer Menge \(A_1\), so dass \(A_2\) die Partion \(\mathcal{A}_1\) verefeinert.
   \begin{itemize}
-    \item [(i)] \(\forall A' \in \mathcal{A}_1\), gibt es eine Teilmengen \(\mathcal{A}'_2 \subseteq \mathcal{A}_2\), die eine Parition von A' ist.
+    \item [(i)] \(\forall A' \in \mathcal{A}_1\), gibt es eine Teilmengen \(\mathcal{A}'_2 \subseteq \mathcal{A}_2\), die eine Partion von A' ist.
     \item [(ii)] Es gilt \(|\mathcal{A}_1| \leq |\mathcal{A}_2|\)
     \item [(iii)] Gilt \(|\mathcal{A}_1| = |\mathcal{A}_2|\) dann ist \(\mathcal{A}_1 = \mathcal{A}_2\)
   \end{itemize}
 
 \mysubsection{Proposition} 
-  Sei \(\Sigma\) eine Alphabet und L eine Sprache über \(\Sigma\) und \(\sim\) eine Rechtskongruenz auf \(\Sigma^*\) mit \(L = \bigcup \limits_{w \in L} [w]_{\sim}\). Die Parition \(\Sigma^*/\sim\) ist eine Verefeinerung der partition \(\Sigma^*/ \sim L\).
+  Sei \(\Sigma\) eine Alphabet und L eine Sprache über \(\Sigma\) und \(\sim\) eine Rechtskongruenz auf \(\Sigma^*\) mit \(L = \bigcup \limits_{w \in L} [w]_{\sim}\). Die Partion \(\Sigma^*/\sim\) ist eine Verfeinerung der partition \(\Sigma^*/ \sim L\).
   \begin{proof}
     Seien \(u, v \in \Sigma^*\) mit \(u \sim v\). Es genügt zu zeigen, dass \(u \sim_{L} v\). Sei \(w \in \Sigma^*\). Es genügt \(uw \in L \leftrightarrow vw \in L\) zu zeigen. Da \(\sim\) eine Rechtskongruenz ist dolgt \(uw \sim vw\). Ist \(u, w \in L\), so folgt aus \(L = \bigcup \limits_{w' \in L} [w']_\sim\) auch \(vw \in L\)(analog folgt auch auch \(vw \in L \Rightarrow uw \in L\)).\\ \(\Rightarrow u \sim_L v\).
   \end{proof}
-  Das heißt \(\sim_L\) ist die größte Parition, die L darstellen kann.
+  Das heißt \(\sim_L\) ist die größte Partion, die L darstellen kann.
 
 \mysubsection{Definition (Minimalautomat)} 
   Sei L eine reguläre Sprache über \(\Sigma\). Der Minimalautomat von L als Sprache über \(\Sigma\) ist der DEA \(A_{\sim L, L}\).
 
-\mysubsection{Satz}
+\mysubsection{Satz(Charakterisierung regulärer Sprachen)*}
   Sei L eine reguläre Sprache über \(\Sigma\) und sei \(M_(Q, \Sigma, \Delta, s ,F)\) der Minimalautomat von L. Dann gilt:
   \begin{itemize}
     \item [(i)] L(M) = L
@@ -159,13 +159,13 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
   \begin{proof}
     \begin{itemize}
       \item [(i)] Folgt direkt aus \hyperref[subsec:5.8]{Satz 5.8} 
-      \item [(ii)] Aus \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} folgt \(|Q_A| \geq |\Sigma^* / \sim_A|\). Nach \hyperref[subsec:5.18]{Proposition 5.18} ist \(\Sigma^* / \sim_A\) eine Verefeinerung von \(\Sigma^* / \sim_L\), nach \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} gilt also \(|\Sigma^* / \sim_A| \geq |\Sigma^* / \sim_L|\). Wegen \(|\Sigma^* / \sim_L| = |Q|\) folgt somit 
+      \item [(ii)] Aus \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} folgt \(|Q_A| \geq |\Sigma^* / \sim_A|\). Nach \hyperref[subsec:5.18]{Proposition 5.18} ist \(\Sigma^* / \sim_A\) eine Verfeinerung von \(\Sigma^* / \sim_L\), nach \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} gilt also \(|\Sigma^* / \sim_A| \geq |\Sigma^* / \sim_L|\). Wegen \(|\Sigma^* / \sim_L| = |Q|\) folgt somit 
       \[
         |Q_A| \geq |\Sigma^* / \sim_A| \geq |\Sigma^* / \sim_L| = |Q|
       \]
       \item [(iii)] Sei A ein DEA mit |Q| Zuständen und L(A) = L. Hätte A unereichbare Zustände, so folgt \(|\Sigma^* / \sim_A| < |Q| = |\Sigma^* /\sim_L|\) im wiederspruch zu \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} und \hyperref[subsec:5.18]{Proposition 5.18} 
     \end{itemize}
-    Nach \hyperref[subsec:5.12]{Satz 5.12} genügt es zu zeigen, dass \(\sim_A = \sim_M\) zu zeigen. Die Relationen \(\sim_M\) und \(\sim_A\) sind nach \hyperref[subsec:5.3]{Bemerkung 5.3} und \hyperref[subsec:5.5]{Proposition 5.5} Rechtskongruent mit endlichem Index und L ist Verfeinerung von Äquivalenzklassen davon. Damit sind \(\Sigma^* / \sim_A\) und \(\Sigma^* / \sim_M\) nach \hyperref[subsec:5.18]{Proposition 5.18} Verfeinerungen von \(\Sigma^* /\sim_L\). Somit sind die Indices von \(\sim_A\) und \(\sim_M\) mindestens so groß wie der index von \(\sim_L\). Weiter sind die Indices von \(\sim_A\) und \(\sim_M\) nach \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} aber auch höchstens so groß wie \(|Q| = |\Sigma^* / \sim_L|\). Die Indices von \(\sim_A\), \(\sim_M\) und \(\sim_L\) sind alle gleich groß. Da \(\Sigma^* / \sim_A\) und \(\Sigma^* / \sim_M\) Verefeinerungen von \(\Sigma^* /\sim_L\) sind, folgt mit \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} somit \(\Sigma^* /\sim_A = \Sigma^* /\sim_M = \Sigma^* /\sim_L und \sim_A = \sim_L = \sim_M\). 
+    Nach \hyperref[subsec:5.12]{Satz 5.12} genügt es zu zeigen, dass \(\sim_A = \sim_M\) zu zeigen. Die Relationen \(\sim_M\) und \(\sim_A\) sind nach \hyperref[subsec:5.3]{Bemerkung 5.3} und \hyperref[subsec:5.5]{Proposition 5.5} Rechtskongruent mit endlichem Index und L ist Verfeinerung von Äquivalenzklassen davon. Damit sind \(\Sigma^* / \sim_A\) und \(\Sigma^* / \sim_M\) nach \hyperref[subsec:5.18]{Proposition 5.18} Verfeinerungen von \(\Sigma^* /\sim_L\). Somit sind die Indices von \(\sim_A\) und \(\sim_M\) mindestens so groß wie der index von \(\sim_L\). Weiter sind die Indices von \(\sim_A\) und \(\sim_M\) nach \hyperref[subsec:5.3]{Bemerkung 5.3 (ii)} aber auch höchstens so groß wie \(|Q| = |\Sigma^* / \sim_L|\). Die Indices von \(\sim_A\), \(\sim_M\) und \(\sim_L\) sind alle gleich groß. Da \(\Sigma^* / \sim_A\) und \(\Sigma^* / \sim_M\) Verfeinerungen von \(\Sigma^* /\sim_L\) sind, folgt mit \hyperref[subsec:5.17]{Bemerkung 5.17 (ii)} somit \(\Sigma^* /\sim_A = \Sigma^* /\sim_M = \Sigma^* /\sim_L und \sim_A = \sim_L = \sim_M\). 
   \end{proof}
   Unsere bisherigen Betrachtungen erlauben verschiedene Äquivalenten Charkterisierungen der Klasse der regulären Sprachen.
 
@@ -201,7 +201,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \]
   \end{proof}
 
-  \mysubsection{Beispiel} 
+  \paragraph{Beispiel} 
     Die Sprache \(L = \{0^n i^n : u \in \mathbb{N}_0\}\) ist nicht regulär. Dies lässt sich mit den Pumping-Lemma wie folgt zeigen.
 
     \begin{proof}
