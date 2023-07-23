@@ -207,3 +207,7 @@
 \contentsline {subsection}{\numberline {9.9}Definition (Platzkonstruierbar)}{69}{subsection.9.9}%
 \contentsline {subsection}{\numberline {9.10}Bemerkung (Platzkonstruierbare Funktionen: Eigenschaften)*}{69}{subsection.9.10}%
 \contentsline {subsection}{\numberline {9.11}Satz (Platzhirarchiesatz für DTM)}{69}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}Platzhirarchiesatz für nichtdeterministsche TM}{70}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}Bemerkung}{70}{subsection.9.13}%
+\contentsline {subsection}{\numberline {9.14}Satz}{70}{subsection.9.14}%
+\contentsline {subsection}{\numberline {9.15}Satz ***}{70}{subsection.9.15}%

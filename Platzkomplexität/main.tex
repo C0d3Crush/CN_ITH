@@ -69,3 +69,34 @@
 
 \mysubsection{Satz (Platzhirarchiesatz für DTM)}
     Sei s eine Platzschranke und S eine platzkonstruierbare Platzschranke mit \(s(n) = o(S(n))\). Dann gilt \textbf{DSPACE}(s(n)) \(\not \subseteq\) \textbf{DSPACE}(S(n)).
+
+\mysubsection{Platzhirarchiesatz für nichtdeterministsche TM}
+    Sei s eine Platzschranke und S platzkonstruierbare Platzschranke mit \(s(n) = o(S(n))\). Dann gilt \textbf{NSPACE}(s(n)) \(\not \subseteq\) \textbf{NSPACE} (S(n))
+    \begin{proof}
+        Sei \(M_0, M_1, \cdots\) eine geeignete effektive Aufzählung aller TM der Form \(M = (\{0, \cdots, m\}, \{0, 1\}, \{0, 1, \Box\}, \Delta, 0, \{1\})\), so dass es für TM M (dieser Form) unendlich viele \(e \in \mathbb{N}_0\) gibt, sodass \(M = M_e\). Wir betrachten eine TM U die bei Eingabe \(1^e\) eine (geratene) Rechnung der TM \(M_e\) bei Eingabe \(1^e\) simuliert und genau akzeptiert wenn die Simulation akzeptiert. 
+        \vspace*{0.5cm}
+        \\
+        Nach \hyperref[subsec:9.7]{Satz 9.7} können wir U so wählen, dass es für alle \(c \geq 1\) und alle \(c \cdot s(n)\)-platzbeschränkte TM M der obigen Form ein \(e_{c,M}\) mit \(M_{e_{c,M}} = M\) gibt, sodass in jeder Rechung von U zur Eingabe \(1^{e_{c,M}}\) auf allen Arbeitsbändern höchstens \(S(e_{c,M})\) Felder besucht werden.
+        \vspace*{0.5cm}
+        \\
+        Da S platzkonstruierbar ist, ist es möglich U so zu modifizieren, dass U bei Eingabe \(1^e\) die Simulation immer abbricht, wenn der nächste Schritt dazu führen würde, dass auf einem Arbeitsband mehr S(e) Felder benutzt würden, wobei U bei abgebrochener Simulation wie akueptiert. Dann ist U offenbar S(n)-platzbeschränkt. Es gilt also \(L(U) \in \textbf{NSPACE}(S(n))\)
+        \vspace*{0.5cm}
+        \\
+        Nach \hyperref[subsec:9.12]{Satz 9.12} gilt für \(\overline{L} := \{0,1\}^* / L(u)\) auch \(\overline{L} \in \textbf{NSPACE} (S(n))\). Wir zeigen nun, dass keine s(n)-platzbeschrenkte TM M mit \(L(M) = \overline{L}\) existiert. Ist M eine s(n)-platzbeschrenkte TM, so existiert nach \hyperref[label]{Satz 9.5} ein \(c \geq 1\) und eine cs(n)-platzbeschrenkte TM M' der obigen Form mit L(M') = L(M). Die TM U bricht dann die Simulation bei Eingabe \(1^e_{c,M}\) nicht ab, es gibt also \(L(M_{e_{c,M}}) \not = \overline{L}\), und damit wegen \(L(M_{e,M'}) = L(M') = L(M)\) also \(L(M) \not = \overline{L}\)
+    \end{proof}
+
+\mysubsection{Bemerkung}
+    Eine Sprache ist genau dann kontextsensitiv, wenn sie von einer n-platzbeschrenkten. TM erkannt wird.
+
+\mysubsection{Satz}
+    Ist L eine kontextsensitive Spracheüber einem Alphabet \(\Sigma\), so ist \(\Sigma^* / L\) kontextsensitiv.
+    \begin{proof}
+        Folgt direkt aus \hyperref[subsec:9.12]{Satz 9.12} und \hyperref[subsec:9.14]{bemerkung 9.14}.
+    \end{proof}
+
+\mysubsection{Satz ***}
+    Für jede Zeitschranke t gelten folgede Inklusionen:
+    
+    \[SKIZZE HIER !\]
+
+    

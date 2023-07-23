@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  21 JUL 2023 00:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  23 JUL 2023 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -862,7 +862,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 24
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<qrcode.png, id=790, 263.48438pt x 263.48438pt>
+<qrcode.png, id=806, 263.48438pt x 263.48438pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
 Package pdftex.def Info: qrcode.png  used on input line 244.
@@ -923,7 +923,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einführung.png, id=1225, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einführung.png, id=1250, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einführung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einführung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einführung.png  used on input line 3.
@@ -977,7 +977,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 LaTeX Warning: Command \" invalid in math mode on input line 192.
 
 [13]
-<Turingmachine/alphabet_wech.png, id=1284, 503.8825pt x 259.97125pt>
+<Turingmachine/alphabet_wech.png, id=1308, 503.8825pt x 259.97125pt>
 File: Turingmachine/alphabet_wech.png Graphic file (type png)
 <use Turingmachine/alphabet_wech.png>
 Package pdftex.def Info: Turingmachine/alphabet_wech.png  used on input line 261.
@@ -1293,31 +1293,47 @@ LaTeX Warning: Command \" invalid in math mode on input line 55.
 
 LaTeX Warning: Command \" invalid in math mode on input line 56.
 
-)
-Overfull \hbox (25.90398pt too wide) in paragraph at lines 71--269
+
+Overfull \hbox (25.90398pt too wide) in paragraph at lines 71--72
 \T1/lmr/m/n/10 Sei s ei-ne Platz-schran-ke und S ei-ne platz-kon-stru-ier-ba-re Platz-schran-ke mit $\OML/lmm/m/it/10 s\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/10 o\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 S\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ))$\T1/lmr/m/n/10 . Dann gilt \T1/lmr/bx/n/10 DSPACE\T1/lmr/m/n/10 (s(n))
  []
 
-[69] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexität/main.aux) (./Komplexitätsklassen P und NP/main.aux) (./Platzkomplexität/main.aux))
+
+Overfull \hbox (6.6405pt too wide) in paragraph at lines 74--76
+\T1/lmr/m/n/10 Sei s ei-ne Platz-schran-ke und S platz-kon-stru-ier-ba-re Platz-schran-ke mit $\OML/lmm/m/it/10 s\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/10 o\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 S\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ))$\T1/lmr/m/n/10 . Dann gilt \T1/lmr/bx/n/10 NSPACE\T1/lmr/m/n/10 (s(n))
+ []
+
+
+LaTeX Warning: Hyper reference `label' on page 69 undefined on input line 85.
+
+
+Overfull \hbox (47.47562pt too wide) in paragraph at lines 76--86
+[]\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te ef-fek-ti-ve Auf-z�h-lung al-ler TM der Form $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; m\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OML/lmm/m/it/10 ; \U/msa/m/n/10 ^^C\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
+ []
+
+[69]) [70] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./ReguläreSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexität/main.aux) (./Komplexitätsklassen P und NP/main.aux) (./Platzkomplexität/main.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: B0B87FDE5C7C47C3329F48A0790EB634;43448.
+(rerunfilecheck)             Checksum: A5389D37E63D1549CBD09DA3987540A9;44038.
  ) 
 Here is how much of TeX's memory you used:
- 32045 strings out of 476025
- 631467 string characters out of 5790017
- 1875388 words of memory out of 5000000
- 51541 multiletter control sequences out of 15000+600000
+ 32059 strings out of 476025
+ 631661 string characters out of 5790017
+ 1876388 words of memory out of 5000000
+ 51550 multiletter control sequences out of 15000+600000
  604493 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,17n,117p,1907b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (70 pages, 717959 bytes).
+Output written on script.pdf (71 pages, 722290 bytes).
 PDF statistics:
- 1818 PDF objects out of 2073 (max. 8388607)
- 1666 compressed objects within 17 object streams
- 306 named destinations out of 1000 (max. 500000)
- 1594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1851 PDF objects out of 2073 (max. 8388607)
+ 1698 compressed objects within 17 object streams
+ 311 named destinations out of 1000 (max. 500000)
+ 1626 words of extra memory for PDF output out of 10000 (max. 10000000)
 
